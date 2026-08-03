@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_52ad10e67e5eb8c17da228b7b74a1f13 {
+                #map_cb6efcaa33946ac670acd075ce1084c3 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -72,14 +72,14 @@
        Call: 2027-03-12</div>
 </div>
     
-            <div class="folium-map" id="map_52ad10e67e5eb8c17da228b7b74a1f13" ></div>
+            <div class="folium-map" id="map_cb6efcaa33946ac670acd075ce1084c3" ></div>
         
 </body>
 <script>
     
     
-            var map_52ad10e67e5eb8c17da228b7b74a1f13 = L.map(
-                "map_52ad10e67e5eb8c17da228b7b74a1f13",
+            var map_cb6efcaa33946ac670acd075ce1084c3 = L.map(
+                "map_cb6efcaa33946ac670acd075ce1084c3",
                 {
                     center: [14.59, 120.96],
                     crs: L.CRS.EPSG3857,
@@ -91,13 +91,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_52ad10e67e5eb8c17da228b7b74a1f13);
+            L.control.scale().addTo(map_cb6efcaa33946ac670acd075ce1084c3);
 
             
 
         
     
-            var tile_layer_68ca93a0ecdb3a1bce8a843ab0edc3a6 = L.tileLayer(
+            var tile_layer_ee5c1c2d3312279f055e50bba83e5af5 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -114,7 +114,7 @@
             );
         
     
-            tile_layer_68ca93a0ecdb3a1bce8a843ab0edc3a6.addTo(map_52ad10e67e5eb8c17da228b7b74a1f13);
+            tile_layer_ee5c1c2d3312279f055e50bba83e5af5.addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
             L.control.fullscreen(
@@ -124,15 +124,15 @@
   "titleCancel": "Exit Full Screen",
   "forceSeparateButton": false,
 }
-            ).addTo(map_52ad10e67e5eb8c17da228b7b74a1f13);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            var tile_layer_21de0cee2df3e1617da5f48fa922b34b = L.tileLayer(
+            var tile_layer_93905b858ba34804e667d91aeaa8b225 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_a95ffe63ca919ce4d4cd3719116cb1a2 = new L.Control.MiniMap(
-                tile_layer_21de0cee2df3e1617da5f48fa922b34b,
+            var mini_map_f9192cc51f5aba8ae9b3d4975ca02445 = new L.Control.MiniMap(
+                tile_layer_93905b858ba34804e667d91aeaa8b225,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -147,16 +147,16 @@
   "minimized": false,
 }
             );
-            map_52ad10e67e5eb8c17da228b7b74a1f13.addControl(mini_map_a95ffe63ca919ce4d4cd3719116cb1a2);
+            map_cb6efcaa33946ac670acd075ce1084c3.addControl(mini_map_f9192cc51f5aba8ae9b3d4975ca02445);
         
     
-            var circle_marker_8cadb72d535b39fa705d07f100354669 = L.circleMarker(
+            var circle_marker_0630163600d95ef5fa0f7888f58a5196 = L.circleMarker(
                 [14.59, 120.96],
                 {"bubblingMouseEvents": true, "color": "#C2410C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2410C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
-            ).addTo(map_52ad10e67e5eb8c17da228b7b74a1f13);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_8cadb72d535b39fa705d07f100354669.bindTooltip(
+            circle_marker_0630163600d95ef5fa0f7888f58a5196.bindTooltip(
                 `<div>
                      Manila — cruise berth
                  </div>`,
@@ -166,19 +166,141 @@
             );
         
     
-            var feature_group_043290ab476a3446e3208ab7ae315486 = L.featureGroup(
+            var circle_marker_736907d20da62d99638b39a1cb9ba162 = L.circleMarker(
+                [14.5929749, 120.9589093],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_736907d20da62d99638b39a1cb9ba162.bindTooltip(
+                `<div>
+                     Church (amenity=place_of_worship)
+                 </div>`,
                 {
+  "sticky": true,
 }
             );
         
     
-            var circle_marker_e7082e21e4c3760a1867c782fb90c9e7 = L.circleMarker(
+            var circle_marker_98608d5eb40afd445fe5a154c398d02d = L.circleMarker(
+                [14.592969, 120.9588919],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_98608d5eb40afd445fe5a154c398d02d.bindTooltip(
+                `<div>
+                     Locale of Baseco (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_433f248cc9fc2da4a250b78cfa876035 = L.circleMarker(
+                [14.591092536132575, 120.95694863713584],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_433f248cc9fc2da4a250b78cfa876035.bindTooltip(
+                `<div>
+                     Sto. Niño de Baseco Parish (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4442db81a9575f64ef228df8c6a15274 = L.circleMarker(
+                [14.59354821434855, 120.96107466751006],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_4442db81a9575f64ef228df8c6a15274.bindTooltip(
+                `<div>
+                     Lokal ng Baseco, Iglesia ni Cristo (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_617a0a47ce50c48aca25060b8442fc47 = L.circleMarker(
+                [14.592847460161268, 120.95743203556373],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_617a0a47ce50c48aca25060b8442fc47.bindTooltip(
+                `<div>
+                     P&G Plaza (leisure=park)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32bd59a4eabefaca6b4ea338e5df76a6 = L.circleMarker(
+                [14.5964287, 120.9607474],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_32bd59a4eabefaca6b4ea338e5df76a6.bindTooltip(
+                `<div>
+                     Parola ng Binondo (historic=memorial)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34c1a95f7237bb113b1e4736362c7752 = L.circleMarker(
+                [14.598010149723834, 120.9609547265197],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_34c1a95f7237bb113b1e4736362c7752.bindTooltip(
+                `<div>
+                     Lokal ng Binondo (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60e5e860fca0d15295ec72d1e270df98 = L.circleMarker(
+                [14.59451197891478, 120.96970597026994],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
+        
+    
+            circle_marker_60e5e860fca0d15295ec72d1e270df98.bindTooltip(
+                `<div>
+                     Rizal Shrine (tourism=museum)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95af58036861671337c1df1feec2ab6a = L.circleMarker(
                 [16.83, 112.33],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_e7082e21e4c3760a1867c782fb90c9e7.bindTooltip(
+            circle_marker_95af58036861671337c1df1feec2ab6a.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -188,13 +310,13 @@
             );
         
     
-            var circle_marker_5193162bb20aad3883e68f78f4bf34c9 = L.circleMarker(
+            var circle_marker_5a3d70c7a817d008e773aacb1f1ebdfc = L.circleMarker(
                 [16.53, 111.75],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_5193162bb20aad3883e68f78f4bf34c9.bindTooltip(
+            circle_marker_5a3d70c7a817d008e773aacb1f1ebdfc.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -204,13 +326,13 @@
             );
         
     
-            var circle_marker_2a45697c3d37e5fd697a174bc33a2400 = L.circleMarker(
+            var circle_marker_5d20a024c604f144a751791d5e0608ff = L.circleMarker(
                 [16.45, 111.7],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_2a45697c3d37e5fd697a174bc33a2400.bindTooltip(
+            circle_marker_5d20a024c604f144a751791d5e0608ff.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -220,13 +342,13 @@
             );
         
     
-            var circle_marker_34e397b2a89d2638a88dfec4e4cd6602 = L.circleMarker(
+            var circle_marker_7e5b93d93976148aaf611fa36840f274 = L.circleMarker(
                 [16.97, 112.26],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_34e397b2a89d2638a88dfec4e4cd6602.bindTooltip(
+            circle_marker_7e5b93d93976148aaf611fa36840f274.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -236,13 +358,13 @@
             );
         
     
-            var circle_marker_48f9d7eef5d1d39c4badf1e3a9d8bac7 = L.circleMarker(
+            var circle_marker_dd4f23ab8f32b3a02d9e0086e512b6d0 = L.circleMarker(
                 [15.78, 111.2],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_48f9d7eef5d1d39c4badf1e3a9d8bac7.bindTooltip(
+            circle_marker_dd4f23ab8f32b3a02d9e0086e512b6d0.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -252,29 +374,29 @@
             );
         
     
-            var marker_d3a934989cd9bc3695024f5ff0b83b33 = L.marker(
+            var marker_f0a5900f7790d138adca4c7b5828f388 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            var div_icon_a86a751b77cef9b53a9b0c783ada0c8b = L.divIcon({
+            var div_icon_2053033f7f13b3da2ba90702c6bfb1f8 = L.divIcon({
   "html": "\u003cdiv style=\"font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\"\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e",
   "className": "empty",
 });
         
     
-                marker_d3a934989cd9bc3695024f5ff0b83b33.setIcon(div_icon_a86a751b77cef9b53a9b0c783ada0c8b);
+                marker_f0a5900f7790d138adca4c7b5828f388.setIcon(div_icon_2053033f7f13b3da2ba90702c6bfb1f8);
             
     
-            var circle_marker_445088a0e7b2f987896b57f95e917305 = L.circleMarker(
+            var circle_marker_4a21b817f61590786b3365712d54610c = L.circleMarker(
                 [10.72, 115.82],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_445088a0e7b2f987896b57f95e917305.bindTooltip(
+            circle_marker_4a21b817f61590786b3365712d54610c.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -284,13 +406,13 @@
             );
         
     
-            var circle_marker_0a16cf942bb1c84f10d884854eb8b994 = L.circleMarker(
+            var circle_marker_90dfe5613e5577c91b829de9f8fd29e3 = L.circleMarker(
                 [10.37, 114.36],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_0a16cf942bb1c84f10d884854eb8b994.bindTooltip(
+            circle_marker_90dfe5613e5577c91b829de9f8fd29e3.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -300,13 +422,13 @@
             );
         
     
-            var circle_marker_9cc18c3e861dc7f19b51930c3b19c556 = L.circleMarker(
+            var circle_marker_90b4e74d9c0f3bd9808bb391c6a495d4 = L.circleMarker(
                 [9.88, 114.35],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_9cc18c3e861dc7f19b51930c3b19c556.bindTooltip(
+            circle_marker_90b4e74d9c0f3bd9808bb391c6a495d4.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -316,13 +438,13 @@
             );
         
     
-            var circle_marker_d8d91cb17e7a48891923974b165b2080 = L.circleMarker(
+            var circle_marker_2335408196b2ddd98a318847c54e6895 = L.circleMarker(
                 [8.64, 111.92],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_d8d91cb17e7a48891923974b165b2080.bindTooltip(
+            circle_marker_2335408196b2ddd98a318847c54e6895.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -332,13 +454,13 @@
             );
         
     
-            var circle_marker_4bfee4162dda683ead42b4dfa1cafc34 = L.circleMarker(
+            var circle_marker_3370a85fda887f8a19e11dbed09a51f2 = L.circleMarker(
                 [11.05, 114.28],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_4bfee4162dda683ead42b4dfa1cafc34.bindTooltip(
+            circle_marker_3370a85fda887f8a19e11dbed09a51f2.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -348,13 +470,13 @@
             );
         
     
-            var circle_marker_718ee4fbd4387fa8be92d30e4e5c858c = L.circleMarker(
+            var circle_marker_7f5e2089a602448334cca1674059d68a = L.circleMarker(
                 [7.38, 113.84],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            circle_marker_718ee4fbd4387fa8be92d30e4e5c858c.bindTooltip(
+            circle_marker_7f5e2089a602448334cca1674059d68a.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -364,38 +486,35 @@
             );
         
     
-            var marker_02ddcc33f5d81de8dfb44648bd79eb07 = L.marker(
+            var marker_449307406ba2b610892fdd6a87d44031 = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(feature_group_043290ab476a3446e3208ab7ae315486);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            var div_icon_dad852a4d778b05e5e15563afd0687b6 = L.divIcon({
+            var div_icon_d1f5359b0f19b71cf5282bfd36c1b10e = L.divIcon({
   "html": "\u003cdiv style=\"font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\"\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e",
   "className": "empty",
 });
         
     
-                marker_02ddcc33f5d81de8dfb44648bd79eb07.setIcon(div_icon_dad852a4d778b05e5e15563afd0687b6);
+                marker_449307406ba2b610892fdd6a87d44031.setIcon(div_icon_d1f5359b0f19b71cf5282bfd36c1b10e);
             
     
-            feature_group_043290ab476a3446e3208ab7ae315486.addTo(map_52ad10e67e5eb8c17da228b7b74a1f13);
-        
-    
-            var feature_group_980c1fb5584499b1dac6ca1950d4d1d5 = L.featureGroup(
+            var feature_group_edb670bd581c903eeee260cfa3dd5dae = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_adb484c40b0f3e1db4f08e3a49869e51 = L.polyline(
+            var poly_line_fd76f76a5534259b1623ad9b87e53d2d = L.polyline(
                 [[14.59, 120.96], [9.74, 118.74]],
                 {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": "6,8", "dashOffset": null, "fill": false, "fillColor": "#7C8794", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_980c1fb5584499b1dac6ca1950d4d1d5);
+            ).addTo(feature_group_edb670bd581c903eeee260cfa3dd5dae);
         
     
-            poly_line_adb484c40b0f3e1db4f08e3a49869e51.bindTooltip(
+            poly_line_fd76f76a5534259b1623ad9b87e53d2d.bindTooltip(
                 `<div>
                      Manila ↔ Puerto Princesa
                  </div>`,
@@ -405,13 +524,13 @@
             );
         
     
-            var circle_marker_0acdbabd271cff3f67b9aa3a1875e87e = L.circleMarker(
+            var circle_marker_586db2182cfda24876cee71f0e2506f8 = L.circleMarker(
                 [9.74, 118.74],
                 {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F4F1EA", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
-            ).addTo(feature_group_980c1fb5584499b1dac6ca1950d4d1d5);
+            ).addTo(feature_group_edb670bd581c903eeee260cfa3dd5dae);
         
     
-            circle_marker_0acdbabd271cff3f67b9aa3a1875e87e.bindTooltip(
+            circle_marker_586db2182cfda24876cee71f0e2506f8.bindTooltip(
                 `<div>
                      Puerto Princesa (stop 6 of 9)
                  </div>`,
@@ -421,13 +540,13 @@
             );
         
     
-            var poly_line_ca859e8a41d4c726539c2acb36b5102c = L.polyline(
+            var poly_line_fb01121799166d3e39410a5d91786b36 = L.polyline(
                 [[14.59, 120.96], [22.295, 114.169]],
                 {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": "6,8", "dashOffset": null, "fill": false, "fillColor": "#7C8794", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_980c1fb5584499b1dac6ca1950d4d1d5);
+            ).addTo(feature_group_edb670bd581c903eeee260cfa3dd5dae);
         
     
-            poly_line_ca859e8a41d4c726539c2acb36b5102c.bindTooltip(
+            poly_line_fb01121799166d3e39410a5d91786b36.bindTooltip(
                 `<div>
                      Manila ↔ Hong Kong
                  </div>`,
@@ -437,13 +556,13 @@
             );
         
     
-            var circle_marker_0f3ac799c16857950ea8e7f4e011ff54 = L.circleMarker(
+            var circle_marker_d2feaa6f47904eebfd2dadb3fef834a2 = L.circleMarker(
                 [22.295, 114.169],
                 {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F4F1EA", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
-            ).addTo(feature_group_980c1fb5584499b1dac6ca1950d4d1d5);
+            ).addTo(feature_group_edb670bd581c903eeee260cfa3dd5dae);
         
     
-            circle_marker_0f3ac799c16857950ea8e7f4e011ff54.bindTooltip(
+            circle_marker_d2feaa6f47904eebfd2dadb3fef834a2.bindTooltip(
                 `<div>
                      Hong Kong (stop 8 of 9)
                  </div>`,
@@ -453,27 +572,26 @@
             );
         
     
-            feature_group_980c1fb5584499b1dac6ca1950d4d1d5.addTo(map_52ad10e67e5eb8c17da228b7b74a1f13);
+            feature_group_edb670bd581c903eeee260cfa3dd5dae.addTo(map_cb6efcaa33946ac670acd075ce1084c3);
         
     
-            var layer_control_a1d8bef9a4f40cf190ad1ff248ca7f6c_layers = {
+            var layer_control_561af0481085cbe10af6d01e90c12470_layers = {
                 base_layers : {
-                    "cartodbpositron" : tile_layer_68ca93a0ecdb3a1bce8a843ab0edc3a6,
+                    "cartodbpositron" : tile_layer_ee5c1c2d3312279f055e50bba83e5af5,
                 },
                 overlays :  {
-                    "Qu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa \u00b7 Tr\u01b0\u1eddng Sa" : feature_group_043290ab476a3446e3208ab7ae315486,
-                    "Cruise legs" : feature_group_980c1fb5584499b1dac6ca1950d4d1d5,
+                    "Cruise legs" : feature_group_edb670bd581c903eeee260cfa3dd5dae,
                 },
             };
-            let layer_control_a1d8bef9a4f40cf190ad1ff248ca7f6c = L.control.layers(
-                layer_control_a1d8bef9a4f40cf190ad1ff248ca7f6c_layers.base_layers,
-                layer_control_a1d8bef9a4f40cf190ad1ff248ca7f6c_layers.overlays,
+            let layer_control_561af0481085cbe10af6d01e90c12470 = L.control.layers(
+                layer_control_561af0481085cbe10af6d01e90c12470_layers.base_layers,
+                layer_control_561af0481085cbe10af6d01e90c12470_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_52ad10e67e5eb8c17da228b7b74a1f13);
+            ).addTo(map_cb6efcaa33946ac670acd075ce1084c3);
 
         
 </script>
