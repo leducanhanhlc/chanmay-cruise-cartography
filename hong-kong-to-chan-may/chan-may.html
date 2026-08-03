@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aee2bf40e63bf331e08a88984e6c54e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+<div style="position:fixed;top:12px;left:60px;z-index:9999;
+    background:#F4F1EA;border:1px solid #C9C3B6;
+    border-radius:4px;padding:10px 14px;font-family:system-ui,sans-serif;
+    box-shadow:0 2px 10px rgba(0,0,0,.12);max-width:340px">
+  <div style="font-size:11px;letter-spacing:.14em;color:#5A6169;
+       text-transform:uppercase">Stop 2 of 2 ·
+       Hong Kong → Chân Mây</div>
+  <div style="font-size:21px;font-weight:600;color:#14181C;
+       margin:3px 0 2px">Chân Mây</div>
+  <div style="font-size:12px;color:#5A6169">Vietnam · gateway to Huế / Đà Nẵng</div>
+  <div style="font-size:12px;color:#5A6169;margin-top:4px">
+       Call: date not published</div>
+</div>
+    
+            <div class="folium-map" id="map_aee2bf40e63bf331e08a88984e6c54e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aee2bf40e63bf331e08a88984e6c54e0 = L.map(
+                "map_aee2bf40e63bf331e08a88984e6c54e0",
+                {
+                    center: [16.3241, 108.0249],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": true,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_aee2bf40e63bf331e08a88984e6c54e0);
+
+            
+
+        
+    
+            var tile_layer_335ab1d503a02e8d5b8ccd090a71fc07 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_335ab1d503a02e8d5b8ccd090a71fc07.addTo(map_aee2bf40e63bf331e08a88984e6c54e0);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_aee2bf40e63bf331e08a88984e6c54e0);
+        
+    
+            var tile_layer_8f303ca173509ddc952acfd85679e5f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_1f380ca0e34e4c5007da631cef113187 = new L.Control.MiniMap(
+                tile_layer_8f303ca173509ddc952acfd85679e5f5,
+                {
+  "position": "bottomleft",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_aee2bf40e63bf331e08a88984e6c54e0.addControl(mini_map_1f380ca0e34e4c5007da631cef113187);
+        
+    
+            var circle_marker_46395cefd66bd955d38a1f2911dbcfb7 = L.circleMarker(
+                [16.3241, 108.0249],
+                {"bubblingMouseEvents": true, "color": "#C2410C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2410C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_aee2bf40e63bf331e08a88984e6c54e0);
+        
+    
+            circle_marker_46395cefd66bd955d38a1f2911dbcfb7.bindTooltip(
+                `<div>
+                     Chân Mây — cruise berth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_d7120d61a4b76dbb312f8c76924ee8b4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_6b1843712818fcbb94678e19beccf3ee = L.polyline(
+                [[16.3241, 108.0249], [22.295, 114.169]],
+                {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": "6,8", "dashOffset": null, "fill": false, "fillColor": "#7C8794", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_d7120d61a4b76dbb312f8c76924ee8b4);
+        
+    
+            poly_line_6b1843712818fcbb94678e19beccf3ee.bindTooltip(
+                `<div>
+                     Chân Mây ↔ Hong Kong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd38baa83482dcc0080008d22ab0ecea = L.circleMarker(
+                [22.295, 114.169],
+                {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F4F1EA", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_d7120d61a4b76dbb312f8c76924ee8b4);
+        
+    
+            circle_marker_dd38baa83482dcc0080008d22ab0ecea.bindTooltip(
+                `<div>
+                     Hong Kong (stop 1 of 2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_d7120d61a4b76dbb312f8c76924ee8b4.addTo(map_aee2bf40e63bf331e08a88984e6c54e0);
+        
+    
+            var layer_control_9f4b10792afff6dc40c18c6f9027a005_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_335ab1d503a02e8d5b8ccd090a71fc07,
+                },
+                overlays :  {
+                    "Cruise legs" : feature_group_d7120d61a4b76dbb312f8c76924ee8b4,
+                },
+            };
+            let layer_control_9f4b10792afff6dc40c18c6f9027a005 = L.control.layers(
+                layer_control_9f4b10792afff6dc40c18c6f9027a005_layers.base_layers,
+                layer_control_9f4b10792afff6dc40c18c6f9027a005_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_aee2bf40e63bf331e08a88984e6c54e0);
+
+        
+</script>
+</html>
