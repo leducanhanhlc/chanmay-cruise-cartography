@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_978f95654acc4fe0510adc0157a3dcfa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+</head>
+<body>
+    
+    
+<div style="position:fixed;top:12px;left:60px;z-index:9999;
+    background:#F4F1EA;border:1px solid #C9C3B6;
+    border-radius:4px;padding:10px 14px;font-family:system-ui,sans-serif;
+    box-shadow:0 2px 10px rgba(0,0,0,.12);max-width:340px">
+  <div style="font-size:11px;letter-spacing:.14em;color:#5A6169;
+       text-transform:uppercase">Stop 4 of 9 ·
+       Sydney → Chân Mây</div>
+  <div style="font-size:21px;font-weight:600;color:#14181C;
+       margin:3px 0 2px">Cairns</div>
+  <div style="font-size:12px;color:#5A6169">Australia</div>
+  <div style="font-size:12px;color:#5A6169;margin-top:4px">
+       Call: 2027-03-02</div>
+</div>
+    
+            <div class="folium-map" id="map_978f95654acc4fe0510adc0157a3dcfa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_978f95654acc4fe0510adc0157a3dcfa = L.map(
+                "map_978f95654acc4fe0510adc0157a3dcfa",
+                {
+                    center: [-16.924, 145.781],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": true,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+
+            
+
+        
+    
+            var tile_layer_a2c13940f1757de5369540d55ac1b4da = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a2c13940f1757de5369540d55ac1b4da.addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            var tile_layer_3b2943f468a47b8eb5f21e07b96de4b3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_7e70acfaa1b1a5e3fdcaaa5429ac81b5 = new L.Control.MiniMap(
+                tile_layer_3b2943f468a47b8eb5f21e07b96de4b3,
+                {
+  "position": "bottomleft",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_978f95654acc4fe0510adc0157a3dcfa.addControl(mini_map_7e70acfaa1b1a5e3fdcaaa5429ac81b5);
+        
+    
+            ant_path_7d5622e7723230320823f5aa9d1a711a = L.polyline.antPath(
+              [[-16.9243123, 145.7798981], [-16.9227325, 145.7794978], [-16.9222362, 145.7792424], [-16.9227325, 145.7794978], [-16.9225146, 145.780495], [-16.9227325, 145.7794978], [-16.9222362, 145.7792424], [-16.9221522, 145.7791647], [-16.9207062, 145.7799522], [-16.9206923, 145.7799508], [-16.9206192, 145.7799706], [-16.9206505, 145.7800026], [-16.9207342, 145.7800132]],
+              {
+  "stroke": true,
+  "color": "#C2410C",
+  "weight": 4,
+  "opacity": 0.55,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+12,
+24,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#C2410C",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 900,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            ant_path_7d5622e7723230320823f5aa9d1a711a.bindTooltip(
+                `<div>
+                     Road route · 0.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("HH:mm");
+                }
+            });
+            map_978f95654acc4fe0510adc0157a3dcfa.timeDimension = L.timeDimension(
+                {
+                    period: "PT1M",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {
+  "position": "bottomleft",
+  "minSpeed": 0.1,
+  "maxSpeed": 10,
+  "autoPlay": true,
+  "loopButton": false,
+  "timeSliderDragUpdate": true,
+  "speedSlider": true,
+  "playerOptions": {
+  "transitionTime": 120,
+  "loop": true,
+  "startOver": true,
+},
+}
+            );
+            map_978f95654acc4fe0510adc0157a3dcfa.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[145.7798981, -16.9243123], [145.7794978, -16.9227325], [145.7792424, -16.9222362], [145.7794978, -16.9227325], [145.780495, -16.9225146], [145.7794978, -16.9227325], [145.7792424, -16.9222362], [145.7791647, -16.9221522], [145.7799522, -16.9207062], [145.7799508, -16.9206923], [145.7799706, -16.9206192], [145.7800026, -16.9206505], [145.7800132, -16.9207342]]}, "properties": {"times": ["2026-01-01T08:00:00", "2026-01-01T08:00:12.839967", "2026-01-01T08:00:17.213807", "2026-01-01T08:00:21.587645", "2026-01-01T08:00:29.366128", "2026-01-01T08:00:37.144602", "2026-01-01T08:00:41.518442", "2026-01-01T08:00:42.406843", "2026-01-01T08:00:55.300277", "2026-01-01T08:00:55.410543", "2026-01-01T08:00:56.007050", "2026-01-01T08:00:56.353943", "2026-01-01T08:00:57.019715"], "style": {"color": "#C2410C", "weight": 5, "opacity": 0.85}, "icon": "circle", "iconstyle": {"fillColor": "#C2410C", "fillOpacity": 0.9, "stroke": "true", "color": "#ffffff", "weight": 2, "radius": 7}}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                        if (feature.properties.tooltip) {
+                        layer.bindTooltip(feature.properties.tooltip);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_691540423bebacf7c514f3a59adf14df = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: false,
+                    duration: "PT3M",
+                }
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            var circle_marker_baf68ce0ffe1cbaf74d659fe2cee6ef0 = L.circleMarker(
+                [-16.924, 145.781],
+                {"bubblingMouseEvents": true, "color": "#C2410C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2410C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_baf68ce0ffe1cbaf74d659fe2cee6ef0.bindTooltip(
+                `<div>
+                     Cairns — cruise berth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d694a9b43759d971c99d2e7b7e6ec0e = L.circleMarker(
+                [-16.9235202, 145.780639],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_7d694a9b43759d971c99d2e7b7e6ec0e.bindTooltip(
+                `<div>
+                     Stories of Cairns (historic=monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0d09f5984eb633a5ad02b93469cdfc2 = L.circleMarker(
+                [-16.9231601, 145.7791616],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_c0d09f5984eb633a5ad02b93469cdfc2.bindTooltip(
+                `<div>
+                     Cairns ZOOM and Wildlife Dome (tourism=attraction)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cc6437783f8326ac5f79a5881027ab4 = L.circleMarker(
+                [-16.922277363120834, 145.77975308720582],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_2cc6437783f8326ac5f79a5881027ab4.bindTooltip(
+                `<div>
+                     Rotary Park (leisure=park)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c937cc56d8c64d1b4bae4f8c30449d6 = L.circleMarker(
+                [-16.922801021572024, 145.77897573735453],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_1c937cc56d8c64d1b4bae4f8c30449d6.bindTooltip(
+                `<div>
+                     Anzac Park (leisure=park)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad83dfd8ce6f07be2715379003fb5f21 = L.circleMarker(
+                [-16.9217672, 145.7800938],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_ad83dfd8ce6f07be2715379003fb5f21.bindTooltip(
+                `<div>
+                     Skydive Cairns (tourism=attraction)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f43ccef87f2586c9741ea2fb7fcec20f = L.circleMarker(
+                [-16.926594850857025, 145.77976635686008],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_f43ccef87f2586c9741ea2fb7fcec20f.bindTooltip(
+                `<div>
+                     CCLT Parkland (leisure=park)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26cbe44908f439e9b24d75f2fb5bf1a7 = L.circleMarker(
+                [-16.92677, 145.7798553],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_26cbe44908f439e9b24d75f2fb5bf1a7.bindTooltip(
+                `<div>
+                     The Lovers (tourism=viewpoint)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db872c64feed4d8497e5dd6fa592132d = L.circleMarker(
+                [-16.9209634, 145.7808393],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            circle_marker_db872c64feed4d8497e5dd6fa592132d.bindTooltip(
+                `<div>
+                     Baybaru (historic=monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_753d41d3077a2c50694e16ce32d0188b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_89c92d880e47f0231480f19d72e185b5 = L.polyline(
+                [[-16.924, 145.781], [-19.25, 146.83]],
+                {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": "6,8", "dashOffset": null, "fill": false, "fillColor": "#7C8794", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_753d41d3077a2c50694e16ce32d0188b);
+        
+    
+            poly_line_89c92d880e47f0231480f19d72e185b5.bindTooltip(
+                `<div>
+                     Cairns ↔ Townsville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fa9b785aa4985719c39cb6e1741f689 = L.circleMarker(
+                [-19.25, 146.83],
+                {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F4F1EA", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_753d41d3077a2c50694e16ce32d0188b);
+        
+    
+            circle_marker_3fa9b785aa4985719c39cb6e1741f689.bindTooltip(
+                `<div>
+                     Townsville (stop 3 of 9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f913de653297fb433a0b047890848e3b = L.polyline(
+                [[-16.924, 145.781], [1.44, 125.19]],
+                {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": "6,8", "dashOffset": null, "fill": false, "fillColor": "#7C8794", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_753d41d3077a2c50694e16ce32d0188b);
+        
+    
+            poly_line_f913de653297fb433a0b047890848e3b.bindTooltip(
+                `<div>
+                     Cairns ↔ Bitung
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be5bb05c617b083734e7fec43845bd70 = L.circleMarker(
+                [1.44, 125.19],
+                {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F4F1EA", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_753d41d3077a2c50694e16ce32d0188b);
+        
+    
+            circle_marker_be5bb05c617b083734e7fec43845bd70.bindTooltip(
+                `<div>
+                     Bitung (stop 5 of 9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_753d41d3077a2c50694e16ce32d0188b.addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+        
+    
+            var layer_control_0a3c3e6eac57208c62b79677fd4ccdea_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_a2c13940f1757de5369540d55ac1b4da,
+                },
+                overlays :  {
+                    "Cruise legs" : feature_group_753d41d3077a2c50694e16ce32d0188b,
+                },
+            };
+            let layer_control_0a3c3e6eac57208c62b79677fd4ccdea = L.control.layers(
+                layer_control_0a3c3e6eac57208c62b79677fd4ccdea_layers.base_layers,
+                layer_control_0a3c3e6eac57208c62b79677fd4ccdea_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_978f95654acc4fe0510adc0157a3dcfa);
+
+        
+</script>
+</html>
