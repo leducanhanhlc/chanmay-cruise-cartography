@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_cc13c875b4315e2b960d38d2b4887552 {
+                #map_012764228d3615b8a8c1d9cf8bd40be2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_cc13c875b4315e2b960d38d2b4887552&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_012764228d3615b8a8c1d9cf8bd40be2&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_cc13c875b4315e2b960d38d2b4887552 = L.map(
-                &quot;map_cc13c875b4315e2b960d38d2b4887552&quot;,
+            var map_012764228d3615b8a8c1d9cf8bd40be2 = L.map(
+                &quot;map_012764228d3615b8a8c1d9cf8bd40be2&quot;,
                 {
                     center: [33.73, -118.27],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            L.control.scale().addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
 
             
 
         
     
-            var tile_layer_7483db3a616c6161eeb71a081164f5d1 = L.tileLayer(
+            var tile_layer_4486cf2da7efe056b087a5b8bb306b43 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_7483db3a616c6161eeb71a081164f5d1.addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            tile_layer_4486cf2da7efe056b087a5b8bb306b43.addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            var circle_marker_d0a746c5f757a22ea086012146b2123e = L.circleMarker(
+            var circle_marker_d9033ff6d4bc9222842ba6ed58f3e208 = L.circleMarker(
                 [33.73, -118.27],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_d0a746c5f757a22ea086012146b2123e.bindTooltip(
+            circle_marker_d9033ff6d4bc9222842ba6ed58f3e208.bindTooltip(
                 `&lt;div&gt;
                      Los Angeles — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_288a6e59fdf8227b3c512eacab45df53 = L.popup({
+        var popup_47d08571b22a12256ac127cde2d3a623 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_347362e6ffcf287d23915b9268153b61 = $(`&lt;div id=&quot;html_347362e6ffcf287d23915b9268153b61&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Los Angeles&lt;/div&gt;&lt;img src=&quot;img/los-angeles.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Los Angeles&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Bruce_D._Judd,_FAIA,_Photographer_August_1997._DETAIL_OF_LOS_ANGELES_CITY_HALL_EAST_ELEVATION_PEDESTRIAN_ENTRY,_FACING_WEST._-_Los_Angeles_City_Hall,_200_North_Spring_Street,_HABS_CAL,19-LOSAN,51-55.tif&quot; rel=&quot;nofollow&quot;&gt;Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_288a6e59fdf8227b3c512eacab45df53.setContent(html_347362e6ffcf287d23915b9268153b61);
+                var html_4d62a5ee24db0456adf17b3e62616503 = $(`&lt;div id=&quot;html_4d62a5ee24db0456adf17b3e62616503&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Los Angeles&lt;/div&gt;&lt;img src=&quot;img/los-angeles.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Los Angeles&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Bruce_D._Judd,_FAIA,_Photographer_August_1997._DETAIL_OF_LOS_ANGELES_CITY_HALL_EAST_ELEVATION_PEDESTRIAN_ENTRY,_FACING_WEST._-_Los_Angeles_City_Hall,_200_North_Spring_Street,_HABS_CAL,19-LOSAN,51-55.tif&quot; rel=&quot;nofollow&quot;&gt;Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_47d08571b22a12256ac127cde2d3a623.setContent(html_4d62a5ee24db0456adf17b3e62616503);
             
         
 
-        circle_marker_d0a746c5f757a22ea086012146b2123e.bindPopup(popup_288a6e59fdf8227b3c512eacab45df53)
+        circle_marker_d9033ff6d4bc9222842ba6ed58f3e208.bindPopup(popup_47d08571b22a12256ac127cde2d3a623)
         ;
 
         
     
     
-            var circle_marker_e1f312230cfc4d246f971739de877678 = L.circleMarker(
+            var circle_marker_9eadee8f64b99c4dd360232d1cffd40d = L.circleMarker(
                 [34.1016851, -118.3449501],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_8b01d33f96c50c8d4e408ca9e64b1adb = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_59040f88c83967d7942051ce0981a6fb = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_1723fc9b9246be8fa6cbb862133ab5e6 = $(`&lt;div id=&quot;html_1723fc9b9246be8fa6cbb862133ab5e6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Hollywood Walk of Fame &amp; TCL Chinese Theatre&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1016851&amp;mlon=-118.3449501#map=16/34.1016851/-118.3449501&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_8b01d33f96c50c8d4e408ca9e64b1adb.setContent(html_1723fc9b9246be8fa6cbb862133ab5e6);
+                var html_9bed3a02db07f30f1a963d784517f056 = $(`&lt;div id=&quot;html_9bed3a02db07f30f1a963d784517f056&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Hollywood Walk of Fame &amp; TCL Chinese Theatre&lt;/div&gt;&lt;img src=&quot;sights/hollywood-walk-of-fame-tcl-chinese-theatre.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Los_Angeles_(California,_USA),_Hollywood_Boulevard,_The_Doors_--_2012_--_5040.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1016851&amp;mlon=-118.3449501#map=16/34.1016851/-118.3449501&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_59040f88c83967d7942051ce0981a6fb.setContent(html_9bed3a02db07f30f1a963d784517f056);
             
         
 
-        circle_marker_e1f312230cfc4d246f971739de877678.bindPopup(popup_8b01d33f96c50c8d4e408ca9e64b1adb)
+        circle_marker_9eadee8f64b99c4dd360232d1cffd40d.bindPopup(popup_59040f88c83967d7942051ce0981a6fb)
         ;
 
         
     
     
-            circle_marker_e1f312230cfc4d246f971739de877678.bindTooltip(
+            circle_marker_9eadee8f64b99c4dd360232d1cffd40d.bindTooltip(
                 `&lt;div&gt;
-                     Hollywood Walk of Fame &amp; TCL Chinese Theatre
+                     Hollywood Walk of Fame &amp; TCL Chinese Theatre — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_463eca4a61bace798dfd4fa75c7df85b = L.circleMarker(
+            var circle_marker_1b84a4909e339c73c786810f1c594073 = L.circleMarker(
                 [34.1182187, -118.3002933],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_4a5c513770040245550086f4e8af30c7 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_51344ca8dab98e81f6ffde4f99df4356 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_8725ffbc00bb06b689f4a041c3e1f04d = $(`&lt;div id=&quot;html_8725ffbc00bb06b689f4a041c3e1f04d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Griffith Observatory &amp; biển hiệu HOLLYWOOD&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1182187&amp;mlon=-118.3002933#map=16/34.1182187/-118.3002933&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_4a5c513770040245550086f4e8af30c7.setContent(html_8725ffbc00bb06b689f4a041c3e1f04d);
+                var html_1ce4410f5858c5551fee2f053a6aecd1 = $(`&lt;div id=&quot;html_1ce4410f5858c5551fee2f053a6aecd1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Griffith Observatory &amp; biển hiệu HOLLYWOOD&lt;/div&gt;&lt;img src=&quot;sights/griffith-observatory-bien-hieu-hollywood.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Griffith_Observatory_2012_01.jpg&quot; rel=&quot;nofollow&quot;&gt;Photograph by Mike Peel ( www.mikepeel.net ). · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1182187&amp;mlon=-118.3002933#map=16/34.1182187/-118.3002933&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_51344ca8dab98e81f6ffde4f99df4356.setContent(html_1ce4410f5858c5551fee2f053a6aecd1);
             
         
 
-        circle_marker_463eca4a61bace798dfd4fa75c7df85b.bindPopup(popup_4a5c513770040245550086f4e8af30c7)
+        circle_marker_1b84a4909e339c73c786810f1c594073.bindPopup(popup_51344ca8dab98e81f6ffde4f99df4356)
         ;
 
         
     
     
-            circle_marker_463eca4a61bace798dfd4fa75c7df85b.bindTooltip(
+            circle_marker_1b84a4909e339c73c786810f1c594073.bindTooltip(
                 `&lt;div&gt;
-                     Griffith Observatory &amp; biển hiệu HOLLYWOOD
+                     Griffith Observatory &amp; biển hiệu HOLLYWOOD — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_79ecc392cbc034cc6919e7293a3cbbec = L.circleMarker(
+            var circle_marker_dc65b74142572ed09df69bcb9fe4ec46 = L.circleMarker(
                 [34.1392322, -118.3543834],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_ed828c4f57d5dafe07e80f4843b074e0 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_6bfb1cc28cbeaec8e57290033588e28b = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_954abe925493cb5b8b643c0f4cfc69fc = $(`&lt;div id=&quot;html_954abe925493cb5b8b643c0f4cfc69fc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Universal Studios Hollywood&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1392322&amp;mlon=-118.3543834#map=16/34.1392322/-118.3543834&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_ed828c4f57d5dafe07e80f4843b074e0.setContent(html_954abe925493cb5b8b643c0f4cfc69fc);
+                var html_0b166f7044cf44a6c962e2a196463a14 = $(`&lt;div id=&quot;html_0b166f7044cf44a6c962e2a196463a14&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Universal Studios Hollywood&lt;/div&gt;&lt;img src=&quot;sights/universal-studios-hollywood.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Psycho_House-Universal_Studios-Hollywood-California4481.JPG&quot; rel=&quot;nofollow&quot;&gt;Diego Delso · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1392322&amp;mlon=-118.3543834#map=16/34.1392322/-118.3543834&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_6bfb1cc28cbeaec8e57290033588e28b.setContent(html_0b166f7044cf44a6c962e2a196463a14);
             
         
 
-        circle_marker_79ecc392cbc034cc6919e7293a3cbbec.bindPopup(popup_ed828c4f57d5dafe07e80f4843b074e0)
+        circle_marker_dc65b74142572ed09df69bcb9fe4ec46.bindPopup(popup_6bfb1cc28cbeaec8e57290033588e28b)
         ;
 
         
     
     
-            circle_marker_79ecc392cbc034cc6919e7293a3cbbec.bindTooltip(
+            circle_marker_dc65b74142572ed09df69bcb9fe4ec46.bindTooltip(
                 `&lt;div&gt;
-                     Universal Studios Hollywood
+                     Universal Studios Hollywood — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,32 +265,32 @@
             );
         
     
-            var circle_marker_5f210d9515462a3b86b0baf25f8f7d4d = L.circleMarker(
+            var circle_marker_80ea6d25127415f64225aa9b64e29347 = L.circleMarker(
                 [34.0770168, -118.47401],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_fa64573f9151a9dc6a29c399457f946f = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_1fcc3e476490546b5cd9e07ee385960b = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_683b0e5ed75ff7aae69230cb29d4832e = $(`&lt;div id=&quot;html_683b0e5ed75ff7aae69230cb29d4832e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Getty Center&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.0770168&amp;mlon=-118.47401#map=16/34.0770168/-118.47401&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_fa64573f9151a9dc6a29c399457f946f.setContent(html_683b0e5ed75ff7aae69230cb29d4832e);
+                var html_a4cf8292e3bd86ff34f49e9917687d7c = $(`&lt;div id=&quot;html_a4cf8292e3bd86ff34f49e9917687d7c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Getty Center&lt;/div&gt;&lt;img src=&quot;sights/getty-center.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Los_angeles_from_getty_panorama.jpg&quot; rel=&quot;nofollow&quot;&gt;Mfield , Matthew Field, http://www.photography.mattfield.com · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.0770168&amp;mlon=-118.47401#map=16/34.0770168/-118.47401&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_1fcc3e476490546b5cd9e07ee385960b.setContent(html_a4cf8292e3bd86ff34f49e9917687d7c);
             
         
 
-        circle_marker_5f210d9515462a3b86b0baf25f8f7d4d.bindPopup(popup_fa64573f9151a9dc6a29c399457f946f)
+        circle_marker_80ea6d25127415f64225aa9b64e29347.bindPopup(popup_1fcc3e476490546b5cd9e07ee385960b)
         ;
 
         
     
     
-            circle_marker_5f210d9515462a3b86b0baf25f8f7d4d.bindTooltip(
+            circle_marker_80ea6d25127415f64225aa9b64e29347.bindTooltip(
                 `&lt;div&gt;
-                     Getty Center
+                     Getty Center — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_68063df023fd579cc7bbd4116a7bf81c = L.circleMarker(
+            var circle_marker_3e87bd4fe110cec5c53ece34a7e004cb = L.circleMarker(
                 [34.0088961, -118.4973998],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_faa629fa0d12eccdcb1d1931dee957bf = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_0f73d3615acf71f70db3b41ea686902e = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_4b81087d846a80245e4d41c41ac1a727 = $(`&lt;div id=&quot;html_4b81087d846a80245e4d41c41ac1a727&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Santa Monica Pier &amp; Venice Beach&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.0088961&amp;mlon=-118.4973998#map=16/34.0088961/-118.4973998&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_faa629fa0d12eccdcb1d1931dee957bf.setContent(html_4b81087d846a80245e4d41c41ac1a727);
+                var html_8ec45851809fb83a82b11bd15990658f = $(`&lt;div id=&quot;html_8ec45851809fb83a82b11bd15990658f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Santa Monica Pier &amp; Venice Beach&lt;/div&gt;&lt;img src=&quot;sights/santa-monica-pier-venice-beach.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Los_Angeles_(California,_USA),_Santa_Monica_Beach_--_2012_--_5301.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.0088961&amp;mlon=-118.4973998#map=16/34.0088961/-118.4973998&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_0f73d3615acf71f70db3b41ea686902e.setContent(html_8ec45851809fb83a82b11bd15990658f);
             
         
 
-        circle_marker_68063df023fd579cc7bbd4116a7bf81c.bindPopup(popup_faa629fa0d12eccdcb1d1931dee957bf)
+        circle_marker_3e87bd4fe110cec5c53ece34a7e004cb.bindPopup(popup_0f73d3615acf71f70db3b41ea686902e)
         ;
 
         
     
     
-            circle_marker_68063df023fd579cc7bbd4116a7bf81c.bindTooltip(
+            circle_marker_3e87bd4fe110cec5c53ece34a7e004cb.bindTooltip(
                 `&lt;div&gt;
-                     Santa Monica Pier &amp; Venice Beach
+                     Santa Monica Pier &amp; Venice Beach — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,32 +331,32 @@
             );
         
     
-            var circle_marker_78a0b7bc2f95c91149e6be1bd06c15d7 = L.circleMarker(
+            var circle_marker_8fb16e07086a3ee8151ccd9a8267ae6d = L.circleMarker(
                 [33.8136512, -117.9197351],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_d0c6fe042138c5c8a59c88f786627399 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_e172862cb61f8e37b05b50f088a36dfd = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_bec8fd3d777bfb56719eab40d95a27f0 = $(`&lt;div id=&quot;html_bec8fd3d777bfb56719eab40d95a27f0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Disneyland Anaheim&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=33.8136512&amp;mlon=-117.9197351#map=16/33.8136512/-117.9197351&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_d0c6fe042138c5c8a59c88f786627399.setContent(html_bec8fd3d777bfb56719eab40d95a27f0);
+                var html_3c973e83753d31328832a6dc29c4bdaa = $(`&lt;div id=&quot;html_3c973e83753d31328832a6dc29c4bdaa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Disneyland Anaheim&lt;/div&gt;&lt;img src=&quot;sights/disneyland-anaheim.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Disneyland_park_-_Anaheim_Los_Angeles_California_USA_(9894442883).jpg&quot; rel=&quot;nofollow&quot;&gt;Boris Dzhingarov · CC BY 2.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=33.8136512&amp;mlon=-117.9197351#map=16/33.8136512/-117.9197351&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_e172862cb61f8e37b05b50f088a36dfd.setContent(html_3c973e83753d31328832a6dc29c4bdaa);
             
         
 
-        circle_marker_78a0b7bc2f95c91149e6be1bd06c15d7.bindPopup(popup_d0c6fe042138c5c8a59c88f786627399)
+        circle_marker_8fb16e07086a3ee8151ccd9a8267ae6d.bindPopup(popup_e172862cb61f8e37b05b50f088a36dfd)
         ;
 
         
     
     
-            circle_marker_78a0b7bc2f95c91149e6be1bd06c15d7.bindTooltip(
+            circle_marker_8fb16e07086a3ee8151ccd9a8267ae6d.bindTooltip(
                 `&lt;div&gt;
-                     Disneyland Anaheim
+                     Disneyland Anaheim — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -361,30 +364,30 @@
             );
         
     
-            var circle_marker_339cf6156d21bb8d193a7adcd1cea649 = L.circleMarker(
+            var circle_marker_56539645fa7cf464035701d9792f3d7c = L.circleMarker(
                 [34.0637362, -118.3589376],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_bd3fbe5f229bcd31ca7bb62c747b4e8e = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_f317e66fe100dd78bca2e2d149e231e2 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_e06ce30b98073b3d65b184bfef706670 = $(`&lt;div id=&quot;html_e06ce30b98073b3d65b184bfef706670&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;LACMA, The Broad&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.0637362&amp;mlon=-118.3589376#map=16/34.0637362/-118.3589376&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_bd3fbe5f229bcd31ca7bb62c747b4e8e.setContent(html_e06ce30b98073b3d65b184bfef706670);
+                var html_01044fdf68d0960d8b1c0851da659a04 = $(`&lt;div id=&quot;html_01044fdf68d0960d8b1c0851da659a04&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;LACMA, The Broad&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.0637362&amp;mlon=-118.3589376#map=16/34.0637362/-118.3589376&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_f317e66fe100dd78bca2e2d149e231e2.setContent(html_01044fdf68d0960d8b1c0851da659a04);
             
         
 
-        circle_marker_339cf6156d21bb8d193a7adcd1cea649.bindPopup(popup_bd3fbe5f229bcd31ca7bb62c747b4e8e)
+        circle_marker_56539645fa7cf464035701d9792f3d7c.bindPopup(popup_f317e66fe100dd78bca2e2d149e231e2)
         ;
 
         
     
     
-            circle_marker_339cf6156d21bb8d193a7adcd1cea649.bindTooltip(
+            circle_marker_56539645fa7cf464035701d9792f3d7c.bindTooltip(
                 `&lt;div&gt;
                      LACMA, The Broad
                  &lt;/div&gt;`,
@@ -394,32 +397,32 @@
             );
         
     
-            var circle_marker_36cd5853be85f2ef0dc0c51e0d42d018 = L.circleMarker(
+            var circle_marker_5be58cbd059cf0c995bd92c403c2b355 = L.circleMarker(
                 [34.1504884, -118.3386231],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-        var popup_9993647ab8d5006b6dc4c3d53014061f = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_e35c2ae65a3f925a5ffa1d73b4709340 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_b1f05eab9cce7c5ace43f8ae0205d795 = $(`&lt;div id=&quot;html_b1f05eab9cce7c5ace43f8ae0205d795&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Warner Bros / Paramount studio tour&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1504884&amp;mlon=-118.3386231#map=16/34.1504884/-118.3386231&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_9993647ab8d5006b6dc4c3d53014061f.setContent(html_b1f05eab9cce7c5ace43f8ae0205d795);
+                var html_94a8e6a5956918971a61280a4c0a5918 = $(`&lt;div id=&quot;html_94a8e6a5956918971a61280a4c0a5918&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Warner Bros / Paramount studio tour&lt;/div&gt;&lt;img src=&quot;sights/warner-bros-paramount-studio-tour.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Warner_Bros._Downtown_Theatre_July_2022.jpg&quot; rel=&quot;nofollow&quot;&gt;Benoît Prieur · CC0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.1504884&amp;mlon=-118.3386231#map=16/34.1504884/-118.3386231&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_e35c2ae65a3f925a5ffa1d73b4709340.setContent(html_94a8e6a5956918971a61280a4c0a5918);
             
         
 
-        circle_marker_36cd5853be85f2ef0dc0c51e0d42d018.bindPopup(popup_9993647ab8d5006b6dc4c3d53014061f)
+        circle_marker_5be58cbd059cf0c995bd92c403c2b355.bindPopup(popup_e35c2ae65a3f925a5ffa1d73b4709340)
         ;
 
         
     
     
-            circle_marker_36cd5853be85f2ef0dc0c51e0d42d018.bindTooltip(
+            circle_marker_5be58cbd059cf0c995bd92c403c2b355.bindTooltip(
                 `&lt;div&gt;
-                     Warner Bros / Paramount studio tour
+                     Warner Bros / Paramount studio tour — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -427,19 +430,19 @@
             );
         
     
-            map_cc13c875b4315e2b960d38d2b4887552.fitBounds(
+            map_012764228d3615b8a8c1d9cf8bd40be2.fitBounds(
                 [[33.73, -118.4973998], [34.1504884, -117.9197351]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_3ca3d332eae553db6edc8005977aa159 = L.circleMarker(
+            var circle_marker_eabd38b876a56828822a334e3669bb94 = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_3ca3d332eae553db6edc8005977aa159.bindTooltip(
+            circle_marker_eabd38b876a56828822a334e3669bb94.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -449,13 +452,13 @@
             );
         
     
-            var circle_marker_96b9421285572f5bc81213e8db46322d = L.circleMarker(
+            var circle_marker_8b4ed93d0235c78c0a358737261f078a = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_96b9421285572f5bc81213e8db46322d.bindTooltip(
+            circle_marker_8b4ed93d0235c78c0a358737261f078a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -465,13 +468,13 @@
             );
         
     
-            var circle_marker_07395908591cd917fdbf3a3915750089 = L.circleMarker(
+            var circle_marker_c56f6481a11bc8a1e77e029a14a2f2d7 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_07395908591cd917fdbf3a3915750089.bindTooltip(
+            circle_marker_c56f6481a11bc8a1e77e029a14a2f2d7.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -481,13 +484,13 @@
             );
         
     
-            var circle_marker_447a7355c45283f051c2da9bb5f83e59 = L.circleMarker(
+            var circle_marker_dcf9f85bec035d3c71103a84a5bacc0e = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_447a7355c45283f051c2da9bb5f83e59.bindTooltip(
+            circle_marker_dcf9f85bec035d3c71103a84a5bacc0e.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -497,13 +500,13 @@
             );
         
     
-            var circle_marker_316fd6484b2631766105a1c16c3ef990 = L.circleMarker(
+            var circle_marker_7c62c2ae6c3c731cd4031caf1263965f = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_316fd6484b2631766105a1c16c3ef990.bindTooltip(
+            circle_marker_7c62c2ae6c3c731cd4031caf1263965f.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -513,29 +516,29 @@
             );
         
     
-            var marker_1d80430314edb203d956e9006d06af59 = L.marker(
+            var marker_7f89021ee09d0ac47fd99bb006210f0f = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            var div_icon_055c706220a9ae192dfeeec93dfbe021 = L.divIcon({
+            var div_icon_86d3ae5626ff06a5e207605c9f63bcdc = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_1d80430314edb203d956e9006d06af59.setIcon(div_icon_055c706220a9ae192dfeeec93dfbe021);
+                marker_7f89021ee09d0ac47fd99bb006210f0f.setIcon(div_icon_86d3ae5626ff06a5e207605c9f63bcdc);
             
     
-            var circle_marker_b3b9aa0fa40718eb0ca2c5d0e5f80814 = L.circleMarker(
+            var circle_marker_752a0a92d530993a1a126ac7d8014411 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_b3b9aa0fa40718eb0ca2c5d0e5f80814.bindTooltip(
+            circle_marker_752a0a92d530993a1a126ac7d8014411.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -545,13 +548,13 @@
             );
         
     
-            var circle_marker_7a6b0a150e8e00a71c3d3c4636b88e76 = L.circleMarker(
+            var circle_marker_590a8d1e5b8c97fc8bb2613ae93b0ce6 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_7a6b0a150e8e00a71c3d3c4636b88e76.bindTooltip(
+            circle_marker_590a8d1e5b8c97fc8bb2613ae93b0ce6.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -561,13 +564,13 @@
             );
         
     
-            var circle_marker_183b7689de439fbf2fa6784bb70b90b5 = L.circleMarker(
+            var circle_marker_a375ddb91fe357e06fcc7aec5ed3157e = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_183b7689de439fbf2fa6784bb70b90b5.bindTooltip(
+            circle_marker_a375ddb91fe357e06fcc7aec5ed3157e.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -577,13 +580,13 @@
             );
         
     
-            var circle_marker_33c169d747caf75adc35b9360b3f8178 = L.circleMarker(
+            var circle_marker_d256d8e00c73ce91843dd2f9a5e5f334 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_33c169d747caf75adc35b9360b3f8178.bindTooltip(
+            circle_marker_d256d8e00c73ce91843dd2f9a5e5f334.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -593,13 +596,13 @@
             );
         
     
-            var circle_marker_5a7fc1e6ea9065af1a22f95fcb824302 = L.circleMarker(
+            var circle_marker_6531041c1743b672f4feb2eabc1d52d1 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_5a7fc1e6ea9065af1a22f95fcb824302.bindTooltip(
+            circle_marker_6531041c1743b672f4feb2eabc1d52d1.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -609,13 +612,13 @@
             );
         
     
-            var circle_marker_899608e1b791224bed142156fd407722 = L.circleMarker(
+            var circle_marker_74a85d9c1f088702a77e5b5540f6ef72 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            circle_marker_899608e1b791224bed142156fd407722.bindTooltip(
+            circle_marker_74a85d9c1f088702a77e5b5540f6ef72.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -625,24 +628,24 @@
             );
         
     
-            var marker_bb1227f207a21e96c209614b5dbb1f74 = L.marker(
+            var marker_f25c562756281814b4ac6b5e978245e8 = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_cc13c875b4315e2b960d38d2b4887552);
+            ).addTo(map_012764228d3615b8a8c1d9cf8bd40be2);
         
     
-            var div_icon_1279773ea28e10f0c86f55d68cee540b = L.divIcon({
+            var div_icon_9896b1961f6f7aca44ac1618ab59498f = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_bb1227f207a21e96c209614b5dbb1f74.setIcon(div_icon_1279773ea28e10f0c86f55d68cee540b);
+                marker_f25c562756281814b4ac6b5e978245e8.setIcon(div_icon_9896b1961f6f7aca44ac1618ab59498f);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=34.1016851&mlon=-118.3449501#map=16/34.1016851/-118.3449501" rel="nofollow">Hollywood Walk of Fame & TCL Chinese Theatre</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.1182187&mlon=-118.3002933#map=16/34.1182187/-118.3002933" rel="nofollow">Griffith Observatory & biển hiệu HOLLYWOOD</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.1392322&mlon=-118.3543834#map=16/34.1392322/-118.3543834" rel="nofollow">Universal Studios Hollywood</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.0770168&mlon=-118.47401#map=16/34.0770168/-118.47401" rel="nofollow">Getty Center</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.0088961&mlon=-118.4973998#map=16/34.0088961/-118.4973998" rel="nofollow">Santa Monica Pier & Venice Beach</a></li><li><a href="https://www.openstreetmap.org/?mlat=33.8136512&mlon=-117.9197351#map=16/33.8136512/-117.9197351" rel="nofollow">Disneyland Anaheim</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.0637362&mlon=-118.3589376#map=16/34.0637362/-118.3589376" rel="nofollow">LACMA, The Broad</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.1504884&mlon=-118.3386231#map=16/34.1504884/-118.3386231" rel="nofollow">Warner Bros / Paramount studio tour</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Honeylove** — công ty trong hồ sơ ([`Honeylove/`](/root/c_semi/etextile_pitching/Honeylove/)), đặt tại Los Angeles; shapewear kỹ thuật với cấu trúc dệt định hình (structured knit / boning), NPV +74,9 M$ @25% theo mô hình trong hồ sơ.
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/hollywood-walk-of-fame-tcl-chinese-theatre.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.1016851&mlon=-118.3449501#map=16/34.1016851/-118.3449501" rel="nofollow">Hollywood Walk of Fame & TCL Chinese Theatre</a></li><li><img class="thumb" src="sights/griffith-observatory-bien-hieu-hollywood.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.1182187&mlon=-118.3002933#map=16/34.1182187/-118.3002933" rel="nofollow">Griffith Observatory & biển hiệu HOLLYWOOD</a></li><li><img class="thumb" src="sights/universal-studios-hollywood.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.1392322&mlon=-118.3543834#map=16/34.1392322/-118.3543834" rel="nofollow">Universal Studios Hollywood</a></li><li><img class="thumb" src="sights/getty-center.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.0770168&mlon=-118.47401#map=16/34.0770168/-118.47401" rel="nofollow">Getty Center</a></li><li><img class="thumb" src="sights/santa-monica-pier-venice-beach.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.0088961&mlon=-118.4973998#map=16/34.0088961/-118.4973998" rel="nofollow">Santa Monica Pier & Venice Beach</a></li><li><img class="thumb" src="sights/disneyland-anaheim.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=33.8136512&mlon=-117.9197351#map=16/33.8136512/-117.9197351" rel="nofollow">Disneyland Anaheim</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.0637362&mlon=-118.3589376#map=16/34.0637362/-118.3589376" rel="nofollow">LACMA, The Broad</a></li><li><img class="thumb" src="sights/warner-bros-paramount-studio-tour.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.1504884&mlon=-118.3386231#map=16/34.1504884/-118.3386231" rel="nofollow">Warner Bros / Paramount studio tour</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Honeylove** — công ty trong hồ sơ ([`Honeylove/`](/root/c_semi/etextile_pitching/Honeylove/)), đặt tại Los Angeles; shapewear kỹ thuật với cấu trúc dệt định hình (structured knit / boning), NPV +74,9 M$ @25% theo mô hình trong hồ sơ.
 - **Ambercycle** (lập 2015, Los Angeles) — **molecular regeneration**: tách và tinh chế rác dệt sau tiêu dùng ở mức phân tử để tạo **cycora®**, polyester tái sinh phát thải CO₂ dưới một nửa polyester nguyên sinh. Gọi vốn 21,6 M$ Series A (H&M Co:Lab, KIRKBI, Temasek, Bestseller, Zalando) rồi thêm 27 M$; hợp đồng >70 M€ với Inditex; hợp tác Gap/Athleta (dùng cycora® ở quy mô từ 2026) và Far Eastern Group. Đây là đối chiếu quy mô lớn cho hướng vật liệu bền vững của **ALT TEX** trong hồ sơ.
 - **LA Fashion District** — cụm may/nguồn hàng lớn nhất bờ Tây; Cal Poly Pomona và Otis College đào tạo dệt/thời trang.
 - Lưu ý: **Skyscrape** (trong hồ sơ) ở **Portland, Oregon** — không phải cảng trong mạng lưới; LA là cảng gần nhất về mặt hệ sinh thái bờ Tây.

@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_ab1d18ea83d059901c08b0f3f6dfe0bc {
+                #map_a6ecde56e82b4d41665f394c2fa52b0e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_ab1d18ea83d059901c08b0f3f6dfe0bc&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a6ecde56e82b4d41665f394c2fa52b0e&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_ab1d18ea83d059901c08b0f3f6dfe0bc = L.map(
-                &quot;map_ab1d18ea83d059901c08b0f3f6dfe0bc&quot;,
+            var map_a6ecde56e82b4d41665f394c2fa52b0e = L.map(
+                &quot;map_a6ecde56e82b4d41665f394c2fa52b0e&quot;,
                 {
                     center: [-33.906, 18.423],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            L.control.scale().addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
 
             
 
         
     
-            var tile_layer_2e47560b9aaff78592b0109b838685d3 = L.tileLayer(
+            var tile_layer_429f84b27b3d953fce3a35c9bb4729ac = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_2e47560b9aaff78592b0109b838685d3.addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            tile_layer_429f84b27b3d953fce3a35c9bb4729ac.addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            var circle_marker_2083d97d469b5a4fdba37bacd5fa6d74 = L.circleMarker(
+            var circle_marker_ada564b8fb9983ea36df55ec83c0b32a = L.circleMarker(
                 [-33.906, 18.423],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_2083d97d469b5a4fdba37bacd5fa6d74.bindTooltip(
+            circle_marker_ada564b8fb9983ea36df55ec83c0b32a.bindTooltip(
                 `&lt;div&gt;
                      Cape Town — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,30 +149,30 @@
             );
         
     
-        var popup_5cf3499f2ee4902be93f3192fdd7ece0 = L.popup({
+        var popup_37f3cb2ac8885db1f57d8f5f4d4c41f4 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_d0f320bf9d49e2b3045d28ec01f1d61f = $(`&lt;div id=&quot;html_d0f320bf9d49e2b3045d28ec01f1d61f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Cape Town&lt;/div&gt;&lt;img src=&quot;img/cape-town.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Cape Town City Hall&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Cape_Town_City_Hall_Pano.jpg&quot; rel=&quot;nofollow&quot;&gt;Shyamal · CC BY 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_5cf3499f2ee4902be93f3192fdd7ece0.setContent(html_d0f320bf9d49e2b3045d28ec01f1d61f);
+                var html_36b093c740d0a93983e42620173fd4fb = $(`&lt;div id=&quot;html_36b093c740d0a93983e42620173fd4fb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Cape Town&lt;/div&gt;&lt;img src=&quot;img/cape-town.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Cape Town City Hall&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Cape_Town_City_Hall_Pano.jpg&quot; rel=&quot;nofollow&quot;&gt;Shyamal · CC BY 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_37f3cb2ac8885db1f57d8f5f4d4c41f4.setContent(html_36b093c740d0a93983e42620173fd4fb);
             
         
 
-        circle_marker_2083d97d469b5a4fdba37bacd5fa6d74.bindPopup(popup_5cf3499f2ee4902be93f3192fdd7ece0)
+        circle_marker_ada564b8fb9983ea36df55ec83c0b32a.bindPopup(popup_37f3cb2ac8885db1f57d8f5f4d4c41f4)
         ;
 
         
     
     
-            var circle_marker_8c958e44b67af5e1bae4a6ed0f332c19 = L.circleMarker(
+            var circle_marker_c0cf695c4e317cd4c90478f4e7f0d65f = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_8c958e44b67af5e1bae4a6ed0f332c19.bindTooltip(
+            circle_marker_c0cf695c4e317cd4c90478f4e7f0d65f.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -179,13 +182,13 @@
             );
         
     
-            var circle_marker_a71baf1f9c93016a63b926148df09e30 = L.circleMarker(
+            var circle_marker_72476ef94e8fdae00e1a76967d828968 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_a71baf1f9c93016a63b926148df09e30.bindTooltip(
+            circle_marker_72476ef94e8fdae00e1a76967d828968.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -195,13 +198,13 @@
             );
         
     
-            var circle_marker_56cda56c38b555ea83b4a2bfec867ae9 = L.circleMarker(
+            var circle_marker_582f0b3f6ed58256c6f5f61cff9a8cda = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_56cda56c38b555ea83b4a2bfec867ae9.bindTooltip(
+            circle_marker_582f0b3f6ed58256c6f5f61cff9a8cda.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -211,13 +214,13 @@
             );
         
     
-            var circle_marker_f1ea458462ac7ac4a513b85adb938c71 = L.circleMarker(
+            var circle_marker_b5be8ca3c645d2f13dc4200008ed4406 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_f1ea458462ac7ac4a513b85adb938c71.bindTooltip(
+            circle_marker_b5be8ca3c645d2f13dc4200008ed4406.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -227,13 +230,13 @@
             );
         
     
-            var circle_marker_46d8da515d827e339285bffd59f2615f = L.circleMarker(
+            var circle_marker_1d646465c86693ca48ae0f24692d8377 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_46d8da515d827e339285bffd59f2615f.bindTooltip(
+            circle_marker_1d646465c86693ca48ae0f24692d8377.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -243,29 +246,29 @@
             );
         
     
-            var marker_b483f369480bfa0de6ca8c11f95b6a47 = L.marker(
+            var marker_2cb01e0e0875523af567516e200c7457 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            var div_icon_c9964634e5251612984eea65f0928011 = L.divIcon({
+            var div_icon_db58056ed7248cbceb03fdc7addb2b66 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_b483f369480bfa0de6ca8c11f95b6a47.setIcon(div_icon_c9964634e5251612984eea65f0928011);
+                marker_2cb01e0e0875523af567516e200c7457.setIcon(div_icon_db58056ed7248cbceb03fdc7addb2b66);
             
     
-            var circle_marker_30daa290e8327ba02aa90b1a4117175d = L.circleMarker(
+            var circle_marker_3bacd348e2a64d5bb3f0a2191afdc294 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_30daa290e8327ba02aa90b1a4117175d.bindTooltip(
+            circle_marker_3bacd348e2a64d5bb3f0a2191afdc294.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -275,13 +278,13 @@
             );
         
     
-            var circle_marker_dc1bac921f1b13ad6803f3c2d018c73c = L.circleMarker(
+            var circle_marker_73586d4fca1f021d9a0d229b54cdb80d = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_dc1bac921f1b13ad6803f3c2d018c73c.bindTooltip(
+            circle_marker_73586d4fca1f021d9a0d229b54cdb80d.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -291,13 +294,13 @@
             );
         
     
-            var circle_marker_49a8c93ad21e805dd1a1614aa5d9edd3 = L.circleMarker(
+            var circle_marker_8c00c59786b62e622f57a3e0d01ec43e = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_49a8c93ad21e805dd1a1614aa5d9edd3.bindTooltip(
+            circle_marker_8c00c59786b62e622f57a3e0d01ec43e.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -307,13 +310,13 @@
             );
         
     
-            var circle_marker_dae570f8f5b6daf119118ed0bbb4fed2 = L.circleMarker(
+            var circle_marker_fcbf3fc9374f35f8b882e71e5955cc37 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_dae570f8f5b6daf119118ed0bbb4fed2.bindTooltip(
+            circle_marker_fcbf3fc9374f35f8b882e71e5955cc37.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -323,13 +326,13 @@
             );
         
     
-            var circle_marker_bcadcc6d5eaa514df602adcb9ae62c63 = L.circleMarker(
+            var circle_marker_8275947630a5b67eb17f403143e28730 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_bcadcc6d5eaa514df602adcb9ae62c63.bindTooltip(
+            circle_marker_8275947630a5b67eb17f403143e28730.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -339,13 +342,13 @@
             );
         
     
-            var circle_marker_fd08c361a59aa69e231a215870b8e52e = L.circleMarker(
+            var circle_marker_e43c840d719ebbea4cda9d000e20b1e6 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            circle_marker_fd08c361a59aa69e231a215870b8e52e.bindTooltip(
+            circle_marker_e43c840d719ebbea4cda9d000e20b1e6.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -355,20 +358,20 @@
             );
         
     
-            var marker_082cb27509de075c55d3efc592794f82 = L.marker(
+            var marker_ee80a0b52c387ec3c8b3c457c3848502 = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_ab1d18ea83d059901c08b0f3f6dfe0bc);
+            ).addTo(map_a6ecde56e82b4d41665f394c2fa52b0e);
         
     
-            var div_icon_ad3f9596d9094ce75326f2385eec04b1 = L.divIcon({
+            var div_icon_95f5499ba9a4e59fbf9b174683198ce1 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_082cb27509de075c55d3efc592794f82.setIcon(div_icon_ad3f9596d9094ce75326f2385eec04b1);
+                marker_ee80a0b52c387ec3c8b3c457c3848502.setIcon(div_icon_95f5499ba9a4e59fbf9b174683198ce1);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>

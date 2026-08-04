@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_9dd573581826bb4ccae3e42a1698460d {
+                #map_2ce690146b47956be1ab1a37de3ad70d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_9dd573581826bb4ccae3e42a1698460d&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_2ce690146b47956be1ab1a37de3ad70d&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_9dd573581826bb4ccae3e42a1698460d = L.map(
-                &quot;map_9dd573581826bb4ccae3e42a1698460d&quot;,
+            var map_2ce690146b47956be1ab1a37de3ad70d = L.map(
+                &quot;map_2ce690146b47956be1ab1a37de3ad70d&quot;,
                 {
                     center: [34.481, 136.843],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            L.control.scale().addTo(map_2ce690146b47956be1ab1a37de3ad70d);
 
             
 
         
     
-            var tile_layer_c889745e588b24c4e16550a2f577e3e8 = L.tileLayer(
+            var tile_layer_3c836f43ea76016ea680382b4c1b3412 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_c889745e588b24c4e16550a2f577e3e8.addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            tile_layer_3c836f43ea76016ea680382b4c1b3412.addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            var circle_marker_f3dbda7c861deaf91a2d7e9f674f8d5b = L.circleMarker(
+            var circle_marker_8b9915c7260417e7a1fda902c8837813 = L.circleMarker(
                 [34.481, 136.843],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_f3dbda7c861deaf91a2d7e9f674f8d5b.bindTooltip(
+            circle_marker_8b9915c7260417e7a1fda902c8837813.bindTooltip(
                 `&lt;div&gt;
                      Toba — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_6121c1462f21bf99588d0b003ddf73bd = L.popup({
+        var popup_1c432efcb827dd961c68e537c9d10005 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_a8cbcb2fadba4555ac41169e134f0d2e = $(`&lt;div id=&quot;html_a8cbcb2fadba4555ac41169e134f0d2e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Toba&lt;/div&gt;&lt;img src=&quot;img/toba.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Ise / Toba&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sanctuaire_Ise_Jing%C3%BB_-_le_pont_Uji-bashi_et_son_torii_-_A56496X.jpg&quot; rel=&quot;nofollow&quot;&gt;Dumas Roger · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_6121c1462f21bf99588d0b003ddf73bd.setContent(html_a8cbcb2fadba4555ac41169e134f0d2e);
+                var html_58f65da8c60cfc69128734a50125826b = $(`&lt;div id=&quot;html_58f65da8c60cfc69128734a50125826b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Toba&lt;/div&gt;&lt;img src=&quot;img/toba.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Ise / Toba&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sanctuaire_Ise_Jing%C3%BB_-_le_pont_Uji-bashi_et_son_torii_-_A56496X.jpg&quot; rel=&quot;nofollow&quot;&gt;Dumas Roger · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_1c432efcb827dd961c68e537c9d10005.setContent(html_58f65da8c60cfc69128734a50125826b);
             
         
 
-        circle_marker_f3dbda7c861deaf91a2d7e9f674f8d5b.bindPopup(popup_6121c1462f21bf99588d0b003ddf73bd)
+        circle_marker_8b9915c7260417e7a1fda902c8837813.bindPopup(popup_1c432efcb827dd961c68e537c9d10005)
         ;
 
         
     
     
-            var circle_marker_f3c1b43a64742ba3c46100112bd7b7b1 = L.circleMarker(
+            var circle_marker_e3725c007e07805121df373d9c62b413 = L.circleMarker(
                 [34.4833938, 136.8468875],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-        var popup_4a985a46406981a1486785e47c5c7ab5 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_f922038b22a7ac4d4a4a4d9897693dd5 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_1282d065a3614e8a534649e67bd1d43c = $(`&lt;div id=&quot;html_1282d065a3614e8a534649e67bd1d43c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Mikimoto Pearl Island — nơi Mikimoto Kōkichi tạo ra ngọc trai nuôi đầu tiên, có trình diễn **ama** (nữ thợ lặn)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.4833938&amp;mlon=136.8468875#map=16/34.4833938/136.8468875&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_4a985a46406981a1486785e47c5c7ab5.setContent(html_1282d065a3614e8a534649e67bd1d43c);
+                var html_a9c63feaf4064c398917917b3eafc896 = $(`&lt;div id=&quot;html_a9c63feaf4064c398917917b3eafc896&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Mikimoto Pearl Island — nơi Mikimoto Kōkichi tạo ra ngọc trai nuôi đầu tiên, có trình diễn **ama** (nữ thợ lặn)&lt;/div&gt;&lt;img src=&quot;sights/mikimoto-pearl-island-noi-mikimoto-kokichi-tao-ra-ngoc-trai-.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Mikimoto_Pearl_Island_from_Toba_Auqarium.jpg&quot; rel=&quot;nofollow&quot;&gt;Miyuki Meinaka · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.4833938&amp;mlon=136.8468875#map=16/34.4833938/136.8468875&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_f922038b22a7ac4d4a4a4d9897693dd5.setContent(html_a9c63feaf4064c398917917b3eafc896);
             
         
 
-        circle_marker_f3c1b43a64742ba3c46100112bd7b7b1.bindPopup(popup_4a985a46406981a1486785e47c5c7ab5)
+        circle_marker_e3725c007e07805121df373d9c62b413.bindPopup(popup_f922038b22a7ac4d4a4a4d9897693dd5)
         ;
 
         
     
     
-            circle_marker_f3c1b43a64742ba3c46100112bd7b7b1.bindTooltip(
+            circle_marker_e3725c007e07805121df373d9c62b413.bindTooltip(
                 `&lt;div&gt;
-                     Mikimoto Pearl Island — nơi Mikimoto Kōkichi tạo ra ngọc trai nuôi đầu tiên, có trình diễn **ama** (nữ thợ lặn)
+                     Mikimoto Pearl Island — nơi Mikimoto Kōkichi tạo ra ngọc trai nuôi đầu tiên, có trình diễn **ama** (nữ thợ lặn) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_afcc6b32111943a124c3c9759515b8e6 = L.circleMarker(
+            var circle_marker_c620aa9801c768966c2e7f1da216dba0 = L.circleMarker(
                 [34.4568901, 136.722978],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-        var popup_cd79b633061f5c2bfc17a5321546db9f = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_cbd534a17660107b9a16fa5be69ee414 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_f18725982049d72776eb693774d7f7c8 = $(`&lt;div id=&quot;html_f18725982049d72776eb693774d7f7c8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Ise Jingū (đền thiêng nhất Nhật Bản, ≈30 phút)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.4568901&amp;mlon=136.722978#map=16/34.4568901/136.722978&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_cd79b633061f5c2bfc17a5321546db9f.setContent(html_f18725982049d72776eb693774d7f7c8);
+                var html_d26b23af003deaeb16c38c4b4e014686 = $(`&lt;div id=&quot;html_d26b23af003deaeb16c38c4b4e014686&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Ise Jingū (đền thiêng nhất Nhật Bản, ≈30 phút)&lt;/div&gt;&lt;img src=&quot;sights/ise-jingu-en-thieng-nhat-nhat-ban-30-phut.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Ise_Ise-jingu_Kagura-den_06.jpg&quot; rel=&quot;nofollow&quot;&gt;Zairon · CC BY 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.4568901&amp;mlon=136.722978#map=16/34.4568901/136.722978&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_cbd534a17660107b9a16fa5be69ee414.setContent(html_d26b23af003deaeb16c38c4b4e014686);
             
         
 
-        circle_marker_afcc6b32111943a124c3c9759515b8e6.bindPopup(popup_cd79b633061f5c2bfc17a5321546db9f)
+        circle_marker_c620aa9801c768966c2e7f1da216dba0.bindPopup(popup_cbd534a17660107b9a16fa5be69ee414)
         ;
 
         
     
     
-            circle_marker_afcc6b32111943a124c3c9759515b8e6.bindTooltip(
+            circle_marker_c620aa9801c768966c2e7f1da216dba0.bindTooltip(
                 `&lt;div&gt;
-                     Ise Jingū (đền thiêng nhất Nhật Bản, ≈30 phút)
+                     Ise Jingū (đền thiêng nhất Nhật Bản, ≈30 phút) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,30 +232,30 @@
             );
         
     
-            var circle_marker_af76b76f5be2bceeeecd972f971b4f63 = L.circleMarker(
+            var circle_marker_adf8cc316905542896c535e59235369b = L.circleMarker(
                 [34.5092605, 136.78832],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-        var popup_354aad86d47518d20bc6f74cadb2071d = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_c5655c50d9c277ee31ffe921ab94744a = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_cf7b718b0d54e44ae8c8179b2913dce5 = $(`&lt;div id=&quot;html_cf7b718b0d54e44ae8c8179b2913dce5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Meoto Iwa (đá vợ chồng)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.5092605&amp;mlon=136.78832#map=16/34.5092605/136.78832&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_354aad86d47518d20bc6f74cadb2071d.setContent(html_cf7b718b0d54e44ae8c8179b2913dce5);
+                var html_b65a35a6597b16b41d2cccec29e6de2d = $(`&lt;div id=&quot;html_b65a35a6597b16b41d2cccec29e6de2d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Meoto Iwa (đá vợ chồng)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.5092605&amp;mlon=136.78832#map=16/34.5092605/136.78832&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_c5655c50d9c277ee31ffe921ab94744a.setContent(html_b65a35a6597b16b41d2cccec29e6de2d);
             
         
 
-        circle_marker_af76b76f5be2bceeeecd972f971b4f63.bindPopup(popup_354aad86d47518d20bc6f74cadb2071d)
+        circle_marker_adf8cc316905542896c535e59235369b.bindPopup(popup_c5655c50d9c277ee31ffe921ab94744a)
         ;
 
         
     
     
-            circle_marker_af76b76f5be2bceeeecd972f971b4f63.bindTooltip(
+            circle_marker_adf8cc316905542896c535e59235369b.bindTooltip(
                 `&lt;div&gt;
                      Meoto Iwa (đá vợ chồng)
                  &lt;/div&gt;`,
@@ -262,19 +265,19 @@
             );
         
     
-            map_9dd573581826bb4ccae3e42a1698460d.fitBounds(
+            map_2ce690146b47956be1ab1a37de3ad70d.fitBounds(
                 [[34.4568901, 136.722978], [34.5092605, 136.8468875]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_5efbfaea6f859f3d1bf7c4084b0eb346 = L.circleMarker(
+            var circle_marker_27c7c3190754d088dd24d928339837af = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_5efbfaea6f859f3d1bf7c4084b0eb346.bindTooltip(
+            circle_marker_27c7c3190754d088dd24d928339837af.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -284,13 +287,13 @@
             );
         
     
-            var circle_marker_b684c8432c34498979f8da6fb3085072 = L.circleMarker(
+            var circle_marker_949cfe9deec0512b051eab69e8611912 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_b684c8432c34498979f8da6fb3085072.bindTooltip(
+            circle_marker_949cfe9deec0512b051eab69e8611912.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -300,13 +303,13 @@
             );
         
     
-            var circle_marker_718945e8cd9facf171066f2f2af30280 = L.circleMarker(
+            var circle_marker_93661e6fdbf349e0b6c6bbfd79e27655 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_718945e8cd9facf171066f2f2af30280.bindTooltip(
+            circle_marker_93661e6fdbf349e0b6c6bbfd79e27655.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -316,13 +319,13 @@
             );
         
     
-            var circle_marker_916023863d0c6634596d1c0b263764d9 = L.circleMarker(
+            var circle_marker_02f90804ec56d4ce2d427db43b4c5ef1 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_916023863d0c6634596d1c0b263764d9.bindTooltip(
+            circle_marker_02f90804ec56d4ce2d427db43b4c5ef1.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -332,13 +335,13 @@
             );
         
     
-            var circle_marker_99d335684d23505f9c0a60f9ad601d12 = L.circleMarker(
+            var circle_marker_705cf87992e5f9f2c3b2686638ca39b3 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_99d335684d23505f9c0a60f9ad601d12.bindTooltip(
+            circle_marker_705cf87992e5f9f2c3b2686638ca39b3.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -348,29 +351,29 @@
             );
         
     
-            var marker_ce6f1a35d006f77bd130b5b197ba174e = L.marker(
+            var marker_e88ca2e3bfde9aadfeca2abd4e192d88 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            var div_icon_3856f192c0e74f0f29c6590643abd25d = L.divIcon({
+            var div_icon_553f74e6c3441a8f20b6fe94e9f742e0 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_ce6f1a35d006f77bd130b5b197ba174e.setIcon(div_icon_3856f192c0e74f0f29c6590643abd25d);
+                marker_e88ca2e3bfde9aadfeca2abd4e192d88.setIcon(div_icon_553f74e6c3441a8f20b6fe94e9f742e0);
             
     
-            var circle_marker_8a93a3087f609fe5e0f9b6aedf67024c = L.circleMarker(
+            var circle_marker_dac71e11d95a1523bc878fb52f56f504 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_8a93a3087f609fe5e0f9b6aedf67024c.bindTooltip(
+            circle_marker_dac71e11d95a1523bc878fb52f56f504.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -380,13 +383,13 @@
             );
         
     
-            var circle_marker_a3f67ba77c6ee21c5ebe7cc170a14a46 = L.circleMarker(
+            var circle_marker_017d165ba552b2c794673daf6f39ac84 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_a3f67ba77c6ee21c5ebe7cc170a14a46.bindTooltip(
+            circle_marker_017d165ba552b2c794673daf6f39ac84.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -396,13 +399,13 @@
             );
         
     
-            var circle_marker_f8afe9a3a6e96ae9451e9648bc657595 = L.circleMarker(
+            var circle_marker_85480662d6ece6615c202ef54a948123 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_f8afe9a3a6e96ae9451e9648bc657595.bindTooltip(
+            circle_marker_85480662d6ece6615c202ef54a948123.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -412,13 +415,13 @@
             );
         
     
-            var circle_marker_790dc58ba387a534de60d441e4e2a995 = L.circleMarker(
+            var circle_marker_22a4d43f3c19d82a2047ea7acef4c235 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_790dc58ba387a534de60d441e4e2a995.bindTooltip(
+            circle_marker_22a4d43f3c19d82a2047ea7acef4c235.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -428,13 +431,13 @@
             );
         
     
-            var circle_marker_7a6cb2a498dc79388a2e50de28c961d7 = L.circleMarker(
+            var circle_marker_fd22484208e37a547dd52423d41b3633 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_7a6cb2a498dc79388a2e50de28c961d7.bindTooltip(
+            circle_marker_fd22484208e37a547dd52423d41b3633.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -444,13 +447,13 @@
             );
         
     
-            var circle_marker_f6e04867413a5cae205fac3d57f3bea3 = L.circleMarker(
+            var circle_marker_c30bbebd4497024193bfdfd277f0bc92 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            circle_marker_f6e04867413a5cae205fac3d57f3bea3.bindTooltip(
+            circle_marker_c30bbebd4497024193bfdfd277f0bc92.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -460,24 +463,24 @@
             );
         
     
-            var marker_61710e5e4b60f8d5835df66783a5ad48 = L.marker(
+            var marker_ff6c82dfd094c8aa44971fc44a18f6af = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_9dd573581826bb4ccae3e42a1698460d);
+            ).addTo(map_2ce690146b47956be1ab1a37de3ad70d);
         
     
-            var div_icon_e8a5fdadb5c750bb146761cb8dd62aef = L.divIcon({
+            var div_icon_8dc2c5ed5d00bc7d14d7519f5edd5d95 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_61710e5e4b60f8d5835df66783a5ad48.setIcon(div_icon_e8a5fdadb5c750bb146761cb8dd62aef);
+                marker_ff6c82dfd094c8aa44971fc44a18f6af.setIcon(div_icon_8dc2c5ed5d00bc7d14d7519f5edd5d95);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=34.4833938&mlon=136.8468875#map=16/34.4833938/136.8468875" rel="nofollow">Mikimoto Pearl Island — nơi Mikimoto Kōkichi tạo ra ngọc trai nuôi đầu tiên, có trình diễn **ama** (nữ thợ lặn)</a></li><li class="off">Thủy cung Toba <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=34.4568901&mlon=136.722978#map=16/34.4568901/136.722978" rel="nofollow">Ise Jingū (đền thiêng nhất Nhật Bản, ≈30 phút)</a></li><li class="off">phố cổ Oharai-machi / Okage-yokocho <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=34.5092605&mlon=136.78832#map=16/34.5092605/136.78832" rel="nofollow">Meoto Iwa (đá vợ chồng)</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có ngành dệt công nghiệp tại chỗ. Giá trị nằm ở di sản: vải bông **Ise-momen** và **Matsusaka-momen** (nhuộm chàm, dệt thoi) của tỉnh Mie, cùng nghề dệt lụa gắn với đền Ise <em>not found</em></li></ul>
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/mikimoto-pearl-island-noi-mikimoto-kokichi-tao-ra-ngoc-trai-.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.4833938&mlon=136.8468875#map=16/34.4833938/136.8468875" rel="nofollow">Mikimoto Pearl Island — nơi Mikimoto Kōkichi tạo ra ngọc trai nuôi đầu tiên, có trình diễn **ama** (nữ thợ lặn)</a></li><li class="off">Thủy cung Toba <em>not found</em></li><li><img class="thumb" src="sights/ise-jingu-en-thieng-nhat-nhat-ban-30-phut.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.4568901&mlon=136.722978#map=16/34.4568901/136.722978" rel="nofollow">Ise Jingū (đền thiêng nhất Nhật Bản, ≈30 phút)</a></li><li class="off">phố cổ Oharai-machi / Okage-yokocho <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=34.5092605&mlon=136.78832#map=16/34.5092605/136.78832" rel="nofollow">Meoto Iwa (đá vợ chồng)</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có ngành dệt công nghiệp tại chỗ. Giá trị nằm ở di sản: vải bông **Ise-momen** và **Matsusaka-momen** (nhuộm chàm, dệt thoi) của tỉnh Mie, cùng nghề dệt lụa gắn với đền Ise <em>not found</em></li></ul>
 
 <footer>Ảnh: Wikimedia Commons theo giấy phép ghi ở trên ·
  bản đồ © OpenStreetMap contributors</footer>

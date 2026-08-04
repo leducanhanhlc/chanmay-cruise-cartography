@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_2258e6af33228a3c32fb76ed647caf00 {
+                #map_d24067b74f5a4621633d9feb5135f638 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_2258e6af33228a3c32fb76ed647caf00&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_d24067b74f5a4621633d9feb5135f638&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_2258e6af33228a3c32fb76ed647caf00 = L.map(
-                &quot;map_2258e6af33228a3c32fb76ed647caf00&quot;,
+            var map_d24067b74f5a4621633d9feb5135f638 = L.map(
+                &quot;map_d24067b74f5a4621633d9feb5135f638&quot;,
                 {
                     center: [22.295, 114.169],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            L.control.scale().addTo(map_d24067b74f5a4621633d9feb5135f638);
 
             
 
         
     
-            var tile_layer_fc50ce63ff33d13f32b89c943574feb8 = L.tileLayer(
+            var tile_layer_a05dd73851509078023971532bcbc7e7 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_fc50ce63ff33d13f32b89c943574feb8.addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            tile_layer_a05dd73851509078023971532bcbc7e7.addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            var circle_marker_9db31c9037ff66258f3e26eb7f0f91da = L.circleMarker(
+            var circle_marker_a2db5006d0820243e0fd255a7e501121 = L.circleMarker(
                 [22.295, 114.169],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_9db31c9037ff66258f3e26eb7f0f91da.bindTooltip(
+            circle_marker_a2db5006d0820243e0fd255a7e501121.bindTooltip(
                 `&lt;div&gt;
                      Hong Kong — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,47 +149,47 @@
             );
         
     
-        var popup_21b5bc673284fdc62ce8f900f4c01d9d = L.popup({
+        var popup_2e3d65bed92f4cfa03e367dff03ad2f5 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_265d1a676d8ce424e4c19426f7c5a063 = $(`&lt;div id=&quot;html_265d1a676d8ce424e4c19426f7c5a063&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Hong Kong&lt;/div&gt;&lt;img src=&quot;img/hong-kong.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Hong Kong&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Hong_Kong_Legislative_Council_Complex.jpg&quot; rel=&quot;nofollow&quot;&gt;17jiangz1 · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_21b5bc673284fdc62ce8f900f4c01d9d.setContent(html_265d1a676d8ce424e4c19426f7c5a063);
+                var html_fd509ea9c1313d2f96a5954efe40b7f7 = $(`&lt;div id=&quot;html_fd509ea9c1313d2f96a5954efe40b7f7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Hong Kong&lt;/div&gt;&lt;img src=&quot;img/hong-kong.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Hong Kong&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Hong_Kong_Legislative_Council_Complex.jpg&quot; rel=&quot;nofollow&quot;&gt;17jiangz1 · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_2e3d65bed92f4cfa03e367dff03ad2f5.setContent(html_fd509ea9c1313d2f96a5954efe40b7f7);
             
         
 
-        circle_marker_9db31c9037ff66258f3e26eb7f0f91da.bindPopup(popup_21b5bc673284fdc62ce8f900f4c01d9d)
+        circle_marker_a2db5006d0820243e0fd255a7e501121.bindPopup(popup_2e3d65bed92f4cfa03e367dff03ad2f5)
         ;
 
         
     
     
-            var circle_marker_9d85b3840bf6f9593e5362ef72fc93d3 = L.circleMarker(
+            var circle_marker_47e3844bfe32ff7b3fe32b3524675898 = L.circleMarker(
                 [22.2760386, 114.1454573],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-        var popup_d1f6e16fa6f22c77e55e1de57ee189aa = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_439d8462d1e924f310c81478efb57630 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_199c96ffa4e206f4b4814a2fb7f23cc4 = $(`&lt;div id=&quot;html_199c96ffa4e206f4b4814a2fb7f23cc4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Victoria Peak &amp; Peak Tram&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.2760386&amp;mlon=114.1454573#map=16/22.2760386/114.1454573&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_d1f6e16fa6f22c77e55e1de57ee189aa.setContent(html_199c96ffa4e206f4b4814a2fb7f23cc4);
+                var html_eedfc7b5d781954852037e6ac6ed0ccb = $(`&lt;div id=&quot;html_eedfc7b5d781954852037e6ac6ed0ccb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Victoria Peak &amp; Peak Tram&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.2760386&amp;mlon=114.1454573#map=16/22.2760386/114.1454573&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_439d8462d1e924f310c81478efb57630.setContent(html_eedfc7b5d781954852037e6ac6ed0ccb);
             
         
 
-        circle_marker_9d85b3840bf6f9593e5362ef72fc93d3.bindPopup(popup_d1f6e16fa6f22c77e55e1de57ee189aa)
+        circle_marker_47e3844bfe32ff7b3fe32b3524675898.bindPopup(popup_439d8462d1e924f310c81478efb57630)
         ;
 
         
     
     
-            circle_marker_9d85b3840bf6f9593e5362ef72fc93d3.bindTooltip(
+            circle_marker_47e3844bfe32ff7b3fe32b3524675898.bindTooltip(
                 `&lt;div&gt;
                      Victoria Peak &amp; Peak Tram
                  &lt;/div&gt;`,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_341de1ef5afcec409c13f3dbe5cc80d2 = L.circleMarker(
+            var circle_marker_dfc9e459629808e73da4c956becf9a82 = L.circleMarker(
                 [22.2985604, 114.1736032],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-        var popup_e40c151fef9212434e6ecb31324a53fd = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_1b6c2604931f35a19a06a4c00dcb85a2 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_1fcebb999e84fd3a7b9403cf33dc6496 = $(`&lt;div id=&quot;html_1fcebb999e84fd3a7b9403cf33dc6496&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Tsim Sha Tsui – Avenue of Stars – Symphony of Lights&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.2985604&amp;mlon=114.1736032#map=16/22.2985604/114.1736032&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_e40c151fef9212434e6ecb31324a53fd.setContent(html_1fcebb999e84fd3a7b9403cf33dc6496);
+                var html_34465c24f0f04f91c5148ca317e95929 = $(`&lt;div id=&quot;html_34465c24f0f04f91c5148ca317e95929&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Tsim Sha Tsui – Avenue of Stars – Symphony of Lights&lt;/div&gt;&lt;img src=&quot;sights/tsim-sha-tsui-avenue-of-stars-symphony-of-lights.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Former_Kowloon-Canton_Railway_Clock_Tower,_Tsim_Sha_Tsui_(Hong_Kong).jpg&quot; rel=&quot;nofollow&quot;&gt;Mk2010 · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.2985604&amp;mlon=114.1736032#map=16/22.2985604/114.1736032&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_1b6c2604931f35a19a06a4c00dcb85a2.setContent(html_34465c24f0f04f91c5148ca317e95929);
             
         
 
-        circle_marker_341de1ef5afcec409c13f3dbe5cc80d2.bindPopup(popup_e40c151fef9212434e6ecb31324a53fd)
+        circle_marker_dfc9e459629808e73da4c956becf9a82.bindPopup(popup_1b6c2604931f35a19a06a4c00dcb85a2)
         ;
 
         
     
     
-            circle_marker_341de1ef5afcec409c13f3dbe5cc80d2.bindTooltip(
+            circle_marker_dfc9e459629808e73da4c956becf9a82.bindTooltip(
                 `&lt;div&gt;
-                     Tsim Sha Tsui – Avenue of Stars – Symphony of Lights
+                     Tsim Sha Tsui – Avenue of Stars – Symphony of Lights — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_d8bd7dbe5f2bbd3b12905132b41190ee = L.circleMarker(
+            var circle_marker_268b0d9e56264a6c615c2545d359e7b9 = L.circleMarker(
                 [22.3130698, 114.0409846],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-        var popup_67a8bde70b52fd0c2fdf2a1441ddd7bd = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_e5b395481c0f4a99827a59a608dbda9a = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_3ea07b6abb1292719c4d5c8c202ef256 = $(`&lt;div id=&quot;html_3ea07b6abb1292719c4d5c8c202ef256&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Hong Kong Disneyland&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.3130698&amp;mlon=114.0409846#map=16/22.3130698/114.0409846&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_67a8bde70b52fd0c2fdf2a1441ddd7bd.setContent(html_3ea07b6abb1292719c4d5c8c202ef256);
+                var html_f780b0bce858776feb06a283d4f0cc85 = $(`&lt;div id=&quot;html_f780b0bce858776feb06a283d4f0cc85&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Hong Kong Disneyland&lt;/div&gt;&lt;img src=&quot;sights/hong-kong-disneyland.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Disneyland_Hong_Kong_China_5.jpg&quot; rel=&quot;nofollow&quot;&gt;Philip Nalangan · CC BY 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.3130698&amp;mlon=114.0409846#map=16/22.3130698/114.0409846&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_e5b395481c0f4a99827a59a608dbda9a.setContent(html_f780b0bce858776feb06a283d4f0cc85);
             
         
 
-        circle_marker_d8bd7dbe5f2bbd3b12905132b41190ee.bindPopup(popup_67a8bde70b52fd0c2fdf2a1441ddd7bd)
+        circle_marker_268b0d9e56264a6c615c2545d359e7b9.bindPopup(popup_e5b395481c0f4a99827a59a608dbda9a)
         ;
 
         
     
     
-            circle_marker_d8bd7dbe5f2bbd3b12905132b41190ee.bindTooltip(
+            circle_marker_268b0d9e56264a6c615c2545d359e7b9.bindTooltip(
                 `&lt;div&gt;
-                     Hong Kong Disneyland
+                     Hong Kong Disneyland — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,30 +265,30 @@
             );
         
     
-            var circle_marker_5d1b67c445689615f8afd77b872a52e6 = L.circleMarker(
+            var circle_marker_b285034bc73d96163fec66475c5f7c74 = L.circleMarker(
                 [22.29178, 114.1932468],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-        var popup_45c6fae8c9a4826f11c50dcd4ee5a284 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_c6d56548c3db079dc79b30f92d687e19 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_f6da1c9cfb9c8d47546ceb5923a3f03c = $(`&lt;div id=&quot;html_f6da1c9cfb9c8d47546ceb5923a3f03c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;làng chài Tai O&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.29178&amp;mlon=114.1932468#map=16/22.29178/114.1932468&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_45c6fae8c9a4826f11c50dcd4ee5a284.setContent(html_f6da1c9cfb9c8d47546ceb5923a3f03c);
+                var html_1f3d2564fd6ce0e42e2aee6519e8a4c3 = $(`&lt;div id=&quot;html_1f3d2564fd6ce0e42e2aee6519e8a4c3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;làng chài Tai O&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.29178&amp;mlon=114.1932468#map=16/22.29178/114.1932468&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_c6d56548c3db079dc79b30f92d687e19.setContent(html_1f3d2564fd6ce0e42e2aee6519e8a4c3);
             
         
 
-        circle_marker_5d1b67c445689615f8afd77b872a52e6.bindPopup(popup_45c6fae8c9a4826f11c50dcd4ee5a284)
+        circle_marker_b285034bc73d96163fec66475c5f7c74.bindPopup(popup_c6d56548c3db079dc79b30f92d687e19)
         ;
 
         
     
     
-            circle_marker_5d1b67c445689615f8afd77b872a52e6.bindTooltip(
+            circle_marker_b285034bc73d96163fec66475c5f7c74.bindTooltip(
                 `&lt;div&gt;
                      làng chài Tai O
                  &lt;/div&gt;`,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_c96d31f93a54facb58ffb7f43b40f101 = L.circleMarker(
+            var circle_marker_f7f271f6dfa2761e5589c6a35f4091b8 = L.circleMarker(
                 [22.3815527, 114.1904697],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-        var popup_9dcd518837835f28ccad7064e916d8c4 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_8ddc199dd2c78964d441d0d7bcb41ef5 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_251ccd0ecfb4803396615285d7582042 = $(`&lt;div id=&quot;html_251ccd0ecfb4803396615285d7582042&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Sha Tin – Vạn Phật Tự&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.3815527&amp;mlon=114.1904697#map=16/22.3815527/114.1904697&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_9dcd518837835f28ccad7064e916d8c4.setContent(html_251ccd0ecfb4803396615285d7582042);
+                var html_76a83cc80b9fa28792338e61ea06a5a5 = $(`&lt;div id=&quot;html_76a83cc80b9fa28792338e61ea06a5a5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Sha Tin – Vạn Phật Tự&lt;/div&gt;&lt;img src=&quot;sights/sha-tin-van-phat-tu.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sha_Tin,_Hong_Kong_-_panoramio_(4).jpg&quot; rel=&quot;nofollow&quot;&gt;ken93110 · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=22.3815527&amp;mlon=114.1904697#map=16/22.3815527/114.1904697&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_8ddc199dd2c78964d441d0d7bcb41ef5.setContent(html_76a83cc80b9fa28792338e61ea06a5a5);
             
         
 
-        circle_marker_c96d31f93a54facb58ffb7f43b40f101.bindPopup(popup_9dcd518837835f28ccad7064e916d8c4)
+        circle_marker_f7f271f6dfa2761e5589c6a35f4091b8.bindPopup(popup_8ddc199dd2c78964d441d0d7bcb41ef5)
         ;
 
         
     
     
-            circle_marker_c96d31f93a54facb58ffb7f43b40f101.bindTooltip(
+            circle_marker_f7f271f6dfa2761e5589c6a35f4091b8.bindTooltip(
                 `&lt;div&gt;
-                     Sha Tin – Vạn Phật Tự
+                     Sha Tin – Vạn Phật Tự — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,19 +331,19 @@
             );
         
     
-            map_2258e6af33228a3c32fb76ed647caf00.fitBounds(
+            map_d24067b74f5a4621633d9feb5135f638.fitBounds(
                 [[22.2760386, 114.0409846], [22.3815527, 114.1932468]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_a204c994810cb50647fc7b4239dc9b3c = L.circleMarker(
+            var circle_marker_3735df9769caff4723aeb9e0ec90741a = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_a204c994810cb50647fc7b4239dc9b3c.bindTooltip(
+            circle_marker_3735df9769caff4723aeb9e0ec90741a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -350,13 +353,13 @@
             );
         
     
-            var circle_marker_035af89ce98dad5c3d4e9343797e03a5 = L.circleMarker(
+            var circle_marker_640ab647cb2660552b6e77a91ab663ad = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_035af89ce98dad5c3d4e9343797e03a5.bindTooltip(
+            circle_marker_640ab647cb2660552b6e77a91ab663ad.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -366,13 +369,13 @@
             );
         
     
-            var circle_marker_fedc893e707f500925f5fd7fed979803 = L.circleMarker(
+            var circle_marker_7916eaa722abbd2e030120c3c06ed6f0 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_fedc893e707f500925f5fd7fed979803.bindTooltip(
+            circle_marker_7916eaa722abbd2e030120c3c06ed6f0.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -382,13 +385,13 @@
             );
         
     
-            var circle_marker_387ec6e2dbf7707cb18ee0047872f7fe = L.circleMarker(
+            var circle_marker_cfe5fc9961c8770be1512f7ba7ef6370 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_387ec6e2dbf7707cb18ee0047872f7fe.bindTooltip(
+            circle_marker_cfe5fc9961c8770be1512f7ba7ef6370.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -398,13 +401,13 @@
             );
         
     
-            var circle_marker_90368d43a1ba59058f2c0142b6635c81 = L.circleMarker(
+            var circle_marker_cf4db5233e992f93395eb66935f23726 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_90368d43a1ba59058f2c0142b6635c81.bindTooltip(
+            circle_marker_cf4db5233e992f93395eb66935f23726.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -414,29 +417,29 @@
             );
         
     
-            var marker_9ca8c90f1d585a21aed3863eada46a1f = L.marker(
+            var marker_80600025df77b4726e01069ba2ffc77a = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            var div_icon_6e4dab18ed506f6c6d7cf4c8de20cf0f = L.divIcon({
+            var div_icon_0de02c4ca784787f17305a27dfa497f5 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_9ca8c90f1d585a21aed3863eada46a1f.setIcon(div_icon_6e4dab18ed506f6c6d7cf4c8de20cf0f);
+                marker_80600025df77b4726e01069ba2ffc77a.setIcon(div_icon_0de02c4ca784787f17305a27dfa497f5);
             
     
-            var circle_marker_65888fc7976c2eccd5e0d201e0507811 = L.circleMarker(
+            var circle_marker_33480017f100563c94a76d96aa06b131 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_65888fc7976c2eccd5e0d201e0507811.bindTooltip(
+            circle_marker_33480017f100563c94a76d96aa06b131.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -446,13 +449,13 @@
             );
         
     
-            var circle_marker_9e9984591cbd069b0b71c8cf738aaddd = L.circleMarker(
+            var circle_marker_1c354ee1197394d53f60a5fc3f2d3bce = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_9e9984591cbd069b0b71c8cf738aaddd.bindTooltip(
+            circle_marker_1c354ee1197394d53f60a5fc3f2d3bce.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -462,13 +465,13 @@
             );
         
     
-            var circle_marker_5cf283f794096e7c5f7e1859222100bd = L.circleMarker(
+            var circle_marker_664a3582b19925994517bce0ca992f04 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_5cf283f794096e7c5f7e1859222100bd.bindTooltip(
+            circle_marker_664a3582b19925994517bce0ca992f04.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -478,13 +481,13 @@
             );
         
     
-            var circle_marker_7ed90adedecb42dfe9724db1fe80666c = L.circleMarker(
+            var circle_marker_c0ee55b69a473c2562e0f8894c16d685 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_7ed90adedecb42dfe9724db1fe80666c.bindTooltip(
+            circle_marker_c0ee55b69a473c2562e0f8894c16d685.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -494,13 +497,13 @@
             );
         
     
-            var circle_marker_d4db42e550473cb76dc009fa5d9d6c04 = L.circleMarker(
+            var circle_marker_3632752b9a288ada7fe22f1248810ff4 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_d4db42e550473cb76dc009fa5d9d6c04.bindTooltip(
+            circle_marker_3632752b9a288ada7fe22f1248810ff4.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -510,13 +513,13 @@
             );
         
     
-            var circle_marker_dd35564f9e02cd0c6afa0a8871f15d0b = L.circleMarker(
+            var circle_marker_6908832c08cd561443d969bad95c588a = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            circle_marker_dd35564f9e02cd0c6afa0a8871f15d0b.bindTooltip(
+            circle_marker_6908832c08cd561443d969bad95c588a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -526,24 +529,24 @@
             );
         
     
-            var marker_b54af90b9b5dab41941a37e6e479dec7 = L.marker(
+            var marker_91be14c13dde9067afc6c8101b42381e = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_2258e6af33228a3c32fb76ed647caf00);
+            ).addTo(map_d24067b74f5a4621633d9feb5135f638);
         
     
-            var div_icon_2a1904881b93554de0297afaf8c3193e = L.divIcon({
+            var div_icon_3a07198374525902e43fb073da148a24 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_b54af90b9b5dab41941a37e6e479dec7.setIcon(div_icon_2a1904881b93554de0297afaf8c3193e);
+                marker_91be14c13dde9067afc6c8101b42381e.setIcon(div_icon_3a07198374525902e43fb073da148a24);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=22.2760386&mlon=114.1454573#map=16/22.2760386/114.1454573" rel="nofollow">Victoria Peak & Peak Tram</a></li><li class="off">Star Ferry qua cảng Victoria <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=22.2985604&mlon=114.1736032#map=16/22.2985604/114.1736032" rel="nofollow">Tsim Sha Tsui – Avenue of Stars – Symphony of Lights</a></li><li class="off">Đại Phật Thiên Đàn & tu viện Po Lin (Ngong Ping 360, Lantau) <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=22.3130698&mlon=114.0409846#map=16/22.3130698/114.0409846" rel="nofollow">Hong Kong Disneyland</a></li><li class="off">chùa Wong Tai Sin, Man Mo Temple <em>not found</em></li><li class="off">chợ đêm Temple Street, Mong Kok <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=22.29178&mlon=114.1932468#map=16/22.29178/114.1932468" rel="nofollow">làng chài Tai O</a></li><li><a href="https://www.openstreetmap.org/?mlat=22.3815527&mlon=114.1904697#map=16/22.3815527/114.1904697" rel="nofollow">Sha Tin – Vạn Phật Tự</a></li><li class="off">M+ và Palace Museum ở West Kowloon <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **HKRITA** (Hong Kong Research Institute of Textiles and Apparel) — viện R&D dệt công lập, thành lập 2006, đặt tại PolyU; nghiên cứu waterless processing, green tech và **active performance wearable systems**; vận hành **Open Lab** ~20.000 sq ft.
+<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=22.2760386&mlon=114.1454573#map=16/22.2760386/114.1454573" rel="nofollow">Victoria Peak & Peak Tram</a></li><li class="off">Star Ferry qua cảng Victoria <em>not found</em></li><li><img class="thumb" src="sights/tsim-sha-tsui-avenue-of-stars-symphony-of-lights.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=22.2985604&mlon=114.1736032#map=16/22.2985604/114.1736032" rel="nofollow">Tsim Sha Tsui – Avenue of Stars – Symphony of Lights</a></li><li class="off">Đại Phật Thiên Đàn & tu viện Po Lin (Ngong Ping 360, Lantau) <em>not found</em></li><li><img class="thumb" src="sights/hong-kong-disneyland.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=22.3130698&mlon=114.0409846#map=16/22.3130698/114.0409846" rel="nofollow">Hong Kong Disneyland</a></li><li class="off">chùa Wong Tai Sin, Man Mo Temple <em>not found</em></li><li class="off">chợ đêm Temple Street, Mong Kok <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=22.29178&mlon=114.1932468#map=16/22.29178/114.1932468" rel="nofollow">làng chài Tai O</a></li><li><img class="thumb" src="sights/sha-tin-van-phat-tu.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=22.3815527&mlon=114.1904697#map=16/22.3815527/114.1904697" rel="nofollow">Sha Tin – Vạn Phật Tự</a></li><li class="off">M+ và Palace Museum ở West Kowloon <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **HKRITA** (Hong Kong Research Institute of Textiles and Apparel) — viện R&D dệt công lập, thành lập 2006, đặt tại PolyU; nghiên cứu waterless processing, green tech và **active performance wearable systems**; vận hành **Open Lab** ~20.000 sq ft.
 - **PolyU — Institute of Textiles and Clothing (ITC)** — nhóm mạnh về e-textile: công bố phương pháp phủ nano bạc (AgNP) lên vải cotton để làm **e-textile dẫn điện, chống nước, giặt được** — trùng đúng lớp công nghệ conductive yarn/fabric trong hồ sơ.
 - **Novetex Upcycling Factory (The Billie System)** ở Tai Po — tái chế sợi cơ học không dùng nước, do HKRITA đồng phát triển; đối chiếu được với hướng textile-to-textile của ALT TEX / Ambercycle.
 - Hệ sinh thái công nghiệp: Esquel Group, Lai Tak, Hong Kong Science Park, Nano and Advanced Materials Institute (NAMI) <em>not found</em></li></ul>

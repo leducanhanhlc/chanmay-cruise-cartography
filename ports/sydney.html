@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_94f34e2c652e8e3a278edce75ffe9583 {
+                #map_7ba540b852506f4e18353e61d0b942a7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_94f34e2c652e8e3a278edce75ffe9583&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_7ba540b852506f4e18353e61d0b942a7&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_94f34e2c652e8e3a278edce75ffe9583 = L.map(
-                &quot;map_94f34e2c652e8e3a278edce75ffe9583&quot;,
+            var map_7ba540b852506f4e18353e61d0b942a7 = L.map(
+                &quot;map_7ba540b852506f4e18353e61d0b942a7&quot;,
                 {
                     center: [-33.857, 151.21],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            L.control.scale().addTo(map_7ba540b852506f4e18353e61d0b942a7);
 
             
 
         
     
-            var tile_layer_274af20dfde2747323aa829839eb66dd = L.tileLayer(
+            var tile_layer_d68f1c1af1ada5fb4880d289ea93b03d = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_274af20dfde2747323aa829839eb66dd.addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            tile_layer_d68f1c1af1ada5fb4880d289ea93b03d.addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            var circle_marker_c3a8d4b168a2aac91e590eb274f593f4 = L.circleMarker(
+            var circle_marker_166adebfc8cfcea5955a686c3dd708e1 = L.circleMarker(
                 [-33.857, 151.21],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_c3a8d4b168a2aac91e590eb274f593f4.bindTooltip(
+            circle_marker_166adebfc8cfcea5955a686c3dd708e1.bindTooltip(
                 `&lt;div&gt;
                      Sydney — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_c222cb5556da44d0354d4993a8cee5c2 = L.popup({
+        var popup_51692dd23a52837ffc136b7bfdd754f0 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_f1620232a25acf68cc9e2d803052745c = $(`&lt;div id=&quot;html_f1620232a25acf68cc9e2d803052745c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Sydney&lt;/div&gt;&lt;img src=&quot;img/sydney.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Nhà hát Opera Sydney&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_c222cb5556da44d0354d4993a8cee5c2.setContent(html_f1620232a25acf68cc9e2d803052745c);
+                var html_120bb72910cb076a3f09076f4b5d8972 = $(`&lt;div id=&quot;html_120bb72910cb076a3f09076f4b5d8972&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Sydney&lt;/div&gt;&lt;img src=&quot;img/sydney.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Nhà hát Opera Sydney&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_51692dd23a52837ffc136b7bfdd754f0.setContent(html_120bb72910cb076a3f09076f4b5d8972);
             
         
 
-        circle_marker_c3a8d4b168a2aac91e590eb274f593f4.bindPopup(popup_c222cb5556da44d0354d4993a8cee5c2)
+        circle_marker_166adebfc8cfcea5955a686c3dd708e1.bindPopup(popup_51692dd23a52837ffc136b7bfdd754f0)
         ;
 
         
     
     
-            var circle_marker_f8dd19e9fd3e9a95708098be1afdac7f = L.circleMarker(
+            var circle_marker_5f8d475a69d7c33aed82e95c7703bf70 = L.circleMarker(
                 [-33.8568221, 151.2149901],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_57ed91572106243158a31e7a87887f56 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_2721066d39ed28447f9c4eb85fad88fb = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_d9307bb42b29618f3dde3c00b8857192 = $(`&lt;div id=&quot;html_d9307bb42b29618f3dde3c00b8857192&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Nhà hát Opera Sydney (UNESCO)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8568221&amp;mlon=151.2149901#map=16/-33.8568221/151.2149901&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_57ed91572106243158a31e7a87887f56.setContent(html_d9307bb42b29618f3dde3c00b8857192);
+                var html_d6565030aea2d576c578e7ac2f6ec5d9 = $(`&lt;div id=&quot;html_d6565030aea2d576c578e7ac2f6ec5d9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Nhà hát Opera Sydney (UNESCO)&lt;/div&gt;&lt;img src=&quot;sights/nha-hat-opera-sydney-unesco.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg&quot; rel=&quot;nofollow&quot;&gt;Diliff · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8568221&amp;mlon=151.2149901#map=16/-33.8568221/151.2149901&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_2721066d39ed28447f9c4eb85fad88fb.setContent(html_d6565030aea2d576c578e7ac2f6ec5d9);
             
         
 
-        circle_marker_f8dd19e9fd3e9a95708098be1afdac7f.bindPopup(popup_57ed91572106243158a31e7a87887f56)
+        circle_marker_5f8d475a69d7c33aed82e95c7703bf70.bindPopup(popup_2721066d39ed28447f9c4eb85fad88fb)
         ;
 
         
     
     
-            circle_marker_f8dd19e9fd3e9a95708098be1afdac7f.bindTooltip(
+            circle_marker_5f8d475a69d7c33aed82e95c7703bf70.bindTooltip(
                 `&lt;div&gt;
-                     Nhà hát Opera Sydney (UNESCO)
+                     Nhà hát Opera Sydney (UNESCO) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,30 +199,30 @@
             );
         
     
-            var circle_marker_f02916abe192bf48a8866d4ae8788408 = L.circleMarker(
+            var circle_marker_5cad6beaf2771366da480e376a0ded76 = L.circleMarker(
                 [-33.8521165, 151.2107812],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_183083947627af27fc3d2ea0b12ea222 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_75321f23f37a3e2c775c54ed51f49c3b = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_0e6a238597b70e9ef9177298b7ce26ba = $(`&lt;div id=&quot;html_0e6a238597b70e9ef9177298b7ce26ba&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Harbour Bridge &amp; BridgeClimb&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8521165&amp;mlon=151.2107812#map=16/-33.8521165/151.2107812&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_183083947627af27fc3d2ea0b12ea222.setContent(html_0e6a238597b70e9ef9177298b7ce26ba);
+                var html_b8441a7294eeec2b6209e6361481052b = $(`&lt;div id=&quot;html_b8441a7294eeec2b6209e6361481052b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Harbour Bridge &amp; BridgeClimb&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8521165&amp;mlon=151.2107812#map=16/-33.8521165/151.2107812&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_75321f23f37a3e2c775c54ed51f49c3b.setContent(html_b8441a7294eeec2b6209e6361481052b);
             
         
 
-        circle_marker_f02916abe192bf48a8866d4ae8788408.bindPopup(popup_183083947627af27fc3d2ea0b12ea222)
+        circle_marker_5cad6beaf2771366da480e376a0ded76.bindPopup(popup_75321f23f37a3e2c775c54ed51f49c3b)
         ;
 
         
     
     
-            circle_marker_f02916abe192bf48a8866d4ae8788408.bindTooltip(
+            circle_marker_5cad6beaf2771366da480e376a0ded76.bindTooltip(
                 `&lt;div&gt;
                      Harbour Bridge &amp; BridgeClimb
                  &lt;/div&gt;`,
@@ -229,30 +232,30 @@
             );
         
     
-            var circle_marker_3c56a6ab79663951d977a25c7532a2d2 = L.circleMarker(
+            var circle_marker_06a4a340c40d42fab0e71b1b179d1c45 = L.circleMarker(
                 [-33.8906977, 151.2724119],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_35966129a4d9af628f5a576039a300b7 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_b9bddab857a28f651ab59e5307904aa3 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_b0bbd52647ba8f876a9728e4995caf31 = $(`&lt;div id=&quot;html_b0bbd52647ba8f876a9728e4995caf31&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Bondi Beach – đường ven biển Bondi–Coogee&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8906977&amp;mlon=151.2724119#map=16/-33.8906977/151.2724119&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_35966129a4d9af628f5a576039a300b7.setContent(html_b0bbd52647ba8f876a9728e4995caf31);
+                var html_8e24df74ab99620371ef40e262badde8 = $(`&lt;div id=&quot;html_8e24df74ab99620371ef40e262badde8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Bondi Beach – đường ven biển Bondi–Coogee&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8906977&amp;mlon=151.2724119#map=16/-33.8906977/151.2724119&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_b9bddab857a28f651ab59e5307904aa3.setContent(html_8e24df74ab99620371ef40e262badde8);
             
         
 
-        circle_marker_3c56a6ab79663951d977a25c7532a2d2.bindPopup(popup_35966129a4d9af628f5a576039a300b7)
+        circle_marker_06a4a340c40d42fab0e71b1b179d1c45.bindPopup(popup_b9bddab857a28f651ab59e5307904aa3)
         ;
 
         
     
     
-            circle_marker_3c56a6ab79663951d977a25c7532a2d2.bindTooltip(
+            circle_marker_06a4a340c40d42fab0e71b1b179d1c45.bindTooltip(
                 `&lt;div&gt;
                      Bondi Beach – đường ven biển Bondi–Coogee
                  &lt;/div&gt;`,
@@ -262,32 +265,32 @@
             );
         
     
-            var circle_marker_a6fad21191d8967ee64a7d1ab32af114 = L.circleMarker(
+            var circle_marker_15b4a5ef877648236ea96c77ef2b3d7a = L.circleMarker(
                 [-33.859992, 151.2083216],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_71cc2e1f5515ae019bba5cab6d0339ca = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_253168c25e06a1ef2999776bd50709e2 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_30c523ec5d8ef3649c29ac8993b8d6a5 = $(`&lt;div id=&quot;html_30c523ec5d8ef3649c29ac8993b8d6a5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;The Rocks&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.859992&amp;mlon=151.2083216#map=16/-33.859992/151.2083216&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_71cc2e1f5515ae019bba5cab6d0339ca.setContent(html_30c523ec5d8ef3649c29ac8993b8d6a5);
+                var html_b28a5caf98f46c3d50a6d395e7ae25bb = $(`&lt;div id=&quot;html_b28a5caf98f46c3d50a6d395e7ae25bb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;The Rocks&lt;/div&gt;&lt;img src=&quot;sights/the-rocks.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sydney_(AU),_The_Rocks_--_2019_--_2133.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.859992&amp;mlon=151.2083216#map=16/-33.859992/151.2083216&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_253168c25e06a1ef2999776bd50709e2.setContent(html_b28a5caf98f46c3d50a6d395e7ae25bb);
             
         
 
-        circle_marker_a6fad21191d8967ee64a7d1ab32af114.bindPopup(popup_71cc2e1f5515ae019bba5cab6d0339ca)
+        circle_marker_15b4a5ef877648236ea96c77ef2b3d7a.bindPopup(popup_253168c25e06a1ef2999776bd50709e2)
         ;
 
         
     
     
-            circle_marker_a6fad21191d8967ee64a7d1ab32af114.bindTooltip(
+            circle_marker_15b4a5ef877648236ea96c77ef2b3d7a.bindTooltip(
                 `&lt;div&gt;
-                     The Rocks
+                     The Rocks — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_0766cc40884efa68b130ca0cd622ce60 = L.circleMarker(
+            var circle_marker_c7feec236d04b5ca1db06b72ec41a983 = L.circleMarker(
                 [-33.8438318, 151.2413746],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_e111e24952fba2d73d998c6020f55b65 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_09bdd6a9d03fe252beb1597308c9eb83 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_722f1de612f49bd871be55f79582188a = $(`&lt;div id=&quot;html_722f1de612f49bd871be55f79582188a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Taronga Zoo&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8438318&amp;mlon=151.2413746#map=16/-33.8438318/151.2413746&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_e111e24952fba2d73d998c6020f55b65.setContent(html_722f1de612f49bd871be55f79582188a);
+                var html_1247e6e895119c2ea57401a0a5a44405 = $(`&lt;div id=&quot;html_1247e6e895119c2ea57401a0a5a44405&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Taronga Zoo&lt;/div&gt;&lt;img src=&quot;sights/taronga-zoo.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Taronga_Zoo_ferry_wharf_from_ferry.jpg&quot; rel=&quot;nofollow&quot;&gt;Grendelkhan · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8438318&amp;mlon=151.2413746#map=16/-33.8438318/151.2413746&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_09bdd6a9d03fe252beb1597308c9eb83.setContent(html_1247e6e895119c2ea57401a0a5a44405);
             
         
 
-        circle_marker_0766cc40884efa68b130ca0cd622ce60.bindPopup(popup_e111e24952fba2d73d998c6020f55b65)
+        circle_marker_c7feec236d04b5ca1db06b72ec41a983.bindPopup(popup_09bdd6a9d03fe252beb1597308c9eb83)
         ;
 
         
     
     
-            circle_marker_0766cc40884efa68b130ca0cd622ce60.bindTooltip(
+            circle_marker_c7feec236d04b5ca1db06b72ec41a983.bindTooltip(
                 `&lt;div&gt;
-                     Taronga Zoo
+                     Taronga Zoo — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,32 +331,32 @@
             );
         
     
-            var circle_marker_90728d415a8bad3a2f75c994eae1bcab = L.circleMarker(
+            var circle_marker_80c50e5708275d2591b1d3921637a389 = L.circleMarker(
                 [-33.8675516, 151.1995619],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_32f32e222aab8a9eafef5e4c8cecb668 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_8f9cb2b092250b878778114848d76a31 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_b7af79d3d01a800e60d8286c2a86ffd9 = $(`&lt;div id=&quot;html_b7af79d3d01a800e60d8286c2a86ffd9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Darling Harbour, SEA LIFE&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8675516&amp;mlon=151.1995619#map=16/-33.8675516/151.1995619&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_32f32e222aab8a9eafef5e4c8cecb668.setContent(html_b7af79d3d01a800e60d8286c2a86ffd9);
+                var html_e540a6963b79373803baae16f5a03243 = $(`&lt;div id=&quot;html_e540a6963b79373803baae16f5a03243&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Darling Harbour, SEA LIFE&lt;/div&gt;&lt;img src=&quot;sights/darling-harbour-sea-life.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Darling_Harbour_--_2019_--_3193-5.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8675516&amp;mlon=151.1995619#map=16/-33.8675516/151.1995619&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_8f9cb2b092250b878778114848d76a31.setContent(html_e540a6963b79373803baae16f5a03243);
             
         
 
-        circle_marker_90728d415a8bad3a2f75c994eae1bcab.bindPopup(popup_32f32e222aab8a9eafef5e4c8cecb668)
+        circle_marker_80c50e5708275d2591b1d3921637a389.bindPopup(popup_8f9cb2b092250b878778114848d76a31)
         ;
 
         
     
     
-            circle_marker_90728d415a8bad3a2f75c994eae1bcab.bindTooltip(
+            circle_marker_80c50e5708275d2591b1d3921637a389.bindTooltip(
                 `&lt;div&gt;
-                     Darling Harbour, SEA LIFE
+                     Darling Harbour, SEA LIFE — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -361,30 +364,30 @@
             );
         
     
-            var circle_marker_55a3866cd0bc50fa435d5288c20a9a79 = L.circleMarker(
+            var circle_marker_405abc6c014178a53c81c1c64e5aacba = L.circleMarker(
                 [-33.7106881, 150.312678],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_567c734bdbea0fc319aec2955c029c00 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_1b2a4706fb6aa1170aa2588cdd217b2d = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_bd26a1f66cbe23078a3ef5f418deedde = $(`&lt;div id=&quot;html_bd26a1f66cbe23078a3ef5f418deedde&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Blue Mountains – Three Sisters&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.7106881&amp;mlon=150.312678#map=16/-33.7106881/150.312678&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_567c734bdbea0fc319aec2955c029c00.setContent(html_bd26a1f66cbe23078a3ef5f418deedde);
+                var html_d3bd48eaafe02a225861515ab2bfee83 = $(`&lt;div id=&quot;html_d3bd48eaafe02a225861515ab2bfee83&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Blue Mountains – Three Sisters&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.7106881&amp;mlon=150.312678#map=16/-33.7106881/150.312678&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_1b2a4706fb6aa1170aa2588cdd217b2d.setContent(html_d3bd48eaafe02a225861515ab2bfee83);
             
         
 
-        circle_marker_55a3866cd0bc50fa435d5288c20a9a79.bindPopup(popup_567c734bdbea0fc319aec2955c029c00)
+        circle_marker_405abc6c014178a53c81c1c64e5aacba.bindPopup(popup_1b2a4706fb6aa1170aa2588cdd217b2d)
         ;
 
         
     
     
-            circle_marker_55a3866cd0bc50fa435d5288c20a9a79.bindTooltip(
+            circle_marker_405abc6c014178a53c81c1c64e5aacba.bindTooltip(
                 `&lt;div&gt;
                      Blue Mountains – Three Sisters
                  &lt;/div&gt;`,
@@ -394,32 +397,32 @@
             );
         
     
-            var circle_marker_22b6a9545f037d7e5677e4db1b5e5a4b = L.circleMarker(
+            var circle_marker_2e754fc064003505effa549de94377a8 = L.circleMarker(
                 [-33.8000957, 151.2849153],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-        var popup_58b5c9766662e2a3999b88f099db5b1a = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_772a3808c940d58dd24c359d69cba006 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_1e62fcdbff4d9edf461b48078da4ef2a = $(`&lt;div id=&quot;html_1e62fcdbff4d9edf461b48078da4ef2a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Manly ferry&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8000957&amp;mlon=151.2849153#map=16/-33.8000957/151.2849153&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_58b5c9766662e2a3999b88f099db5b1a.setContent(html_1e62fcdbff4d9edf461b48078da4ef2a);
+                var html_2ae61be420eb88cce0890c1c1b83d966 = $(`&lt;div id=&quot;html_2ae61be420eb88cce0890c1c1b83d966&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Manly ferry&lt;/div&gt;&lt;img src=&quot;sights/manly-ferry.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Manly_ferry_wharf_side_view.JPG&quot; rel=&quot;nofollow&quot;&gt;Abesty · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-33.8000957&amp;mlon=151.2849153#map=16/-33.8000957/151.2849153&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_772a3808c940d58dd24c359d69cba006.setContent(html_2ae61be420eb88cce0890c1c1b83d966);
             
         
 
-        circle_marker_22b6a9545f037d7e5677e4db1b5e5a4b.bindPopup(popup_58b5c9766662e2a3999b88f099db5b1a)
+        circle_marker_2e754fc064003505effa549de94377a8.bindPopup(popup_772a3808c940d58dd24c359d69cba006)
         ;
 
         
     
     
-            circle_marker_22b6a9545f037d7e5677e4db1b5e5a4b.bindTooltip(
+            circle_marker_2e754fc064003505effa549de94377a8.bindTooltip(
                 `&lt;div&gt;
-                     Manly ferry
+                     Manly ferry — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -427,19 +430,19 @@
             );
         
     
-            map_94f34e2c652e8e3a278edce75ffe9583.fitBounds(
+            map_7ba540b852506f4e18353e61d0b942a7.fitBounds(
                 [[-33.8906977, 150.312678], [-33.7106881, 151.2849153]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_1c37e997723b89bfb7c1682d36eb998f = L.circleMarker(
+            var circle_marker_b241616f6ac11e548b72bd41075661f8 = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_1c37e997723b89bfb7c1682d36eb998f.bindTooltip(
+            circle_marker_b241616f6ac11e548b72bd41075661f8.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -449,13 +452,13 @@
             );
         
     
-            var circle_marker_4f397efad09b8f685c6bebdc10bfaf16 = L.circleMarker(
+            var circle_marker_bc8fe117b5e1e14c07afa8cdd8efb653 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_4f397efad09b8f685c6bebdc10bfaf16.bindTooltip(
+            circle_marker_bc8fe117b5e1e14c07afa8cdd8efb653.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -465,13 +468,13 @@
             );
         
     
-            var circle_marker_d38ff4b80e44f82ce78396fdbd403deb = L.circleMarker(
+            var circle_marker_ac512dc154ac6cc0744aeb6803d76832 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_d38ff4b80e44f82ce78396fdbd403deb.bindTooltip(
+            circle_marker_ac512dc154ac6cc0744aeb6803d76832.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -481,13 +484,13 @@
             );
         
     
-            var circle_marker_ab13b237405bc64819ba30c9f12b4b25 = L.circleMarker(
+            var circle_marker_7d29f672b7724f02f41c2ca84429e1d6 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_ab13b237405bc64819ba30c9f12b4b25.bindTooltip(
+            circle_marker_7d29f672b7724f02f41c2ca84429e1d6.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -497,13 +500,13 @@
             );
         
     
-            var circle_marker_a48a9c03003531b30de426e9c7a57a7e = L.circleMarker(
+            var circle_marker_db99bd82f8ad639d8a1fb7a7f9bfa4a7 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_a48a9c03003531b30de426e9c7a57a7e.bindTooltip(
+            circle_marker_db99bd82f8ad639d8a1fb7a7f9bfa4a7.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -513,29 +516,29 @@
             );
         
     
-            var marker_8ee8cea37a5b4e11763081e7e889a292 = L.marker(
+            var marker_e1a976b1c2dbd273f34566fe524c85e3 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            var div_icon_184f764e6c1efe9c6c4fd44181750859 = L.divIcon({
+            var div_icon_be49ffd4f01409ebbd060663fe850043 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_8ee8cea37a5b4e11763081e7e889a292.setIcon(div_icon_184f764e6c1efe9c6c4fd44181750859);
+                marker_e1a976b1c2dbd273f34566fe524c85e3.setIcon(div_icon_be49ffd4f01409ebbd060663fe850043);
             
     
-            var circle_marker_eba0ac5a68edda78460bf1c8a09c3614 = L.circleMarker(
+            var circle_marker_a6b10c055d2b00c682cda10f0d17aa2d = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_eba0ac5a68edda78460bf1c8a09c3614.bindTooltip(
+            circle_marker_a6b10c055d2b00c682cda10f0d17aa2d.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -545,13 +548,13 @@
             );
         
     
-            var circle_marker_4ac166bb60238008687ea45bc4eae4ee = L.circleMarker(
+            var circle_marker_85f7b6e1ae2f3db56267237ab5330a77 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_4ac166bb60238008687ea45bc4eae4ee.bindTooltip(
+            circle_marker_85f7b6e1ae2f3db56267237ab5330a77.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -561,13 +564,13 @@
             );
         
     
-            var circle_marker_7530774a59c1aeaab9f25e79a2a634bd = L.circleMarker(
+            var circle_marker_296043b035709175850a6f669b0c8050 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_7530774a59c1aeaab9f25e79a2a634bd.bindTooltip(
+            circle_marker_296043b035709175850a6f669b0c8050.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -577,13 +580,13 @@
             );
         
     
-            var circle_marker_4ccecdb04c73f5f7d46bb44334eac4d1 = L.circleMarker(
+            var circle_marker_6c9249a6682552fb25dd186aad9eb621 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_4ccecdb04c73f5f7d46bb44334eac4d1.bindTooltip(
+            circle_marker_6c9249a6682552fb25dd186aad9eb621.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -593,13 +596,13 @@
             );
         
     
-            var circle_marker_b1255ce462d2c459402e69c6f6e9a2a1 = L.circleMarker(
+            var circle_marker_4a4e927c13ce7a090499753ba6eab6a9 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_b1255ce462d2c459402e69c6f6e9a2a1.bindTooltip(
+            circle_marker_4a4e927c13ce7a090499753ba6eab6a9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -609,13 +612,13 @@
             );
         
     
-            var circle_marker_810577aee913ea06e77a9290fd7db8b2 = L.circleMarker(
+            var circle_marker_f1379b36b12336fd24dd65d685e7f5c9 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            circle_marker_810577aee913ea06e77a9290fd7db8b2.bindTooltip(
+            circle_marker_f1379b36b12336fd24dd65d685e7f5c9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -625,24 +628,24 @@
             );
         
     
-            var marker_72aeef3387169917ac60f79922fe4e54 = L.marker(
+            var marker_f595b65b80eef4b1d76570d8e9a3dfd0 = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_94f34e2c652e8e3a278edce75ffe9583);
+            ).addTo(map_7ba540b852506f4e18353e61d0b942a7);
         
     
-            var div_icon_b51fd6ae9b2304a2ea5b51207f4dc2f8 = L.divIcon({
+            var div_icon_ce02aa5b22e8b71a3d74cb5011daf6c0 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_72aeef3387169917ac60f79922fe4e54.setIcon(div_icon_b51fd6ae9b2304a2ea5b51207f4dc2f8);
+                marker_f595b65b80eef4b1d76570d8e9a3dfd0.setIcon(div_icon_ce02aa5b22e8b71a3d74cb5011daf6c0);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=-33.8568221&mlon=151.2149901#map=16/-33.8568221/151.2149901" rel="nofollow">Nhà hát Opera Sydney (UNESCO)</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.8521165&mlon=151.2107812#map=16/-33.8521165/151.2107812" rel="nofollow">Harbour Bridge & BridgeClimb</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.8906977&mlon=151.2724119#map=16/-33.8906977/151.2724119" rel="nofollow">Bondi Beach – đường ven biển Bondi–Coogee</a></li><li class="off">Vườn Bách thảo Hoàng gia & Mrs Macquarie's Chair <em>nearest match was 714 km away; not used</em></li><li><a href="https://www.openstreetmap.org/?mlat=-33.859992&mlon=151.2083216#map=16/-33.859992/151.2083216" rel="nofollow">The Rocks</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.8438318&mlon=151.2413746#map=16/-33.8438318/151.2413746" rel="nofollow">Taronga Zoo</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.8675516&mlon=151.1995619#map=16/-33.8675516/151.1995619" rel="nofollow">Darling Harbour, SEA LIFE</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.7106881&mlon=150.312678#map=16/-33.7106881/150.312678" rel="nofollow">Blue Mountains – Three Sisters</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.8000957&mlon=151.2849153#map=16/-33.8000957/151.2849153" rel="nofollow">Manly ferry</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Australian Wool Innovation / The Woolmark Company** — trụ sở Sydney; điều phối R&D len merino toàn cầu (bao gồm len hiệu năng, xử lý chống co, blend kỹ thuật).
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/nha-hat-opera-sydney-unesco.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-33.8568221&mlon=151.2149901#map=16/-33.8568221/151.2149901" rel="nofollow">Nhà hát Opera Sydney (UNESCO)</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.8521165&mlon=151.2107812#map=16/-33.8521165/151.2107812" rel="nofollow">Harbour Bridge & BridgeClimb</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.8906977&mlon=151.2724119#map=16/-33.8906977/151.2724119" rel="nofollow">Bondi Beach – đường ven biển Bondi–Coogee</a></li><li class="off">Vườn Bách thảo Hoàng gia & Mrs Macquarie's Chair <em>nearest match was 714 km away; not used</em></li><li><img class="thumb" src="sights/the-rocks.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-33.859992&mlon=151.2083216#map=16/-33.859992/151.2083216" rel="nofollow">The Rocks</a></li><li><img class="thumb" src="sights/taronga-zoo.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-33.8438318&mlon=151.2413746#map=16/-33.8438318/151.2413746" rel="nofollow">Taronga Zoo</a></li><li><img class="thumb" src="sights/darling-harbour-sea-life.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-33.8675516&mlon=151.1995619#map=16/-33.8675516/151.1995619" rel="nofollow">Darling Harbour, SEA LIFE</a></li><li><a href="https://www.openstreetmap.org/?mlat=-33.7106881&mlon=150.312678#map=16/-33.7106881/150.312678" rel="nofollow">Blue Mountains – Three Sisters</a></li><li><img class="thumb" src="sights/manly-ferry.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-33.8000957&mlon=151.2849153#map=16/-33.8000957/151.2849153" rel="nofollow">Manly ferry</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Australian Wool Innovation / The Woolmark Company** — trụ sở Sydney; điều phối R&D len merino toàn cầu (bao gồm len hiệu năng, xử lý chống co, blend kỹ thuật).
 - **University of Wollongong** (≈1,5 h nam) — **ACES / Intelligent Polymer Research Institute**: smart textile từ **sợi carbon nanotube + spandex** vừa cảm biến vừa co giãn như cơ (artificial muscle); khai thác dữ liệu sensor mặc trên người.
 - **Deakin IFM** (Geelong, cùng bờ đông) — **nhóm nghiên cứu xơ sợi lớn nhất Nam bán cầu**; sợi dệt **strain-sensing** cho đồ nén theo dõi vận động viên và phục hồi chức năng; ARC Research Hub for Future Fibres.
 - Trục này là đối chiếu học thuật gần nhất với Nextiles (smart thread đo biomechanics) trong hồ sơ <em>not found</em></li></ul>

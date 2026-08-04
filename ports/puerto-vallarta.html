@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_6738c061f66c79b94ad4eb86ea934cbc {
+                #map_d29202dc576564a17c8960983e7482e5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_6738c061f66c79b94ad4eb86ea934cbc&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_d29202dc576564a17c8960983e7482e5&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_6738c061f66c79b94ad4eb86ea934cbc = L.map(
-                &quot;map_6738c061f66c79b94ad4eb86ea934cbc&quot;,
+            var map_d29202dc576564a17c8960983e7482e5 = L.map(
+                &quot;map_d29202dc576564a17c8960983e7482e5&quot;,
                 {
                     center: [20.65, -105.24],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            L.control.scale().addTo(map_d29202dc576564a17c8960983e7482e5);
 
             
 
         
     
-            var tile_layer_f9a4b1180107b57a5a33f1d1e9558273 = L.tileLayer(
+            var tile_layer_1ed73002b8eb5eb5391ada28e2600b20 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_f9a4b1180107b57a5a33f1d1e9558273.addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            tile_layer_1ed73002b8eb5eb5391ada28e2600b20.addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            var circle_marker_83fbcde100cd3ff3910bcdf09f43e5ac = L.circleMarker(
+            var circle_marker_9f1172454a6c8df24e9ce6902f2ad6ed = L.circleMarker(
                 [20.65, -105.24],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_83fbcde100cd3ff3910bcdf09f43e5ac.bindTooltip(
+            circle_marker_9f1172454a6c8df24e9ce6902f2ad6ed.bindTooltip(
                 `&lt;div&gt;
                      Puerto Vallarta — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_a19f535c4613c0e5083f84e712c7c796 = L.popup({
+        var popup_4389b7b1fd29742a39be3403650ff69b = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_8e64a8b11d9e32340f126270253f7d2c = $(`&lt;div id=&quot;html_8e64a8b11d9e32340f126270253f7d2c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Puerto Vallarta&lt;/div&gt;&lt;img src=&quot;img/puerto-vallarta.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Nhà thờ Đức Mẹ Guadalupe, Puerto Vallarta&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Los_Arcos_del_Malecon_de_Puerto_Vallarta.jpg&quot; rel=&quot;nofollow&quot;&gt;Mtmontenegro · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_a19f535c4613c0e5083f84e712c7c796.setContent(html_8e64a8b11d9e32340f126270253f7d2c);
+                var html_700bb0cabb80097e9094e32d1f92d66b = $(`&lt;div id=&quot;html_700bb0cabb80097e9094e32d1f92d66b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Puerto Vallarta&lt;/div&gt;&lt;img src=&quot;img/puerto-vallarta.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Nhà thờ Đức Mẹ Guadalupe, Puerto Vallarta&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Los_Arcos_del_Malecon_de_Puerto_Vallarta.jpg&quot; rel=&quot;nofollow&quot;&gt;Mtmontenegro · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_4389b7b1fd29742a39be3403650ff69b.setContent(html_700bb0cabb80097e9094e32d1f92d66b);
             
         
 
-        circle_marker_83fbcde100cd3ff3910bcdf09f43e5ac.bindPopup(popup_a19f535c4613c0e5083f84e712c7c796)
+        circle_marker_9f1172454a6c8df24e9ce6902f2ad6ed.bindPopup(popup_4389b7b1fd29742a39be3403650ff69b)
         ;
 
         
     
     
-            var circle_marker_5a9bcb2dcfe3010c9d742e5bfc8d0442 = L.circleMarker(
+            var circle_marker_0dafe90180f5c9bcb31e5945bd3a2d5f = L.circleMarker(
                 [20.6103646, -105.2351071],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-        var popup_7eff4aec79ada932598924f37d547c83 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_dd6827dc18ead907fee31f3800f01cda = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_48dc77f1595fa5f81f1ae73242112275 = $(`&lt;div id=&quot;html_48dc77f1595fa5f81f1ae73242112275&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Malecón &amp; Los Arcos&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6103646&amp;mlon=-105.2351071#map=16/20.6103646/-105.2351071&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_7eff4aec79ada932598924f37d547c83.setContent(html_48dc77f1595fa5f81f1ae73242112275);
+                var html_9049a78622bd78ca975d4a1216ac8cec = $(`&lt;div id=&quot;html_9049a78622bd78ca975d4a1216ac8cec&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Malecón &amp; Los Arcos&lt;/div&gt;&lt;img src=&quot;sights/malecon-los-arcos.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Malec%C3%B3n_Lighthouse,_Puerto_Vallarta,_2014.jpg&quot; rel=&quot;nofollow&quot;&gt;Another Believer · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6103646&amp;mlon=-105.2351071#map=16/20.6103646/-105.2351071&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_dd6827dc18ead907fee31f3800f01cda.setContent(html_9049a78622bd78ca975d4a1216ac8cec);
             
         
 
-        circle_marker_5a9bcb2dcfe3010c9d742e5bfc8d0442.bindPopup(popup_7eff4aec79ada932598924f37d547c83)
+        circle_marker_0dafe90180f5c9bcb31e5945bd3a2d5f.bindPopup(popup_dd6827dc18ead907fee31f3800f01cda)
         ;
 
         
     
     
-            circle_marker_5a9bcb2dcfe3010c9d742e5bfc8d0442.bindTooltip(
+            circle_marker_0dafe90180f5c9bcb31e5945bd3a2d5f.bindTooltip(
                 `&lt;div&gt;
-                     Malecón &amp; Los Arcos
+                     Malecón &amp; Los Arcos — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_b6f70ae87e71544435980f61d2ece3d2 = L.circleMarker(
+            var circle_marker_964e3850ec78e705e3f4fe38fdfa0d8d = L.circleMarker(
                 [20.6022025, -105.2350998],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-        var popup_317039ffe71206093fff99caf2cc06f0 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_a9fa086b26b76e71518ea03608a5703f = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_457da1583bf23fc8238435723badf290 = $(`&lt;div id=&quot;html_457da1583bf23fc8238435723badf290&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Zona Romántica, bãi Los Muertos&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6022025&amp;mlon=-105.2350998#map=16/20.6022025/-105.2350998&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_317039ffe71206093fff99caf2cc06f0.setContent(html_457da1583bf23fc8238435723badf290);
+                var html_000cbe030632b88712c9d634de2018d7 = $(`&lt;div id=&quot;html_000cbe030632b88712c9d634de2018d7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Zona Romántica, bãi Los Muertos&lt;/div&gt;&lt;img src=&quot;sights/zona-romantica-bai-los-muertos.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Puerto_Vallarta,_Jalisco,_2025_-_151.jpg&quot; rel=&quot;nofollow&quot;&gt;Another Believer · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6022025&amp;mlon=-105.2350998#map=16/20.6022025/-105.2350998&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_a9fa086b26b76e71518ea03608a5703f.setContent(html_000cbe030632b88712c9d634de2018d7);
             
         
 
-        circle_marker_b6f70ae87e71544435980f61d2ece3d2.bindPopup(popup_317039ffe71206093fff99caf2cc06f0)
+        circle_marker_964e3850ec78e705e3f4fe38fdfa0d8d.bindPopup(popup_a9fa086b26b76e71518ea03608a5703f)
         ;
 
         
     
     
-            circle_marker_b6f70ae87e71544435980f61d2ece3d2.bindTooltip(
+            circle_marker_964e3850ec78e705e3f4fe38fdfa0d8d.bindTooltip(
                 `&lt;div&gt;
-                     Zona Romántica, bãi Los Muertos
+                     Zona Romántica, bãi Los Muertos — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,30 +232,30 @@
             );
         
     
-            var circle_marker_75b7f7d6c6e210e228deb00da39558b9 = L.circleMarker(
+            var circle_marker_db234493697062c03f022d1d2d50a8e9 = L.circleMarker(
                 [20.6273723, -105.4029055],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-        var popup_0adf212f4e582a834539bd14ab26d990 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_760967bb4ee7534ed0150a04a14481cd = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_a432c5956db9c4aeea03f4a66f728598 = $(`&lt;div id=&quot;html_a432c5956db9c4aeea03f4a66f728598&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;vịnh Banderas – ngắm cá voi lưng gù (12–3)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6273723&amp;mlon=-105.4029055#map=16/20.6273723/-105.4029055&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_0adf212f4e582a834539bd14ab26d990.setContent(html_a432c5956db9c4aeea03f4a66f728598);
+                var html_2586e3f748d047b08a5fbffdbf3396df = $(`&lt;div id=&quot;html_2586e3f748d047b08a5fbffdbf3396df&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;vịnh Banderas – ngắm cá voi lưng gù (12–3)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6273723&amp;mlon=-105.4029055#map=16/20.6273723/-105.4029055&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_760967bb4ee7534ed0150a04a14481cd.setContent(html_2586e3f748d047b08a5fbffdbf3396df);
             
         
 
-        circle_marker_75b7f7d6c6e210e228deb00da39558b9.bindPopup(popup_0adf212f4e582a834539bd14ab26d990)
+        circle_marker_db234493697062c03f022d1d2d50a8e9.bindPopup(popup_760967bb4ee7534ed0150a04a14481cd)
         ;
 
         
     
     
-            circle_marker_75b7f7d6c6e210e228deb00da39558b9.bindTooltip(
+            circle_marker_db234493697062c03f022d1d2d50a8e9.bindTooltip(
                 `&lt;div&gt;
                      vịnh Banderas – ngắm cá voi lưng gù (12–3)
                  &lt;/div&gt;`,
@@ -262,30 +265,30 @@
             );
         
     
-            var circle_marker_b669b993f20b08ae384eea088cbabe15 = L.circleMarker(
+            var circle_marker_bdf8e2003baa17a336f0e6ae684ccd8e = L.circleMarker(
                 [20.6988913, -105.5850726],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-        var popup_12f88ae75107523bbf1d34885ad1ecee = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_d60739304e2db5d32750a732249fb2ef = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_98e9d076b633df6299fe93f82e98a3ad = $(`&lt;div id=&quot;html_98e9d076b633df6299fe93f82e98a3ad&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Marietas Islands (Hidden Beach)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6988913&amp;mlon=-105.5850726#map=16/20.6988913/-105.5850726&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_12f88ae75107523bbf1d34885ad1ecee.setContent(html_98e9d076b633df6299fe93f82e98a3ad);
+                var html_a6cb6308b31479b4efd385dcd6df4b7d = $(`&lt;div id=&quot;html_a6cb6308b31479b4efd385dcd6df4b7d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Marietas Islands (Hidden Beach)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.6988913&amp;mlon=-105.5850726#map=16/20.6988913/-105.5850726&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_d60739304e2db5d32750a732249fb2ef.setContent(html_a6cb6308b31479b4efd385dcd6df4b7d);
             
         
 
-        circle_marker_b669b993f20b08ae384eea088cbabe15.bindPopup(popup_12f88ae75107523bbf1d34885ad1ecee)
+        circle_marker_bdf8e2003baa17a336f0e6ae684ccd8e.bindPopup(popup_d60739304e2db5d32750a732249fb2ef)
         ;
 
         
     
     
-            circle_marker_b669b993f20b08ae384eea088cbabe15.bindTooltip(
+            circle_marker_bdf8e2003baa17a336f0e6ae684ccd8e.bindTooltip(
                 `&lt;div&gt;
                      Marietas Islands (Hidden Beach)
                  &lt;/div&gt;`,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_9150b0d5306fc5abef2edc5f47eab8e7 = L.circleMarker(
+            var circle_marker_fdfc9f76b03c7aeb14ecdc5ede6154d1 = L.circleMarker(
                 [20.7728343, -105.2246059],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-        var popup_c8c582e02766d349b975f23cb298a8a2 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_21f823270e74686aebefad8789df512f = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_0283b5780ccbcda6edf64308c4201d53 = $(`&lt;div id=&quot;html_0283b5780ccbcda6edf64308c4201d53&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Sierra Madre – zipline, tequila tour&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.7728343&amp;mlon=-105.2246059#map=16/20.7728343/-105.2246059&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_c8c582e02766d349b975f23cb298a8a2.setContent(html_0283b5780ccbcda6edf64308c4201d53);
+                var html_b16b0657b9720c00b2ad5621ce9e8732 = $(`&lt;div id=&quot;html_b16b0657b9720c00b2ad5621ce9e8732&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Sierra Madre – zipline, tequila tour&lt;/div&gt;&lt;img src=&quot;sights/sierra-madre-zipline-tequila-tour.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sierra_Madre_Mountains,_Mexico_(38100844695).jpg&quot; rel=&quot;nofollow&quot;&gt;Andrew Milligan sumo · CC BY 2.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=20.7728343&amp;mlon=-105.2246059#map=16/20.7728343/-105.2246059&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_21f823270e74686aebefad8789df512f.setContent(html_b16b0657b9720c00b2ad5621ce9e8732);
             
         
 
-        circle_marker_9150b0d5306fc5abef2edc5f47eab8e7.bindPopup(popup_c8c582e02766d349b975f23cb298a8a2)
+        circle_marker_fdfc9f76b03c7aeb14ecdc5ede6154d1.bindPopup(popup_21f823270e74686aebefad8789df512f)
         ;
 
         
     
     
-            circle_marker_9150b0d5306fc5abef2edc5f47eab8e7.bindTooltip(
+            circle_marker_fdfc9f76b03c7aeb14ecdc5ede6154d1.bindTooltip(
                 `&lt;div&gt;
-                     Sierra Madre – zipline, tequila tour
+                     Sierra Madre – zipline, tequila tour — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,19 +331,19 @@
             );
         
     
-            map_6738c061f66c79b94ad4eb86ea934cbc.fitBounds(
+            map_d29202dc576564a17c8960983e7482e5.fitBounds(
                 [[20.6022025, -105.5850726], [20.7728343, -105.2246059]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_a8c833a31992fcccaab6d0e5e09bba90 = L.circleMarker(
+            var circle_marker_a9fdc27beecb41ff75291bd087554678 = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_a8c833a31992fcccaab6d0e5e09bba90.bindTooltip(
+            circle_marker_a9fdc27beecb41ff75291bd087554678.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -350,13 +353,13 @@
             );
         
     
-            var circle_marker_ce31a0c248bd00dcb7465fb586b03559 = L.circleMarker(
+            var circle_marker_a382da50a49140d5ebd2961a00cbb285 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_ce31a0c248bd00dcb7465fb586b03559.bindTooltip(
+            circle_marker_a382da50a49140d5ebd2961a00cbb285.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -366,13 +369,13 @@
             );
         
     
-            var circle_marker_86743b038c3178da8b9b6fda8f861d8e = L.circleMarker(
+            var circle_marker_bb3ce2390cba91fe65642c71347bd16a = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_86743b038c3178da8b9b6fda8f861d8e.bindTooltip(
+            circle_marker_bb3ce2390cba91fe65642c71347bd16a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -382,13 +385,13 @@
             );
         
     
-            var circle_marker_848516f8beba61eb59ef0a0ca4de5b44 = L.circleMarker(
+            var circle_marker_24d5b32695cc7e0d9b50583d77a36035 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_848516f8beba61eb59ef0a0ca4de5b44.bindTooltip(
+            circle_marker_24d5b32695cc7e0d9b50583d77a36035.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -398,13 +401,13 @@
             );
         
     
-            var circle_marker_3909a7d0968783ba43a2efad5b36d30a = L.circleMarker(
+            var circle_marker_4317feef30b38d162f5c048335769d44 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_3909a7d0968783ba43a2efad5b36d30a.bindTooltip(
+            circle_marker_4317feef30b38d162f5c048335769d44.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -414,29 +417,29 @@
             );
         
     
-            var marker_6a87c136c233116eaed750c13afb1375 = L.marker(
+            var marker_92b88ac5f742a117bf054222763a675a = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            var div_icon_98b526d7d6581d2130a28db647dce3d6 = L.divIcon({
+            var div_icon_8acda35c01e859c7c0e3916aab2698dc = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_6a87c136c233116eaed750c13afb1375.setIcon(div_icon_98b526d7d6581d2130a28db647dce3d6);
+                marker_92b88ac5f742a117bf054222763a675a.setIcon(div_icon_8acda35c01e859c7c0e3916aab2698dc);
             
     
-            var circle_marker_6b5af7a2d3ee058263369a0eb92645a2 = L.circleMarker(
+            var circle_marker_e3c17e4372d21382cf721e11ddb49b27 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_6b5af7a2d3ee058263369a0eb92645a2.bindTooltip(
+            circle_marker_e3c17e4372d21382cf721e11ddb49b27.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -446,13 +449,13 @@
             );
         
     
-            var circle_marker_12a4b0010c4bce05f128ee9697954a1c = L.circleMarker(
+            var circle_marker_aac9e1701507bcdc614a54ac9ff6faf8 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_12a4b0010c4bce05f128ee9697954a1c.bindTooltip(
+            circle_marker_aac9e1701507bcdc614a54ac9ff6faf8.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -462,13 +465,13 @@
             );
         
     
-            var circle_marker_5a20d3f99f5fb140358b11d830f5b186 = L.circleMarker(
+            var circle_marker_be9718c5684e3f5423214e2d4e865e66 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_5a20d3f99f5fb140358b11d830f5b186.bindTooltip(
+            circle_marker_be9718c5684e3f5423214e2d4e865e66.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -478,13 +481,13 @@
             );
         
     
-            var circle_marker_db547dffc9ee370cb1734495619c5bb2 = L.circleMarker(
+            var circle_marker_f395b3ef69d76b491a0b5bdeee248266 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_db547dffc9ee370cb1734495619c5bb2.bindTooltip(
+            circle_marker_f395b3ef69d76b491a0b5bdeee248266.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -494,13 +497,13 @@
             );
         
     
-            var circle_marker_d2d9b2111d2ea0ef28abd427eccec34c = L.circleMarker(
+            var circle_marker_63ec03d00d8307939b5cac9a9cdc8396 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_d2d9b2111d2ea0ef28abd427eccec34c.bindTooltip(
+            circle_marker_63ec03d00d8307939b5cac9a9cdc8396.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -510,13 +513,13 @@
             );
         
     
-            var circle_marker_e683294912b26de42dfd45be5c2d834f = L.circleMarker(
+            var circle_marker_56959cb61c168ebaeb9a89bb8f6f5823 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            circle_marker_e683294912b26de42dfd45be5c2d834f.bindTooltip(
+            circle_marker_56959cb61c168ebaeb9a89bb8f6f5823.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -526,24 +529,24 @@
             );
         
     
-            var marker_180d234db2885b3a86751411213c87bb = L.marker(
+            var marker_1a55669855f9459e2b8b9e40164b1e2d = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_6738c061f66c79b94ad4eb86ea934cbc);
+            ).addTo(map_d29202dc576564a17c8960983e7482e5);
         
     
-            var div_icon_d7b337899129168f80e80f4a3094a988 = L.divIcon({
+            var div_icon_498230b31cdf88b2c4bb7996759ce2bb = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_180d234db2885b3a86751411213c87bb.setIcon(div_icon_d7b337899129168f80e80f4a3094a988);
+                marker_1a55669855f9459e2b8b9e40164b1e2d.setIcon(div_icon_498230b31cdf88b2c4bb7996759ce2bb);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=20.6103646&mlon=-105.2351071#map=16/20.6103646/-105.2351071" rel="nofollow">Malecón & Los Arcos</a></li><li class="off">nhà thờ Đức Mẹ Guadalupe <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=20.6022025&mlon=-105.2350998#map=16/20.6022025/-105.2350998" rel="nofollow">Zona Romántica, bãi Los Muertos</a></li><li><a href="https://www.openstreetmap.org/?mlat=20.6273723&mlon=-105.4029055#map=16/20.6273723/-105.4029055" rel="nofollow">vịnh Banderas – ngắm cá voi lưng gù (12–3)</a></li><li><a href="https://www.openstreetmap.org/?mlat=20.6988913&mlon=-105.5850726#map=16/20.6988913/-105.5850726" rel="nofollow">Marietas Islands (Hidden Beach)</a></li><li class="off">làng Yelapa <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=20.7728343&mlon=-105.2246059#map=16/20.7728343/-105.2246059" rel="nofollow">Sierra Madre – zipline, tequila tour</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có công nghiệp. Đáng xem: **nghệ thuật chuỗi hạt và vải thêu Huichol (Wixárika)** — bán tại các gallery Puerto Vallarta; kỹ thuật thêu/hạt trên nền vải là di sản chứ không phải sản xuất <em>not found</em></li></ul>
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/malecon-los-arcos.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=20.6103646&mlon=-105.2351071#map=16/20.6103646/-105.2351071" rel="nofollow">Malecón & Los Arcos</a></li><li class="off">nhà thờ Đức Mẹ Guadalupe <em>not found</em></li><li><img class="thumb" src="sights/zona-romantica-bai-los-muertos.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=20.6022025&mlon=-105.2350998#map=16/20.6022025/-105.2350998" rel="nofollow">Zona Romántica, bãi Los Muertos</a></li><li><a href="https://www.openstreetmap.org/?mlat=20.6273723&mlon=-105.4029055#map=16/20.6273723/-105.4029055" rel="nofollow">vịnh Banderas – ngắm cá voi lưng gù (12–3)</a></li><li><a href="https://www.openstreetmap.org/?mlat=20.6988913&mlon=-105.5850726#map=16/20.6988913/-105.5850726" rel="nofollow">Marietas Islands (Hidden Beach)</a></li><li class="off">làng Yelapa <em>not found</em></li><li><img class="thumb" src="sights/sierra-madre-zipline-tequila-tour.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=20.7728343&mlon=-105.2246059#map=16/20.7728343/-105.2246059" rel="nofollow">Sierra Madre – zipline, tequila tour</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có công nghiệp. Đáng xem: **nghệ thuật chuỗi hạt và vải thêu Huichol (Wixárika)** — bán tại các gallery Puerto Vallarta; kỹ thuật thêu/hạt trên nền vải là di sản chứ không phải sản xuất <em>not found</em></li></ul>
 
 <footer>Ảnh: Wikimedia Commons theo giấy phép ghi ở trên ·
  bản đồ © OpenStreetMap contributors</footer>

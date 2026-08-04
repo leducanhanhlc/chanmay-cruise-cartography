@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7f3b824bf7afdda74247f2c8e50fb07a {
+                #map_f9f693f89f2a78edd4382942ed353174 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7f3b824bf7afdda74247f2c8e50fb07a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_f9f693f89f2a78edd4382942ed353174&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_7f3b824bf7afdda74247f2c8e50fb07a = L.map(
-                &quot;map_7f3b824bf7afdda74247f2c8e50fb07a&quot;,
+            var map_f9f693f89f2a78edd4382942ed353174 = L.map(
+                &quot;map_f9f693f89f2a78edd4382942ed353174&quot;,
                 {
                     center: [21.307, -157.867],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            L.control.scale().addTo(map_f9f693f89f2a78edd4382942ed353174);
 
             
 
         
     
-            var tile_layer_7df21c1b14fe169e11b848cd190dc89e = L.tileLayer(
+            var tile_layer_6ae34c8d0a2412bc167d1bcea412f285 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_7df21c1b14fe169e11b848cd190dc89e.addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            tile_layer_6ae34c8d0a2412bc167d1bcea412f285.addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            var circle_marker_ed2a3d1966bd947898713c907c806248 = L.circleMarker(
+            var circle_marker_7a8d8623a547b95da595e73c0f00b9d5 = L.circleMarker(
                 [21.307, -157.867],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_ed2a3d1966bd947898713c907c806248.bindTooltip(
+            circle_marker_7a8d8623a547b95da595e73c0f00b9d5.bindTooltip(
                 `&lt;div&gt;
                      Honolulu — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,47 +149,47 @@
             );
         
     
-        var popup_e2ad7996e3419250a01ddfd2002fa672 = L.popup({
+        var popup_e88ce07bea073f1808a33f4ca4d687d2 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_43d50e228c73dc71b1f736b0da4cb5f0 = $(`&lt;div id=&quot;html_43d50e228c73dc71b1f736b0da4cb5f0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Honolulu&lt;/div&gt;&lt;img src=&quot;img/honolulu.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Iolani Palace, Honolulu&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:CORONATION_OF_KALAKAUA._(Engraving_-_1883)_-_Iolani_Bandstand,_King_and_Richards_Streets,_Honolulu,_Honolulu_County,_HI_HABS_HI,2-HONLU,9-5.tif&quot; rel=&quot;nofollow&quot;&gt;J. F. Weedon · Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_e2ad7996e3419250a01ddfd2002fa672.setContent(html_43d50e228c73dc71b1f736b0da4cb5f0);
+                var html_1fc5b40101f283498cf73febae3f75c3 = $(`&lt;div id=&quot;html_1fc5b40101f283498cf73febae3f75c3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Honolulu&lt;/div&gt;&lt;img src=&quot;img/honolulu.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Iolani Palace, Honolulu&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:CORONATION_OF_KALAKAUA._(Engraving_-_1883)_-_Iolani_Bandstand,_King_and_Richards_Streets,_Honolulu,_Honolulu_County,_HI_HABS_HI,2-HONLU,9-5.tif&quot; rel=&quot;nofollow&quot;&gt;J. F. Weedon · Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_e88ce07bea073f1808a33f4ca4d687d2.setContent(html_1fc5b40101f283498cf73febae3f75c3);
             
         
 
-        circle_marker_ed2a3d1966bd947898713c907c806248.bindPopup(popup_e2ad7996e3419250a01ddfd2002fa672)
+        circle_marker_7a8d8623a547b95da595e73c0f00b9d5.bindPopup(popup_e88ce07bea073f1808a33f4ca4d687d2)
         ;
 
         
     
     
-            var circle_marker_27801cc6db8d00020c97ce98cdcee92f = L.circleMarker(
+            var circle_marker_05a6aeda64411f7cbd626474537537fb = L.circleMarker(
                 [21.2827041, -157.8356388],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-        var popup_5f2893341d880955d4b5cb69d15be58b = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_3766578daf4c0629fdfed5c06d7e5e99 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_024ccf8bfd8d8eaa7a98c4f5b494de46 = $(`&lt;div id=&quot;html_024ccf8bfd8d8eaa7a98c4f5b494de46&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Bãi Waikiki &amp; Diamond Head&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.2827041&amp;mlon=-157.8356388#map=16/21.2827041/-157.8356388&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_5f2893341d880955d4b5cb69d15be58b.setContent(html_024ccf8bfd8d8eaa7a98c4f5b494de46);
+                var html_14c7739b566344f2b2cdb49d41e09d1f = $(`&lt;div id=&quot;html_14c7739b566344f2b2cdb49d41e09d1f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Bãi Waikiki &amp; Diamond Head&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.2827041&amp;mlon=-157.8356388#map=16/21.2827041/-157.8356388&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_3766578daf4c0629fdfed5c06d7e5e99.setContent(html_14c7739b566344f2b2cdb49d41e09d1f);
             
         
 
-        circle_marker_27801cc6db8d00020c97ce98cdcee92f.bindPopup(popup_5f2893341d880955d4b5cb69d15be58b)
+        circle_marker_05a6aeda64411f7cbd626474537537fb.bindPopup(popup_3766578daf4c0629fdfed5c06d7e5e99)
         ;
 
         
     
     
-            circle_marker_27801cc6db8d00020c97ce98cdcee92f.bindTooltip(
+            circle_marker_05a6aeda64411f7cbd626474537537fb.bindTooltip(
                 `&lt;div&gt;
                      Bãi Waikiki &amp; Diamond Head
                  &lt;/div&gt;`,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_d30ef7f7b1c820471a15d55668108abc = L.circleMarker(
+            var circle_marker_95db5d67030895086d132b7b2ad35b11 = L.circleMarker(
                 [21.3557747, -157.9991492],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-        var popup_bc0f5fb22df8bacf783755d2617aa619 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_9f0198f7abdefd183346f351035c164c = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_59635ba31745de34b0d659b4227b1c7a = $(`&lt;div id=&quot;html_59635ba31745de34b0d659b4227b1c7a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Pearl Harbor – USS *Arizona* Memorial, Battleship *Missouri*&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.3557747&amp;mlon=-157.9991492#map=16/21.3557747/-157.9991492&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_bc0f5fb22df8bacf783755d2617aa619.setContent(html_59635ba31745de34b0d659b4227b1c7a);
+                var html_f8ff989cd9cc08b4bc39788e391ab173 = $(`&lt;div id=&quot;html_f8ff989cd9cc08b4bc39788e391ab173&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Pearl Harbor – USS *Arizona* Memorial, Battleship *Missouri*&lt;/div&gt;&lt;img src=&quot;sights/pearl-harbor-uss-arizona-memorial-battleship-missouri.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Pearl_Harbor,_Honolulu_-_panoramio_(8).jpg&quot; rel=&quot;nofollow&quot;&gt;Bob Linsdell · CC BY 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.3557747&amp;mlon=-157.9991492#map=16/21.3557747/-157.9991492&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_9f0198f7abdefd183346f351035c164c.setContent(html_f8ff989cd9cc08b4bc39788e391ab173);
             
         
 
-        circle_marker_d30ef7f7b1c820471a15d55668108abc.bindPopup(popup_bc0f5fb22df8bacf783755d2617aa619)
+        circle_marker_95db5d67030895086d132b7b2ad35b11.bindPopup(popup_9f0198f7abdefd183346f351035c164c)
         ;
 
         
     
     
-            circle_marker_d30ef7f7b1c820471a15d55668108abc.bindTooltip(
+            circle_marker_95db5d67030895086d132b7b2ad35b11.bindTooltip(
                 `&lt;div&gt;
-                     Pearl Harbor – USS *Arizona* Memorial, Battleship *Missouri*
+                     Pearl Harbor – USS *Arizona* Memorial, Battleship *Missouri* — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_ead48f0fe8e73e17af29047aa92dd20a = L.circleMarker(
+            var circle_marker_4fa8807d44d2e90fa0f462039451699f = L.circleMarker(
                 [21.3068147, -157.8587655],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-        var popup_10f25a3b6d601d31ccd1439b7241ea8f = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_fc729384e5f04ab6cfec33edff25b856 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_9f7c293470e14c5c3c10b66ebf535a64 = $(`&lt;div id=&quot;html_9f7c293470e14c5c3c10b66ebf535a64&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Iolani Palace (cung điện hoàng gia duy nhất trên đất Mỹ)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.3068147&amp;mlon=-157.8587655#map=16/21.3068147/-157.8587655&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_10f25a3b6d601d31ccd1439b7241ea8f.setContent(html_9f7c293470e14c5c3c10b66ebf535a64);
+                var html_5c63279d1562d9a4749f16a31c46ce48 = $(`&lt;div id=&quot;html_5c63279d1562d9a4749f16a31c46ce48&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Iolani Palace (cung điện hoàng gia duy nhất trên đất Mỹ)&lt;/div&gt;&lt;img src=&quot;sights/iolani-palace-cung-ien-hoang-gia-duy-nhat-tren-at-my.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Iolani_Palace_-_Honolulu_01.jpg&quot; rel=&quot;nofollow&quot;&gt;Farragutful · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.3068147&amp;mlon=-157.8587655#map=16/21.3068147/-157.8587655&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_fc729384e5f04ab6cfec33edff25b856.setContent(html_5c63279d1562d9a4749f16a31c46ce48);
             
         
 
-        circle_marker_ead48f0fe8e73e17af29047aa92dd20a.bindPopup(popup_10f25a3b6d601d31ccd1439b7241ea8f)
+        circle_marker_4fa8807d44d2e90fa0f462039451699f.bindPopup(popup_fc729384e5f04ab6cfec33edff25b856)
         ;
 
         
     
     
-            circle_marker_ead48f0fe8e73e17af29047aa92dd20a.bindTooltip(
+            circle_marker_4fa8807d44d2e90fa0f462039451699f.bindTooltip(
                 `&lt;div&gt;
-                     Iolani Palace (cung điện hoàng gia duy nhất trên đất Mỹ)
+                     Iolani Palace (cung điện hoàng gia duy nhất trên đất Mỹ) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,32 +265,32 @@
             );
         
     
-            var circle_marker_263dfec982221fabfadb7871de85db7b = L.circleMarker(
+            var circle_marker_f7c5a67c177bfafd21b93d16ddec0c22 = L.circleMarker(
                 [21.3330841, -157.8707112],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-        var popup_cad2820b52d31e4419e81fc4af627777 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_e371a65e0d24c3eb0be855baecda917d = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_8a8f3310ec3cfc5d9bbc06ae06d5c14f = $(`&lt;div id=&quot;html_8a8f3310ec3cfc5d9bbc06ae06d5c14f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Bishop Museum&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.3330841&amp;mlon=-157.8707112#map=16/21.3330841/-157.8707112&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_cad2820b52d31e4419e81fc4af627777.setContent(html_8a8f3310ec3cfc5d9bbc06ae06d5c14f);
+                var html_5cd4b60cc56a2990f02b693e1a2de3a5 = $(`&lt;div id=&quot;html_5cd4b60cc56a2990f02b693e1a2de3a5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Bishop Museum&lt;/div&gt;&lt;img src=&quot;sights/bishop-museum.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Starr_050729-3256_Herbarium_Pacificum,_Bishop_Museum,_cabinets.jpg&quot; rel=&quot;nofollow&quot;&gt;Forest &amp;amp; Kim Starr · CC BY 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.3330841&amp;mlon=-157.8707112#map=16/21.3330841/-157.8707112&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_e371a65e0d24c3eb0be855baecda917d.setContent(html_5cd4b60cc56a2990f02b693e1a2de3a5);
             
         
 
-        circle_marker_263dfec982221fabfadb7871de85db7b.bindPopup(popup_cad2820b52d31e4419e81fc4af627777)
+        circle_marker_f7c5a67c177bfafd21b93d16ddec0c22.bindPopup(popup_e371a65e0d24c3eb0be855baecda917d)
         ;
 
         
     
     
-            circle_marker_263dfec982221fabfadb7871de85db7b.bindTooltip(
+            circle_marker_f7c5a67c177bfafd21b93d16ddec0c22.bindTooltip(
                 `&lt;div&gt;
-                     Bishop Museum
+                     Bishop Museum — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -295,30 +298,30 @@
             );
         
     
-            var circle_marker_6e7b2d19319e899f42f0c995e0cf5e73 = L.circleMarker(
+            var circle_marker_9d518bfd834fbdad3d28e0776e06ced5 = L.circleMarker(
                 [21.2696208, -157.6938065],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-        var popup_1d5812041b0182d61d4f2296b1e92ef5 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_071aaba55fef2a803db5e529806e63e3 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_2f9097bfe993cbd79174cbf498bb13f0 = $(`&lt;div id=&quot;html_2f9097bfe993cbd79174cbf498bb13f0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Hanauma Bay&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.2696208&amp;mlon=-157.6938065#map=16/21.2696208/-157.6938065&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_1d5812041b0182d61d4f2296b1e92ef5.setContent(html_2f9097bfe993cbd79174cbf498bb13f0);
+                var html_cfd7a6153a12c196d093d1c782f4a933 = $(`&lt;div id=&quot;html_cfd7a6153a12c196d093d1c782f4a933&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Hanauma Bay&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.2696208&amp;mlon=-157.6938065#map=16/21.2696208/-157.6938065&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_071aaba55fef2a803db5e529806e63e3.setContent(html_cfd7a6153a12c196d093d1c782f4a933);
             
         
 
-        circle_marker_6e7b2d19319e899f42f0c995e0cf5e73.bindPopup(popup_1d5812041b0182d61d4f2296b1e92ef5)
+        circle_marker_9d518bfd834fbdad3d28e0776e06ced5.bindPopup(popup_071aaba55fef2a803db5e529806e63e3)
         ;
 
         
     
     
-            circle_marker_6e7b2d19319e899f42f0c995e0cf5e73.bindTooltip(
+            circle_marker_9d518bfd834fbdad3d28e0776e06ced5.bindTooltip(
                 `&lt;div&gt;
                      Hanauma Bay
                  &lt;/div&gt;`,
@@ -328,32 +331,32 @@
             );
         
     
-            var circle_marker_0fabfacdd15ce0ad820534306e386f04 = L.circleMarker(
+            var circle_marker_c45229c66e8432085607096348fd15d5 = L.circleMarker(
                 [21.6390233, -157.920265],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-        var popup_1d7c229f41f4d85435d76672813aa35f = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_436b2a2c85949197e4619ddd2056e8ed = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_9c75b0062c221084ea8bbcabd05c6623 = $(`&lt;div id=&quot;html_9c75b0062c221084ea8bbcabd05c6623&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Polynesian Cultural Center&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.6390233&amp;mlon=-157.920265#map=16/21.6390233/-157.920265&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_1d7c229f41f4d85435d76672813aa35f.setContent(html_9c75b0062c221084ea8bbcabd05c6623);
+                var html_e49d5171a1f58bb281036e35dffad76b = $(`&lt;div id=&quot;html_e49d5171a1f58bb281036e35dffad76b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Polynesian Cultural Center&lt;/div&gt;&lt;img src=&quot;sights/polynesian-cultural-center.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Polynesian_Cultural_Center,Honolulu,Hawaii,USA._-_panoramio.jpg&quot; rel=&quot;nofollow&quot;&gt;Roman Eugeniusz · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.6390233&amp;mlon=-157.920265#map=16/21.6390233/-157.920265&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_436b2a2c85949197e4619ddd2056e8ed.setContent(html_e49d5171a1f58bb281036e35dffad76b);
             
         
 
-        circle_marker_0fabfacdd15ce0ad820534306e386f04.bindPopup(popup_1d7c229f41f4d85435d76672813aa35f)
+        circle_marker_c45229c66e8432085607096348fd15d5.bindPopup(popup_436b2a2c85949197e4619ddd2056e8ed)
         ;
 
         
     
     
-            circle_marker_0fabfacdd15ce0ad820534306e386f04.bindTooltip(
+            circle_marker_c45229c66e8432085607096348fd15d5.bindTooltip(
                 `&lt;div&gt;
-                     Polynesian Cultural Center
+                     Polynesian Cultural Center — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -361,32 +364,32 @@
             );
         
     
-            var circle_marker_76f46c4b70a4d0a65f0505ee0c8888d5 = L.circleMarker(
+            var circle_marker_fb9cecef04369d1bc10b99e221855562 = L.circleMarker(
                 [21.2780753, -157.7703572],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-        var popup_a81672fa79355217a96c72d976ace599 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_7da9df2f3321012e615ea612bf44ba13 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_7613823020b95cdd2b3d532f1013148e = $(`&lt;div id=&quot;html_7613823020b95cdd2b3d532f1013148e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;North Shore&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.2780753&amp;mlon=-157.7703572#map=16/21.2780753/-157.7703572&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_a81672fa79355217a96c72d976ace599.setContent(html_7613823020b95cdd2b3d532f1013148e);
+                var html_6dfbf308c4ed2b2f3e36d285998523e3 = $(`&lt;div id=&quot;html_6dfbf308c4ed2b2f3e36d285998523e3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;North Shore&lt;/div&gt;&lt;img src=&quot;sights/north-shore.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:North_Shore_Haleiwa_Hawaii_(33632860176).jpg&quot; rel=&quot;nofollow&quot;&gt;Anthony Quintano from Honolulu, HI, United States · CC BY 2.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=21.2780753&amp;mlon=-157.7703572#map=16/21.2780753/-157.7703572&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_7da9df2f3321012e615ea612bf44ba13.setContent(html_6dfbf308c4ed2b2f3e36d285998523e3);
             
         
 
-        circle_marker_76f46c4b70a4d0a65f0505ee0c8888d5.bindPopup(popup_a81672fa79355217a96c72d976ace599)
+        circle_marker_fb9cecef04369d1bc10b99e221855562.bindPopup(popup_7da9df2f3321012e615ea612bf44ba13)
         ;
 
         
     
     
-            circle_marker_76f46c4b70a4d0a65f0505ee0c8888d5.bindTooltip(
+            circle_marker_fb9cecef04369d1bc10b99e221855562.bindTooltip(
                 `&lt;div&gt;
-                     North Shore
+                     North Shore — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -394,19 +397,19 @@
             );
         
     
-            map_7f3b824bf7afdda74247f2c8e50fb07a.fitBounds(
+            map_f9f693f89f2a78edd4382942ed353174.fitBounds(
                 [[21.2696208, -157.9991492], [21.6390233, -157.6938065]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_05df4d42f9c96b62b2e42cd5d7d95acc = L.circleMarker(
+            var circle_marker_9223b2516089bb28c20de2c834c131dc = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_05df4d42f9c96b62b2e42cd5d7d95acc.bindTooltip(
+            circle_marker_9223b2516089bb28c20de2c834c131dc.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -416,13 +419,13 @@
             );
         
     
-            var circle_marker_b7a9fdd8251aa04a13a61c8f28a123d3 = L.circleMarker(
+            var circle_marker_2add40290d25a1fce6dda7275e619946 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_b7a9fdd8251aa04a13a61c8f28a123d3.bindTooltip(
+            circle_marker_2add40290d25a1fce6dda7275e619946.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -432,13 +435,13 @@
             );
         
     
-            var circle_marker_ee929d768d57d171cec0524e3729f9c3 = L.circleMarker(
+            var circle_marker_a950f10f98a05ffbff8385b7f3d7f31b = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_ee929d768d57d171cec0524e3729f9c3.bindTooltip(
+            circle_marker_a950f10f98a05ffbff8385b7f3d7f31b.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -448,13 +451,13 @@
             );
         
     
-            var circle_marker_1ba11b35ac13a82a77da707d2f38b851 = L.circleMarker(
+            var circle_marker_f724dddf297b431d80701fd1a2a78eb0 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_1ba11b35ac13a82a77da707d2f38b851.bindTooltip(
+            circle_marker_f724dddf297b431d80701fd1a2a78eb0.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -464,13 +467,13 @@
             );
         
     
-            var circle_marker_c02b8a05abf4f8ed3b0f57d514bd1d8e = L.circleMarker(
+            var circle_marker_0829f87505d9a62de5032838863c14f1 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_c02b8a05abf4f8ed3b0f57d514bd1d8e.bindTooltip(
+            circle_marker_0829f87505d9a62de5032838863c14f1.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -480,29 +483,29 @@
             );
         
     
-            var marker_9801e4aa32802ca5a7f23dee095b81d0 = L.marker(
+            var marker_d21dfef4c1901259d5538fc5c2b7703a = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            var div_icon_fec1a4de9f843de566075dcfd8f571ca = L.divIcon({
+            var div_icon_36f23b3ef02256074877d7696ab91d46 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_9801e4aa32802ca5a7f23dee095b81d0.setIcon(div_icon_fec1a4de9f843de566075dcfd8f571ca);
+                marker_d21dfef4c1901259d5538fc5c2b7703a.setIcon(div_icon_36f23b3ef02256074877d7696ab91d46);
             
     
-            var circle_marker_9e87b665749ca6dd2dc61a66c697f03f = L.circleMarker(
+            var circle_marker_85d1a00cf0e237f201d3e0d68b5842ca = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_9e87b665749ca6dd2dc61a66c697f03f.bindTooltip(
+            circle_marker_85d1a00cf0e237f201d3e0d68b5842ca.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -512,13 +515,13 @@
             );
         
     
-            var circle_marker_bb363129dbc861ca7337c1fc22826c93 = L.circleMarker(
+            var circle_marker_6df759296c5c356cbd8f1552fed7ec91 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_bb363129dbc861ca7337c1fc22826c93.bindTooltip(
+            circle_marker_6df759296c5c356cbd8f1552fed7ec91.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -528,13 +531,13 @@
             );
         
     
-            var circle_marker_609d486c0640e1900c3278083c31bee1 = L.circleMarker(
+            var circle_marker_ce8a897b27a2d756b2954c3d3c1d18df = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_609d486c0640e1900c3278083c31bee1.bindTooltip(
+            circle_marker_ce8a897b27a2d756b2954c3d3c1d18df.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -544,13 +547,13 @@
             );
         
     
-            var circle_marker_0cd88dc42716cead5c036fecbc0ea677 = L.circleMarker(
+            var circle_marker_7bc20e44d2c316f276e14f7e3fb2710f = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_0cd88dc42716cead5c036fecbc0ea677.bindTooltip(
+            circle_marker_7bc20e44d2c316f276e14f7e3fb2710f.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -560,13 +563,13 @@
             );
         
     
-            var circle_marker_8996f9de16eda48e0a3b69f04a501aaa = L.circleMarker(
+            var circle_marker_a6ff9d453401c97ec6846f1f5af5f43a = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_8996f9de16eda48e0a3b69f04a501aaa.bindTooltip(
+            circle_marker_a6ff9d453401c97ec6846f1f5af5f43a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -576,13 +579,13 @@
             );
         
     
-            var circle_marker_b43b3bf374d6b86e89259cff494b85ff = L.circleMarker(
+            var circle_marker_b513b88a6ef1ef2cc12482569796389e = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            circle_marker_b43b3bf374d6b86e89259cff494b85ff.bindTooltip(
+            circle_marker_b513b88a6ef1ef2cc12482569796389e.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -592,24 +595,24 @@
             );
         
     
-            var marker_9f565a978e24787bfe5594baba1dbe01 = L.marker(
+            var marker_0b00dedf9d2a0b928ba694a53437fd2b = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_7f3b824bf7afdda74247f2c8e50fb07a);
+            ).addTo(map_f9f693f89f2a78edd4382942ed353174);
         
     
-            var div_icon_871f9a6290ff6891529dcfbe165812c4 = L.divIcon({
+            var div_icon_a50ee6fe515d27224942553340e62b0c = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_9f565a978e24787bfe5594baba1dbe01.setIcon(div_icon_871f9a6290ff6891529dcfbe165812c4);
+                marker_0b00dedf9d2a0b928ba694a53437fd2b.setIcon(div_icon_a50ee6fe515d27224942553340e62b0c);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=21.2827041&mlon=-157.8356388#map=16/21.2827041/-157.8356388" rel="nofollow">Bãi Waikiki & Diamond Head</a></li><li><a href="https://www.openstreetmap.org/?mlat=21.3557747&mlon=-157.9991492#map=16/21.3557747/-157.9991492" rel="nofollow">Pearl Harbor – USS *Arizona* Memorial, Battleship *Missouri*</a></li><li><a href="https://www.openstreetmap.org/?mlat=21.3068147&mlon=-157.8587655#map=16/21.3068147/-157.8587655" rel="nofollow">Iolani Palace (cung điện hoàng gia duy nhất trên đất Mỹ)</a></li><li><a href="https://www.openstreetmap.org/?mlat=21.3330841&mlon=-157.8707112#map=16/21.3330841/-157.8707112" rel="nofollow">Bishop Museum</a></li><li><a href="https://www.openstreetmap.org/?mlat=21.2696208&mlon=-157.6938065#map=16/21.2696208/-157.6938065" rel="nofollow">Hanauma Bay</a></li><li class="off">Nuuanu Pali Lookout <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=21.6390233&mlon=-157.920265#map=16/21.6390233/-157.920265" rel="nofollow">Polynesian Cultural Center</a></li><li><a href="https://www.openstreetmap.org/?mlat=21.2780753&mlon=-157.7703572#map=16/21.2780753/-157.7703572" rel="nofollow">North Shore</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- Trung tâm của ngành **aloha shirt**: **Tori Richard** (lập 1956, đến nay vẫn đặt tại Honolulu; chuyên chiffon, lụa, cotton lawn) và **Reyn Spooner** (lập 1962; **Spooner Kloth** — vải độc quyền cho phép in mặt trái để họa tiết mờ đi, một sáng chế vật liệu thật sự chứ không chỉ thời trang).
+<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=21.2827041&mlon=-157.8356388#map=16/21.2827041/-157.8356388" rel="nofollow">Bãi Waikiki & Diamond Head</a></li><li><img class="thumb" src="sights/pearl-harbor-uss-arizona-memorial-battleship-missouri.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=21.3557747&mlon=-157.9991492#map=16/21.3557747/-157.9991492" rel="nofollow">Pearl Harbor – USS *Arizona* Memorial, Battleship *Missouri*</a></li><li><img class="thumb" src="sights/iolani-palace-cung-ien-hoang-gia-duy-nhat-tren-at-my.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=21.3068147&mlon=-157.8587655#map=16/21.3068147/-157.8587655" rel="nofollow">Iolani Palace (cung điện hoàng gia duy nhất trên đất Mỹ)</a></li><li><img class="thumb" src="sights/bishop-museum.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=21.3330841&mlon=-157.8707112#map=16/21.3330841/-157.8707112" rel="nofollow">Bishop Museum</a></li><li><a href="https://www.openstreetmap.org/?mlat=21.2696208&mlon=-157.6938065#map=16/21.2696208/-157.6938065" rel="nofollow">Hanauma Bay</a></li><li class="off">Nuuanu Pali Lookout <em>not found</em></li><li><img class="thumb" src="sights/polynesian-cultural-center.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=21.6390233&mlon=-157.920265#map=16/21.6390233/-157.920265" rel="nofollow">Polynesian Cultural Center</a></li><li><img class="thumb" src="sights/north-shore.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=21.2780753&mlon=-157.7703572#map=16/21.2780753/-157.7703572" rel="nofollow">North Shore</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- Trung tâm của ngành **aloha shirt**: **Tori Richard** (lập 1956, đến nay vẫn đặt tại Honolulu; chuyên chiffon, lụa, cotton lawn) và **Reyn Spooner** (lập 1962; **Spooner Kloth** — vải độc quyền cho phép in mặt trái để họa tiết mờ đi, một sáng chế vật liệu thật sự chứ không chỉ thời trang).
 - Di sản: **kapa** — vải vỏ cây Hawaii (đập từ vỏ wauke), và **Hawaiian quilting**; xem tại Bishop Museum.
 - Không có R&D smart textile <em>not found</em></li></ul>
 

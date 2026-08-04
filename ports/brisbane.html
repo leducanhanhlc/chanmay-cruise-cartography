@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_0d43dd9228872cc0b67914e41f5c51fe {
+                #map_3a97ff0a529804e7befce2aaf748d2ab {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_0d43dd9228872cc0b67914e41f5c51fe&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_3a97ff0a529804e7befce2aaf748d2ab&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_0d43dd9228872cc0b67914e41f5c51fe = L.map(
-                &quot;map_0d43dd9228872cc0b67914e41f5c51fe&quot;,
+            var map_3a97ff0a529804e7befce2aaf748d2ab = L.map(
+                &quot;map_3a97ff0a529804e7befce2aaf748d2ab&quot;,
                 {
                     center: [-27.385, 153.17],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            L.control.scale().addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
 
             
 
         
     
-            var tile_layer_f762bbbccd11b72180afcd02d3251666 = L.tileLayer(
+            var tile_layer_9a3fbbd50af014e43dd016ff27edd200 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_f762bbbccd11b72180afcd02d3251666.addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            tile_layer_9a3fbbd50af014e43dd016ff27edd200.addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            var circle_marker_0714ad78755395eb85dabebd16867ea3 = L.circleMarker(
+            var circle_marker_cc075a468cd696943ccc6a2608eff2a6 = L.circleMarker(
                 [-27.385, 153.17],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_0714ad78755395eb85dabebd16867ea3.bindTooltip(
+            circle_marker_cc075a468cd696943ccc6a2608eff2a6.bindTooltip(
                 `&lt;div&gt;
                      Brisbane — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_d649e4eda25054ca702c8025ed58c0d6 = L.popup({
+        var popup_fdd460d8bbbc01977828f26bf02752c0 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_bc3a8d3c55845e2f6f987c6f1bc11735 = $(`&lt;div id=&quot;html_bc3a8d3c55845e2f6f987c6f1bc11735&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Brisbane&lt;/div&gt;&lt;img src=&quot;img/brisbane.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Brisbane City Hall&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Brisbane_City_Hall_seen_from_Wickham_Park,_Brisbane,_2024.jpg&quot; rel=&quot;nofollow&quot;&gt;Kgbo · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_d649e4eda25054ca702c8025ed58c0d6.setContent(html_bc3a8d3c55845e2f6f987c6f1bc11735);
+                var html_5261d13f2fd3e5b2354641b87374967d = $(`&lt;div id=&quot;html_5261d13f2fd3e5b2354641b87374967d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Brisbane&lt;/div&gt;&lt;img src=&quot;img/brisbane.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Brisbane City Hall&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Brisbane_City_Hall_seen_from_Wickham_Park,_Brisbane,_2024.jpg&quot; rel=&quot;nofollow&quot;&gt;Kgbo · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_fdd460d8bbbc01977828f26bf02752c0.setContent(html_5261d13f2fd3e5b2354641b87374967d);
             
         
 
-        circle_marker_0714ad78755395eb85dabebd16867ea3.bindPopup(popup_d649e4eda25054ca702c8025ed58c0d6)
+        circle_marker_cc075a468cd696943ccc6a2608eff2a6.bindPopup(popup_fdd460d8bbbc01977828f26bf02752c0)
         ;
 
         
     
     
-            var circle_marker_c0b20051044e0d536bb0c0a7432a9640 = L.circleMarker(
+            var circle_marker_86b117ffb9922116ae54d88c01861c95 = L.circleMarker(
                 [-27.4775593, 153.0223999],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-        var popup_34d16858d9904c6ebc9c80f25d49ec01 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_da7efdfb584e0ea1bca40df690fe8367 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_a0290748f8b61bbf194baa54c131dc8f = $(`&lt;div id=&quot;html_a0290748f8b61bbf194baa54c131dc8f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;South Bank Parklands – Streets Beach, Wheel of Brisbane&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4775593&amp;mlon=153.0223999#map=16/-27.4775593/153.0223999&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_34d16858d9904c6ebc9c80f25d49ec01.setContent(html_a0290748f8b61bbf194baa54c131dc8f);
+                var html_d780c9a4460560bec32914482492e1ae = $(`&lt;div id=&quot;html_d780c9a4460560bec32914482492e1ae&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;South Bank Parklands – Streets Beach, Wheel of Brisbane&lt;/div&gt;&lt;img src=&quot;sights/south-bank-parklands-streets-beach-wheel-of-brisbane.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Brisbane%27s_%22new%22_South_Bank_Parklands,_August_1992.jpg&quot; rel=&quot;nofollow&quot;&gt;Queensland State Archives · Public domain&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4775593&amp;mlon=153.0223999#map=16/-27.4775593/153.0223999&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_da7efdfb584e0ea1bca40df690fe8367.setContent(html_d780c9a4460560bec32914482492e1ae);
             
         
 
-        circle_marker_c0b20051044e0d536bb0c0a7432a9640.bindPopup(popup_34d16858d9904c6ebc9c80f25d49ec01)
+        circle_marker_86b117ffb9922116ae54d88c01861c95.bindPopup(popup_da7efdfb584e0ea1bca40df690fe8367)
         ;
 
         
     
     
-            circle_marker_c0b20051044e0d536bb0c0a7432a9640.bindTooltip(
+            circle_marker_86b117ffb9922116ae54d88c01861c95.bindTooltip(
                 `&lt;div&gt;
-                     South Bank Parklands – Streets Beach, Wheel of Brisbane
+                     South Bank Parklands – Streets Beach, Wheel of Brisbane — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,30 +199,30 @@
             );
         
     
-            var circle_marker_bb18ea34d9f5cbf04fad33de0b652b1b = L.circleMarker(
+            var circle_marker_798d0ba088ef774d0d56c353d039d618 = L.circleMarker(
                 [-27.5351781, 152.9683661],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-        var popup_82506cd1fbea0d277f2d45c5418c98b4 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_9ec171ed67f93ae7900a0aaa9af7ada7 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_98b2d2f0373a73c232334067023231f2 = $(`&lt;div id=&quot;html_98b2d2f0373a73c232334067023231f2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Lone Pine Koala Sanctuary&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.5351781&amp;mlon=152.9683661#map=16/-27.5351781/152.9683661&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_82506cd1fbea0d277f2d45c5418c98b4.setContent(html_98b2d2f0373a73c232334067023231f2);
+                var html_d24a80d320bbcd8817dd060908aac8e2 = $(`&lt;div id=&quot;html_d24a80d320bbcd8817dd060908aac8e2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Lone Pine Koala Sanctuary&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.5351781&amp;mlon=152.9683661#map=16/-27.5351781/152.9683661&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_9ec171ed67f93ae7900a0aaa9af7ada7.setContent(html_d24a80d320bbcd8817dd060908aac8e2);
             
         
 
-        circle_marker_bb18ea34d9f5cbf04fad33de0b652b1b.bindPopup(popup_82506cd1fbea0d277f2d45c5418c98b4)
+        circle_marker_798d0ba088ef774d0d56c353d039d618.bindPopup(popup_9ec171ed67f93ae7900a0aaa9af7ada7)
         ;
 
         
     
     
-            circle_marker_bb18ea34d9f5cbf04fad33de0b652b1b.bindTooltip(
+            circle_marker_798d0ba088ef774d0d56c353d039d618.bindTooltip(
                 `&lt;div&gt;
                      Lone Pine Koala Sanctuary
                  &lt;/div&gt;`,
@@ -229,30 +232,30 @@
             );
         
     
-            var circle_marker_ffdaf616d6025fbb098ac115361a9502 = L.circleMarker(
+            var circle_marker_8179b07c1b75559f405969e81e5aac78 = L.circleMarker(
                 [-27.4677979, 153.0356415],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-        var popup_af7c4b9fa6c74d8ec17ba326df9c969d = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_525656e6c3d005583c2895d677cc9557 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_798459508bb89f51b8a7b191ac4ad6af = $(`&lt;div id=&quot;html_798459508bb89f51b8a7b191ac4ad6af&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Story Bridge Adventure Climb&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4677979&amp;mlon=153.0356415#map=16/-27.4677979/153.0356415&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_af7c4b9fa6c74d8ec17ba326df9c969d.setContent(html_798459508bb89f51b8a7b191ac4ad6af);
+                var html_91fc1b84ed418bb0368d1b1d7bf53f88 = $(`&lt;div id=&quot;html_91fc1b84ed418bb0368d1b1d7bf53f88&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Story Bridge Adventure Climb&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4677979&amp;mlon=153.0356415#map=16/-27.4677979/153.0356415&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_525656e6c3d005583c2895d677cc9557.setContent(html_91fc1b84ed418bb0368d1b1d7bf53f88);
             
         
 
-        circle_marker_ffdaf616d6025fbb098ac115361a9502.bindPopup(popup_af7c4b9fa6c74d8ec17ba326df9c969d)
+        circle_marker_8179b07c1b75559f405969e81e5aac78.bindPopup(popup_525656e6c3d005583c2895d677cc9557)
         ;
 
         
     
     
-            circle_marker_ffdaf616d6025fbb098ac115361a9502.bindTooltip(
+            circle_marker_8179b07c1b75559f405969e81e5aac78.bindTooltip(
                 `&lt;div&gt;
                      Story Bridge Adventure Climb
                  &lt;/div&gt;`,
@@ -262,32 +265,32 @@
             );
         
     
-            var circle_marker_7390af9149328c0ec6ef1edd4df66885 = L.circleMarker(
+            var circle_marker_b36a3c4b1ef7099340442c7c5b823065 = L.circleMarker(
                 [-27.4849727, 152.958613],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-        var popup_1c282262978a4e20ee911ff5ef1d2440 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_607eae75eb555d7ef2d01e222a21bbf4 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_e159eaaa3328f46df6ae499f171851a1 = $(`&lt;div id=&quot;html_e159eaaa3328f46df6ae499f171851a1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Mount Coot-tha Lookout &amp; Vườn Bách thảo&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4849727&amp;mlon=152.958613#map=16/-27.4849727/152.958613&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_1c282262978a4e20ee911ff5ef1d2440.setContent(html_e159eaaa3328f46df6ae499f171851a1);
+                var html_f7d2595bd95b193e9e853c0310de47f4 = $(`&lt;div id=&quot;html_f7d2595bd95b193e9e853c0310de47f4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Mount Coot-tha Lookout &amp; Vườn Bách thảo&lt;/div&gt;&lt;img src=&quot;sights/mount-coot-tha-lookout-vuon-bach-thao.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Mount_Coot-tha_Lookout,_Brisbane,_2021.jpg&quot; rel=&quot;nofollow&quot;&gt;Kgbo · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4849727&amp;mlon=152.958613#map=16/-27.4849727/152.958613&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_607eae75eb555d7ef2d01e222a21bbf4.setContent(html_f7d2595bd95b193e9e853c0310de47f4);
             
         
 
-        circle_marker_7390af9149328c0ec6ef1edd4df66885.bindPopup(popup_1c282262978a4e20ee911ff5ef1d2440)
+        circle_marker_b36a3c4b1ef7099340442c7c5b823065.bindPopup(popup_607eae75eb555d7ef2d01e222a21bbf4)
         ;
 
         
     
     
-            circle_marker_7390af9149328c0ec6ef1edd4df66885.bindTooltip(
+            circle_marker_b36a3c4b1ef7099340442c7c5b823065.bindTooltip(
                 `&lt;div&gt;
-                     Mount Coot-tha Lookout &amp; Vườn Bách thảo
+                     Mount Coot-tha Lookout &amp; Vườn Bách thảo — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_4814f49303ad8807e8934d2d8e72fe6f = L.circleMarker(
+            var circle_marker_a2dca0fa2dfd0b6c7c38f7c769d5aba7 = L.circleMarker(
                 [-27.4727764, 153.0179843],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-        var popup_f552aebffc12c1b8c02fec0d0d5a2b60 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_be33d3ca54d9a9a4bb8ba1b8394fdc35 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_4f661b0d3970ea4350e6ae3095dce8bb = $(`&lt;div id=&quot;html_4f661b0d3970ea4350e6ae3095dce8bb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Bảo tàng Queensland / GOMA&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4727764&amp;mlon=153.0179843#map=16/-27.4727764/153.0179843&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_f552aebffc12c1b8c02fec0d0d5a2b60.setContent(html_4f661b0d3970ea4350e6ae3095dce8bb);
+                var html_5f2b1f1d8b5c70b26b48bfe5b409bf11 = $(`&lt;div id=&quot;html_5f2b1f1d8b5c70b26b48bfe5b409bf11&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Bảo tàng Queensland / GOMA&lt;/div&gt;&lt;img src=&quot;sights/bao-tang-queensland-goma.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Queensland_Museum-Sciencentre.JPG&quot; rel=&quot;nofollow&quot;&gt;Figaro · Public domain&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.4727764&amp;mlon=153.0179843#map=16/-27.4727764/153.0179843&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_be33d3ca54d9a9a4bb8ba1b8394fdc35.setContent(html_5f2b1f1d8b5c70b26b48bfe5b409bf11);
             
         
 
-        circle_marker_4814f49303ad8807e8934d2d8e72fe6f.bindPopup(popup_f552aebffc12c1b8c02fec0d0d5a2b60)
+        circle_marker_a2dca0fa2dfd0b6c7c38f7c769d5aba7.bindPopup(popup_be33d3ca54d9a9a4bb8ba1b8394fdc35)
         ;
 
         
     
     
-            circle_marker_4814f49303ad8807e8934d2d8e72fe6f.bindTooltip(
+            circle_marker_a2dca0fa2dfd0b6c7c38f7c769d5aba7.bindTooltip(
                 `&lt;div&gt;
-                     Bảo tàng Queensland / GOMA
+                     Bảo tàng Queensland / GOMA — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,32 +331,32 @@
             );
         
     
-            var circle_marker_24911f5d5a4cdcc9f46e4dafbe253176 = L.circleMarker(
+            var circle_marker_b2e72e315ef2942d7d8627fe8b4c6dbc = L.circleMarker(
                 [-27.6024317, 153.2186716],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-        var popup_41826ab1ca69fb365222f1b12cb939bc = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_205c922c9a24a38c03166265752f417e = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_e7c4f1e234fa56b5ddf5b51ac68ab87b = $(`&lt;div id=&quot;html_e7c4f1e234fa56b5ddf5b51ac68ab87b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Gold Coast &amp; Moreton Island&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.6024317&amp;mlon=153.2186716#map=16/-27.6024317/153.2186716&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_41826ab1ca69fb365222f1b12cb939bc.setContent(html_e7c4f1e234fa56b5ddf5b51ac68ab87b);
+                var html_b431d7b49eb176c0993ebba471afdde3 = $(`&lt;div id=&quot;html_b431d7b49eb176c0993ebba471afdde3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Gold Coast &amp; Moreton Island&lt;/div&gt;&lt;img src=&quot;sights/gold-coast-moreton-island.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Murals_at_Gold_Coast_railway_line_viaduct_supports_01.jpg&quot; rel=&quot;nofollow&quot;&gt;Kgbo · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-27.6024317&amp;mlon=153.2186716#map=16/-27.6024317/153.2186716&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_205c922c9a24a38c03166265752f417e.setContent(html_b431d7b49eb176c0993ebba471afdde3);
             
         
 
-        circle_marker_24911f5d5a4cdcc9f46e4dafbe253176.bindPopup(popup_41826ab1ca69fb365222f1b12cb939bc)
+        circle_marker_b2e72e315ef2942d7d8627fe8b4c6dbc.bindPopup(popup_205c922c9a24a38c03166265752f417e)
         ;
 
         
     
     
-            circle_marker_24911f5d5a4cdcc9f46e4dafbe253176.bindTooltip(
+            circle_marker_b2e72e315ef2942d7d8627fe8b4c6dbc.bindTooltip(
                 `&lt;div&gt;
-                     Gold Coast &amp; Moreton Island
+                     Gold Coast &amp; Moreton Island — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -361,19 +364,19 @@
             );
         
     
-            map_0d43dd9228872cc0b67914e41f5c51fe.fitBounds(
+            map_3a97ff0a529804e7befce2aaf748d2ab.fitBounds(
                 [[-27.6024317, 152.958613], [-27.385, 153.2186716]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_fb0ac603aa77b809d6439c90719f8a3b = L.circleMarker(
+            var circle_marker_9e333850b920c5e617ff6c80dacc8fbf = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_fb0ac603aa77b809d6439c90719f8a3b.bindTooltip(
+            circle_marker_9e333850b920c5e617ff6c80dacc8fbf.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -383,13 +386,13 @@
             );
         
     
-            var circle_marker_19d9c7c7b2d234183bdb5af2393d3518 = L.circleMarker(
+            var circle_marker_f10183d71eec6ca49c6ae641186f98e9 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_19d9c7c7b2d234183bdb5af2393d3518.bindTooltip(
+            circle_marker_f10183d71eec6ca49c6ae641186f98e9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -399,13 +402,13 @@
             );
         
     
-            var circle_marker_62f0fe0fc7141358b951e4a4e4ef5789 = L.circleMarker(
+            var circle_marker_5acc91ec594ab7479fd62c26c2f134f2 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_62f0fe0fc7141358b951e4a4e4ef5789.bindTooltip(
+            circle_marker_5acc91ec594ab7479fd62c26c2f134f2.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -415,13 +418,13 @@
             );
         
     
-            var circle_marker_6b302334be542d4d611b4fe0726ddb3b = L.circleMarker(
+            var circle_marker_60db6fe82a812642210d44056e3a13ea = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_6b302334be542d4d611b4fe0726ddb3b.bindTooltip(
+            circle_marker_60db6fe82a812642210d44056e3a13ea.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -431,13 +434,13 @@
             );
         
     
-            var circle_marker_fefde8fc366aa8af9e4677c2832034df = L.circleMarker(
+            var circle_marker_9ce7020a2ceb9667ab86ce058fdcf91d = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_fefde8fc366aa8af9e4677c2832034df.bindTooltip(
+            circle_marker_9ce7020a2ceb9667ab86ce058fdcf91d.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -447,29 +450,29 @@
             );
         
     
-            var marker_d569bebc8425e72369f6a0fd6c094d88 = L.marker(
+            var marker_e3c814be946344b7e20206c3c503879d = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            var div_icon_a6f75eff0fc5324c7991ea0c0fb7dc30 = L.divIcon({
+            var div_icon_c65d21468b0d516de791596526421106 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_d569bebc8425e72369f6a0fd6c094d88.setIcon(div_icon_a6f75eff0fc5324c7991ea0c0fb7dc30);
+                marker_e3c814be946344b7e20206c3c503879d.setIcon(div_icon_c65d21468b0d516de791596526421106);
             
     
-            var circle_marker_dd74317eb0569d9e5c58c3d19d73adbf = L.circleMarker(
+            var circle_marker_69827a436e70ef91b5f737377c81a8a1 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_dd74317eb0569d9e5c58c3d19d73adbf.bindTooltip(
+            circle_marker_69827a436e70ef91b5f737377c81a8a1.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -479,13 +482,13 @@
             );
         
     
-            var circle_marker_0b6c001bce2cc631551d839dd76677f6 = L.circleMarker(
+            var circle_marker_d6c67086e9789506eb7ae87bd04abccb = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_0b6c001bce2cc631551d839dd76677f6.bindTooltip(
+            circle_marker_d6c67086e9789506eb7ae87bd04abccb.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -495,13 +498,13 @@
             );
         
     
-            var circle_marker_46d00e8ff3a54efdfb4dd97537dff623 = L.circleMarker(
+            var circle_marker_a7e04cb77dd58e7217b7fa20e684137b = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_46d00e8ff3a54efdfb4dd97537dff623.bindTooltip(
+            circle_marker_a7e04cb77dd58e7217b7fa20e684137b.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -511,13 +514,13 @@
             );
         
     
-            var circle_marker_d0a2bba5865641bed571dc6e4019f550 = L.circleMarker(
+            var circle_marker_c13d32d49ad20e3fec3b31ff18125c68 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_d0a2bba5865641bed571dc6e4019f550.bindTooltip(
+            circle_marker_c13d32d49ad20e3fec3b31ff18125c68.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -527,13 +530,13 @@
             );
         
     
-            var circle_marker_27581364e6e7e4b9c49091e5983cd170 = L.circleMarker(
+            var circle_marker_52d2945f4c2931179a36c1c4eab4bf85 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_27581364e6e7e4b9c49091e5983cd170.bindTooltip(
+            circle_marker_52d2945f4c2931179a36c1c4eab4bf85.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -543,13 +546,13 @@
             );
         
     
-            var circle_marker_6d646720edd371de85e1814d78365b5e = L.circleMarker(
+            var circle_marker_9d7a0b764191ad8e979286185a72829c = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            circle_marker_6d646720edd371de85e1814d78365b5e.bindTooltip(
+            circle_marker_9d7a0b764191ad8e979286185a72829c.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -559,24 +562,24 @@
             );
         
     
-            var marker_d08dcb78de20437a559c6dc000b2b9dc = L.marker(
+            var marker_102715ac1de59ac12626c6e68c2d819a = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_0d43dd9228872cc0b67914e41f5c51fe);
+            ).addTo(map_3a97ff0a529804e7befce2aaf748d2ab);
         
     
-            var div_icon_e4916ff401df38da96b3f4e47699214e = L.divIcon({
+            var div_icon_ef7798b8fe39fb8c1854570e480f5047 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_d08dcb78de20437a559c6dc000b2b9dc.setIcon(div_icon_e4916ff401df38da96b3f4e47699214e);
+                marker_102715ac1de59ac12626c6e68c2d819a.setIcon(div_icon_ef7798b8fe39fb8c1854570e480f5047);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=-27.4775593&mlon=153.0223999#map=16/-27.4775593/153.0223999" rel="nofollow">South Bank Parklands – Streets Beach, Wheel of Brisbane</a></li><li><a href="https://www.openstreetmap.org/?mlat=-27.5351781&mlon=152.9683661#map=16/-27.5351781/152.9683661" rel="nofollow">Lone Pine Koala Sanctuary</a></li><li><a href="https://www.openstreetmap.org/?mlat=-27.4677979&mlon=153.0356415#map=16/-27.4677979/153.0356415" rel="nofollow">Story Bridge Adventure Climb</a></li><li><a href="https://www.openstreetmap.org/?mlat=-27.4849727&mlon=152.958613#map=16/-27.4849727/152.958613" rel="nofollow">Mount Coot-tha Lookout & Vườn Bách thảo</a></li><li><a href="https://www.openstreetmap.org/?mlat=-27.4727764&mlon=153.0179843#map=16/-27.4727764/153.0179843" rel="nofollow">Bảo tàng Queensland / GOMA</a></li><li class="off">du thuyền sông Brisbane <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=-27.6024317&mlon=153.2186716#map=16/-27.6024317/153.2186716" rel="nofollow">Gold Coast & Moreton Island</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có cụm dệt lớn. Liên quan gián tiếp: Queensland là bang trồng **bông** lớn của Úc (Darling Downs, St George) — đầu nguồn chuỗi; QUT và UQ có nhóm vật liệu/wearable sensor nhưng không chuyên dệt <em>not found</em></li></ul>
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/south-bank-parklands-streets-beach-wheel-of-brisbane.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-27.4775593&mlon=153.0223999#map=16/-27.4775593/153.0223999" rel="nofollow">South Bank Parklands – Streets Beach, Wheel of Brisbane</a></li><li><a href="https://www.openstreetmap.org/?mlat=-27.5351781&mlon=152.9683661#map=16/-27.5351781/152.9683661" rel="nofollow">Lone Pine Koala Sanctuary</a></li><li><a href="https://www.openstreetmap.org/?mlat=-27.4677979&mlon=153.0356415#map=16/-27.4677979/153.0356415" rel="nofollow">Story Bridge Adventure Climb</a></li><li><img class="thumb" src="sights/mount-coot-tha-lookout-vuon-bach-thao.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-27.4849727&mlon=152.958613#map=16/-27.4849727/152.958613" rel="nofollow">Mount Coot-tha Lookout & Vườn Bách thảo</a></li><li><img class="thumb" src="sights/bao-tang-queensland-goma.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-27.4727764&mlon=153.0179843#map=16/-27.4727764/153.0179843" rel="nofollow">Bảo tàng Queensland / GOMA</a></li><li class="off">du thuyền sông Brisbane <em>not found</em></li><li><img class="thumb" src="sights/gold-coast-moreton-island.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-27.6024317&mlon=153.2186716#map=16/-27.6024317/153.2186716" rel="nofollow">Gold Coast & Moreton Island</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có cụm dệt lớn. Liên quan gián tiếp: Queensland là bang trồng **bông** lớn của Úc (Darling Downs, St George) — đầu nguồn chuỗi; QUT và UQ có nhóm vật liệu/wearable sensor nhưng không chuyên dệt <em>not found</em></li></ul>
 
 <footer>Ảnh: Wikimedia Commons theo giấy phép ghi ở trên ·
  bản đồ © OpenStreetMap contributors</footer>

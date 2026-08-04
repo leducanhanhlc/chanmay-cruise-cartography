@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_cb765030afac3e1fe8c34353c17e183d {
+                #map_3109754ff63eee55467b915a1ba9571a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_cb765030afac3e1fe8c34353c17e183d&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_3109754ff63eee55467b915a1ba9571a&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_cb765030afac3e1fe8c34353c17e183d = L.map(
-                &quot;map_cb765030afac3e1fe8c34353c17e183d&quot;,
+            var map_3109754ff63eee55467b915a1ba9571a = L.map(
+                &quot;map_3109754ff63eee55467b915a1ba9571a&quot;,
                 {
                     center: [-20.267, 148.718],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            L.control.scale().addTo(map_3109754ff63eee55467b915a1ba9571a);
 
             
 
         
     
-            var tile_layer_289314263e338f0e74f764548615c278 = L.tileLayer(
+            var tile_layer_704ce680cd75383bb0116d3761f52cd5 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_289314263e338f0e74f764548615c278.addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            tile_layer_704ce680cd75383bb0116d3761f52cd5.addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            var circle_marker_4fc7b37492faef6f59b57cade06072b3 = L.circleMarker(
+            var circle_marker_0652a6d8bda819982798ba7e56079a10 = L.circleMarker(
                 [-20.267, 148.718],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_4fc7b37492faef6f59b57cade06072b3.bindTooltip(
+            circle_marker_0652a6d8bda819982798ba7e56079a10.bindTooltip(
                 `&lt;div&gt;
                      Airlie Beach — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,47 +149,47 @@
             );
         
     
-        var popup_97351343dcbade2986740212ed5983f1 = L.popup({
+        var popup_a1a162bb315cdcdbe5244091bef542dd = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_fa123fd6c9b9134628e17d9a26db0247 = $(`&lt;div id=&quot;html_fa123fd6c9b9134628e17d9a26db0247&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Airlie Beach&lt;/div&gt;&lt;img src=&quot;img/airlie-beach.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Whitsundays&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:DSC77_Australia_Queensland_Airlie_Beach_harbour_(5491403517).jpg&quot; rel=&quot;nofollow&quot;&gt;DANIEL JULIE from Paris, France · CC BY 2.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_97351343dcbade2986740212ed5983f1.setContent(html_fa123fd6c9b9134628e17d9a26db0247);
+                var html_b30c9fc6f86d9a1eb7ef6107bcb346a2 = $(`&lt;div id=&quot;html_b30c9fc6f86d9a1eb7ef6107bcb346a2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Airlie Beach&lt;/div&gt;&lt;img src=&quot;img/airlie-beach.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Whitsundays&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:DSC77_Australia_Queensland_Airlie_Beach_harbour_(5491403517).jpg&quot; rel=&quot;nofollow&quot;&gt;DANIEL JULIE from Paris, France · CC BY 2.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_a1a162bb315cdcdbe5244091bef542dd.setContent(html_b30c9fc6f86d9a1eb7ef6107bcb346a2);
             
         
 
-        circle_marker_4fc7b37492faef6f59b57cade06072b3.bindPopup(popup_97351343dcbade2986740212ed5983f1)
+        circle_marker_0652a6d8bda819982798ba7e56079a10.bindPopup(popup_a1a162bb315cdcdbe5244091bef542dd)
         ;
 
         
     
     
-            var circle_marker_91b346528c297ac4d75385d22442c660 = L.circleMarker(
+            var circle_marker_3e26decc50341be8d757abe6fc2abee6 = L.circleMarker(
                 [-20.2772373, 148.7541506],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-        var popup_fe0cd624d3695c6d765260c81fe2d62c = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_96d6f232d9a578ad0c7e70e9c69680e3 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_3fed642304a4ea46bbc108e564584de8 = $(`&lt;div id=&quot;html_3fed642304a4ea46bbc108e564584de8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Whitsunday Islands – **Whitehaven Beach** (một trong những bãi cát trắng đẹp nhất thế giới), Hill Inlet Lookout&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2772373&amp;mlon=148.7541506#map=16/-20.2772373/148.7541506&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_fe0cd624d3695c6d765260c81fe2d62c.setContent(html_3fed642304a4ea46bbc108e564584de8);
+                var html_9fc4dcad1cf79ba8dcff0e6e30c324ff = $(`&lt;div id=&quot;html_9fc4dcad1cf79ba8dcff0e6e30c324ff&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Whitsunday Islands – **Whitehaven Beach** (một trong những bãi cát trắng đẹp nhất thế giới), Hill Inlet Lookout&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2772373&amp;mlon=148.7541506#map=16/-20.2772373/148.7541506&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_96d6f232d9a578ad0c7e70e9c69680e3.setContent(html_9fc4dcad1cf79ba8dcff0e6e30c324ff);
             
         
 
-        circle_marker_91b346528c297ac4d75385d22442c660.bindPopup(popup_fe0cd624d3695c6d765260c81fe2d62c)
+        circle_marker_3e26decc50341be8d757abe6fc2abee6.bindPopup(popup_96d6f232d9a578ad0c7e70e9c69680e3)
         ;
 
         
     
     
-            circle_marker_91b346528c297ac4d75385d22442c660.bindTooltip(
+            circle_marker_3e26decc50341be8d757abe6fc2abee6.bindTooltip(
                 `&lt;div&gt;
                      Whitsunday Islands – **Whitehaven Beach** (một trong những bãi cát trắng đẹp nhất thế giới), Hill Inlet Lookout
                  &lt;/div&gt;`,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_c037a9bc375e435d875c78a41496eed9 = L.circleMarker(
+            var circle_marker_276bd074aa7225fe796db85bd9ab9e78 = L.circleMarker(
                 [-20.2682833, 148.7165659],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-        var popup_44b9b57162d03c9ea378673c9e2c88e5 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_387fc9b86d8cd855918a1e3612195b3d = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_28678e412eeb2d3081608a34bda46ce6 = $(`&lt;div id=&quot;html_28678e412eeb2d3081608a34bda46ce6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;lặn/snorkel rạn Great Barrier Reef&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2682833&amp;mlon=148.7165659#map=16/-20.2682833/148.7165659&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_44b9b57162d03c9ea378673c9e2c88e5.setContent(html_28678e412eeb2d3081608a34bda46ce6);
+                var html_d4f0f13bbbfa6a6089aed848cd4cbbc9 = $(`&lt;div id=&quot;html_d4f0f13bbbfa6a6089aed848cd4cbbc9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;lặn/snorkel rạn Great Barrier Reef&lt;/div&gt;&lt;img src=&quot;sights/lan-snorkel-ran-great-barrier-reef.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake_shoreline.jpg&quot; rel=&quot;nofollow&quot;&gt;The Cosmonaut · CC BY-SA 2.5 ca&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2682833&amp;mlon=148.7165659#map=16/-20.2682833/148.7165659&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_387fc9b86d8cd855918a1e3612195b3d.setContent(html_d4f0f13bbbfa6a6089aed848cd4cbbc9);
             
         
 
-        circle_marker_c037a9bc375e435d875c78a41496eed9.bindPopup(popup_44b9b57162d03c9ea378673c9e2c88e5)
+        circle_marker_276bd074aa7225fe796db85bd9ab9e78.bindPopup(popup_387fc9b86d8cd855918a1e3612195b3d)
         ;
 
         
     
     
-            circle_marker_c037a9bc375e435d875c78a41496eed9.bindTooltip(
+            circle_marker_276bd074aa7225fe796db85bd9ab9e78.bindTooltip(
                 `&lt;div&gt;
-                     lặn/snorkel rạn Great Barrier Reef
+                     lặn/snorkel rạn Great Barrier Reef — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_7be9dfb770db560f3db2f12cf1a70e94 = L.circleMarker(
+            var circle_marker_187cc623205109dd45ff9c47d996bafb = L.circleMarker(
                 [-20.2672255, 148.7174278],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-        var popup_999894c661b1faa9d92e705e1d6583a5 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_3b1e5e314274610ba14234ad57410b50 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_3ef846f9dd6d6b71f0c8b46afb063d1f = $(`&lt;div id=&quot;html_3ef846f9dd6d6b71f0c8b46afb063d1f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Airlie Beach Lagoon&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2672255&amp;mlon=148.7174278#map=16/-20.2672255/148.7174278&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_999894c661b1faa9d92e705e1d6583a5.setContent(html_3ef846f9dd6d6b71f0c8b46afb063d1f);
+                var html_b84ba51641e2410f244f8aa47c70c82c = $(`&lt;div id=&quot;html_b84ba51641e2410f244f8aa47c70c82c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Airlie Beach Lagoon&lt;/div&gt;&lt;img src=&quot;sights/airlie-beach-lagoon.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Airlie_Beach_Lagoon.JPG&quot; rel=&quot;nofollow&quot;&gt;Niki Gango · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2672255&amp;mlon=148.7174278#map=16/-20.2672255/148.7174278&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_3b1e5e314274610ba14234ad57410b50.setContent(html_b84ba51641e2410f244f8aa47c70c82c);
             
         
 
-        circle_marker_7be9dfb770db560f3db2f12cf1a70e94.bindPopup(popup_999894c661b1faa9d92e705e1d6583a5)
+        circle_marker_187cc623205109dd45ff9c47d996bafb.bindPopup(popup_3b1e5e314274610ba14234ad57410b50)
         ;
 
         
     
     
-            circle_marker_7be9dfb770db560f3db2f12cf1a70e94.bindTooltip(
+            circle_marker_187cc623205109dd45ff9c47d996bafb.bindTooltip(
                 `&lt;div&gt;
-                     Airlie Beach Lagoon
+                     Airlie Beach Lagoon — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,30 +265,30 @@
             );
         
     
-            var circle_marker_dbfea3d2a95d4be07ef7a474988f0ca8 = L.circleMarker(
+            var circle_marker_9bd2cd8249e61637120c4a639304d43e = L.circleMarker(
                 [-20.2723804, 148.7246935],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-        var popup_1fc17264f7e48bda53bef6f5843dbb7a = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_dad653647649efbeffe104609f047683 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_fb501d20dc0c06da5b49cceb5a090602 = $(`&lt;div id=&quot;html_fb501d20dc0c06da5b49cceb5a090602&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Heart Reef (bay ngắm)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2723804&amp;mlon=148.7246935#map=16/-20.2723804/148.7246935&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_1fc17264f7e48bda53bef6f5843dbb7a.setContent(html_fb501d20dc0c06da5b49cceb5a090602);
+                var html_fb30a9f4bda46818b9161ff6c94d9373 = $(`&lt;div id=&quot;html_fb30a9f4bda46818b9161ff6c94d9373&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Heart Reef (bay ngắm)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2723804&amp;mlon=148.7246935#map=16/-20.2723804/148.7246935&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_dad653647649efbeffe104609f047683.setContent(html_fb30a9f4bda46818b9161ff6c94d9373);
             
         
 
-        circle_marker_dbfea3d2a95d4be07ef7a474988f0ca8.bindPopup(popup_1fc17264f7e48bda53bef6f5843dbb7a)
+        circle_marker_9bd2cd8249e61637120c4a639304d43e.bindPopup(popup_dad653647649efbeffe104609f047683)
         ;
 
         
     
     
-            circle_marker_dbfea3d2a95d4be07ef7a474988f0ca8.bindTooltip(
+            circle_marker_9bd2cd8249e61637120c4a639304d43e.bindTooltip(
                 `&lt;div&gt;
                      Heart Reef (bay ngắm)
                  &lt;/div&gt;`,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_754540ef362a5832bebd2cd098a78be3 = L.circleMarker(
+            var circle_marker_586a04e3903d4ba692ce9027ca7bd028 = L.circleMarker(
                 [-20.2557993, 148.8138701],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-        var popup_5f74d5ebc96cba4f42e0f4a9d15ccbf7 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_dbd552e32d1633c567ba7696957bac42 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_635f4377890dc74e09690fc5478715e4 = $(`&lt;div id=&quot;html_635f4377890dc74e09690fc5478715e4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Daydream &amp; Hamilton Island&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2557993&amp;mlon=148.8138701#map=16/-20.2557993/148.8138701&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_5f74d5ebc96cba4f42e0f4a9d15ccbf7.setContent(html_635f4377890dc74e09690fc5478715e4);
+                var html_8121c74df551a8c25cb003ad8c4e05aa = $(`&lt;div id=&quot;html_8121c74df551a8c25cb003ad8c4e05aa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Daydream &amp; Hamilton Island&lt;/div&gt;&lt;img src=&quot;sights/daydream-hamilton-island.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Closed_eyes,_Hypnosis,_Daydreaming,_Rostov-on-Don,_Russia.jpg&quot; rel=&quot;nofollow&quot;&gt;Vyacheslav Argenberg · CC BY 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=-20.2557993&amp;mlon=148.8138701#map=16/-20.2557993/148.8138701&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_dbd552e32d1633c567ba7696957bac42.setContent(html_8121c74df551a8c25cb003ad8c4e05aa);
             
         
 
-        circle_marker_754540ef362a5832bebd2cd098a78be3.bindPopup(popup_5f74d5ebc96cba4f42e0f4a9d15ccbf7)
+        circle_marker_586a04e3903d4ba692ce9027ca7bd028.bindPopup(popup_dbd552e32d1633c567ba7696957bac42)
         ;
 
         
     
     
-            circle_marker_754540ef362a5832bebd2cd098a78be3.bindTooltip(
+            circle_marker_586a04e3903d4ba692ce9027ca7bd028.bindTooltip(
                 `&lt;div&gt;
-                     Daydream &amp; Hamilton Island
+                     Daydream &amp; Hamilton Island — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,19 +331,19 @@
             );
         
     
-            map_cb765030afac3e1fe8c34353c17e183d.fitBounds(
+            map_3109754ff63eee55467b915a1ba9571a.fitBounds(
                 [[-20.2772373, 148.7165659], [-20.2557993, 148.8138701]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_e4e982bdc6e8d2ab674df7562ef8a25a = L.circleMarker(
+            var circle_marker_cbf3c1ca6a52ac8b5edad9366d9bfaad = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_e4e982bdc6e8d2ab674df7562ef8a25a.bindTooltip(
+            circle_marker_cbf3c1ca6a52ac8b5edad9366d9bfaad.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -350,13 +353,13 @@
             );
         
     
-            var circle_marker_af81a2eb31cb3a5dcdc6dfe47c42cc2b = L.circleMarker(
+            var circle_marker_499eece9be0a0a176ca7f6970a7183e9 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_af81a2eb31cb3a5dcdc6dfe47c42cc2b.bindTooltip(
+            circle_marker_499eece9be0a0a176ca7f6970a7183e9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -366,13 +369,13 @@
             );
         
     
-            var circle_marker_5dd89207198076662f0e383292c2851f = L.circleMarker(
+            var circle_marker_0666b849087fd0b9fb38ef70bf480541 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_5dd89207198076662f0e383292c2851f.bindTooltip(
+            circle_marker_0666b849087fd0b9fb38ef70bf480541.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -382,13 +385,13 @@
             );
         
     
-            var circle_marker_78157aac611ef39746b8bc11550b18c8 = L.circleMarker(
+            var circle_marker_8b8b20e0bbe9d686a229c535256ee670 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_78157aac611ef39746b8bc11550b18c8.bindTooltip(
+            circle_marker_8b8b20e0bbe9d686a229c535256ee670.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -398,13 +401,13 @@
             );
         
     
-            var circle_marker_05d324a51020acecb9cf6ebaa4bd8daa = L.circleMarker(
+            var circle_marker_56b8c3af0f34e68272e778ef60b14bd9 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_05d324a51020acecb9cf6ebaa4bd8daa.bindTooltip(
+            circle_marker_56b8c3af0f34e68272e778ef60b14bd9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -414,29 +417,29 @@
             );
         
     
-            var marker_02adee2737f65c99aaaa65e9042c9ffe = L.marker(
+            var marker_de2d60d30ca91fc401c0ba18426041bf = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            var div_icon_8b1dfadab341b300a3b2ab420b4ef0d7 = L.divIcon({
+            var div_icon_9e006ba1b337ddfa74f303402d7035a1 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_02adee2737f65c99aaaa65e9042c9ffe.setIcon(div_icon_8b1dfadab341b300a3b2ab420b4ef0d7);
+                marker_de2d60d30ca91fc401c0ba18426041bf.setIcon(div_icon_9e006ba1b337ddfa74f303402d7035a1);
             
     
-            var circle_marker_14bb4c4d67a4d6d4eec162382386ea09 = L.circleMarker(
+            var circle_marker_8c769619bce9517b32e4e7c0abbaa38a = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_14bb4c4d67a4d6d4eec162382386ea09.bindTooltip(
+            circle_marker_8c769619bce9517b32e4e7c0abbaa38a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -446,13 +449,13 @@
             );
         
     
-            var circle_marker_85ab1bf6f2d5ea0a4690ebbe1f1dbbd4 = L.circleMarker(
+            var circle_marker_704a262c4a58e8cea105eadd0648aa15 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_85ab1bf6f2d5ea0a4690ebbe1f1dbbd4.bindTooltip(
+            circle_marker_704a262c4a58e8cea105eadd0648aa15.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -462,13 +465,13 @@
             );
         
     
-            var circle_marker_0cf86eed50ef56eb427be594028a0448 = L.circleMarker(
+            var circle_marker_3a171bb9ef7c88eb7be6a86244b70854 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_0cf86eed50ef56eb427be594028a0448.bindTooltip(
+            circle_marker_3a171bb9ef7c88eb7be6a86244b70854.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -478,13 +481,13 @@
             );
         
     
-            var circle_marker_6737702eaf75b079a386e859416159fe = L.circleMarker(
+            var circle_marker_790a266b1b0a68f00609ba59c554454b = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_6737702eaf75b079a386e859416159fe.bindTooltip(
+            circle_marker_790a266b1b0a68f00609ba59c554454b.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -494,13 +497,13 @@
             );
         
     
-            var circle_marker_98dcb22c5f9f9a5887f45de30593e414 = L.circleMarker(
+            var circle_marker_6e4f60364fb27bb9d173935d98354e15 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_98dcb22c5f9f9a5887f45de30593e414.bindTooltip(
+            circle_marker_6e4f60364fb27bb9d173935d98354e15.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -510,13 +513,13 @@
             );
         
     
-            var circle_marker_d3ba12d6f98fe7298a060a45d2bdf0ff = L.circleMarker(
+            var circle_marker_bba6325d18f184ca1001eff4297d01b9 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            circle_marker_d3ba12d6f98fe7298a060a45d2bdf0ff.bindTooltip(
+            circle_marker_bba6325d18f184ca1001eff4297d01b9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -526,24 +529,24 @@
             );
         
     
-            var marker_5d76faaa2d7b970927d52d654d98e155 = L.marker(
+            var marker_f167bf4a3c07985c2d823b7f296f865a = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_cb765030afac3e1fe8c34353c17e183d);
+            ).addTo(map_3109754ff63eee55467b915a1ba9571a);
         
     
-            var div_icon_4f100cf9f57376aecb7af0a10b3961ac = L.divIcon({
+            var div_icon_beffbb2daa6b3ce77ca3ab81cfa97ec8 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_5d76faaa2d7b970927d52d654d98e155.setIcon(div_icon_4f100cf9f57376aecb7af0a10b3961ac);
+                marker_f167bf4a3c07985c2d823b7f296f865a.setIcon(div_icon_beffbb2daa6b3ce77ca3ab81cfa97ec8);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=-20.2772373&mlon=148.7541506#map=16/-20.2772373/148.7541506" rel="nofollow">Whitsunday Islands – **Whitehaven Beach** (một trong những bãi cát trắng đẹp nhất thế giới), Hill Inlet Lookout</a></li><li><a href="https://www.openstreetmap.org/?mlat=-20.2682833&mlon=148.7165659#map=16/-20.2682833/148.7165659" rel="nofollow">lặn/snorkel rạn Great Barrier Reef</a></li><li><a href="https://www.openstreetmap.org/?mlat=-20.2672255&mlon=148.7174278#map=16/-20.2672255/148.7174278" rel="nofollow">Airlie Beach Lagoon</a></li><li><a href="https://www.openstreetmap.org/?mlat=-20.2723804&mlon=148.7246935#map=16/-20.2723804/148.7246935" rel="nofollow">Heart Reef (bay ngắm)</a></li><li><a href="https://www.openstreetmap.org/?mlat=-20.2557993&mlon=148.8138701#map=16/-20.2557993/148.8138701" rel="nofollow">Daydream & Hamilton Island</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có <em>nearest match was 6,541 km away; not used</em></li></ul>
+<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=-20.2772373&mlon=148.7541506#map=16/-20.2772373/148.7541506" rel="nofollow">Whitsunday Islands – **Whitehaven Beach** (một trong những bãi cát trắng đẹp nhất thế giới), Hill Inlet Lookout</a></li><li><img class="thumb" src="sights/lan-snorkel-ran-great-barrier-reef.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-20.2682833&mlon=148.7165659#map=16/-20.2682833/148.7165659" rel="nofollow">lặn/snorkel rạn Great Barrier Reef</a></li><li><img class="thumb" src="sights/airlie-beach-lagoon.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-20.2672255&mlon=148.7174278#map=16/-20.2672255/148.7174278" rel="nofollow">Airlie Beach Lagoon</a></li><li><a href="https://www.openstreetmap.org/?mlat=-20.2723804&mlon=148.7246935#map=16/-20.2723804/148.7246935" rel="nofollow">Heart Reef (bay ngắm)</a></li><li><img class="thumb" src="sights/daydream-hamilton-island.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=-20.2557993&mlon=148.8138701#map=16/-20.2557993/148.8138701" rel="nofollow">Daydream & Hamilton Island</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">không có <em>nearest match was 6,541 km away; not used</em></li></ul>
 <p class="more"><a href="../sydney-to-chan-may/airlie-beach.html">Bản đồ đường phố tương tác · hoạt ảnh lộ trình →</a></p>
 <footer>Ảnh: Wikimedia Commons theo giấy phép ghi ở trên ·
  bản đồ © OpenStreetMap contributors</footer>

@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_a309c615665aa9b1e1ebf12c23811e6c {
+                #map_bed10a6559332b15349051c6d28227d2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_a309c615665aa9b1e1ebf12c23811e6c&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_bed10a6559332b15349051c6d28227d2&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_a309c615665aa9b1e1ebf12c23811e6c = L.map(
-                &quot;map_a309c615665aa9b1e1ebf12c23811e6c&quot;,
+            var map_bed10a6559332b15349051c6d28227d2 = L.map(
+                &quot;map_bed10a6559332b15349051c6d28227d2&quot;,
                 {
                     center: [34.65, 135.43],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            L.control.scale().addTo(map_bed10a6559332b15349051c6d28227d2);
 
             
 
         
     
-            var tile_layer_9f8a093c41686e5771b2feeead94ab57 = L.tileLayer(
+            var tile_layer_2cb514eb90cb558635d23f7e585eb391 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_9f8a093c41686e5771b2feeead94ab57.addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            tile_layer_2cb514eb90cb558635d23f7e585eb391.addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            var circle_marker_25d142b891f075081523eb4ede034846 = L.circleMarker(
+            var circle_marker_df8ed0dbe7d02edd1c2b2a4338d2b3a7 = L.circleMarker(
                 [34.65, 135.43],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_25d142b891f075081523eb4ede034846.bindTooltip(
+            circle_marker_df8ed0dbe7d02edd1c2b2a4338d2b3a7.bindTooltip(
                 `&lt;div&gt;
                      Osaka — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_97636e157c24dcc9608b46660e3e5f45 = L.popup({
+        var popup_75481add0a1c5c2a9570cea14946b71f = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_463ae2d5a8a0c367851769fe89d89bdd = $(`&lt;div id=&quot;html_463ae2d5a8a0c367851769fe89d89bdd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Osaka&lt;/div&gt;&lt;img src=&quot;img/osaka.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Lâu đài Osaka — tháp chính&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Osaka_Castle,_Keep_tower,_South_view_20190415_1.jpg&quot; rel=&quot;nofollow&quot;&gt;DXR · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_97636e157c24dcc9608b46660e3e5f45.setContent(html_463ae2d5a8a0c367851769fe89d89bdd);
+                var html_716944c6dfb52c685c77fdd3ee944956 = $(`&lt;div id=&quot;html_716944c6dfb52c685c77fdd3ee944956&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Osaka&lt;/div&gt;&lt;img src=&quot;img/osaka.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Lâu đài Osaka — tháp chính&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Osaka_Castle,_Keep_tower,_South_view_20190415_1.jpg&quot; rel=&quot;nofollow&quot;&gt;DXR · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_75481add0a1c5c2a9570cea14946b71f.setContent(html_716944c6dfb52c685c77fdd3ee944956);
             
         
 
-        circle_marker_25d142b891f075081523eb4ede034846.bindPopup(popup_97636e157c24dcc9608b46660e3e5f45)
+        circle_marker_df8ed0dbe7d02edd1c2b2a4338d2b3a7.bindPopup(popup_75481add0a1c5c2a9570cea14946b71f)
         ;
 
         
     
     
-            var circle_marker_658258c1641b438029848ce7af24c5e2 = L.circleMarker(
+            var circle_marker_323af0510ebb01d8314e3c8f1c1c6b16 = L.circleMarker(
                 [34.6873735, 135.5258555],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_23c19c314f28cdc957cd34b745164b9b = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_9478ddaadd45c1dc3b5b10f89e392c4a = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_0c7a4589585ee63d887b232c6c8b4e82 = $(`&lt;div id=&quot;html_0c7a4589585ee63d887b232c6c8b4e82&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Lâu đài Osaka&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6873735&amp;mlon=135.5258555#map=16/34.6873735/135.5258555&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_23c19c314f28cdc957cd34b745164b9b.setContent(html_0c7a4589585ee63d887b232c6c8b4e82);
+                var html_a04146fe97c08f9d672c695876134f4c = $(`&lt;div id=&quot;html_a04146fe97c08f9d672c695876134f4c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Lâu đài Osaka&lt;/div&gt;&lt;img src=&quot;sights/lau-ai-osaka.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Osaka_Castle_Outer_Moat_and_Osaka_Business_Park,_November_2016.jpg&quot; rel=&quot;nofollow&quot;&gt;Martin Falbisoner · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6873735&amp;mlon=135.5258555#map=16/34.6873735/135.5258555&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_9478ddaadd45c1dc3b5b10f89e392c4a.setContent(html_a04146fe97c08f9d672c695876134f4c);
             
         
 
-        circle_marker_658258c1641b438029848ce7af24c5e2.bindPopup(popup_23c19c314f28cdc957cd34b745164b9b)
+        circle_marker_323af0510ebb01d8314e3c8f1c1c6b16.bindPopup(popup_9478ddaadd45c1dc3b5b10f89e392c4a)
         ;
 
         
     
     
-            circle_marker_658258c1641b438029848ce7af24c5e2.bindTooltip(
+            circle_marker_323af0510ebb01d8314e3c8f1c1c6b16.bindTooltip(
                 `&lt;div&gt;
-                     Lâu đài Osaka
+                     Lâu đài Osaka — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_0e1dfb73c5e7660504abdba504ffca65 = L.circleMarker(
+            var circle_marker_27b5ade2f80a7bf5ec6c16820dd4a34a = L.circleMarker(
                 [34.6690306, 135.5015715],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_30708b1a0e2689f959f4f0902e7467db = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_5c44557db05a2cd9aadbc278b7fa62eb = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_e17030d2fa6abf5a9c95365ad65be7dd = $(`&lt;div id=&quot;html_e17030d2fa6abf5a9c95365ad65be7dd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Dotonbori – Glico Man, Kuromon Ichiba&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6690306&amp;mlon=135.5015715#map=16/34.6690306/135.5015715&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_30708b1a0e2689f959f4f0902e7467db.setContent(html_e17030d2fa6abf5a9c95365ad65be7dd);
+                var html_b38e38abf14913618784a52b45febad1 = $(`&lt;div id=&quot;html_b38e38abf14913618784a52b45febad1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Dotonbori – Glico Man, Kuromon Ichiba&lt;/div&gt;&lt;img src=&quot;sights/dotonbori-glico-man-kuromon-ichiba.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg&quot; rel=&quot;nofollow&quot;&gt;Martin Falbisoner · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6690306&amp;mlon=135.5015715#map=16/34.6690306/135.5015715&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_5c44557db05a2cd9aadbc278b7fa62eb.setContent(html_b38e38abf14913618784a52b45febad1);
             
         
 
-        circle_marker_0e1dfb73c5e7660504abdba504ffca65.bindPopup(popup_30708b1a0e2689f959f4f0902e7467db)
+        circle_marker_27b5ade2f80a7bf5ec6c16820dd4a34a.bindPopup(popup_5c44557db05a2cd9aadbc278b7fa62eb)
         ;
 
         
     
     
-            circle_marker_0e1dfb73c5e7660504abdba504ffca65.bindTooltip(
+            circle_marker_27b5ade2f80a7bf5ec6c16820dd4a34a.bindTooltip(
                 `&lt;div&gt;
-                     Dotonbori – Glico Man, Kuromon Ichiba
+                     Dotonbori – Glico Man, Kuromon Ichiba — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_603ee0a66f9f1cd320c1d941156784fe = L.circleMarker(
+            var circle_marker_ae0a2ac03f1a724cfefc799663c2c3f6 = L.circleMarker(
                 [34.6656393, 135.4324527],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_9a63add12c62fc36e2510ef893dbe7a1 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_08772e1dac7e276623261a852425de5a = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_91a6c235009c62fd5a5a1b0bbe5fe6c7 = $(`&lt;div id=&quot;html_91a6c235009c62fd5a5a1b0bbe5fe6c7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Universal Studios Japan&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6656393&amp;mlon=135.4324527#map=16/34.6656393/135.4324527&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_9a63add12c62fc36e2510ef893dbe7a1.setContent(html_91a6c235009c62fd5a5a1b0bbe5fe6c7);
+                var html_a9686151d754fee7c99d028cda240c27 = $(`&lt;div id=&quot;html_a9686151d754fee7c99d028cda240c27&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Universal Studios Japan&lt;/div&gt;&lt;img src=&quot;sights/universal-studios-japan.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:COVID-19_pandemic_related_signs_at_Universal_Studios_Japan_20220814.jpg&quot; rel=&quot;nofollow&quot;&gt;高砂の浦 · CC0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6656393&amp;mlon=135.4324527#map=16/34.6656393/135.4324527&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_08772e1dac7e276623261a852425de5a.setContent(html_a9686151d754fee7c99d028cda240c27);
             
         
 
-        circle_marker_603ee0a66f9f1cd320c1d941156784fe.bindPopup(popup_9a63add12c62fc36e2510ef893dbe7a1)
+        circle_marker_ae0a2ac03f1a724cfefc799663c2c3f6.bindPopup(popup_08772e1dac7e276623261a852425de5a)
         ;
 
         
     
     
-            circle_marker_603ee0a66f9f1cd320c1d941156784fe.bindTooltip(
+            circle_marker_ae0a2ac03f1a724cfefc799663c2c3f6.bindTooltip(
                 `&lt;div&gt;
-                     Universal Studios Japan
+                     Universal Studios Japan — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,32 +265,32 @@
             );
         
     
-            var circle_marker_1bd2f73dae536085bc0c7d96c2934483 = L.circleMarker(
+            var circle_marker_9aeaf13cab37e6f434395f33bc07393d = L.circleMarker(
                 [34.7052927, 135.4905349],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_4277967c19787f0aada7637becaae8a5 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_fbd574f146aa51f2124b831ee8e18e39 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_d02046e3ae1746517acdf397602dc8dc = $(`&lt;div id=&quot;html_d02046e3ae1746517acdf397602dc8dc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Umeda Sky Building&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.7052927&amp;mlon=135.4905349#map=16/34.7052927/135.4905349&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_4277967c19787f0aada7637becaae8a5.setContent(html_d02046e3ae1746517acdf397602dc8dc);
+                var html_196bf1ba63bbc9f4f9756ba6a4bdee3c = $(`&lt;div id=&quot;html_196bf1ba63bbc9f4f9756ba6a4bdee3c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Umeda Sky Building&lt;/div&gt;&lt;img src=&quot;sights/umeda-sky-building.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Umeda_Sky_Building,_Osaka,_November_2016_-02.jpg&quot; rel=&quot;nofollow&quot;&gt;Martin Falbisoner · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.7052927&amp;mlon=135.4905349#map=16/34.7052927/135.4905349&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_fbd574f146aa51f2124b831ee8e18e39.setContent(html_196bf1ba63bbc9f4f9756ba6a4bdee3c);
             
         
 
-        circle_marker_1bd2f73dae536085bc0c7d96c2934483.bindPopup(popup_4277967c19787f0aada7637becaae8a5)
+        circle_marker_9aeaf13cab37e6f434395f33bc07393d.bindPopup(popup_fbd574f146aa51f2124b831ee8e18e39)
         ;
 
         
     
     
-            circle_marker_1bd2f73dae536085bc0c7d96c2934483.bindTooltip(
+            circle_marker_9aeaf13cab37e6f434395f33bc07393d.bindTooltip(
                 `&lt;div&gt;
-                     Umeda Sky Building
+                     Umeda Sky Building — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_aed0a82adfc8e26fd3119cca48b67090 = L.circleMarker(
+            var circle_marker_72628e09be8d94ceffdc5bea59ad8cdf = L.circleMarker(
                 [34.6547194, 135.5167979],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_d6cb14697f47ef02c7db7fc933968e41 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_7d4bdabb4088afffd0da3b12492684b5 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_79e257aa0b4c5bf4877e4e05a8a01f1b = $(`&lt;div id=&quot;html_79e257aa0b4c5bf4877e4e05a8a01f1b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Shitennō-ji&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6547194&amp;mlon=135.5167979#map=16/34.6547194/135.5167979&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_d6cb14697f47ef02c7db7fc933968e41.setContent(html_79e257aa0b4c5bf4877e4e05a8a01f1b);
+                var html_5f7159b7bb4add63e76605437dd56abd = $(`&lt;div id=&quot;html_5f7159b7bb4add63e76605437dd56abd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Shitennō-ji&lt;/div&gt;&lt;img src=&quot;sights/shitenno-ji.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Scenery_of_the_pond_at_Shitenn%C5%8D-ji_Honb%C5%8D_Park_in_Osaka,_November_2015.jpg&quot; rel=&quot;nofollow&quot;&gt;Laitche · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6547194&amp;mlon=135.5167979#map=16/34.6547194/135.5167979&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_7d4bdabb4088afffd0da3b12492684b5.setContent(html_5f7159b7bb4add63e76605437dd56abd);
             
         
 
-        circle_marker_aed0a82adfc8e26fd3119cca48b67090.bindPopup(popup_d6cb14697f47ef02c7db7fc933968e41)
+        circle_marker_72628e09be8d94ceffdc5bea59ad8cdf.bindPopup(popup_7d4bdabb4088afffd0da3b12492684b5)
         ;
 
         
     
     
-            circle_marker_aed0a82adfc8e26fd3119cca48b67090.bindTooltip(
+            circle_marker_72628e09be8d94ceffdc5bea59ad8cdf.bindTooltip(
                 `&lt;div&gt;
-                     Shitennō-ji
+                     Shitennō-ji — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,30 +331,30 @@
             );
         
     
-            var circle_marker_ce71ea53f04aa34348e6d534c317c9cb = L.circleMarker(
+            var circle_marker_88a3d01de5d5be2de0066d46f623186c = L.circleMarker(
                 [34.6545464, 135.4289211],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_9137ba577310fa276226cc4d9e03214d = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_9fa2dd1cda20f5c1cbbee9a6bd036a5a = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_1b6e5f2cd72a00adb95a784d249a1ea0 = $(`&lt;div id=&quot;html_1b6e5f2cd72a00adb95a784d249a1ea0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Kaiyukan Aquarium&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6545464&amp;mlon=135.4289211#map=16/34.6545464/135.4289211&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_9137ba577310fa276226cc4d9e03214d.setContent(html_1b6e5f2cd72a00adb95a784d249a1ea0);
+                var html_e88a14c679155020e95ad40b35ee4687 = $(`&lt;div id=&quot;html_e88a14c679155020e95ad40b35ee4687&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Kaiyukan Aquarium&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6545464&amp;mlon=135.4289211#map=16/34.6545464/135.4289211&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_9fa2dd1cda20f5c1cbbee9a6bd036a5a.setContent(html_e88a14c679155020e95ad40b35ee4687);
             
         
 
-        circle_marker_ce71ea53f04aa34348e6d534c317c9cb.bindPopup(popup_9137ba577310fa276226cc4d9e03214d)
+        circle_marker_88a3d01de5d5be2de0066d46f623186c.bindPopup(popup_9fa2dd1cda20f5c1cbbee9a6bd036a5a)
         ;
 
         
     
     
-            circle_marker_ce71ea53f04aa34348e6d534c317c9cb.bindTooltip(
+            circle_marker_88a3d01de5d5be2de0066d46f623186c.bindTooltip(
                 `&lt;div&gt;
                      Kaiyukan Aquarium
                  &lt;/div&gt;`,
@@ -361,30 +364,30 @@
             );
         
     
-            var circle_marker_393836ccdcc93df9c88ce5c87417152e = L.circleMarker(
+            var circle_marker_3c876de3d7bea2d5a84f671a4f625c59 = L.circleMarker(
                 [34.6727979, 135.6377808],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_67252c233e5b16b2f612af5658be0c4b = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_8a429f647e8dbf043a9a2a47c5becd75 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_44f77757dccddb4d2e7dfbd062df6b44 = $(`&lt;div id=&quot;html_44f77757dccddb4d2e7dfbd062df6b44&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Nara (chùa Tōdai-ji, công viên hươu)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6727979&amp;mlon=135.6377808#map=16/34.6727979/135.6377808&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_67252c233e5b16b2f612af5658be0c4b.setContent(html_44f77757dccddb4d2e7dfbd062df6b44);
+                var html_69e58265ccf2b4b45193ecf3d78b243d = $(`&lt;div id=&quot;html_69e58265ccf2b4b45193ecf3d78b243d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Nara (chùa Tōdai-ji, công viên hươu)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6727979&amp;mlon=135.6377808#map=16/34.6727979/135.6377808&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_8a429f647e8dbf043a9a2a47c5becd75.setContent(html_69e58265ccf2b4b45193ecf3d78b243d);
             
         
 
-        circle_marker_393836ccdcc93df9c88ce5c87417152e.bindPopup(popup_67252c233e5b16b2f612af5658be0c4b)
+        circle_marker_3c876de3d7bea2d5a84f671a4f625c59.bindPopup(popup_8a429f647e8dbf043a9a2a47c5becd75)
         ;
 
         
     
     
-            circle_marker_393836ccdcc93df9c88ce5c87417152e.bindTooltip(
+            circle_marker_3c876de3d7bea2d5a84f671a4f625c59.bindTooltip(
                 `&lt;div&gt;
                      Nara (chùa Tōdai-ji, công viên hươu)
                  &lt;/div&gt;`,
@@ -394,35 +397,35 @@
             );
         
     
-            var circle_marker_5da2a8fe000d2d28f8c47ea08a5df2ba = L.circleMarker(
+            var circle_marker_6d14bbe5d940fea63e1497bcaf2d29ee = L.circleMarker(
                 [34.6958135, 135.4942373],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-        var popup_0d7bd45b89f3efb146dfd985bba17ba2 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_cd1dc5c66a8752bb362fc30aa48fc299 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_bba6cc7384b29cabb3f5593da2e7a942 = $(`&lt;div id=&quot;html_bba6cc7384b29cabb3f5593da2e7a942&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;- **Toyobo** (thành lập tại Osaka, 1882) — **COCOMI™**, màng dẫn điện co giãn dày 0,3 mm dùng làm điện cực cho smart sensing wear; đo nhịp tim, nhịp thở, hoạt động cơ (cả người lẫn ngựa đua). Tương đương trực tiếp với lớp điện cực dệt của Myant / Nextiles. - **Toray Industries** — **hitoe™** (hợp tác NTT/NTT Docomo): vải nanofiber tẩm polymer dẫn điện làm bio-electrode; đã được cấp phép dùng trong y tế. - **Mitsufuji** (Kyoto/Shiga, sát Osaka) — **AGposs®** sợi mạ bạc (conductive yarn thương mại) và hệ IoT mặc trên người **hamon®**. - Cụm dệt Kansai truyền thống: Gunze, Kurabo, Shikibo, Daiwabo; Senshu (khăn bông), Kishiwada&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6958135&amp;mlon=135.4942373#map=16/34.6958135/135.4942373&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_0d7bd45b89f3efb146dfd985bba17ba2.setContent(html_bba6cc7384b29cabb3f5593da2e7a942);
+                var html_ec37179316eec7ec251fe8ef766a965a = $(`&lt;div id=&quot;html_ec37179316eec7ec251fe8ef766a965a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;- **Toyobo** (thành lập tại Osaka, 1882) — **COCOMI™**, màng dẫn điện co giãn dày 0,3 mm dùng làm điện cực cho smart sensing wear; đo nhịp tim, nhịp thở, hoạt động cơ (cả người lẫn ngựa đua). Tương đương trực tiếp với lớp điện cực dệt của Myant / Nextiles. - **Toray Industries** — **hitoe™** (hợp tác NTT/NTT Docomo): vải nanofiber tẩm polymer dẫn điện làm bio-electrode; đã được cấp phép dùng trong y tế. - **Mitsufuji** (Kyoto/Shiga, sát Osaka) — **AGposs®** sợi mạ bạc (conductive yarn thương mại) và hệ IoT mặc trên người **hamon®**. - Cụm dệt Kansai truyền thống: Gunze, Kurabo, Shikibo, Daiwabo; Senshu (khăn bông), Kishiwada&lt;/div&gt;&lt;img src=&quot;sights/toyobo-thanh-lap-tai-osaka-1882-cocomitm-mang-dan-ien-co-gia.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Toyobo_Headoffice.JPG&quot; rel=&quot;nofollow&quot;&gt;KishujiRapid · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=34.6958135&amp;mlon=135.4942373#map=16/34.6958135/135.4942373&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_cd1dc5c66a8752bb362fc30aa48fc299.setContent(html_ec37179316eec7ec251fe8ef766a965a);
             
         
 
-        circle_marker_5da2a8fe000d2d28f8c47ea08a5df2ba.bindPopup(popup_0d7bd45b89f3efb146dfd985bba17ba2)
+        circle_marker_6d14bbe5d940fea63e1497bcaf2d29ee.bindPopup(popup_cd1dc5c66a8752bb362fc30aa48fc299)
         ;
 
         
     
     
-            circle_marker_5da2a8fe000d2d28f8c47ea08a5df2ba.bindTooltip(
+            circle_marker_6d14bbe5d940fea63e1497bcaf2d29ee.bindTooltip(
                 `&lt;div&gt;
                      - **Toyobo** (thành lập tại Osaka, 1882) — **COCOMI™**, màng dẫn điện co giãn dày 0,3 mm dùng làm điện cực cho smart sensing wear; đo nhịp tim, nhịp thở, hoạt động cơ (cả người lẫn ngựa đua). Tương đương trực tiếp với lớp điện cực dệt của Myant / Nextiles.
 - **Toray Industries** — **hitoe™** (hợp tác NTT/NTT Docomo): vải nanofiber tẩm polymer dẫn điện làm bio-electrode; đã được cấp phép dùng trong y tế.
 - **Mitsufuji** (Kyoto/Shiga, sát Osaka) — **AGposs®** sợi mạ bạc (conductive yarn thương mại) và hệ IoT mặc trên người **hamon®**.
-- Cụm dệt Kansai truyền thống: Gunze, Kurabo, Shikibo, Daiwabo; Senshu (khăn bông), Kishiwada
+- Cụm dệt Kansai truyền thống: Gunze, Kurabo, Shikibo, Daiwabo; Senshu (khăn bông), Kishiwada — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -430,19 +433,19 @@
             );
         
     
-            map_a309c615665aa9b1e1ebf12c23811e6c.fitBounds(
+            map_bed10a6559332b15349051c6d28227d2.fitBounds(
                 [[34.65, 135.4289211], [34.7052927, 135.6377808]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_36d209c942a680e36b765ae14963b054 = L.circleMarker(
+            var circle_marker_0138c0051d64b5de1664fe01f5e8a407 = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_36d209c942a680e36b765ae14963b054.bindTooltip(
+            circle_marker_0138c0051d64b5de1664fe01f5e8a407.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -452,13 +455,13 @@
             );
         
     
-            var circle_marker_e148ab2985bd87c668f028348bf27ea3 = L.circleMarker(
+            var circle_marker_61f0c7d4d01c04a1a7b878b17c25ba25 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_e148ab2985bd87c668f028348bf27ea3.bindTooltip(
+            circle_marker_61f0c7d4d01c04a1a7b878b17c25ba25.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -468,13 +471,13 @@
             );
         
     
-            var circle_marker_22cd7117296fcc04c9983b60727477b2 = L.circleMarker(
+            var circle_marker_5a5b111ea253bc96e7eaba550fc289cb = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_22cd7117296fcc04c9983b60727477b2.bindTooltip(
+            circle_marker_5a5b111ea253bc96e7eaba550fc289cb.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -484,13 +487,13 @@
             );
         
     
-            var circle_marker_61240c979ff7168cd3dea6569ff96a38 = L.circleMarker(
+            var circle_marker_198b001b5610c2f344f4a94d1e768267 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_61240c979ff7168cd3dea6569ff96a38.bindTooltip(
+            circle_marker_198b001b5610c2f344f4a94d1e768267.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -500,13 +503,13 @@
             );
         
     
-            var circle_marker_886c1124a6a26019c9745b84d25fadb0 = L.circleMarker(
+            var circle_marker_df8c05f4aaf34ccb62e66d2cbf717ccf = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_886c1124a6a26019c9745b84d25fadb0.bindTooltip(
+            circle_marker_df8c05f4aaf34ccb62e66d2cbf717ccf.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -516,29 +519,29 @@
             );
         
     
-            var marker_3a82edc2699b7d21592b891670680f57 = L.marker(
+            var marker_6516b8ccb26e7316dad60bbf6e767539 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            var div_icon_5163d36bdfcd5867b0070a855d6f8ccf = L.divIcon({
+            var div_icon_a2613c9082ef2431c7dfd344a3daf416 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_3a82edc2699b7d21592b891670680f57.setIcon(div_icon_5163d36bdfcd5867b0070a855d6f8ccf);
+                marker_6516b8ccb26e7316dad60bbf6e767539.setIcon(div_icon_a2613c9082ef2431c7dfd344a3daf416);
             
     
-            var circle_marker_9abf9b97bedbfc9b3206d91f97dcc139 = L.circleMarker(
+            var circle_marker_f6358a0d821c545f4922dad9d04c30f3 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_9abf9b97bedbfc9b3206d91f97dcc139.bindTooltip(
+            circle_marker_f6358a0d821c545f4922dad9d04c30f3.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -548,13 +551,13 @@
             );
         
     
-            var circle_marker_81c9786f1ad0da52b4ddcae20a31d7ca = L.circleMarker(
+            var circle_marker_2831bfdb721fd99b77da9c1fec51557b = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_81c9786f1ad0da52b4ddcae20a31d7ca.bindTooltip(
+            circle_marker_2831bfdb721fd99b77da9c1fec51557b.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -564,13 +567,13 @@
             );
         
     
-            var circle_marker_73a32903ed595e216602ab27d2d7dcfd = L.circleMarker(
+            var circle_marker_ad3d5a73ea3623cc649c80850b8491dd = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_73a32903ed595e216602ab27d2d7dcfd.bindTooltip(
+            circle_marker_ad3d5a73ea3623cc649c80850b8491dd.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -580,13 +583,13 @@
             );
         
     
-            var circle_marker_a34d5c91961fa8a148672a81ce64fa3a = L.circleMarker(
+            var circle_marker_52c72f92d8d497b8e2b7e67455ebdc61 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_a34d5c91961fa8a148672a81ce64fa3a.bindTooltip(
+            circle_marker_52c72f92d8d497b8e2b7e67455ebdc61.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -596,13 +599,13 @@
             );
         
     
-            var circle_marker_bea08872b349d55da5b9ec72942c31cc = L.circleMarker(
+            var circle_marker_af70da3b9c9da742db1c6c9307157dd1 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_bea08872b349d55da5b9ec72942c31cc.bindTooltip(
+            circle_marker_af70da3b9c9da742db1c6c9307157dd1.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -612,13 +615,13 @@
             );
         
     
-            var circle_marker_cf409de65723fcb945de01ec91821e5f = L.circleMarker(
+            var circle_marker_df52d0e704ad925c3a06ce7a4132e30a = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            circle_marker_cf409de65723fcb945de01ec91821e5f.bindTooltip(
+            circle_marker_df52d0e704ad925c3a06ce7a4132e30a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -628,24 +631,24 @@
             );
         
     
-            var marker_a6ff3158c601ea3404ff6273a2e92838 = L.marker(
+            var marker_59c7f823ba1cb8367aa9f5710c2d2c4c = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_a309c615665aa9b1e1ebf12c23811e6c);
+            ).addTo(map_bed10a6559332b15349051c6d28227d2);
         
     
-            var div_icon_9634e825a3b75feacbdecc9780f1ae6d = L.divIcon({
+            var div_icon_07ea5f3d2a018d126d79c1b8d81e43c6 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_a6ff3158c601ea3404ff6273a2e92838.setIcon(div_icon_9634e825a3b75feacbdecc9780f1ae6d);
+                marker_59c7f823ba1cb8367aa9f5710c2d2c4c.setIcon(div_icon_07ea5f3d2a018d126d79c1b8d81e43c6);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=34.6873735&mlon=135.5258555#map=16/34.6873735/135.5258555" rel="nofollow">Lâu đài Osaka</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.6690306&mlon=135.5015715#map=16/34.6690306/135.5015715" rel="nofollow">Dotonbori – Glico Man, Kuromon Ichiba</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.6656393&mlon=135.4324527#map=16/34.6656393/135.4324527" rel="nofollow">Universal Studios Japan</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.7052927&mlon=135.4905349#map=16/34.7052927/135.4905349" rel="nofollow">Umeda Sky Building</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.6547194&mlon=135.5167979#map=16/34.6547194/135.5167979" rel="nofollow">Shitennō-ji</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.6545464&mlon=135.4289211#map=16/34.6545464/135.4289211" rel="nofollow">Kaiyukan Aquarium</a></li><li class="off">Kyoto ≈30 phút (Fushimi Inari, Kiyomizu-dera, Arashiyama) <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=34.6727979&mlon=135.6377808#map=16/34.6727979/135.6377808" rel="nofollow">Nara (chùa Tōdai-ji, công viên hươu)</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=34.6958135&mlon=135.4942373#map=16/34.6958135/135.4942373" rel="nofollow">- **Toyobo** (thành lập tại Osaka, 1882) — **COCOMI™**, màng dẫn điện co giãn dày 0,3 mm dùng làm điện cực cho smart sensing wear; đo nhịp tim, nhịp thở, hoạt động cơ (cả người lẫn ngựa đua). Tương đương trực tiếp với lớp điện cực dệt của Myant / Nextiles.
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/lau-ai-osaka.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.6873735&mlon=135.5258555#map=16/34.6873735/135.5258555" rel="nofollow">Lâu đài Osaka</a></li><li><img class="thumb" src="sights/dotonbori-glico-man-kuromon-ichiba.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.6690306&mlon=135.5015715#map=16/34.6690306/135.5015715" rel="nofollow">Dotonbori – Glico Man, Kuromon Ichiba</a></li><li><img class="thumb" src="sights/universal-studios-japan.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.6656393&mlon=135.4324527#map=16/34.6656393/135.4324527" rel="nofollow">Universal Studios Japan</a></li><li><img class="thumb" src="sights/umeda-sky-building.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.7052927&mlon=135.4905349#map=16/34.7052927/135.4905349" rel="nofollow">Umeda Sky Building</a></li><li><img class="thumb" src="sights/shitenno-ji.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.6547194&mlon=135.5167979#map=16/34.6547194/135.5167979" rel="nofollow">Shitennō-ji</a></li><li><a href="https://www.openstreetmap.org/?mlat=34.6545464&mlon=135.4289211#map=16/34.6545464/135.4289211" rel="nofollow">Kaiyukan Aquarium</a></li><li class="off">Kyoto ≈30 phút (Fushimi Inari, Kiyomizu-dera, Arashiyama) <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=34.6727979&mlon=135.6377808#map=16/34.6727979/135.6377808" rel="nofollow">Nara (chùa Tōdai-ji, công viên hươu)</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><img class="thumb" src="sights/toyobo-thanh-lap-tai-osaka-1882-cocomitm-mang-dan-ien-co-gia.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=34.6958135&mlon=135.4942373#map=16/34.6958135/135.4942373" rel="nofollow">- **Toyobo** (thành lập tại Osaka, 1882) — **COCOMI™**, màng dẫn điện co giãn dày 0,3 mm dùng làm điện cực cho smart sensing wear; đo nhịp tim, nhịp thở, hoạt động cơ (cả người lẫn ngựa đua). Tương đương trực tiếp với lớp điện cực dệt của Myant / Nextiles.
 - **Toray Industries** — **hitoe™** (hợp tác NTT/NTT Docomo): vải nanofiber tẩm polymer dẫn điện làm bio-electrode; đã được cấp phép dùng trong y tế.
 - **Mitsufuji** (Kyoto/Shiga, sát Osaka) — **AGposs®** sợi mạ bạc (conductive yarn thương mại) và hệ IoT mặc trên người **hamon®**.
 - Cụm dệt Kansai truyền thống: Gunze, Kurabo, Shikibo, Daiwabo; Senshu (khăn bông), Kishiwada</a></li></ul>

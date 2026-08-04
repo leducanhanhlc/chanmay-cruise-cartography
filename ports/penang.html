@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_a038661ee1b76176c8176c2575db8ba3 {
+                #map_38382f466ff2c9478adb0bb7f3299db7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_a038661ee1b76176c8176c2575db8ba3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_38382f466ff2c9478adb0bb7f3299db7&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_a038661ee1b76176c8176c2575db8ba3 = L.map(
-                &quot;map_a038661ee1b76176c8176c2575db8ba3&quot;,
+            var map_38382f466ff2c9478adb0bb7f3299db7 = L.map(
+                &quot;map_38382f466ff2c9478adb0bb7f3299db7&quot;,
                 {
                     center: [5.416, 100.342],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            L.control.scale().addTo(map_38382f466ff2c9478adb0bb7f3299db7);
 
             
 
         
     
-            var tile_layer_6f9e50b1327f117415a98ca4f47a2cc7 = L.tileLayer(
+            var tile_layer_c1a96f56696fb0237b15f2c228d3ea07 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_6f9e50b1327f117415a98ca4f47a2cc7.addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            tile_layer_c1a96f56696fb0237b15f2c228d3ea07.addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            var circle_marker_ebaf12a3f1bfe96811cc15a6929935da = L.circleMarker(
+            var circle_marker_a5ce9e457be19d3e210b0cbc9491927e = L.circleMarker(
                 [5.416, 100.342],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_ebaf12a3f1bfe96811cc15a6929935da.bindTooltip(
+            circle_marker_a5ce9e457be19d3e210b0cbc9491927e.bindTooltip(
                 `&lt;div&gt;
                      Penang — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,47 +149,47 @@
             );
         
     
-        var popup_ceaf36a4d096dbc959a3364ca3450804 = L.popup({
+        var popup_75e21f1a03a441c863ae2856879f9e1c = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_436041401e33012e43862bbade410771 = $(`&lt;div id=&quot;html_436041401e33012e43862bbade410771&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Penang&lt;/div&gt;&lt;img src=&quot;img/penang.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc George Town, Penang&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Penang_Museum_historical_painting_N164b.jpg&quot; rel=&quot;nofollow&quot;&gt;James Baily / After William Westall · Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_ceaf36a4d096dbc959a3364ca3450804.setContent(html_436041401e33012e43862bbade410771);
+                var html_3a99dcaa1d423a4a3022b9f0a8d4847a = $(`&lt;div id=&quot;html_3a99dcaa1d423a4a3022b9f0a8d4847a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Penang&lt;/div&gt;&lt;img src=&quot;img/penang.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc George Town, Penang&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Penang_Museum_historical_painting_N164b.jpg&quot; rel=&quot;nofollow&quot;&gt;James Baily / After William Westall · Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_75e21f1a03a441c863ae2856879f9e1c.setContent(html_3a99dcaa1d423a4a3022b9f0a8d4847a);
             
         
 
-        circle_marker_ebaf12a3f1bfe96811cc15a6929935da.bindPopup(popup_ceaf36a4d096dbc959a3364ca3450804)
+        circle_marker_a5ce9e457be19d3e210b0cbc9491927e.bindPopup(popup_75e21f1a03a441c863ae2856879f9e1c)
         ;
 
         
     
     
-            var circle_marker_87f306ea25fcbad74085d961bcd009df = L.circleMarker(
+            var circle_marker_31000e15648335055fffd295ac3e787c = L.circleMarker(
                 [5.4141619, 100.3287352],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-        var popup_6e0402272a1f15fde788575cfde58c62 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_f9e7e3a4269c4d2038d0a3ca8c3ed865 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_fb67ddffe2b653312a245c12298fa3b6 = $(`&lt;div id=&quot;html_fb67ddffe2b653312a245c12298fa3b6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;George Town (UNESCO) – tranh tường Armenian Street, clan jetties, Cheong Fatt Tze Blue Mansion&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.4141619&amp;mlon=100.3287352#map=16/5.4141619/100.3287352&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_6e0402272a1f15fde788575cfde58c62.setContent(html_fb67ddffe2b653312a245c12298fa3b6);
+                var html_f05abfba3326a31ed1afa6a2fe7e7fec = $(`&lt;div id=&quot;html_f05abfba3326a31ed1afa6a2fe7e7fec&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;George Town (UNESCO) – tranh tường Armenian Street, clan jetties, Cheong Fatt Tze Blue Mansion&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.4141619&amp;mlon=100.3287352#map=16/5.4141619/100.3287352&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_f9e7e3a4269c4d2038d0a3ca8c3ed865.setContent(html_f05abfba3326a31ed1afa6a2fe7e7fec);
             
         
 
-        circle_marker_87f306ea25fcbad74085d961bcd009df.bindPopup(popup_6e0402272a1f15fde788575cfde58c62)
+        circle_marker_31000e15648335055fffd295ac3e787c.bindPopup(popup_f9e7e3a4269c4d2038d0a3ca8c3ed865)
         ;
 
         
     
     
-            circle_marker_87f306ea25fcbad74085d961bcd009df.bindTooltip(
+            circle_marker_31000e15648335055fffd295ac3e787c.bindTooltip(
                 `&lt;div&gt;
                      George Town (UNESCO) – tranh tường Armenian Street, clan jetties, Cheong Fatt Tze Blue Mansion
                  &lt;/div&gt;`,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_23843db6edfc68655a200e9cf2eed917 = L.circleMarker(
+            var circle_marker_8405f31a50b69c5628fc860d14624dc0 = L.circleMarker(
                 [5.3997214, 100.2738891],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-        var popup_e81bc311295342dc8b289347caffa7a7 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_565278390efa0b1b562f687e47f2f488 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_962f9de0979ef4d0b5a36b1a4d73dfd8 = $(`&lt;div id=&quot;html_962f9de0979ef4d0b5a36b1a4d73dfd8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Kek Lok Si&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.3997214&amp;mlon=100.2738891#map=16/5.3997214/100.2738891&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_e81bc311295342dc8b289347caffa7a7.setContent(html_962f9de0979ef4d0b5a36b1a4d73dfd8);
+                var html_73d095d5b65ccadb5f48ad2c82e22b7d = $(`&lt;div id=&quot;html_73d095d5b65ccadb5f48ad2c82e22b7d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Kek Lok Si&lt;/div&gt;&lt;img src=&quot;sights/kek-lok-si.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Penang_Malaysia_Kek-Lok-Si-Temple-03.jpg&quot; rel=&quot;nofollow&quot;&gt;CEphoto, Uwe Aranas · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.3997214&amp;mlon=100.2738891#map=16/5.3997214/100.2738891&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_565278390efa0b1b562f687e47f2f488.setContent(html_73d095d5b65ccadb5f48ad2c82e22b7d);
             
         
 
-        circle_marker_23843db6edfc68655a200e9cf2eed917.bindPopup(popup_e81bc311295342dc8b289347caffa7a7)
+        circle_marker_8405f31a50b69c5628fc860d14624dc0.bindPopup(popup_565278390efa0b1b562f687e47f2f488)
         ;
 
         
     
     
-            circle_marker_23843db6edfc68655a200e9cf2eed917.bindTooltip(
+            circle_marker_8405f31a50b69c5628fc860d14624dc0.bindTooltip(
                 `&lt;div&gt;
-                     Kek Lok Si
+                     Kek Lok Si — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_9a05ed304fb024a8e56f58eaa3340964 = L.circleMarker(
+            var circle_marker_ec47ad3cc0c50363b58d14a4b80937ff = L.circleMarker(
                 [5.4227023, 100.2699782],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-        var popup_591d9dc0ffa3b1c0a076bd95f406ad0d = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_37a1404c025d815549faf404e955740b = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_376e636c6e1744a7bf978436d56d01d9 = $(`&lt;div id=&quot;html_376e636c6e1744a7bf978436d56d01d9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Penang Hill funicular&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.4227023&amp;mlon=100.2699782#map=16/5.4227023/100.2699782&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_591d9dc0ffa3b1c0a076bd95f406ad0d.setContent(html_376e636c6e1744a7bf978436d56d01d9);
+                var html_c9555bce57b698ae11a30700ce408ea4 = $(`&lt;div id=&quot;html_c9555bce57b698ae11a30700ce408ea4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Penang Hill funicular&lt;/div&gt;&lt;img src=&quot;sights/penang-hill-funicular.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Penang_Hill_funicular_railway.jpg&quot; rel=&quot;nofollow&quot;&gt;HundenvonPenang · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.4227023&amp;mlon=100.2699782#map=16/5.4227023/100.2699782&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_37a1404c025d815549faf404e955740b.setContent(html_c9555bce57b698ae11a30700ce408ea4);
             
         
 
-        circle_marker_9a05ed304fb024a8e56f58eaa3340964.bindPopup(popup_591d9dc0ffa3b1c0a076bd95f406ad0d)
+        circle_marker_ec47ad3cc0c50363b58d14a4b80937ff.bindPopup(popup_37a1404c025d815549faf404e955740b)
         ;
 
         
     
     
-            circle_marker_9a05ed304fb024a8e56f58eaa3340964.bindTooltip(
+            circle_marker_ec47ad3cc0c50363b58d14a4b80937ff.bindTooltip(
                 `&lt;div&gt;
-                     Penang Hill funicular
+                     Penang Hill funicular — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,32 +265,32 @@
             );
         
     
-            var circle_marker_41c92a4de6f9ebb0baea2e60db863af5 = L.circleMarker(
+            var circle_marker_d0cdfe58611369f5070166f3dbda4954 = L.circleMarker(
                 [5.4708863, 100.2485887],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-        var popup_19c58db9d5b59f919e198a297a1246b2 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_48ce37386c532504267488f0a771972f = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_e2417bc94ad8d3bf24acd273d7d27170 = $(`&lt;div id=&quot;html_e2417bc94ad8d3bf24acd273d7d27170&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Batu Ferringhi&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.4708863&amp;mlon=100.2485887#map=16/5.4708863/100.2485887&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_19c58db9d5b59f919e198a297a1246b2.setContent(html_e2417bc94ad8d3bf24acd273d7d27170);
+                var html_fce7dbf10b213c4a8710a4ebe5235bfe = $(`&lt;div id=&quot;html_fce7dbf10b213c4a8710a4ebe5235bfe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Batu Ferringhi&lt;/div&gt;&lt;img src=&quot;sights/batu-ferringhi.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Batu_Ferringhi,_George_Town,_Penang_2023.jpg&quot; rel=&quot;nofollow&quot;&gt;HundenvonPenang · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=5.4708863&amp;mlon=100.2485887#map=16/5.4708863/100.2485887&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_48ce37386c532504267488f0a771972f.setContent(html_fce7dbf10b213c4a8710a4ebe5235bfe);
             
         
 
-        circle_marker_41c92a4de6f9ebb0baea2e60db863af5.bindPopup(popup_19c58db9d5b59f919e198a297a1246b2)
+        circle_marker_d0cdfe58611369f5070166f3dbda4954.bindPopup(popup_48ce37386c532504267488f0a771972f)
         ;
 
         
     
     
-            circle_marker_41c92a4de6f9ebb0baea2e60db863af5.bindTooltip(
+            circle_marker_d0cdfe58611369f5070166f3dbda4954.bindTooltip(
                 `&lt;div&gt;
-                     Batu Ferringhi
+                     Batu Ferringhi — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -295,19 +298,19 @@
             );
         
     
-            map_a038661ee1b76176c8176c2575db8ba3.fitBounds(
+            map_38382f466ff2c9478adb0bb7f3299db7.fitBounds(
                 [[5.3997214, 100.2485887], [5.4708863, 100.342]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_63b1a3b7005b7a2c612f98cddcb981fd = L.circleMarker(
+            var circle_marker_6463548ec2a7808f4213221e680c729b = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_63b1a3b7005b7a2c612f98cddcb981fd.bindTooltip(
+            circle_marker_6463548ec2a7808f4213221e680c729b.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -317,13 +320,13 @@
             );
         
     
-            var circle_marker_469e12e8c84cc5cbaa080f8b9c918423 = L.circleMarker(
+            var circle_marker_9d01969bc8cb326de53aa1d21174cd15 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_469e12e8c84cc5cbaa080f8b9c918423.bindTooltip(
+            circle_marker_9d01969bc8cb326de53aa1d21174cd15.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -333,13 +336,13 @@
             );
         
     
-            var circle_marker_d66fd6116825ffbdc9bf3ee0b1fc33ce = L.circleMarker(
+            var circle_marker_59ca8ccf738f32e8e6843220b3ed6389 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_d66fd6116825ffbdc9bf3ee0b1fc33ce.bindTooltip(
+            circle_marker_59ca8ccf738f32e8e6843220b3ed6389.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -349,13 +352,13 @@
             );
         
     
-            var circle_marker_b6c134bb51dea074d283efc90d02220d = L.circleMarker(
+            var circle_marker_8b1b02011e7d2d9f81193739cdba56b9 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_b6c134bb51dea074d283efc90d02220d.bindTooltip(
+            circle_marker_8b1b02011e7d2d9f81193739cdba56b9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -365,13 +368,13 @@
             );
         
     
-            var circle_marker_409b8be7ee6024c46533a19b2e98b0e7 = L.circleMarker(
+            var circle_marker_bfe95ab9d82fd17ef909c1e868ffb7e7 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_409b8be7ee6024c46533a19b2e98b0e7.bindTooltip(
+            circle_marker_bfe95ab9d82fd17ef909c1e868ffb7e7.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -381,29 +384,29 @@
             );
         
     
-            var marker_949fbc560f8fa1841d73ef1ba182f880 = L.marker(
+            var marker_e19b6a27d5a485ea12c5c806b161c514 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            var div_icon_f85fcd9df368866d91f4f1dc6f8b8826 = L.divIcon({
+            var div_icon_027ab20af13aedfeddc38a98b73535cf = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_949fbc560f8fa1841d73ef1ba182f880.setIcon(div_icon_f85fcd9df368866d91f4f1dc6f8b8826);
+                marker_e19b6a27d5a485ea12c5c806b161c514.setIcon(div_icon_027ab20af13aedfeddc38a98b73535cf);
             
     
-            var circle_marker_07ef217ce9263e5e6e6972c851093b55 = L.circleMarker(
+            var circle_marker_1d2502610265d2f16d0a3b7b2cc57a95 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_07ef217ce9263e5e6e6972c851093b55.bindTooltip(
+            circle_marker_1d2502610265d2f16d0a3b7b2cc57a95.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -413,13 +416,13 @@
             );
         
     
-            var circle_marker_b9c4fc3636a629795ca5501601bdbe48 = L.circleMarker(
+            var circle_marker_6be253f08d2db85de1722b1fbccc4ea1 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_b9c4fc3636a629795ca5501601bdbe48.bindTooltip(
+            circle_marker_6be253f08d2db85de1722b1fbccc4ea1.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -429,13 +432,13 @@
             );
         
     
-            var circle_marker_4366a7decd1e3f05f9af2c13cc043a05 = L.circleMarker(
+            var circle_marker_bb96f12dc9d8af03d0b817cae9422478 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_4366a7decd1e3f05f9af2c13cc043a05.bindTooltip(
+            circle_marker_bb96f12dc9d8af03d0b817cae9422478.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -445,13 +448,13 @@
             );
         
     
-            var circle_marker_9561a5891624b31a32c7937a6036397a = L.circleMarker(
+            var circle_marker_072df993577396c54689460c92872300 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_9561a5891624b31a32c7937a6036397a.bindTooltip(
+            circle_marker_072df993577396c54689460c92872300.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -461,13 +464,13 @@
             );
         
     
-            var circle_marker_c4e78cca912aa0d35179514a086c993b = L.circleMarker(
+            var circle_marker_4ab0b868e74e86b5cf09dc082e464350 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_c4e78cca912aa0d35179514a086c993b.bindTooltip(
+            circle_marker_4ab0b868e74e86b5cf09dc082e464350.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -477,13 +480,13 @@
             );
         
     
-            var circle_marker_8d486c592e9fd5abd62a1377d3a65e1f = L.circleMarker(
+            var circle_marker_9e54897d1ed81c8375022776a9477e51 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            circle_marker_8d486c592e9fd5abd62a1377d3a65e1f.bindTooltip(
+            circle_marker_9e54897d1ed81c8375022776a9477e51.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -493,24 +496,24 @@
             );
         
     
-            var marker_39da503a931abf92b6dad17d290770b4 = L.marker(
+            var marker_1f4680effe700dfbab6a3218d55237fa = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_a038661ee1b76176c8176c2575db8ba3);
+            ).addTo(map_38382f466ff2c9478adb0bb7f3299db7);
         
     
-            var div_icon_77ed4bdf6d57529ac8bbf34f023fbf39 = L.divIcon({
+            var div_icon_ed9df6786cf98a5baae4213629ff1dbe = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_39da503a931abf92b6dad17d290770b4.setIcon(div_icon_77ed4bdf6d57529ac8bbf34f023fbf39);
+                marker_1f4680effe700dfbab6a3218d55237fa.setIcon(div_icon_ed9df6786cf98a5baae4213629ff1dbe);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=5.4141619&mlon=100.3287352#map=16/5.4141619/100.3287352" rel="nofollow">George Town (UNESCO) – tranh tường Armenian Street, clan jetties, Cheong Fatt Tze Blue Mansion</a></li><li><a href="https://www.openstreetmap.org/?mlat=5.3997214&mlon=100.2738891#map=16/5.3997214/100.2738891" rel="nofollow">Kek Lok Si</a></li><li><a href="https://www.openstreetmap.org/?mlat=5.4227023&mlon=100.2699782#map=16/5.4227023/100.2699782" rel="nofollow">Penang Hill funicular</a></li><li class="off">Đền Rắn <em>nearest match was 457 km away; not used</em></li><li><a href="https://www.openstreetmap.org/?mlat=5.4708863&mlon=100.2485887#map=16/5.4708863/100.2485887" rel="nofollow">Batu Ferringhi</a></li><li class="off">ẩm thực char kway teow, assam laksa <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Toray Group Malaysia** vận hành **8 nhà máy tại Penang**: **Penfabric** (4 xưởng dệt/nhuộm), **Penfibre** (xơ staple polyester ~51.000 tấn/năm, màng polyester, và **màng ngăn pin — battery separator film**). Đây là điểm giao thú vị: cùng một tổ hợp vừa làm vải vừa làm vật liệu pin — nền tảng vật lý của smart garment cần nguồn.
+<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=5.4141619&mlon=100.3287352#map=16/5.4141619/100.3287352" rel="nofollow">George Town (UNESCO) – tranh tường Armenian Street, clan jetties, Cheong Fatt Tze Blue Mansion</a></li><li><img class="thumb" src="sights/kek-lok-si.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=5.3997214&mlon=100.2738891#map=16/5.3997214/100.2738891" rel="nofollow">Kek Lok Si</a></li><li><img class="thumb" src="sights/penang-hill-funicular.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=5.4227023&mlon=100.2699782#map=16/5.4227023/100.2699782" rel="nofollow">Penang Hill funicular</a></li><li class="off">Đền Rắn <em>nearest match was 457 km away; not used</em></li><li><img class="thumb" src="sights/batu-ferringhi.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=5.4708863&mlon=100.2485887#map=16/5.4708863/100.2485887" rel="nofollow">Batu Ferringhi</a></li><li class="off">ẩm thực char kway teow, assam laksa <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Toray Group Malaysia** vận hành **8 nhà máy tại Penang**: **Penfabric** (4 xưởng dệt/nhuộm), **Penfibre** (xơ staple polyester ~51.000 tấn/năm, màng polyester, và **màng ngăn pin — battery separator film**). Đây là điểm giao thú vị: cùng một tổ hợp vừa làm vải vừa làm vật liệu pin — nền tảng vật lý của smart garment cần nguồn.
 - Penang đồng thời là cụm điện tử/đóng gói bán dẫn lớn nhất Malaysia → hạ tầng cho lai ghép textile × electronics.
 - Di sản: batik Penang, nyonya kebaya (thêu Peranakan) <em>not found</em></li></ul>
 

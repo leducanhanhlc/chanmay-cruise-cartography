@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5499cf5cab9ac1729162581203671f12 {
+                #map_d950c44287d67a1392a541042dc83660 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5499cf5cab9ac1729162581203671f12&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_d950c44287d67a1392a541042dc83660&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_5499cf5cab9ac1729162581203671f12 = L.map(
-                &quot;map_5499cf5cab9ac1729162581203671f12&quot;,
+            var map_d950c44287d67a1392a541042dc83660 = L.map(
+                &quot;map_d950c44287d67a1392a541042dc83660&quot;,
                 {
                     center: [1.2645, 103.863],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_5499cf5cab9ac1729162581203671f12);
+            L.control.scale().addTo(map_d950c44287d67a1392a541042dc83660);
 
             
 
         
     
-            var tile_layer_cbf3b698740cdee6aa3e117d0d57a22b = L.tileLayer(
+            var tile_layer_cffede99f5ab35ca02018a0ae4934ea2 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_cbf3b698740cdee6aa3e117d0d57a22b.addTo(map_5499cf5cab9ac1729162581203671f12);
+            tile_layer_cffede99f5ab35ca02018a0ae4934ea2.addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            var circle_marker_87306d6a6d47b6d3b64ecfd4376086f1 = L.circleMarker(
+            var circle_marker_7e3302a59b4839365ac2c85eca4cc480 = L.circleMarker(
                 [1.2645, 103.863],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_87306d6a6d47b6d3b64ecfd4376086f1.bindTooltip(
+            circle_marker_7e3302a59b4839365ac2c85eca4cc480.bindTooltip(
                 `&lt;div&gt;
                      Singapore — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_b6dc7a21a8a493301134e5c4cfa975ac = L.popup({
+        var popup_e1544676abbd8350663a49304f295298 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_ece896f2835e96b1f628b86f02ebd75e = $(`&lt;div id=&quot;html_ece896f2835e96b1f628b86f02ebd75e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Singapore&lt;/div&gt;&lt;img src=&quot;img/singapore.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Singapore&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Singapore_(SG),_The_Fullerton_Hotel_--_2019_--_4681.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_b6dc7a21a8a493301134e5c4cfa975ac.setContent(html_ece896f2835e96b1f628b86f02ebd75e);
+                var html_3856ea8c898b45b22828525472e672f2 = $(`&lt;div id=&quot;html_3856ea8c898b45b22828525472e672f2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Singapore&lt;/div&gt;&lt;img src=&quot;img/singapore.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Singapore&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Singapore_(SG),_The_Fullerton_Hotel_--_2019_--_4681.jpg&quot; rel=&quot;nofollow&quot;&gt;Dietmar Rabich · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_e1544676abbd8350663a49304f295298.setContent(html_3856ea8c898b45b22828525472e672f2);
             
         
 
-        circle_marker_87306d6a6d47b6d3b64ecfd4376086f1.bindPopup(popup_b6dc7a21a8a493301134e5c4cfa975ac)
+        circle_marker_7e3302a59b4839365ac2c85eca4cc480.bindPopup(popup_e1544676abbd8350663a49304f295298)
         ;
 
         
     
     
-            var circle_marker_1e6d00727b1b6b3e51a709ae09562d06 = L.circleMarker(
+            var circle_marker_6cb5233e894aa6097e3d9cf403d3eb2b = L.circleMarker(
                 [1.2811486, 103.86496],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_aecef1414d040742bde068fa74089361 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_3c0739fdd79ecdf28c8e7971e290c81c = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_89ce71ecc23ff9254d4009d9dcfe137e = $(`&lt;div id=&quot;html_89ce71ecc23ff9254d4009d9dcfe137e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Gardens by the Bay – Supertree Grove, Cloud Forest&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2811486&amp;mlon=103.86496#map=16/1.2811486/103.86496&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_aecef1414d040742bde068fa74089361.setContent(html_89ce71ecc23ff9254d4009d9dcfe137e);
+                var html_9f159f4dd0d0c92b961702e37e2e0c87 = $(`&lt;div id=&quot;html_9f159f4dd0d0c92b961702e37e2e0c87&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Gardens by the Bay – Supertree Grove, Cloud Forest&lt;/div&gt;&lt;img src=&quot;sights/gardens-by-the-bay-supertree-grove-cloud-forest.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Supertree_Grove,_Gardens_by_the_Bay,_Singapore1.jpg&quot; rel=&quot;nofollow&quot;&gt;Mustang Joe · CC0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2811486&amp;mlon=103.86496#map=16/1.2811486/103.86496&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_3c0739fdd79ecdf28c8e7971e290c81c.setContent(html_9f159f4dd0d0c92b961702e37e2e0c87);
             
         
 
-        circle_marker_1e6d00727b1b6b3e51a709ae09562d06.bindPopup(popup_aecef1414d040742bde068fa74089361)
+        circle_marker_6cb5233e894aa6097e3d9cf403d3eb2b.bindPopup(popup_3c0739fdd79ecdf28c8e7971e290c81c)
         ;
 
         
     
     
-            circle_marker_1e6d00727b1b6b3e51a709ae09562d06.bindTooltip(
+            circle_marker_6cb5233e894aa6097e3d9cf403d3eb2b.bindTooltip(
                 `&lt;div&gt;
-                     Gardens by the Bay – Supertree Grove, Cloud Forest
+                     Gardens by the Bay – Supertree Grove, Cloud Forest — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_98f0c5da08766b879c5c4de5758932c1 = L.circleMarker(
+            var circle_marker_e3630cb9a0ca7f84662f69486b4ea97f = L.circleMarker(
                 [1.2856852, 103.8541592],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_bc2ec0490c0b9a16b29f862fc69579e0 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_4c4089177c0d401bb1334be8194b6311 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_81d4437d68794d32fec3537727914a4a = $(`&lt;div id=&quot;html_81d4437d68794d32fec3537727914a4a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Merlion Park&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2856852&amp;mlon=103.8541592#map=16/1.2856852/103.8541592&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_bc2ec0490c0b9a16b29f862fc69579e0.setContent(html_81d4437d68794d32fec3537727914a4a);
+                var html_dfe8aae5ce461f78030756dc99d03526 = $(`&lt;div id=&quot;html_dfe8aae5ce461f78030756dc99d03526&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Merlion Park&lt;/div&gt;&lt;img src=&quot;sights/merlion-park.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Merli%C3%B3n,_Marina_Bay,_Singapur,_2023-08-18,_DD_45-47_HDR.jpg&quot; rel=&quot;nofollow&quot;&gt;Diego Delso · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2856852&amp;mlon=103.8541592#map=16/1.2856852/103.8541592&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_4c4089177c0d401bb1334be8194b6311.setContent(html_dfe8aae5ce461f78030756dc99d03526);
             
         
 
-        circle_marker_98f0c5da08766b879c5c4de5758932c1.bindPopup(popup_bc2ec0490c0b9a16b29f862fc69579e0)
+        circle_marker_e3630cb9a0ca7f84662f69486b4ea97f.bindPopup(popup_4c4089177c0d401bb1334be8194b6311)
         ;
 
         
     
     
-            circle_marker_98f0c5da08766b879c5c4de5758932c1.bindTooltip(
+            circle_marker_e3630cb9a0ca7f84662f69486b4ea97f.bindTooltip(
                 `&lt;div&gt;
-                     Merlion Park
+                     Merlion Park — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_c40ab42ac1528342a9c0488b92c13379 = L.circleMarker(
+            var circle_marker_064c17853691e6c51f45f42406da139e = L.circleMarker(
                 [1.249689, 103.8297534],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_2e943daf01a33370db0ab63a9c527745 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_55de28f866a7f3100ff978a29a43f380 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_064eb5c07cc409fca12a51b44456aa09 = $(`&lt;div id=&quot;html_064eb5c07cc409fca12a51b44456aa09&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Sentosa – Universal Studios, S.E.A. Aquarium&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.249689&amp;mlon=103.8297534#map=16/1.249689/103.8297534&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_2e943daf01a33370db0ab63a9c527745.setContent(html_064eb5c07cc409fca12a51b44456aa09);
+                var html_039bbbb2885479ae416fa5ea5831c4ef = $(`&lt;div id=&quot;html_039bbbb2885479ae416fa5ea5831c4ef&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Sentosa – Universal Studios, S.E.A. Aquarium&lt;/div&gt;&lt;img src=&quot;sights/sentosa-universal-studios-s-e-a-aquarium.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:(SGP-Singapore)_Sentosa_Development_Corporation_PD3134S_Sentosa_Bus_A_2026-03-13.jpg&quot; rel=&quot;nofollow&quot;&gt;S5A-0043 · CC BY 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.249689&amp;mlon=103.8297534#map=16/1.249689/103.8297534&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_55de28f866a7f3100ff978a29a43f380.setContent(html_039bbbb2885479ae416fa5ea5831c4ef);
             
         
 
-        circle_marker_c40ab42ac1528342a9c0488b92c13379.bindPopup(popup_2e943daf01a33370db0ab63a9c527745)
+        circle_marker_064c17853691e6c51f45f42406da139e.bindPopup(popup_55de28f866a7f3100ff978a29a43f380)
         ;
 
         
     
     
-            circle_marker_c40ab42ac1528342a9c0488b92c13379.bindTooltip(
+            circle_marker_064c17853691e6c51f45f42406da139e.bindTooltip(
                 `&lt;div&gt;
-                     Sentosa – Universal Studios, S.E.A. Aquarium
+                     Sentosa – Universal Studios, S.E.A. Aquarium — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,30 +265,30 @@
             );
         
     
-            var circle_marker_d4d541903a843ca2b786fde71f170f9b = L.circleMarker(
+            var circle_marker_7d5978e08b343b8c6830aad657740860 = L.circleMarker(
                 [1.4037076, 103.7940374],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_6735549a0525fe5b4b5399be8b807525 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_775557c79c261b2faf2d41820b64be7b = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_4bc7725996e17f34b6999f2b3e0884ce = $(`&lt;div id=&quot;html_4bc7725996e17f34b6999f2b3e0884ce&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Singapore Zoo &amp; Night Safari&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.4037076&amp;mlon=103.7940374#map=16/1.4037076/103.7940374&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_6735549a0525fe5b4b5399be8b807525.setContent(html_4bc7725996e17f34b6999f2b3e0884ce);
+                var html_477dc358321759a1ea525299b85e207b = $(`&lt;div id=&quot;html_477dc358321759a1ea525299b85e207b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Singapore Zoo &amp; Night Safari&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.4037076&amp;mlon=103.7940374#map=16/1.4037076/103.7940374&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_775557c79c261b2faf2d41820b64be7b.setContent(html_477dc358321759a1ea525299b85e207b);
             
         
 
-        circle_marker_d4d541903a843ca2b786fde71f170f9b.bindPopup(popup_6735549a0525fe5b4b5399be8b807525)
+        circle_marker_7d5978e08b343b8c6830aad657740860.bindPopup(popup_775557c79c261b2faf2d41820b64be7b)
         ;
 
         
     
     
-            circle_marker_d4d541903a843ca2b786fde71f170f9b.bindTooltip(
+            circle_marker_7d5978e08b343b8c6830aad657740860.bindTooltip(
                 `&lt;div&gt;
                      Singapore Zoo &amp; Night Safari
                  &lt;/div&gt;`,
@@ -295,32 +298,32 @@
             );
         
     
-            var circle_marker_e9e41df3dd20b4862e9a7f94143a52ea = L.circleMarker(
+            var circle_marker_45daf3070b80b9e97f1021a2e453e15c = L.circleMarker(
                 [1.2799695, 103.8436879],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_51b88be46f58b2ff70ab62b4cee52ca7 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_d8b098e1fd2b8b5a60f37e0315b63064 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_3f9eb216d02015d70794f4e802c29d79 = $(`&lt;div id=&quot;html_3f9eb216d02015d70794f4e802c29d79&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Chinatown, Little India, Kampong Glam – Masjid Sultan&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2799695&amp;mlon=103.8436879#map=16/1.2799695/103.8436879&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_51b88be46f58b2ff70ab62b4cee52ca7.setContent(html_3f9eb216d02015d70794f4e802c29d79);
+                var html_65011ed781359593e5a65ef05b28c3c8 = $(`&lt;div id=&quot;html_65011ed781359593e5a65ef05b28c3c8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Chinatown, Little India, Kampong Glam – Masjid Sultan&lt;/div&gt;&lt;img src=&quot;sights/chinatown-little-india-kampong-glam-masjid-sultan.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Carved_double_door_with_two_wooden_reliefs_of_standing_women,_Chinatown,_Singapore.jpg&quot; rel=&quot;nofollow&quot;&gt;Basile Morin · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2799695&amp;mlon=103.8436879#map=16/1.2799695/103.8436879&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_d8b098e1fd2b8b5a60f37e0315b63064.setContent(html_65011ed781359593e5a65ef05b28c3c8);
             
         
 
-        circle_marker_e9e41df3dd20b4862e9a7f94143a52ea.bindPopup(popup_51b88be46f58b2ff70ab62b4cee52ca7)
+        circle_marker_45daf3070b80b9e97f1021a2e453e15c.bindPopup(popup_d8b098e1fd2b8b5a60f37e0315b63064)
         ;
 
         
     
     
-            circle_marker_e9e41df3dd20b4862e9a7f94143a52ea.bindTooltip(
+            circle_marker_45daf3070b80b9e97f1021a2e453e15c.bindTooltip(
                 `&lt;div&gt;
-                     Chinatown, Little India, Kampong Glam – Masjid Sultan
+                     Chinatown, Little India, Kampong Glam – Masjid Sultan — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -328,30 +331,30 @@
             );
         
     
-            var circle_marker_56b3d94f2d90d3616e68864c66020c57 = L.circleMarker(
+            var circle_marker_8ca75270b469834c0a1ac7c46ac2d4a1 = L.circleMarker(
                 [1.3017541, 103.8378772],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_1038b86b1803fd6d1ca6dba2f2b290e7 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_8bcd2e8739cade5a46252ca2b14cf2bb = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_eb28c0fc39599dd16e247bfd71aee24e = $(`&lt;div id=&quot;html_eb28c0fc39599dd16e247bfd71aee24e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Orchard Road&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.3017541&amp;mlon=103.8378772#map=16/1.3017541/103.8378772&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_1038b86b1803fd6d1ca6dba2f2b290e7.setContent(html_eb28c0fc39599dd16e247bfd71aee24e);
+                var html_98da1224c0b3e6194105715905661941 = $(`&lt;div id=&quot;html_98da1224c0b3e6194105715905661941&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Orchard Road&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.3017541&amp;mlon=103.8378772#map=16/1.3017541/103.8378772&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_8bcd2e8739cade5a46252ca2b14cf2bb.setContent(html_98da1224c0b3e6194105715905661941);
             
         
 
-        circle_marker_56b3d94f2d90d3616e68864c66020c57.bindPopup(popup_1038b86b1803fd6d1ca6dba2f2b290e7)
+        circle_marker_8ca75270b469834c0a1ac7c46ac2d4a1.bindPopup(popup_8bcd2e8739cade5a46252ca2b14cf2bb)
         ;
 
         
     
     
-            circle_marker_56b3d94f2d90d3616e68864c66020c57.bindTooltip(
+            circle_marker_8ca75270b469834c0a1ac7c46ac2d4a1.bindTooltip(
                 `&lt;div&gt;
                      Orchard Road
                  &lt;/div&gt;`,
@@ -361,32 +364,32 @@
             );
         
     
-            var circle_marker_0e59b4307142ed350f12fd07456bbc1a = L.circleMarker(
+            var circle_marker_3cad71137293d76f454e1d4e0a499d1f = L.circleMarker(
                 [1.3602243, 103.9896749],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_7ea317202b363b7462559205a060fc5c = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_542d24bba5359ef22c8111424036500e = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_e7af6051526b6c0e0cfa5d8ae37a5096 = $(`&lt;div id=&quot;html_e7af6051526b6c0e0cfa5d8ae37a5096&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Jewel Changi – Rain Vortex&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.3602243&amp;mlon=103.9896749#map=16/1.3602243/103.9896749&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_7ea317202b363b7462559205a060fc5c.setContent(html_e7af6051526b6c0e0cfa5d8ae37a5096);
+                var html_7273ea96d8c8597b6092a46be97f203d = $(`&lt;div id=&quot;html_7273ea96d8c8597b6092a46be97f203d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Jewel Changi – Rain Vortex&lt;/div&gt;&lt;img src=&quot;sights/jewel-changi-rain-vortex.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Rain_Vortex_Night_Jewel_Changi_Feb23_R16_06856.jpg&quot; rel=&quot;nofollow&quot;&gt;This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.3602243&amp;mlon=103.9896749#map=16/1.3602243/103.9896749&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_542d24bba5359ef22c8111424036500e.setContent(html_7273ea96d8c8597b6092a46be97f203d);
             
         
 
-        circle_marker_0e59b4307142ed350f12fd07456bbc1a.bindPopup(popup_7ea317202b363b7462559205a060fc5c)
+        circle_marker_3cad71137293d76f454e1d4e0a499d1f.bindPopup(popup_542d24bba5359ef22c8111424036500e)
         ;
 
         
     
     
-            circle_marker_0e59b4307142ed350f12fd07456bbc1a.bindTooltip(
+            circle_marker_3cad71137293d76f454e1d4e0a499d1f.bindTooltip(
                 `&lt;div&gt;
-                     Jewel Changi – Rain Vortex
+                     Jewel Changi – Rain Vortex — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -394,32 +397,32 @@
             );
         
     
-            var circle_marker_aaac3c0987ed280dd30d35af46321d78 = L.circleMarker(
+            var circle_marker_eabbea3dcb0b7d0150e7fdea39827589 = L.circleMarker(
                 [1.2861382, 103.8592297],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_993ed24ea209e99206b82787fa072ef4 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_9c5dbaf1c9eb3f550dc465b08ce338fa = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_ea4035781af45403846ad29844e35696 = $(`&lt;div id=&quot;html_ea4035781af45403846ad29844e35696&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;ArtScience Museum, National Gallery&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2861382&amp;mlon=103.8592297#map=16/1.2861382/103.8592297&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_993ed24ea209e99206b82787fa072ef4.setContent(html_ea4035781af45403846ad29844e35696);
+                var html_088dd38e07130461c29f5ee57f5a36eb = $(`&lt;div id=&quot;html_088dd38e07130461c29f5ee57f5a36eb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;ArtScience Museum, National Gallery&lt;/div&gt;&lt;img src=&quot;sights/artscience-museum-national-gallery.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:ArtScience_Museum,_Marina_Bay_Sands,_Singapore.jpg&quot; rel=&quot;nofollow&quot;&gt;Basile Morin · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.2861382&amp;mlon=103.8592297#map=16/1.2861382/103.8592297&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_9c5dbaf1c9eb3f550dc465b08ce338fa.setContent(html_088dd38e07130461c29f5ee57f5a36eb);
             
         
 
-        circle_marker_aaac3c0987ed280dd30d35af46321d78.bindPopup(popup_993ed24ea209e99206b82787fa072ef4)
+        circle_marker_eabbea3dcb0b7d0150e7fdea39827589.bindPopup(popup_9c5dbaf1c9eb3f550dc465b08ce338fa)
         ;
 
         
     
     
-            circle_marker_aaac3c0987ed280dd30d35af46321d78.bindTooltip(
+            circle_marker_eabbea3dcb0b7d0150e7fdea39827589.bindTooltip(
                 `&lt;div&gt;
-                     ArtScience Museum, National Gallery
+                     ArtScience Museum, National Gallery — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -427,30 +430,30 @@
             );
         
     
-            var circle_marker_9dc3705656150ae3dc1628ad78c871c5 = L.circleMarker(
+            var circle_marker_019d74aadc19d9004898d46c421ab381 = L.circleMarker(
                 [1.3484104, 103.6829332],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-        var popup_379a8a351397e79de3b78908d2881ab3 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_c7b15a94acd3dc0580d03428944ad2bd = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_0d01bf7c810138b8d7cbc913f370e479 = $(`&lt;div id=&quot;html_0d01bf7c810138b8d7cbc913f370e479&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;- **NTU Singapore** — trung tâm mạnh nhất khu vực: **sợi bán dẫn siêu mảnh** dệt được vào vải (đã kéo được sợi không lỗi dài 100 m — dấu hiệu khả năng mở rộng thương mại); &quot;device-in-a-fibre&quot;; vải **thu năng lượng từ chuyển động cơ thể** (miếng 3×4 cm thắp 100 LED, ổn định sau 5 tháng giặt/gấp). Prototype: mũ beanie thông minh cho người khiếm thị, áo nhận thông tin như audio guide, dây đồng hồ làm cảm biến nhịp tim. - **A*STAR** (IME/IMRE) — vi điện tử và vật liệu, cộng tác với NTU trên wearable sensor. - **TaFF (Textile &amp; Fashion Federation)** và **Singapore Fashion Council** — cửa ngõ thương mại hóa; Singapore là trung tâm mua hàng/tài chính của phần lớn chuỗi cung ứng dệt ASEAN&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.3484104&amp;mlon=103.6829332#map=16/1.3484104/103.6829332&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_379a8a351397e79de3b78908d2881ab3.setContent(html_0d01bf7c810138b8d7cbc913f370e479);
+                var html_a7fc4f6dfa665329aa02840a9bec8fda = $(`&lt;div id=&quot;html_a7fc4f6dfa665329aa02840a9bec8fda&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;- **NTU Singapore** — trung tâm mạnh nhất khu vực: **sợi bán dẫn siêu mảnh** dệt được vào vải (đã kéo được sợi không lỗi dài 100 m — dấu hiệu khả năng mở rộng thương mại); &quot;device-in-a-fibre&quot;; vải **thu năng lượng từ chuyển động cơ thể** (miếng 3×4 cm thắp 100 LED, ổn định sau 5 tháng giặt/gấp). Prototype: mũ beanie thông minh cho người khiếm thị, áo nhận thông tin như audio guide, dây đồng hồ làm cảm biến nhịp tim. - **A*STAR** (IME/IMRE) — vi điện tử và vật liệu, cộng tác với NTU trên wearable sensor. - **TaFF (Textile &amp; Fashion Federation)** và **Singapore Fashion Council** — cửa ngõ thương mại hóa; Singapore là trung tâm mua hàng/tài chính của phần lớn chuỗi cung ứng dệt ASEAN&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=1.3484104&amp;mlon=103.6829332#map=16/1.3484104/103.6829332&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_c7b15a94acd3dc0580d03428944ad2bd.setContent(html_a7fc4f6dfa665329aa02840a9bec8fda);
             
         
 
-        circle_marker_9dc3705656150ae3dc1628ad78c871c5.bindPopup(popup_379a8a351397e79de3b78908d2881ab3)
+        circle_marker_019d74aadc19d9004898d46c421ab381.bindPopup(popup_c7b15a94acd3dc0580d03428944ad2bd)
         ;
 
         
     
     
-            circle_marker_9dc3705656150ae3dc1628ad78c871c5.bindTooltip(
+            circle_marker_019d74aadc19d9004898d46c421ab381.bindTooltip(
                 `&lt;div&gt;
                      - **NTU Singapore** — trung tâm mạnh nhất khu vực: **sợi bán dẫn siêu mảnh** dệt được vào vải (đã kéo được sợi không lỗi dài 100 m — dấu hiệu khả năng mở rộng thương mại); &quot;device-in-a-fibre&quot;; vải **thu năng lượng từ chuyển động cơ thể** (miếng 3×4 cm thắp 100 LED, ổn định sau 5 tháng giặt/gấp). Prototype: mũ beanie thông minh cho người khiếm thị, áo nhận thông tin như audio guide, dây đồng hồ làm cảm biến nhịp tim.
 - **A*STAR** (IME/IMRE) — vi điện tử và vật liệu, cộng tác với NTU trên wearable sensor.
@@ -462,19 +465,19 @@
             );
         
     
-            map_5499cf5cab9ac1729162581203671f12.fitBounds(
+            map_d950c44287d67a1392a541042dc83660.fitBounds(
                 [[1.249689, 103.6829332], [1.4037076, 103.9896749]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_41c7e24c791e08a602a87d50a4e7902f = L.circleMarker(
+            var circle_marker_2228d23af2ef40c6f4268b507ae5c270 = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_41c7e24c791e08a602a87d50a4e7902f.bindTooltip(
+            circle_marker_2228d23af2ef40c6f4268b507ae5c270.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -484,13 +487,13 @@
             );
         
     
-            var circle_marker_baad2a86e5ee1870a6a138c27e453ad8 = L.circleMarker(
+            var circle_marker_eb43e0e1d5e111ea7703c37f01e8d9f4 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_baad2a86e5ee1870a6a138c27e453ad8.bindTooltip(
+            circle_marker_eb43e0e1d5e111ea7703c37f01e8d9f4.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -500,13 +503,13 @@
             );
         
     
-            var circle_marker_850905534119875c383c14e59bf42a4a = L.circleMarker(
+            var circle_marker_b4901c1b5293c648dc88265fa8206c24 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_850905534119875c383c14e59bf42a4a.bindTooltip(
+            circle_marker_b4901c1b5293c648dc88265fa8206c24.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -516,13 +519,13 @@
             );
         
     
-            var circle_marker_fa43bdbd6ef0fbc0d58612a43f462a15 = L.circleMarker(
+            var circle_marker_7c9e803a01caa9d6c08e6f4d554ec635 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_fa43bdbd6ef0fbc0d58612a43f462a15.bindTooltip(
+            circle_marker_7c9e803a01caa9d6c08e6f4d554ec635.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -532,13 +535,13 @@
             );
         
     
-            var circle_marker_04ba5af5e52bf3bfd96726a3f0913cca = L.circleMarker(
+            var circle_marker_8275d95e28525b24b9e548be590aba1d = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_04ba5af5e52bf3bfd96726a3f0913cca.bindTooltip(
+            circle_marker_8275d95e28525b24b9e548be590aba1d.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -548,29 +551,29 @@
             );
         
     
-            var marker_cbcf0d859a6259191fba8ee7de63184b = L.marker(
+            var marker_719351c4ae883ac7d41af209f0cc2256 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            var div_icon_957191220e287acf2a889fad77d15ca4 = L.divIcon({
+            var div_icon_4f49e2a2c019294e25e68ec8bf9d581b = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_cbcf0d859a6259191fba8ee7de63184b.setIcon(div_icon_957191220e287acf2a889fad77d15ca4);
+                marker_719351c4ae883ac7d41af209f0cc2256.setIcon(div_icon_4f49e2a2c019294e25e68ec8bf9d581b);
             
     
-            var circle_marker_e7681dd960a92cedf62ddd6bbf6117af = L.circleMarker(
+            var circle_marker_d218c6d9fb1956f2b692c1000fe1550e = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_e7681dd960a92cedf62ddd6bbf6117af.bindTooltip(
+            circle_marker_d218c6d9fb1956f2b692c1000fe1550e.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -580,13 +583,13 @@
             );
         
     
-            var circle_marker_b927dccf6db2102381b9f566859bb8f5 = L.circleMarker(
+            var circle_marker_c446d303bcc2adfeb53e2a303221dbab = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_b927dccf6db2102381b9f566859bb8f5.bindTooltip(
+            circle_marker_c446d303bcc2adfeb53e2a303221dbab.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -596,13 +599,13 @@
             );
         
     
-            var circle_marker_5fe449365bb08d1ce54641d21d5b72f2 = L.circleMarker(
+            var circle_marker_40371c690460b61ab89a15f046f2c394 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_5fe449365bb08d1ce54641d21d5b72f2.bindTooltip(
+            circle_marker_40371c690460b61ab89a15f046f2c394.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -612,13 +615,13 @@
             );
         
     
-            var circle_marker_08d1589802a5915260290a6dcfc9ff0e = L.circleMarker(
+            var circle_marker_6238e4aab12b696549b0d52da71bab5c = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_08d1589802a5915260290a6dcfc9ff0e.bindTooltip(
+            circle_marker_6238e4aab12b696549b0d52da71bab5c.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -628,13 +631,13 @@
             );
         
     
-            var circle_marker_bef77cfeddcd7f8259f411e2c3bdc693 = L.circleMarker(
+            var circle_marker_d5cb58f24b35bef5c6c6f24aafc11418 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_bef77cfeddcd7f8259f411e2c3bdc693.bindTooltip(
+            circle_marker_d5cb58f24b35bef5c6c6f24aafc11418.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -644,13 +647,13 @@
             );
         
     
-            var circle_marker_f629573027279ed224eeda863ce8df70 = L.circleMarker(
+            var circle_marker_e2ecab40651f65f7a1189946f394f4a8 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            circle_marker_f629573027279ed224eeda863ce8df70.bindTooltip(
+            circle_marker_e2ecab40651f65f7a1189946f394f4a8.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -660,24 +663,24 @@
             );
         
     
-            var marker_9d1b4569271004d4b2e6242f0017316d = L.marker(
+            var marker_097166b12230b60e210cda83ca17d62e = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_5499cf5cab9ac1729162581203671f12);
+            ).addTo(map_d950c44287d67a1392a541042dc83660);
         
     
-            var div_icon_12fec277430282f5ca61e4448e9264e7 = L.divIcon({
+            var div_icon_644871fd857183d90f5f5a9c5a53b263 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_9d1b4569271004d4b2e6242f0017316d.setIcon(div_icon_12fec277430282f5ca61e4448e9264e7);
+                marker_097166b12230b60e210cda83ca17d62e.setIcon(div_icon_644871fd857183d90f5f5a9c5a53b263);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=1.2811486&mlon=103.86496#map=16/1.2811486/103.86496" rel="nofollow">Gardens by the Bay – Supertree Grove, Cloud Forest</a></li><li class="off">Marina Bay Sands SkyPark <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=1.2856852&mlon=103.8541592#map=16/1.2856852/103.8541592" rel="nofollow">Merlion Park</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.249689&mlon=103.8297534#map=16/1.249689/103.8297534" rel="nofollow">Sentosa – Universal Studios, S.E.A. Aquarium</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.4037076&mlon=103.7940374#map=16/1.4037076/103.7940374" rel="nofollow">Singapore Zoo & Night Safari</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.2799695&mlon=103.8436879#map=16/1.2799695/103.8436879" rel="nofollow">Chinatown, Little India, Kampong Glam – Masjid Sultan</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.3017541&mlon=103.8378772#map=16/1.3017541/103.8378772" rel="nofollow">Orchard Road</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.3602243&mlon=103.9896749#map=16/1.3602243/103.9896749" rel="nofollow">Jewel Changi – Rain Vortex</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.2861382&mlon=103.8592297#map=16/1.2861382/103.8592297" rel="nofollow">ArtScience Museum, National Gallery</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=1.3484104&mlon=103.6829332#map=16/1.3484104/103.6829332" rel="nofollow">- **NTU Singapore** — trung tâm mạnh nhất khu vực: **sợi bán dẫn siêu mảnh** dệt được vào vải (đã kéo được sợi không lỗi dài 100 m — dấu hiệu khả năng mở rộng thương mại); "device-in-a-fibre"; vải **thu năng lượng từ chuyển động cơ thể** (miếng 3×4 cm thắp 100 LED, ổn định sau 5 tháng giặt/gấp). Prototype: mũ beanie thông minh cho người khiếm thị, áo nhận thông tin như audio guide, dây đồng hồ làm cảm biến nhịp tim.
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/gardens-by-the-bay-supertree-grove-cloud-forest.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=1.2811486&mlon=103.86496#map=16/1.2811486/103.86496" rel="nofollow">Gardens by the Bay – Supertree Grove, Cloud Forest</a></li><li class="off">Marina Bay Sands SkyPark <em>not found</em></li><li><img class="thumb" src="sights/merlion-park.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=1.2856852&mlon=103.8541592#map=16/1.2856852/103.8541592" rel="nofollow">Merlion Park</a></li><li><img class="thumb" src="sights/sentosa-universal-studios-s-e-a-aquarium.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=1.249689&mlon=103.8297534#map=16/1.249689/103.8297534" rel="nofollow">Sentosa – Universal Studios, S.E.A. Aquarium</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.4037076&mlon=103.7940374#map=16/1.4037076/103.7940374" rel="nofollow">Singapore Zoo & Night Safari</a></li><li><img class="thumb" src="sights/chinatown-little-india-kampong-glam-masjid-sultan.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=1.2799695&mlon=103.8436879#map=16/1.2799695/103.8436879" rel="nofollow">Chinatown, Little India, Kampong Glam – Masjid Sultan</a></li><li><a href="https://www.openstreetmap.org/?mlat=1.3017541&mlon=103.8378772#map=16/1.3017541/103.8378772" rel="nofollow">Orchard Road</a></li><li><img class="thumb" src="sights/jewel-changi-rain-vortex.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=1.3602243&mlon=103.9896749#map=16/1.3602243/103.9896749" rel="nofollow">Jewel Changi – Rain Vortex</a></li><li><img class="thumb" src="sights/artscience-museum-national-gallery.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=1.2861382&mlon=103.8592297#map=16/1.2861382/103.8592297" rel="nofollow">ArtScience Museum, National Gallery</a></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=1.3484104&mlon=103.6829332#map=16/1.3484104/103.6829332" rel="nofollow">- **NTU Singapore** — trung tâm mạnh nhất khu vực: **sợi bán dẫn siêu mảnh** dệt được vào vải (đã kéo được sợi không lỗi dài 100 m — dấu hiệu khả năng mở rộng thương mại); "device-in-a-fibre"; vải **thu năng lượng từ chuyển động cơ thể** (miếng 3×4 cm thắp 100 LED, ổn định sau 5 tháng giặt/gấp). Prototype: mũ beanie thông minh cho người khiếm thị, áo nhận thông tin như audio guide, dây đồng hồ làm cảm biến nhịp tim.
 - **A*STAR** (IME/IMRE) — vi điện tử và vật liệu, cộng tác với NTU trên wearable sensor.
 - **TaFF (Textile & Fashion Federation)** và **Singapore Fashion Council** — cửa ngõ thương mại hóa; Singapore là trung tâm mua hàng/tài chính của phần lớn chuỗi cung ứng dệt ASEAN</a></li></ul>
 

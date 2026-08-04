@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_cb9c1d1a32be4d347375f0e8d75e4823 {
+                #map_a4ea6da9034f6c0c32d98b18bae9dc79 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_cb9c1d1a32be4d347375f0e8d75e4823&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a4ea6da9034f6c0c32d98b18bae9dc79&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_cb9c1d1a32be4d347375f0e8d75e4823 = L.map(
-                &quot;map_cb9c1d1a32be4d347375f0e8d75e4823&quot;,
+            var map_a4ea6da9034f6c0c32d98b18bae9dc79 = L.map(
+                &quot;map_a4ea6da9034f6c0c32d98b18bae9dc79&quot;,
                 {
                     center: [9.08, -79.68],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            L.control.scale().addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
 
             
 
         
     
-            var tile_layer_46422d3224699e80f29c3be70e84e1ee = L.tileLayer(
+            var tile_layer_0291c4c23a1d60a6397736d4500b9a45 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_46422d3224699e80f29c3be70e84e1ee.addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            tile_layer_0291c4c23a1d60a6397736d4500b9a45.addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            var circle_marker_5efaf06910c33e08fd66e813697d5061 = L.circleMarker(
+            var circle_marker_1af585054f009c7ef9dcff28dbfb93e3 = L.circleMarker(
                 [9.08, -79.68],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_5efaf06910c33e08fd66e813697d5061.bindTooltip(
+            circle_marker_1af585054f009c7ef9dcff28dbfb93e3.bindTooltip(
                 `&lt;div&gt;
                      Panama Canal — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_f2bd539a757c200ef8cd41f25f4391d4 = L.popup({
+        var popup_90d365c40915fda32674835a656db27f = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_deb45f48663469c9777e4f4c33710409 = $(`&lt;div id=&quot;html_deb45f48663469c9777e4f4c33710409&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Panama Canal&lt;/div&gt;&lt;img src=&quot;img/panama-canal.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Casco Viejo / âu tàu Panama&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:RMS_Franconia,_entering_Panama_Canal_locks.jpg&quot; rel=&quot;nofollow&quot;&gt;Unknown author Unknown author · Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_f2bd539a757c200ef8cd41f25f4391d4.setContent(html_deb45f48663469c9777e4f4c33710409);
+                var html_3dc10a0a34492fba6c5b04663cb85368 = $(`&lt;div id=&quot;html_3dc10a0a34492fba6c5b04663cb85368&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Panama Canal&lt;/div&gt;&lt;img src=&quot;img/panama-canal.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Casco Viejo / âu tàu Panama&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:RMS_Franconia,_entering_Panama_Canal_locks.jpg&quot; rel=&quot;nofollow&quot;&gt;Unknown author Unknown author · Public domain&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_90d365c40915fda32674835a656db27f.setContent(html_3dc10a0a34492fba6c5b04663cb85368);
             
         
 
-        circle_marker_5efaf06910c33e08fd66e813697d5061.bindPopup(popup_f2bd539a757c200ef8cd41f25f4391d4)
+        circle_marker_1af585054f009c7ef9dcff28dbfb93e3.bindPopup(popup_90d365c40915fda32674835a656db27f)
         ;
 
         
     
     
-            var circle_marker_347aff4799cbe5814b16549b1bb84126 = L.circleMarker(
+            var circle_marker_dd3fa4e002cbfe97ae4f71f591094d9f = L.circleMarker(
                 [8.9525478, -79.5347175],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-        var popup_46979a2bedfe749272e8d6b06f804217 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_08920f19c106ebeca4232045b77cdda7 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_0b1baab74ff298d7c7322251d6ce75d1 = $(`&lt;div id=&quot;html_0b1baab74ff298d7c7322251d6ce75d1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Casco Viejo, Panama City (UNESCO)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=8.9525478&amp;mlon=-79.5347175#map=16/8.9525478/-79.5347175&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_46979a2bedfe749272e8d6b06f804217.setContent(html_0b1baab74ff298d7c7322251d6ce75d1);
+                var html_eed74bbcbcc295c8119f5c1ecb5752de = $(`&lt;div id=&quot;html_eed74bbcbcc295c8119f5c1ecb5752de&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Casco Viejo, Panama City (UNESCO)&lt;/div&gt;&lt;img src=&quot;sights/casco-viejo-panama-city-unesco.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Casco_Viejo,_Panama_City,_Panama_-_54301629817.jpg&quot; rel=&quot;nofollow&quot;&gt;RB Photo · CC BY 2.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=8.9525478&amp;mlon=-79.5347175#map=16/8.9525478/-79.5347175&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_08920f19c106ebeca4232045b77cdda7.setContent(html_eed74bbcbcc295c8119f5c1ecb5752de);
             
         
 
-        circle_marker_347aff4799cbe5814b16549b1bb84126.bindPopup(popup_46979a2bedfe749272e8d6b06f804217)
+        circle_marker_dd3fa4e002cbfe97ae4f71f591094d9f.bindPopup(popup_08920f19c106ebeca4232045b77cdda7)
         ;
 
         
     
     
-            circle_marker_347aff4799cbe5814b16549b1bb84126.bindTooltip(
+            circle_marker_dd3fa4e002cbfe97ae4f71f591094d9f.bindTooltip(
                 `&lt;div&gt;
-                     Casco Viejo, Panama City (UNESCO)
+                     Casco Viejo, Panama City (UNESCO) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_b04068673314efe640fdd59c9f22573c = L.circleMarker(
+            var circle_marker_1db80ddf4fd8bdbfeacb8550dace9541 = L.circleMarker(
                 [9.1180893, -79.7003028],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-        var popup_fda16d675db3773195861141e58ca169 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_aec41d1bbf5169bc804881317ed8f595 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_314c4ff2d74c1d5b7a21b51a2d20fc02 = $(`&lt;div id=&quot;html_314c4ff2d74c1d5b7a21b51a2d20fc02&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Gamboa – rừng mưa, Monkey Island&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=9.1180893&amp;mlon=-79.7003028#map=16/9.1180893/-79.7003028&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_fda16d675db3773195861141e58ca169.setContent(html_314c4ff2d74c1d5b7a21b51a2d20fc02);
+                var html_d589b2a5327d4d8d18e57d96d66a222e = $(`&lt;div id=&quot;html_d589b2a5327d4d8d18e57d96d66a222e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Gamboa – rừng mưa, Monkey Island&lt;/div&gt;&lt;img src=&quot;sights/gamboa-rung-mua-monkey-island.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Road_and_rail_bridge_at_Gamboa,_Panama_(17549695166).jpg&quot; rel=&quot;nofollow&quot;&gt;Seabamirum from Ithaca · CC BY 2.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=9.1180893&amp;mlon=-79.7003028#map=16/9.1180893/-79.7003028&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_aec41d1bbf5169bc804881317ed8f595.setContent(html_d589b2a5327d4d8d18e57d96d66a222e);
             
         
 
-        circle_marker_b04068673314efe640fdd59c9f22573c.bindPopup(popup_fda16d675db3773195861141e58ca169)
+        circle_marker_1db80ddf4fd8bdbfeacb8550dace9541.bindPopup(popup_aec41d1bbf5169bc804881317ed8f595)
         ;
 
         
     
     
-            circle_marker_b04068673314efe640fdd59c9f22573c.bindTooltip(
+            circle_marker_1db80ddf4fd8bdbfeacb8550dace9541.bindTooltip(
                 `&lt;div&gt;
-                     Gamboa – rừng mưa, Monkey Island
+                     Gamboa – rừng mưa, Monkey Island — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_d47cf4e84d7f0550014717eaeb5d3e33 = L.circleMarker(
+            var circle_marker_26aebad221b2c6971716d835245be128 = L.circleMarker(
                 [9.5538162, -79.6549259],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-        var popup_e01bab2e047bd465058a9a624321af97 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_c1cd2444f90851543e8d7e008168bf9c = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_b5fd20fb366cb25bcf95be15b65fddd2 = $(`&lt;div id=&quot;html_b5fd20fb366cb25bcf95be15b65fddd2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Portobelo&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=9.5538162&amp;mlon=-79.6549259#map=16/9.5538162/-79.6549259&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_e01bab2e047bd465058a9a624321af97.setContent(html_b5fd20fb366cb25bcf95be15b65fddd2);
+                var html_dfb0266a63b5dec098c64bc1c4576bbc = $(`&lt;div id=&quot;html_dfb0266a63b5dec098c64bc1c4576bbc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Portobelo&lt;/div&gt;&lt;img src=&quot;sights/portobelo.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Plano_de_la_costa_de_Puerto_Velo_qe._comprehende_desde_el_Canal_de_Juan_Gallegos_hasta_la_Ya._de_Naranjos_segun_el_LOC_90680561.jpg&quot; rel=&quot;nofollow&quot;&gt;Vasquez, Joseph · Public domain&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=9.5538162&amp;mlon=-79.6549259#map=16/9.5538162/-79.6549259&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_c1cd2444f90851543e8d7e008168bf9c.setContent(html_dfb0266a63b5dec098c64bc1c4576bbc);
             
         
 
-        circle_marker_d47cf4e84d7f0550014717eaeb5d3e33.bindPopup(popup_e01bab2e047bd465058a9a624321af97)
+        circle_marker_26aebad221b2c6971716d835245be128.bindPopup(popup_c1cd2444f90851543e8d7e008168bf9c)
         ;
 
         
     
     
-            circle_marker_d47cf4e84d7f0550014717eaeb5d3e33.bindTooltip(
+            circle_marker_26aebad221b2c6971716d835245be128.bindTooltip(
                 `&lt;div&gt;
-                     Portobelo
+                     Portobelo — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,30 +265,30 @@
             );
         
     
-            var circle_marker_2fc29e170866f5d36bdc22729a7ca9bb = L.circleMarker(
+            var circle_marker_4891f98beeef0b28af10bff7eb72bde5 = L.circleMarker(
                 [9.3505567, -79.8833556],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-        var popup_530bee45da5e509942753dc838945dfd = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_27f9520af0958d506b7587ef79019752 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_959f6a8730e1380270d17431e1f6f190 = $(`&lt;div id=&quot;html_959f6a8730e1380270d17431e1f6f190&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;- **Colón Free Zone** — khu tự do lớn thứ hai thế giới sau Hong Kong; **dệt may, quần áo, giày dép, bedding, linens** là nhóm hàng chính trung chuyển từ Viễn Đông (Trung Quốc, Singapore, Đài Loan) sang toàn Tây bán cầu. Là nút logistics chứ không phải nút sản xuất. - Di sản: **mola** — vải ghép nhiều lớp (reverse appliqué) của người Guna, kỹ thuật xếp lớp vải thủ công tinh vi&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=9.3505567&amp;mlon=-79.8833556#map=16/9.3505567/-79.8833556&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_530bee45da5e509942753dc838945dfd.setContent(html_959f6a8730e1380270d17431e1f6f190);
+                var html_61d0cf85b885aa52298824064501c18b = $(`&lt;div id=&quot;html_61d0cf85b885aa52298824064501c18b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;- **Colón Free Zone** — khu tự do lớn thứ hai thế giới sau Hong Kong; **dệt may, quần áo, giày dép, bedding, linens** là nhóm hàng chính trung chuyển từ Viễn Đông (Trung Quốc, Singapore, Đài Loan) sang toàn Tây bán cầu. Là nút logistics chứ không phải nút sản xuất. - Di sản: **mola** — vải ghép nhiều lớp (reverse appliqué) của người Guna, kỹ thuật xếp lớp vải thủ công tinh vi&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=9.3505567&amp;mlon=-79.8833556#map=16/9.3505567/-79.8833556&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_27f9520af0958d506b7587ef79019752.setContent(html_61d0cf85b885aa52298824064501c18b);
             
         
 
-        circle_marker_2fc29e170866f5d36bdc22729a7ca9bb.bindPopup(popup_530bee45da5e509942753dc838945dfd)
+        circle_marker_4891f98beeef0b28af10bff7eb72bde5.bindPopup(popup_27f9520af0958d506b7587ef79019752)
         ;
 
         
     
     
-            circle_marker_2fc29e170866f5d36bdc22729a7ca9bb.bindTooltip(
+            circle_marker_4891f98beeef0b28af10bff7eb72bde5.bindTooltip(
                 `&lt;div&gt;
                      - **Colón Free Zone** — khu tự do lớn thứ hai thế giới sau Hong Kong; **dệt may, quần áo, giày dép, bedding, linens** là nhóm hàng chính trung chuyển từ Viễn Đông (Trung Quốc, Singapore, Đài Loan) sang toàn Tây bán cầu. Là nút logistics chứ không phải nút sản xuất.
 - Di sản: **mola** — vải ghép nhiều lớp (reverse appliqué) của người Guna, kỹ thuật xếp lớp vải thủ công tinh vi
@@ -296,19 +299,19 @@
             );
         
     
-            map_cb9c1d1a32be4d347375f0e8d75e4823.fitBounds(
+            map_a4ea6da9034f6c0c32d98b18bae9dc79.fitBounds(
                 [[8.9525478, -79.8833556], [9.5538162, -79.5347175]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_58c5f73797018bc8b5ad4d496038c7a4 = L.circleMarker(
+            var circle_marker_2f9a028d1091a5edc7e5222328a16c8e = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_58c5f73797018bc8b5ad4d496038c7a4.bindTooltip(
+            circle_marker_2f9a028d1091a5edc7e5222328a16c8e.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -318,13 +321,13 @@
             );
         
     
-            var circle_marker_85dd715a775ddb492397a5c9cfd4b127 = L.circleMarker(
+            var circle_marker_74304d24c95892fd59c0b9bc7e7e4d48 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_85dd715a775ddb492397a5c9cfd4b127.bindTooltip(
+            circle_marker_74304d24c95892fd59c0b9bc7e7e4d48.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -334,13 +337,13 @@
             );
         
     
-            var circle_marker_ad6e6be5346dbd422fe33b5464c604fb = L.circleMarker(
+            var circle_marker_460b4c7c7c4de71cafed37dc875d30e7 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_ad6e6be5346dbd422fe33b5464c604fb.bindTooltip(
+            circle_marker_460b4c7c7c4de71cafed37dc875d30e7.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -350,13 +353,13 @@
             );
         
     
-            var circle_marker_9472e15f380cca6947d1dc7f6eef84d5 = L.circleMarker(
+            var circle_marker_032ac2c6d19af805f0cd8e7689130b71 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_9472e15f380cca6947d1dc7f6eef84d5.bindTooltip(
+            circle_marker_032ac2c6d19af805f0cd8e7689130b71.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -366,13 +369,13 @@
             );
         
     
-            var circle_marker_dbda005bbddbf971cc5abdbe53153663 = L.circleMarker(
+            var circle_marker_3dc793aa9e21b1ca0879670af1c025fd = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_dbda005bbddbf971cc5abdbe53153663.bindTooltip(
+            circle_marker_3dc793aa9e21b1ca0879670af1c025fd.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -382,29 +385,29 @@
             );
         
     
-            var marker_5d8f5f38098326216dffed168fee9877 = L.marker(
+            var marker_acdce9048b7921dfc2db617f12b28d67 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            var div_icon_e88842a74a6c3c94086c9f2d4fcd4c78 = L.divIcon({
+            var div_icon_226e77c3a6e0130ded374558378e8e37 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_5d8f5f38098326216dffed168fee9877.setIcon(div_icon_e88842a74a6c3c94086c9f2d4fcd4c78);
+                marker_acdce9048b7921dfc2db617f12b28d67.setIcon(div_icon_226e77c3a6e0130ded374558378e8e37);
             
     
-            var circle_marker_d31fa24d7b34dd5e7cb422c0ef1fdacb = L.circleMarker(
+            var circle_marker_bce203bff07ddeb1c28c99b5aaffdba5 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_d31fa24d7b34dd5e7cb422c0ef1fdacb.bindTooltip(
+            circle_marker_bce203bff07ddeb1c28c99b5aaffdba5.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -414,13 +417,13 @@
             );
         
     
-            var circle_marker_b57d19c06d69f13945f2f9d848306f97 = L.circleMarker(
+            var circle_marker_42526f94df6de10bd04c79293f6a7c40 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_b57d19c06d69f13945f2f9d848306f97.bindTooltip(
+            circle_marker_42526f94df6de10bd04c79293f6a7c40.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -430,13 +433,13 @@
             );
         
     
-            var circle_marker_d55384254904ae2b29b1b484e032115c = L.circleMarker(
+            var circle_marker_395c6a3c311cf1d8ab222b036e6be1c6 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_d55384254904ae2b29b1b484e032115c.bindTooltip(
+            circle_marker_395c6a3c311cf1d8ab222b036e6be1c6.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -446,13 +449,13 @@
             );
         
     
-            var circle_marker_15aae559f5ee3b963b3c1c01d8e64eb2 = L.circleMarker(
+            var circle_marker_b347d0080fc68882931655c8f31cd591 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_15aae559f5ee3b963b3c1c01d8e64eb2.bindTooltip(
+            circle_marker_b347d0080fc68882931655c8f31cd591.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -462,13 +465,13 @@
             );
         
     
-            var circle_marker_4421f52388db79567d91eb49202dc03c = L.circleMarker(
+            var circle_marker_4e2cc71f05ee309c7ad072c77e6390f9 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_4421f52388db79567d91eb49202dc03c.bindTooltip(
+            circle_marker_4e2cc71f05ee309c7ad072c77e6390f9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -478,13 +481,13 @@
             );
         
     
-            var circle_marker_eed4d6e9c9c458e217485e2608392402 = L.circleMarker(
+            var circle_marker_d754011349ca66ffef8fee593570572e = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            circle_marker_eed4d6e9c9c458e217485e2608392402.bindTooltip(
+            circle_marker_d754011349ca66ffef8fee593570572e.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -494,24 +497,24 @@
             );
         
     
-            var marker_b7265c5b1804e4a24e4a3c42f8f93a20 = L.marker(
+            var marker_4200fbc07088c97e3fed272e55508e2a = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_cb9c1d1a32be4d347375f0e8d75e4823);
+            ).addTo(map_a4ea6da9034f6c0c32d98b18bae9dc79);
         
     
-            var div_icon_cfa4900bade30e5c4f2151e7e82c09dd = L.divIcon({
+            var div_icon_a31e97d9bdf2fb7aa3838f0e72133921 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_b7265c5b1804e4a24e4a3c42f8f93a20.setIcon(div_icon_cfa4900bade30e5c4f2151e7e82c09dd);
+                marker_4200fbc07088c97e3fed272e55508e2a.setIcon(div_icon_a31e97d9bdf2fb7aa3838f0e72133921);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li class="off">Âu tàu Miraflores & Agua Clara (trung tâm khách tham quan) <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=8.9525478&mlon=-79.5347175#map=16/8.9525478/-79.5347175" rel="nofollow">Casco Viejo, Panama City (UNESCO)</a></li><li class="off">Bảo tàng Biodiversidad (Frank Gehry) <em>nearest match was 2,370 km away; not used</em></li><li><a href="https://www.openstreetmap.org/?mlat=9.1180893&mlon=-79.7003028#map=16/9.1180893/-79.7003028" rel="nofollow">Gamboa – rừng mưa, Monkey Island</a></li><li><a href="https://www.openstreetmap.org/?mlat=9.5538162&mlon=-79.6549259#map=16/9.5538162/-79.6549259" rel="nofollow">Portobelo</a></li><li class="off">làng Emberá <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=9.3505567&mlon=-79.8833556#map=16/9.3505567/-79.8833556" rel="nofollow">- **Colón Free Zone** — khu tự do lớn thứ hai thế giới sau Hong Kong; **dệt may, quần áo, giày dép, bedding, linens** là nhóm hàng chính trung chuyển từ Viễn Đông (Trung Quốc, Singapore, Đài Loan) sang toàn Tây bán cầu. Là nút logistics chứ không phải nút sản xuất.
+<h2>Điểm tham quan</h2><ul><li class="off">Âu tàu Miraflores & Agua Clara (trung tâm khách tham quan) <em>not found</em></li><li><img class="thumb" src="sights/casco-viejo-panama-city-unesco.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=8.9525478&mlon=-79.5347175#map=16/8.9525478/-79.5347175" rel="nofollow">Casco Viejo, Panama City (UNESCO)</a></li><li class="off">Bảo tàng Biodiversidad (Frank Gehry) <em>nearest match was 2,370 km away; not used</em></li><li><img class="thumb" src="sights/gamboa-rung-mua-monkey-island.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=9.1180893&mlon=-79.7003028#map=16/9.1180893/-79.7003028" rel="nofollow">Gamboa – rừng mưa, Monkey Island</a></li><li><img class="thumb" src="sights/portobelo.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=9.5538162&mlon=-79.6549259#map=16/9.5538162/-79.6549259" rel="nofollow">Portobelo</a></li><li class="off">làng Emberá <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=9.3505567&mlon=-79.8833556#map=16/9.3505567/-79.8833556" rel="nofollow">- **Colón Free Zone** — khu tự do lớn thứ hai thế giới sau Hong Kong; **dệt may, quần áo, giày dép, bedding, linens** là nhóm hàng chính trung chuyển từ Viễn Đông (Trung Quốc, Singapore, Đài Loan) sang toàn Tây bán cầu. Là nút logistics chứ không phải nút sản xuất.
 - Di sản: **mola** — vải ghép nhiều lớp (reverse appliqué) của người Guna, kỹ thuật xếp lớp vải thủ công tinh vi</a></li></ul>
 
 <footer>Ảnh: Wikimedia Commons theo giấy phép ghi ở trên ·

@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_1da764e69d38efa8aa1290dbea154de0 {
+                #map_f049a1947bd9b6bf5191691237c57daa {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_1da764e69d38efa8aa1290dbea154de0&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_f049a1947bd9b6bf5191691237c57daa&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_1da764e69d38efa8aa1290dbea154de0 = L.map(
-                &quot;map_1da764e69d38efa8aa1290dbea154de0&quot;,
+            var map_f049a1947bd9b6bf5191691237c57daa = L.map(
+                &quot;map_f049a1947bd9b6bf5191691237c57daa&quot;,
                 {
                     center: [13.59, -89.834],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            L.control.scale().addTo(map_f049a1947bd9b6bf5191691237c57daa);
 
             
 
         
     
-            var tile_layer_431d2b608ee1037f191c38d5aa38d5ab = L.tileLayer(
+            var tile_layer_4d3800956786a19f4d57cd7096a6ce9a = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_431d2b608ee1037f191c38d5aa38d5ab.addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            tile_layer_4d3800956786a19f4d57cd7096a6ce9a.addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            var circle_marker_e1ec860286d23735833eb01f84747157 = L.circleMarker(
+            var circle_marker_4bf8c42ae14648ed53778780de939fe5 = L.circleMarker(
                 [13.59, -89.834],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_e1ec860286d23735833eb01f84747157.bindTooltip(
+            circle_marker_4bf8c42ae14648ed53778780de939fe5.bindTooltip(
                 `&lt;div&gt;
                      Acajutla — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_3dd3a006f5630a2b8928a7807b76741e = L.popup({
+        var popup_51cc4e1f09724e7e53aba4422e548637 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_a19606725c951714c8c0b5eb36ccde73 = $(`&lt;div id=&quot;html_a19606725c951714c8c0b5eb36ccde73&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Acajutla&lt;/div&gt;&lt;img src=&quot;img/acajutla.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Iglesia Santa Lucía, Suchitoto, El Salvador&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Iglesia_Santa_Luc%C3%ADa,_Suchitoto.JPG&quot; rel=&quot;nofollow&quot;&gt;Beatriz Fortinez · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_3dd3a006f5630a2b8928a7807b76741e.setContent(html_a19606725c951714c8c0b5eb36ccde73);
+                var html_4dc56411b026a10ef3980b2cf200c4a4 = $(`&lt;div id=&quot;html_4dc56411b026a10ef3980b2cf200c4a4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Acajutla&lt;/div&gt;&lt;img src=&quot;img/acajutla.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Iglesia Santa Lucía, Suchitoto, El Salvador&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Iglesia_Santa_Luc%C3%ADa,_Suchitoto.JPG&quot; rel=&quot;nofollow&quot;&gt;Beatriz Fortinez · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_51cc4e1f09724e7e53aba4422e548637.setContent(html_4dc56411b026a10ef3980b2cf200c4a4);
             
         
 
-        circle_marker_e1ec860286d23735833eb01f84747157.bindPopup(popup_3dd3a006f5630a2b8928a7807b76741e)
+        circle_marker_4bf8c42ae14648ed53778780de939fe5.bindPopup(popup_51cc4e1f09724e7e53aba4422e548637)
         ;
 
         
     
     
-            var circle_marker_318dff97c33414f17bdaf278db392b3b = L.circleMarker(
+            var circle_marker_4a263037ad6579bc6cc6b1c502494f8b = L.circleMarker(
                 [13.7255174, -89.7290863],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-        var popup_ba9a230bd99f9f545bac5ce13c3ad567 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_6dfdced1a650d2c0a04498dfc41fb339 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_c2ddab17d369c2d56404bd48b782ae22 = $(`&lt;div id=&quot;html_c2ddab17d369c2d56404bd48b782ae22&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Ruta de las Flores (Juayúa, Ataco, Apaneca) — làng cà phê, chợ ẩm thực cuối tuần&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=13.7255174&amp;mlon=-89.7290863#map=16/13.7255174/-89.7290863&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_ba9a230bd99f9f545bac5ce13c3ad567.setContent(html_c2ddab17d369c2d56404bd48b782ae22);
+                var html_f3904a7cac4dae21f5c16454bbf48888 = $(`&lt;div id=&quot;html_f3904a7cac4dae21f5c16454bbf48888&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Ruta de las Flores (Juayúa, Ataco, Apaneca) — làng cà phê, chợ ẩm thực cuối tuần&lt;/div&gt;&lt;img src=&quot;sights/ruta-de-las-flores-juayua-ataco-apaneca-lang-ca-phe-cho-am-t.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Ruta_de_las_Flores_banner.jpg&quot; rel=&quot;nofollow&quot;&gt;Alex Romero · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=13.7255174&amp;mlon=-89.7290863#map=16/13.7255174/-89.7290863&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_6dfdced1a650d2c0a04498dfc41fb339.setContent(html_f3904a7cac4dae21f5c16454bbf48888);
             
         
 
-        circle_marker_318dff97c33414f17bdaf278db392b3b.bindPopup(popup_ba9a230bd99f9f545bac5ce13c3ad567)
+        circle_marker_4a263037ad6579bc6cc6b1c502494f8b.bindPopup(popup_6dfdced1a650d2c0a04498dfc41fb339)
         ;
 
         
     
     
-            circle_marker_318dff97c33414f17bdaf278db392b3b.bindTooltip(
+            circle_marker_4a263037ad6579bc6cc6b1c502494f8b.bindTooltip(
                 `&lt;div&gt;
-                     Ruta de las Flores (Juayúa, Ataco, Apaneca) — làng cà phê, chợ ẩm thực cuối tuần
+                     Ruta de las Flores (Juayúa, Ataco, Apaneca) — làng cà phê, chợ ẩm thực cuối tuần — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_935f0c96be354810885a5fa3db8aa457 = L.circleMarker(
+            var circle_marker_2e4a9c18132b88677fd4e21154d82da7 = L.circleMarker(
                 [13.8234739, -89.360317],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-        var popup_62ae607c5f3a1343be7b75d4702c8cda = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_2d5bc2f76b4ff10ccc17c8964fc9e15b = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_6b5c6691d32a2e6b613cb04a60829f37 = $(`&lt;div id=&quot;html_6b5c6691d32a2e6b613cb04a60829f37&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Joya de Cerén (UNESCO — &quot;Pompeii của châu Mỹ&quot;)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=13.8234739&amp;mlon=-89.360317#map=16/13.8234739/-89.360317&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_62ae607c5f3a1343be7b75d4702c8cda.setContent(html_6b5c6691d32a2e6b613cb04a60829f37);
+                var html_c07e71fe6d08f996e4d4fd00d3b0b9ce = $(`&lt;div id=&quot;html_c07e71fe6d08f996e4d4fd00d3b0b9ce&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Joya de Cerén (UNESCO — &quot;Pompeii của châu Mỹ&quot;)&lt;/div&gt;&lt;img src=&quot;sights/joya-de-ceren-unesco-pompeii-cua-chau-my.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:ES_Joya_Ceren_05_2012_Estructura_9_Area_2_Tamazcal_wide_angle_1479.JPG&quot; rel=&quot;nofollow&quot;&gt;Mariordo (Mario Roberto Duran Ortiz) · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=13.8234739&amp;mlon=-89.360317#map=16/13.8234739/-89.360317&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_2d5bc2f76b4ff10ccc17c8964fc9e15b.setContent(html_c07e71fe6d08f996e4d4fd00d3b0b9ce);
             
         
 
-        circle_marker_935f0c96be354810885a5fa3db8aa457.bindPopup(popup_62ae607c5f3a1343be7b75d4702c8cda)
+        circle_marker_2e4a9c18132b88677fd4e21154d82da7.bindPopup(popup_2d5bc2f76b4ff10ccc17c8964fc9e15b)
         ;
 
         
     
     
-            circle_marker_935f0c96be354810885a5fa3db8aa457.bindTooltip(
+            circle_marker_2e4a9c18132b88677fd4e21154d82da7.bindTooltip(
                 `&lt;div&gt;
-                     Joya de Cerén (UNESCO — &quot;Pompeii của châu Mỹ&quot;)
+                     Joya de Cerén (UNESCO — &quot;Pompeii của châu Mỹ&quot;) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_affa5bc5253a5a3dc8d094d4fc160247 = L.circleMarker(
+            var circle_marker_21a63a09d0015a66dbf5d4f829068313 = L.circleMarker(
                 [13.9790559, -89.6740774],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-        var popup_fe737eddf7ec65429925e59a68ca69f8 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_c0d36baf257bc6dfbb31333deb642f3c = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_fff6850d6ea636503b566e9afb002fd2 = $(`&lt;div id=&quot;html_fff6850d6ea636503b566e9afb002fd2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Tazumal (di chỉ Maya)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=13.9790559&amp;mlon=-89.6740774#map=16/13.9790559/-89.6740774&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_fe737eddf7ec65429925e59a68ca69f8.setContent(html_fff6850d6ea636503b566e9afb002fd2);
+                var html_bee52fc5116fd96dee19edf70716863c = $(`&lt;div id=&quot;html_bee52fc5116fd96dee19edf70716863c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Tazumal (di chỉ Maya)&lt;/div&gt;&lt;img src=&quot;sights/tazumal-di-chi-maya.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:El_Tazumal,_Chalchuapa.jpg&quot; rel=&quot;nofollow&quot;&gt;ARamirez69 · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=13.9790559&amp;mlon=-89.6740774#map=16/13.9790559/-89.6740774&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_c0d36baf257bc6dfbb31333deb642f3c.setContent(html_bee52fc5116fd96dee19edf70716863c);
             
         
 
-        circle_marker_affa5bc5253a5a3dc8d094d4fc160247.bindPopup(popup_fe737eddf7ec65429925e59a68ca69f8)
+        circle_marker_21a63a09d0015a66dbf5d4f829068313.bindPopup(popup_c0d36baf257bc6dfbb31333deb642f3c)
         ;
 
         
     
     
-            circle_marker_affa5bc5253a5a3dc8d094d4fc160247.bindTooltip(
+            circle_marker_21a63a09d0015a66dbf5d4f829068313.bindTooltip(
                 `&lt;div&gt;
-                     Tazumal (di chỉ Maya)
+                     Tazumal (di chỉ Maya) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,19 +265,19 @@
             );
         
     
-            map_1da764e69d38efa8aa1290dbea154de0.fitBounds(
+            map_f049a1947bd9b6bf5191691237c57daa.fitBounds(
                 [[13.59, -89.834], [13.9790559, -89.360317]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_095c8429176400e5edabf575c9057034 = L.circleMarker(
+            var circle_marker_ec4159a66d45756d91c5dded9e47e2cb = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_095c8429176400e5edabf575c9057034.bindTooltip(
+            circle_marker_ec4159a66d45756d91c5dded9e47e2cb.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -284,13 +287,13 @@
             );
         
     
-            var circle_marker_d37581ae6932f23060b86f5d39e2cb5b = L.circleMarker(
+            var circle_marker_9d965785424e876bbf82732a7c57afaf = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_d37581ae6932f23060b86f5d39e2cb5b.bindTooltip(
+            circle_marker_9d965785424e876bbf82732a7c57afaf.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -300,13 +303,13 @@
             );
         
     
-            var circle_marker_55dd0a6abe2185e2ea8b06890bb73d4d = L.circleMarker(
+            var circle_marker_632fcedd3374de5db94f5b33e5847d47 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_55dd0a6abe2185e2ea8b06890bb73d4d.bindTooltip(
+            circle_marker_632fcedd3374de5db94f5b33e5847d47.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -316,13 +319,13 @@
             );
         
     
-            var circle_marker_81f8a4195a2cace7f12ae4efee5c7ca9 = L.circleMarker(
+            var circle_marker_8ffc93b97518fb32ee353279ec3663f1 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_81f8a4195a2cace7f12ae4efee5c7ca9.bindTooltip(
+            circle_marker_8ffc93b97518fb32ee353279ec3663f1.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -332,13 +335,13 @@
             );
         
     
-            var circle_marker_cde073db98cdde6c1e495df491f563a4 = L.circleMarker(
+            var circle_marker_d98cd150fd405ae248442239ae5bab85 = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_cde073db98cdde6c1e495df491f563a4.bindTooltip(
+            circle_marker_d98cd150fd405ae248442239ae5bab85.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -348,29 +351,29 @@
             );
         
     
-            var marker_c8931e4218492f041bfbb089e6e78fbd = L.marker(
+            var marker_c1c104cb62b3f58886c7c9a304168ffa = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            var div_icon_11558073b53104a6def9088fc952e38c = L.divIcon({
+            var div_icon_a174fa3ddda68e447a1214621b3f7f18 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_c8931e4218492f041bfbb089e6e78fbd.setIcon(div_icon_11558073b53104a6def9088fc952e38c);
+                marker_c1c104cb62b3f58886c7c9a304168ffa.setIcon(div_icon_a174fa3ddda68e447a1214621b3f7f18);
             
     
-            var circle_marker_90bb86f6cb96ebe6777ee7d4a909e6bf = L.circleMarker(
+            var circle_marker_4687379b47d9af3fc7bc2af34e07ec82 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_90bb86f6cb96ebe6777ee7d4a909e6bf.bindTooltip(
+            circle_marker_4687379b47d9af3fc7bc2af34e07ec82.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -380,13 +383,13 @@
             );
         
     
-            var circle_marker_10fc4706af8872511f91541da213ecaf = L.circleMarker(
+            var circle_marker_5c9a247000d9cd029b55b96a895642f9 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_10fc4706af8872511f91541da213ecaf.bindTooltip(
+            circle_marker_5c9a247000d9cd029b55b96a895642f9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -396,13 +399,13 @@
             );
         
     
-            var circle_marker_eeda9ef8645b2cd9e94b240bec6c91c2 = L.circleMarker(
+            var circle_marker_fda2b9c974865bd5cc400eb12c15721a = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_eeda9ef8645b2cd9e94b240bec6c91c2.bindTooltip(
+            circle_marker_fda2b9c974865bd5cc400eb12c15721a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -412,13 +415,13 @@
             );
         
     
-            var circle_marker_fd0ae56fbab3906afe8801768e55db75 = L.circleMarker(
+            var circle_marker_1689a633f4ced1ff8209a1bf41debc35 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_fd0ae56fbab3906afe8801768e55db75.bindTooltip(
+            circle_marker_1689a633f4ced1ff8209a1bf41debc35.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -428,13 +431,13 @@
             );
         
     
-            var circle_marker_05c4e9f509b39fb38486bf71acc31b2c = L.circleMarker(
+            var circle_marker_efe44b46fa55dfaffb600f6b7029f672 = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_05c4e9f509b39fb38486bf71acc31b2c.bindTooltip(
+            circle_marker_efe44b46fa55dfaffb600f6b7029f672.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -444,13 +447,13 @@
             );
         
     
-            var circle_marker_1f0886ba9c5c4c00941c19df65edc8e6 = L.circleMarker(
+            var circle_marker_b8bec1dee5bbca058dcad5747a9768b9 = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            circle_marker_1f0886ba9c5c4c00941c19df65edc8e6.bindTooltip(
+            circle_marker_b8bec1dee5bbca058dcad5747a9768b9.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -460,24 +463,24 @@
             );
         
     
-            var marker_299e6b58a2914fed4ba201b6a15d1431 = L.marker(
+            var marker_9e587781fe75e98e71a019a31464aca8 = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_1da764e69d38efa8aa1290dbea154de0);
+            ).addTo(map_f049a1947bd9b6bf5191691237c57daa);
         
     
-            var div_icon_88434b8d44df7604bf008e5a08a44e9a = L.divIcon({
+            var div_icon_210eadfeb4133714f0c1afc9783f5ff9 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_299e6b58a2914fed4ba201b6a15d1431.setIcon(div_icon_88434b8d44df7604bf008e5a08a44e9a);
+                marker_9e587781fe75e98e71a019a31464aca8.setIcon(div_icon_210eadfeb4133714f0c1afc9783f5ff9);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=13.7255174&mlon=-89.7290863#map=16/13.7255174/-89.7290863" rel="nofollow">Ruta de las Flores (Juayúa, Ataco, Apaneca) — làng cà phê, chợ ẩm thực cuối tuần</a></li><li class="off">hồ miệng núi lửa Coatepeque <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=13.8234739&mlon=-89.360317#map=16/13.8234739/-89.360317" rel="nofollow">Joya de Cerén (UNESCO — "Pompeii của châu Mỹ")</a></li><li><a href="https://www.openstreetmap.org/?mlat=13.9790559&mlon=-89.6740774#map=16/13.9790559/-89.6740774" rel="nofollow">Tazumal (di chỉ Maya)</a></li><li class="off">bãi El Tunco (lướt sóng) <em>not found</em></li><li class="off">San Salvador ≈1,5 h <em>nearest match was 6,160 km away; not used</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Cảng Acajutla là tuyến Thái Bình Dương chính của El Salvador**, nối thẳng châu Á và bờ Tây Mỹ — hạ tầng phục vụ ngành may xuất khẩu.
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/ruta-de-las-flores-juayua-ataco-apaneca-lang-ca-phe-cho-am-t.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=13.7255174&mlon=-89.7290863#map=16/13.7255174/-89.7290863" rel="nofollow">Ruta de las Flores (Juayúa, Ataco, Apaneca) — làng cà phê, chợ ẩm thực cuối tuần</a></li><li class="off">hồ miệng núi lửa Coatepeque <em>not found</em></li><li><img class="thumb" src="sights/joya-de-ceren-unesco-pompeii-cua-chau-my.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=13.8234739&mlon=-89.360317#map=16/13.8234739/-89.360317" rel="nofollow">Joya de Cerén (UNESCO — "Pompeii của châu Mỹ")</a></li><li><img class="thumb" src="sights/tazumal-di-chi-maya.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=13.9790559&mlon=-89.6740774#map=16/13.9790559/-89.6740774" rel="nofollow">Tazumal (di chỉ Maya)</a></li><li class="off">bãi El Tunco (lướt sóng) <em>not found</em></li><li class="off">San Salvador ≈1,5 h <em>nearest match was 6,160 km away; not used</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- **Cảng Acajutla là tuyến Thái Bình Dương chính của El Salvador**, nối thẳng châu Á và bờ Tây Mỹ — hạ tầng phục vụ ngành may xuất khẩu.
 - El Salvador nổi tiếng về **chuỗi cung ứng dệt may tích hợp dọc** (từ nguyên liệu tới thành phẩm) cho phép lead time ngắn — khác với mô hình maquila thuần lắp ráp.
 - Cụm: zonas francas San Bartolo, El Pedregal, American Park; các nhà máy dệt kim/vớ quy mô lớn phục vụ thương hiệu Mỹ.
 - Di sản: **añil (chàm)** — El Salvador từng là nguồn thuốc nhuộm chàm hàng đầu thế giới; nay có các xưởng nhuộm chàm thủ công ở Suchitoto (tour được) <em>not found</em></li></ul>

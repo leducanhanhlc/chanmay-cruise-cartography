@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_edd18c7874668b630c5b39d8d01ff6b8 {
+                #map_6c6eb4cd5b6306c69e6362c0660a5eb9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_edd18c7874668b630c5b39d8d01ff6b8&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_6c6eb4cd5b6306c69e6362c0660a5eb9&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_edd18c7874668b630c5b39d8d01ff6b8 = L.map(
-                &quot;map_edd18c7874668b630c5b39d8d01ff6b8&quot;,
+            var map_6c6eb4cd5b6306c69e6362c0660a5eb9 = L.map(
+                &quot;map_6c6eb4cd5b6306c69e6362c0660a5eb9&quot;,
                 {
                     center: [3.0, 101.392],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            L.control.scale().addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
 
             
 
         
     
-            var tile_layer_855e81be1b8898c508b20057985e48b3 = L.tileLayer(
+            var tile_layer_50127242d59e99088c54f8139a509c13 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_855e81be1b8898c508b20057985e48b3.addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            tile_layer_50127242d59e99088c54f8139a509c13.addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            var circle_marker_65f3f293ed73b2122f4ec0533c967832 = L.circleMarker(
+            var circle_marker_7cf38dcb68b0ec5b3546eea66a66780f = L.circleMarker(
                 [3.0, 101.392],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_65f3f293ed73b2122f4ec0533c967832.bindTooltip(
+            circle_marker_7cf38dcb68b0ec5b3546eea66a66780f.bindTooltip(
                 `&lt;div&gt;
                      Port Klang — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_b3d25bee3d0b170bddc5fab7fa0d3a7f = L.popup({
+        var popup_ac155a7bb5e8feb03954fcb81cd52c0e = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_2d75aab8dbfcd4b839feb5c4976cc4d7 = $(`&lt;div id=&quot;html_2d75aab8dbfcd4b839feb5c4976cc4d7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Port Klang&lt;/div&gt;&lt;img src=&quot;img/port-kelang.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Klang / Kuala Lumpur&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:20190822_Sultan_Abdul_Samad_Building-10.jpg&quot; rel=&quot;nofollow&quot;&gt;CC0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_b3d25bee3d0b170bddc5fab7fa0d3a7f.setContent(html_2d75aab8dbfcd4b839feb5c4976cc4d7);
+                var html_09b04121785499dc04440d3a149d00c5 = $(`&lt;div id=&quot;html_09b04121785499dc04440d3a149d00c5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Port Klang&lt;/div&gt;&lt;img src=&quot;img/port-kelang.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Kiến trúc Klang / Kuala Lumpur&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:20190822_Sultan_Abdul_Samad_Building-10.jpg&quot; rel=&quot;nofollow&quot;&gt;CC0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_ac155a7bb5e8feb03954fcb81cd52c0e.setContent(html_09b04121785499dc04440d3a149d00c5);
             
         
 
-        circle_marker_65f3f293ed73b2122f4ec0533c967832.bindPopup(popup_b3d25bee3d0b170bddc5fab7fa0d3a7f)
+        circle_marker_7cf38dcb68b0ec5b3546eea66a66780f.bindPopup(popup_ac155a7bb5e8feb03954fcb81cd52c0e)
         ;
 
         
     
     
-            var circle_marker_a8bbc41bde6b701bb5879e48b55f9267 = L.circleMarker(
+            var circle_marker_5fb39aa6f963d2acb278e6719fab0f24 = L.circleMarker(
                 [3.0310309, 101.4333945],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-        var popup_be93e95cf3f14c0494f704944db8df93 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_36c11aec1fc5c3e9a10bbdff649b2233 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_2131633f087e62b0420349e778ad2501 = $(`&lt;div id=&quot;html_2131633f087e62b0420349e778ad2501&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Kuala Lumpur ≈1 h — Petronas Twin Towers, KL Tower, Batu Caves, Merdeka Square, Central Market, Bukit Bintang&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=3.0310309&amp;mlon=101.4333945#map=16/3.0310309/101.4333945&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_be93e95cf3f14c0494f704944db8df93.setContent(html_2131633f087e62b0420349e778ad2501);
+                var html_f457810a16fc5b4cdbe4d581ca27727a = $(`&lt;div id=&quot;html_f457810a16fc5b4cdbe4d581ca27727a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Kuala Lumpur ≈1 h — Petronas Twin Towers, KL Tower, Batu Caves, Merdeka Square, Central Market, Bukit Bintang&lt;/div&gt;&lt;img src=&quot;sights/kuala-lumpur-1-h-petronas-twin-towers-kl-tower-batu-caves-me.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Desa_Parkcity,_52200_Kuala_Lumpur,_Federal_Territory_of_Kuala_Lumpur,_Malaysia_-_panoramio_(1).jpg&quot; rel=&quot;nofollow&quot;&gt;Ardeka Balian Aga Fo… · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=3.0310309&amp;mlon=101.4333945#map=16/3.0310309/101.4333945&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_36c11aec1fc5c3e9a10bbdff649b2233.setContent(html_f457810a16fc5b4cdbe4d581ca27727a);
             
         
 
-        circle_marker_a8bbc41bde6b701bb5879e48b55f9267.bindPopup(popup_be93e95cf3f14c0494f704944db8df93)
+        circle_marker_5fb39aa6f963d2acb278e6719fab0f24.bindPopup(popup_36c11aec1fc5c3e9a10bbdff649b2233)
         ;
 
         
     
     
-            circle_marker_a8bbc41bde6b701bb5879e48b55f9267.bindTooltip(
+            circle_marker_5fb39aa6f963d2acb278e6719fab0f24.bindTooltip(
                 `&lt;div&gt;
-                     Kuala Lumpur ≈1 h — Petronas Twin Towers, KL Tower, Batu Caves, Merdeka Square, Central Market, Bukit Bintang
+                     Kuala Lumpur ≈1 h — Petronas Twin Towers, KL Tower, Batu Caves, Merdeka Square, Central Market, Bukit Bintang — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_619f5715d689f3755b7cf27fb293f2c1 = L.circleMarker(
+            var circle_marker_28dde0cbfc9b292e25b0c5774bbfb461 = L.circleMarker(
                 [2.9384381, 101.69223],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-        var popup_879e7e91f345d347d9327b7309e982a4 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_202b6fb6444626c4b7c608128d55570c = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_f1d8477abb96569a8fc18f19c9de1f05 = $(`&lt;div id=&quot;html_f1d8477abb96569a8fc18f19c9de1f05&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Putrajaya (nhà thờ Hồi giáo hồng)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=2.9384381&amp;mlon=101.69223#map=16/2.9384381/101.69223&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_879e7e91f345d347d9327b7309e982a4.setContent(html_f1d8477abb96569a8fc18f19c9de1f05);
+                var html_04455f1ae6a53d57815cc9557b06fc2c = $(`&lt;div id=&quot;html_04455f1ae6a53d57815cc9557b06fc2c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Putrajaya (nhà thờ Hồi giáo hồng)&lt;/div&gt;&lt;img src=&quot;sights/putrajaya-nha-tho-hoi-giao-hong.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:C7F_Meets_with_Malaysia_Maritime_Enforcement_Agency_in_Putrajaya_(8539843).jpg&quot; rel=&quot;nofollow&quot;&gt;U.S. Navy photo by Petty Officer 2nd Class Belen Saldana · Public domain&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=2.9384381&amp;mlon=101.69223#map=16/2.9384381/101.69223&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_202b6fb6444626c4b7c608128d55570c.setContent(html_04455f1ae6a53d57815cc9557b06fc2c);
             
         
 
-        circle_marker_619f5715d689f3755b7cf27fb293f2c1.bindPopup(popup_879e7e91f345d347d9327b7309e982a4)
+        circle_marker_28dde0cbfc9b292e25b0c5774bbfb461.bindPopup(popup_202b6fb6444626c4b7c608128d55570c)
         ;
 
         
     
     
-            circle_marker_619f5715d689f3755b7cf27fb293f2c1.bindTooltip(
+            circle_marker_28dde0cbfc9b292e25b0c5774bbfb461.bindTooltip(
                 `&lt;div&gt;
-                     Putrajaya (nhà thờ Hồi giáo hồng)
+                     Putrajaya (nhà thờ Hồi giáo hồng) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,32 +232,32 @@
             );
         
     
-            var circle_marker_f8305caeb1b93933c34d8b9f38dda2c5 = L.circleMarker(
+            var circle_marker_01ba759dfb1a912d8a43171ed2ef9045 = L.circleMarker(
                 [3.2093361, 101.1868901],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-        var popup_a4bb74989d30da843049ca8fcf747b0c = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_bb8678b91724e799ee5ca7cc0dc1f3bb = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_2b74c1bc3eae98e493dd00c821507752 = $(`&lt;div id=&quot;html_2b74c1bc3eae98e493dd00c821507752&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Sky Mirror (Sasaran)&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=3.2093361&amp;mlon=101.1868901#map=16/3.2093361/101.1868901&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_a4bb74989d30da843049ca8fcf747b0c.setContent(html_2b74c1bc3eae98e493dd00c821507752);
+                var html_f858e2ae0671fca06985b2a289d105be = $(`&lt;div id=&quot;html_f858e2ae0671fca06985b2a289d105be&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Sky Mirror (Sasaran)&lt;/div&gt;&lt;img src=&quot;sights/sky-mirror-sasaran.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Sky_Mirror,_Kensington_Gardens_(cropped).JPG&quot; rel=&quot;nofollow&quot;&gt;Gaius Cornelius · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=3.2093361&amp;mlon=101.1868901#map=16/3.2093361/101.1868901&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_bb8678b91724e799ee5ca7cc0dc1f3bb.setContent(html_f858e2ae0671fca06985b2a289d105be);
             
         
 
-        circle_marker_f8305caeb1b93933c34d8b9f38dda2c5.bindPopup(popup_a4bb74989d30da843049ca8fcf747b0c)
+        circle_marker_01ba759dfb1a912d8a43171ed2ef9045.bindPopup(popup_bb8678b91724e799ee5ca7cc0dc1f3bb)
         ;
 
         
     
     
-            circle_marker_f8305caeb1b93933c34d8b9f38dda2c5.bindTooltip(
+            circle_marker_01ba759dfb1a912d8a43171ed2ef9045.bindTooltip(
                 `&lt;div&gt;
-                     Sky Mirror (Sasaran)
+                     Sky Mirror (Sasaran) — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -262,19 +265,19 @@
             );
         
     
-            map_edd18c7874668b630c5b39d8d01ff6b8.fitBounds(
+            map_6c6eb4cd5b6306c69e6362c0660a5eb9.fitBounds(
                 [[2.9384381, 101.1868901], [3.2093361, 101.69223]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_570ad6b2473699d482b0a337703c8088 = L.circleMarker(
+            var circle_marker_2edd363c17e93c3aeb8754a168973226 = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_570ad6b2473699d482b0a337703c8088.bindTooltip(
+            circle_marker_2edd363c17e93c3aeb8754a168973226.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -284,13 +287,13 @@
             );
         
     
-            var circle_marker_93154afdf40f7628d45059867d8f1e03 = L.circleMarker(
+            var circle_marker_8b1ff154625ad954f2d8aa75c30a90d7 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_93154afdf40f7628d45059867d8f1e03.bindTooltip(
+            circle_marker_8b1ff154625ad954f2d8aa75c30a90d7.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -300,13 +303,13 @@
             );
         
     
-            var circle_marker_9d5a13d5824757cc2f54358eb1f87cc5 = L.circleMarker(
+            var circle_marker_3cb96211609c7ba38b99e359f5178685 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_9d5a13d5824757cc2f54358eb1f87cc5.bindTooltip(
+            circle_marker_3cb96211609c7ba38b99e359f5178685.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -316,13 +319,13 @@
             );
         
     
-            var circle_marker_e54e1df32692e37451ed2ac6c765c98d = L.circleMarker(
+            var circle_marker_c2cdeec3f1de367b1fbabc7a3f49a463 = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_e54e1df32692e37451ed2ac6c765c98d.bindTooltip(
+            circle_marker_c2cdeec3f1de367b1fbabc7a3f49a463.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -332,13 +335,13 @@
             );
         
     
-            var circle_marker_9e1cb70e6c46e1bf6e7564ccf7c2a29a = L.circleMarker(
+            var circle_marker_cbee8403732c7255dc3d604af195d69f = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_9e1cb70e6c46e1bf6e7564ccf7c2a29a.bindTooltip(
+            circle_marker_cbee8403732c7255dc3d604af195d69f.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -348,29 +351,29 @@
             );
         
     
-            var marker_df60393efd8dbe933369778420a59a6b = L.marker(
+            var marker_a787019eaef1fd75e27d4944a06324b4 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            var div_icon_f3c995dfa25d0686c12125b3b56e7eae = L.divIcon({
+            var div_icon_29f850b2553d928cfb055dc1ed0fdf50 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_df60393efd8dbe933369778420a59a6b.setIcon(div_icon_f3c995dfa25d0686c12125b3b56e7eae);
+                marker_a787019eaef1fd75e27d4944a06324b4.setIcon(div_icon_29f850b2553d928cfb055dc1ed0fdf50);
             
     
-            var circle_marker_1d667d62707abe85a971fa2157a61683 = L.circleMarker(
+            var circle_marker_ecc1503e21741bd60636e30f413522ce = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_1d667d62707abe85a971fa2157a61683.bindTooltip(
+            circle_marker_ecc1503e21741bd60636e30f413522ce.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -380,13 +383,13 @@
             );
         
     
-            var circle_marker_89a07b56a4bd189248bffe12d6bbc82c = L.circleMarker(
+            var circle_marker_839a8ba4d5b347c3709951b561356abc = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_89a07b56a4bd189248bffe12d6bbc82c.bindTooltip(
+            circle_marker_839a8ba4d5b347c3709951b561356abc.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -396,13 +399,13 @@
             );
         
     
-            var circle_marker_e47c40ed714e2a914e5ec0ee2b13a36b = L.circleMarker(
+            var circle_marker_6f7bbd3066fb3e50626a8422ad47d210 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_e47c40ed714e2a914e5ec0ee2b13a36b.bindTooltip(
+            circle_marker_6f7bbd3066fb3e50626a8422ad47d210.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -412,13 +415,13 @@
             );
         
     
-            var circle_marker_f2ec5f9f96c92b8201928bc873497ff4 = L.circleMarker(
+            var circle_marker_5d431f229945f251ec343d0109253307 = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_f2ec5f9f96c92b8201928bc873497ff4.bindTooltip(
+            circle_marker_5d431f229945f251ec343d0109253307.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -428,13 +431,13 @@
             );
         
     
-            var circle_marker_e15915927ba99c31c74a5795dab4c2e5 = L.circleMarker(
+            var circle_marker_eed05f31e7a9b165d79a58d3545f9a2d = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_e15915927ba99c31c74a5795dab4c2e5.bindTooltip(
+            circle_marker_eed05f31e7a9b165d79a58d3545f9a2d.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -444,13 +447,13 @@
             );
         
     
-            var circle_marker_a18d42ae550739f53fb35ea33f0436a4 = L.circleMarker(
+            var circle_marker_33eeced2d7cb197163189dd24490a86c = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            circle_marker_a18d42ae550739f53fb35ea33f0436a4.bindTooltip(
+            circle_marker_33eeced2d7cb197163189dd24490a86c.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -460,24 +463,24 @@
             );
         
     
-            var marker_ef75437be3e211cdbe445fb7d81e2b9c = L.marker(
+            var marker_c7c77afe745b4c799ed807675545057e = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_edd18c7874668b630c5b39d8d01ff6b8);
+            ).addTo(map_6c6eb4cd5b6306c69e6362c0660a5eb9);
         
     
-            var div_icon_d59cc41a9d7304a5863d85159fe19331 = L.divIcon({
+            var div_icon_3c8821f8cff0e1fe7dfc38e6de765847 = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_ef75437be3e211cdbe445fb7d81e2b9c.setIcon(div_icon_d59cc41a9d7304a5863d85159fe19331);
+                marker_c7c77afe745b4c799ed807675545057e.setIcon(div_icon_3c8821f8cff0e1fe7dfc38e6de765847);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=3.0310309&mlon=101.4333945#map=16/3.0310309/101.4333945" rel="nofollow">Kuala Lumpur ≈1 h — Petronas Twin Towers, KL Tower, Batu Caves, Merdeka Square, Central Market, Bukit Bintang</a></li><li><a href="https://www.openstreetmap.org/?mlat=2.9384381&mlon=101.69223#map=16/2.9384381/101.69223" rel="nofollow">Putrajaya (nhà thờ Hồi giáo hồng)</a></li><li><a href="https://www.openstreetmap.org/?mlat=3.2093361&mlon=101.1868901#map=16/3.2093361/101.1868901" rel="nofollow">Sky Mirror (Sasaran)</a></li><li class="off">Klang: đền Sri Sundararaja Perumal, ẩm thực bak kut teh gốc <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- Port Klang là **cửa xuất chính của ngành dệt Malaysia** — luồng xuất khẩu đang dồn về đây.
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/kuala-lumpur-1-h-petronas-twin-towers-kl-tower-batu-caves-me.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=3.0310309&mlon=101.4333945#map=16/3.0310309/101.4333945" rel="nofollow">Kuala Lumpur ≈1 h — Petronas Twin Towers, KL Tower, Batu Caves, Merdeka Square, Central Market, Bukit Bintang</a></li><li><img class="thumb" src="sights/putrajaya-nha-tho-hoi-giao-hong.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=2.9384381&mlon=101.69223#map=16/2.9384381/101.69223" rel="nofollow">Putrajaya (nhà thờ Hồi giáo hồng)</a></li><li><img class="thumb" src="sights/sky-mirror-sasaran.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=3.2093361&mlon=101.1868901#map=16/3.2093361/101.1868901" rel="nofollow">Sky Mirror (Sasaran)</a></li><li class="off">Klang: đền Sri Sundararaja Perumal, ẩm thực bak kut teh gốc <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li class="off">- Port Klang là **cửa xuất chính của ngành dệt Malaysia** — luồng xuất khẩu đang dồn về đây.
 - **Ramatex Textiles Industrial** — dẫn đầu thị trường dệt Malaysia, cụm Johor (Batu Pahat – Sedenak), được gọi là "thủ phủ dệt Malaysia".
 - Toray Group Malaysia (xem Penang) đưa hàng qua Klang.
 - Di sản: **songket** (dệt kim tuyến) và **batik** Malaysia <em>not found</em></li></ul>

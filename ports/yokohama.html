@@ -15,7 +15,10 @@
  figcaption span{color:#8F8371}
  ul{margin:0;padding-left:18px}
  li{margin:3px 0}
- li.off{color:#8F8371;list-style-type:'· '}
+ li{display:flex;align-items:center;gap:9px}
+ li .thumb{width:56px;height:40px;object-fit:cover;border-radius:2px;
+   flex:0 0 auto}
+ li.off{color:#8F8371;display:list-item}
  li.off em{font-style:normal;font-size:11px}
  a{color:#A8320A}
  .mapbox{height:440px;border:1px solid #B3A490;border-radius:3px;
@@ -48,7 +51,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5a3afbbd63e5622c80eff82ab5be4069 {
+                #map_277f1217382d17d4a5caa2c90ab17c2a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -85,14 +88,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5a3afbbd63e5622c80eff82ab5be4069&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_277f1217382d17d4a5caa2c90ab17c2a&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_5a3afbbd63e5622c80eff82ab5be4069 = L.map(
-                &quot;map_5a3afbbd63e5622c80eff82ab5be4069&quot;,
+            var map_277f1217382d17d4a5caa2c90ab17c2a = L.map(
+                &quot;map_277f1217382d17d4a5caa2c90ab17c2a&quot;,
                 {
                     center: [35.452, 139.666],
                     crs: L.CRS.EPSG3857,
@@ -104,13 +107,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            L.control.scale().addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
 
             
 
         
     
-            var tile_layer_2fde756b95787edd87bf54115ddd700a = L.tileLayer(
+            var tile_layer_9c85a5d9993283f6b68bdff1c7e54dbe = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -127,16 +130,16 @@
             );
         
     
-            tile_layer_2fde756b95787edd87bf54115ddd700a.addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            tile_layer_9c85a5d9993283f6b68bdff1c7e54dbe.addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            var circle_marker_618d1be1e981b83a5d72c471360c2ea3 = L.circleMarker(
+            var circle_marker_501ffb40fec528fe329bb2a7680b3443 = L.circleMarker(
                 [35.452, 139.666],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#C2410C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#C2410C&quot;, &quot;fillOpacity&quot;: 0.85, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_618d1be1e981b83a5d72c471360c2ea3.bindTooltip(
+            circle_marker_501ffb40fec528fe329bb2a7680b3443.bindTooltip(
                 `&lt;div&gt;
                      Yokohama — bấm để xem ảnh
                  &lt;/div&gt;`,
@@ -146,49 +149,49 @@
             );
         
     
-        var popup_ae0b38faf0c818599bb85ba7916c84ab = L.popup({
+        var popup_847b16b71a24d4655b2b066aaf005de0 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_a10ba1c3d8b46f7e10a686625db806b4 = $(`&lt;div id=&quot;html_a10ba1c3d8b46f7e10a686625db806b4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Yokohama&lt;/div&gt;&lt;img src=&quot;img/yokohama.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Red Brick Warehouse, Yokohama&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Yokohama_Red_Brick_Warehouse_No1.jpg&quot; rel=&quot;nofollow&quot;&gt;Ymblanter · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
-                popup_ae0b38faf0c818599bb85ba7916c84ab.setContent(html_a10ba1c3d8b46f7e10a686625db806b4);
+                var html_99cdc41900ba9c158de8a15ff6a68b2d = $(`&lt;div id=&quot;html_99cdc41900ba9c158de8a15ff6a68b2d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:260px&quot;&gt;&lt;div style=&quot;font:600 14px system-ui,sans-serif;margin:0 0 6px&quot;&gt;Yokohama&lt;/div&gt;&lt;img src=&quot;img/yokohama.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block&quot;&gt;&lt;div style=&quot;font:12px system-ui;color:#5B5044;margin-top:5px&quot;&gt;Red Brick Warehouse, Yokohama&lt;/div&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371;margin-top:3px&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Yokohama_Red_Brick_Warehouse_No1.jpg&quot; rel=&quot;nofollow&quot;&gt;Ymblanter · CC BY-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_847b16b71a24d4655b2b066aaf005de0.setContent(html_99cdc41900ba9c158de8a15ff6a68b2d);
             
         
 
-        circle_marker_618d1be1e981b83a5d72c471360c2ea3.bindPopup(popup_ae0b38faf0c818599bb85ba7916c84ab)
+        circle_marker_501ffb40fec528fe329bb2a7680b3443.bindPopup(popup_847b16b71a24d4655b2b066aaf005de0)
         ;
 
         
     
     
-            var circle_marker_678d6e68ee79391dc68c1dc50083eadf = L.circleMarker(
+            var circle_marker_1f8b3a6224e35251d50ce6220eac7d54 = L.circleMarker(
                 [35.4594441, 139.6323669],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-        var popup_ad215a4bc6619880fc4fbc200aec085a = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_e4d81b730daa480c8301c99d3d40be7a = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_3c7fd74124f25fefb01172331a7f318b = $(`&lt;div id=&quot;html_3c7fd74124f25fefb01172331a7f318b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Minato Mirai 21 – Landmark Tower, Cosmo Clock 21&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.4594441&amp;mlon=139.6323669#map=16/35.4594441/139.6323669&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_ad215a4bc6619880fc4fbc200aec085a.setContent(html_3c7fd74124f25fefb01172331a7f318b);
+                var html_54dc6906f05359a1f2093c0a3b6a7a17 = $(`&lt;div id=&quot;html_54dc6906f05359a1f2093c0a3b6a7a17&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Minato Mirai 21 – Landmark Tower, Cosmo Clock 21&lt;/div&gt;&lt;img src=&quot;sights/minato-mirai-21-landmark-tower-cosmo-clock-21.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:20250101_Minato_Mirai_21_(Landmark_Tower,_Queen%27s_Square_Yokohama,_Pacifico_Yokohama,_InterContinental_Yokohama_Grand)_122135.jpg&quot; rel=&quot;nofollow&quot;&gt;Matthide127 · CC0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.4594441&amp;mlon=139.6323669#map=16/35.4594441/139.6323669&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_e4d81b730daa480c8301c99d3d40be7a.setContent(html_54dc6906f05359a1f2093c0a3b6a7a17);
             
         
 
-        circle_marker_678d6e68ee79391dc68c1dc50083eadf.bindPopup(popup_ad215a4bc6619880fc4fbc200aec085a)
+        circle_marker_1f8b3a6224e35251d50ce6220eac7d54.bindPopup(popup_e4d81b730daa480c8301c99d3d40be7a)
         ;
 
         
     
     
-            circle_marker_678d6e68ee79391dc68c1dc50083eadf.bindTooltip(
+            circle_marker_1f8b3a6224e35251d50ce6220eac7d54.bindTooltip(
                 `&lt;div&gt;
-                     Minato Mirai 21 – Landmark Tower, Cosmo Clock 21
+                     Minato Mirai 21 – Landmark Tower, Cosmo Clock 21 — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -196,32 +199,32 @@
             );
         
     
-            var circle_marker_1ddee5352444dd0bf8baddf852729317 = L.circleMarker(
+            var circle_marker_87094775bb85e39b4c0e904b2348a24e = L.circleMarker(
                 [35.41714, 139.6593804],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-        var popup_5f020b7d970feb3645a13c7e381322d2 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_27a2ee813e347d284b6ce0ac7d46906b = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_ef2978baa34c9a194d981c3376ffd35a = $(`&lt;div id=&quot;html_ef2978baa34c9a194d981c3376ffd35a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Sankeien Garden&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.41714&amp;mlon=139.6593804#map=16/35.41714/139.6593804&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_5f020b7d970feb3645a13c7e381322d2.setContent(html_ef2978baa34c9a194d981c3376ffd35a);
+                var html_7201c590c343a8f70025ebb0876d5574 = $(`&lt;div id=&quot;html_7201c590c343a8f70025ebb0876d5574&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Sankeien Garden&lt;/div&gt;&lt;img src=&quot;sights/sankeien-garden.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Yokohama_Sankeien_garden_-_panoramio.jpg&quot; rel=&quot;nofollow&quot;&gt;Kaz Ish · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.41714&amp;mlon=139.6593804#map=16/35.41714/139.6593804&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_27a2ee813e347d284b6ce0ac7d46906b.setContent(html_7201c590c343a8f70025ebb0876d5574);
             
         
 
-        circle_marker_1ddee5352444dd0bf8baddf852729317.bindPopup(popup_5f020b7d970feb3645a13c7e381322d2)
+        circle_marker_87094775bb85e39b4c0e904b2348a24e.bindPopup(popup_27a2ee813e347d284b6ce0ac7d46906b)
         ;
 
         
     
     
-            circle_marker_1ddee5352444dd0bf8baddf852729317.bindTooltip(
+            circle_marker_87094775bb85e39b4c0e904b2348a24e.bindTooltip(
                 `&lt;div&gt;
-                     Sankeien Garden
+                     Sankeien Garden — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -229,30 +232,30 @@
             );
         
     
-            var circle_marker_740b0d2f561e68a688a4b2a6f02bd91f = L.circleMarker(
+            var circle_marker_30a4e8ef6fbf696725fd1c5cda2328d3 = L.circleMarker(
                 [35.4554856, 139.638881],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-        var popup_8a658bb1ea339ec58a94717e1466d4e1 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_2a7323e74845fb2d330f2fec1769a2ee = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_d72d9a9f764a9e3f1abda789f393b994 = $(`&lt;div id=&quot;html_d72d9a9f764a9e3f1abda789f393b994&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Cup Noodles Museum&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.4554856&amp;mlon=139.638881#map=16/35.4554856/139.638881&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_8a658bb1ea339ec58a94717e1466d4e1.setContent(html_d72d9a9f764a9e3f1abda789f393b994);
+                var html_46049864c1fc2edce82057599f9d7725 = $(`&lt;div id=&quot;html_46049864c1fc2edce82057599f9d7725&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Cup Noodles Museum&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.4554856&amp;mlon=139.638881#map=16/35.4554856/139.638881&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_2a7323e74845fb2d330f2fec1769a2ee.setContent(html_46049864c1fc2edce82057599f9d7725);
             
         
 
-        circle_marker_740b0d2f561e68a688a4b2a6f02bd91f.bindPopup(popup_8a658bb1ea339ec58a94717e1466d4e1)
+        circle_marker_30a4e8ef6fbf696725fd1c5cda2328d3.bindPopup(popup_2a7323e74845fb2d330f2fec1769a2ee)
         ;
 
         
     
     
-            circle_marker_740b0d2f561e68a688a4b2a6f02bd91f.bindTooltip(
+            circle_marker_30a4e8ef6fbf696725fd1c5cda2328d3.bindTooltip(
                 `&lt;div&gt;
                      Cup Noodles Museum
                  &lt;/div&gt;`,
@@ -262,32 +265,32 @@
             );
         
     
-            var circle_marker_fefed069e5fba671627b7e4f854945fe = L.circleMarker(
+            var circle_marker_f2d3209fc27ae5ff4c3158157b9739e6 = L.circleMarker(
                 [35.4525105, 139.6415074],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-        var popup_7982af054312b4e8c1446fdfb3f99278 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_5302e7c33bb2a00954f916a748503aa1 = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_b8f1d8a31483843875236cf536b64317 = $(`&lt;div id=&quot;html_b8f1d8a31483843875236cf536b64317&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;Red Brick Warehouse&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.4525105&amp;mlon=139.6415074#map=16/35.4525105/139.6415074&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_7982af054312b4e8c1446fdfb3f99278.setContent(html_b8f1d8a31483843875236cf536b64317);
+                var html_11767aaf229f0b65345e65e5617799ca = $(`&lt;div id=&quot;html_11767aaf229f0b65345e65e5617799ca&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;Red Brick Warehouse&lt;/div&gt;&lt;img src=&quot;sights/red-brick-warehouse.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Yokohama_Red_Brick_Warehouse_2012.JPG&quot; rel=&quot;nofollow&quot;&gt;Kakidai · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.4525105&amp;mlon=139.6415074#map=16/35.4525105/139.6415074&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_5302e7c33bb2a00954f916a748503aa1.setContent(html_11767aaf229f0b65345e65e5617799ca);
             
         
 
-        circle_marker_fefed069e5fba671627b7e4f854945fe.bindPopup(popup_7982af054312b4e8c1446fdfb3f99278)
+        circle_marker_f2d3209fc27ae5ff4c3158157b9739e6.bindPopup(popup_5302e7c33bb2a00954f916a748503aa1)
         ;
 
         
     
     
-            circle_marker_fefed069e5fba671627b7e4f854945fe.bindTooltip(
+            circle_marker_f2d3209fc27ae5ff4c3158157b9739e6.bindTooltip(
                 `&lt;div&gt;
-                     Red Brick Warehouse
+                     Red Brick Warehouse — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -295,34 +298,34 @@
             );
         
     
-            var circle_marker_c0ca32d8d83857e1f4d94bcecc3f1cfd = L.circleMarker(
+            var circle_marker_8f7137ef8310e05b9a43bf28f14a6051 = L.circleMarker(
                 [35.447237, 139.64523],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#14181C&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffff&quot;, &quot;fillOpacity&quot;: 0.95, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-        var popup_975e38b2602be6e4507d25bb116d9830 = L.popup({
-  &quot;maxWidth&quot;: 250,
+        var popup_bd2f0e13b16c6af6b01a6ebe5d6c35dd = L.popup({
+  &quot;maxWidth&quot;: 290,
 });
 
         
             
-                var html_e1c5b539e879bcfefa38be753cbad3f0 = $(`&lt;div id=&quot;html_e1c5b539e879bcfefa38be753cbad3f0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;font:600 13px system-ui;width:210px&quot;&gt;- **Silk Museum (Bảo tàng Tơ lụa Yokohama)** — Yokohama từng là cảng xuất khẩu tơ tằm số 1 thế giới; bảo tàng nằm trong Silk Center, kể toàn bộ chuỗi từ kén tới lụa. - Là cửa ngõ tới trục R&amp;D dệt kỹ thuật vùng Tokyo: trụ sở/phòng lab Toray, Teijin, Asahi Kasei; NTT (đối tác hitoe™). - Tokyo cũng là nơi **Wearable X** (trong hồ sơ, [\`Wearable_X/\`](/root/c_semi/etextile_pitching/Wearable_X/)) có gốc sáng lập trước khi đặt cơ sở tại NYC — dòng Nadi X yoga pants dùng haptic dệt trong vải&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.447237&amp;mlon=139.64523#map=16/35.447237/139.64523&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;`)[0];
-                popup_975e38b2602be6e4507d25bb116d9830.setContent(html_e1c5b539e879bcfefa38be753cbad3f0);
+                var html_eab66bf5dd5c299b33af4e4e827d90cf = $(`&lt;div id=&quot;html_eab66bf5dd5c299b33af4e4e827d90cf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;div style=&quot;width:250px&quot;&gt;&lt;div style=&quot;font:600 13px system-ui&quot;&gt;- **Silk Museum (Bảo tàng Tơ lụa Yokohama)** — Yokohama từng là cảng xuất khẩu tơ tằm số 1 thế giới; bảo tàng nằm trong Silk Center, kể toàn bộ chuỗi từ kén tới lụa. - Là cửa ngõ tới trục R&amp;D dệt kỹ thuật vùng Tokyo: trụ sở/phòng lab Toray, Teijin, Asahi Kasei; NTT (đối tác hitoe™). - Tokyo cũng là nơi **Wearable X** (trong hồ sơ, [\`Wearable_X/\`](/root/c_semi/etextile_pitching/Wearable_X/)) có gốc sáng lập trước khi đặt cơ sở tại NYC — dòng Nadi X yoga pants dùng haptic dệt trong vải&lt;/div&gt;&lt;img src=&quot;sights/silk-museum-bao-tang-to-lua-yokohama-yokohama-tung-la-cang-x.jpg&quot; style=&quot;width:100%;height:auto;border-radius:3px;display:block;margin:6px 0 4px&quot;&gt;&lt;div style=&quot;font:11px system-ui;color:#8F8371&quot;&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Yokohama_Silk_Museum_001.JPG&quot; rel=&quot;nofollow&quot;&gt;User:Piotrus · CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;https://www.openstreetmap.org/?mlat=35.447237&amp;mlon=139.64523#map=16/35.447237/139.64523&quot; style=&quot;font:12px system-ui;color:#A8320A&quot; rel=&quot;nofollow&quot;&gt;Mở trên OpenStreetMap →&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;`)[0];
+                popup_bd2f0e13b16c6af6b01a6ebe5d6c35dd.setContent(html_eab66bf5dd5c299b33af4e4e827d90cf);
             
         
 
-        circle_marker_c0ca32d8d83857e1f4d94bcecc3f1cfd.bindPopup(popup_975e38b2602be6e4507d25bb116d9830)
+        circle_marker_8f7137ef8310e05b9a43bf28f14a6051.bindPopup(popup_bd2f0e13b16c6af6b01a6ebe5d6c35dd)
         ;
 
         
     
     
-            circle_marker_c0ca32d8d83857e1f4d94bcecc3f1cfd.bindTooltip(
+            circle_marker_8f7137ef8310e05b9a43bf28f14a6051.bindTooltip(
                 `&lt;div&gt;
                      - **Silk Museum (Bảo tàng Tơ lụa Yokohama)** — Yokohama từng là cảng xuất khẩu tơ tằm số 1 thế giới; bảo tàng nằm trong Silk Center, kể toàn bộ chuỗi từ kén tới lụa.
 - Là cửa ngõ tới trục R&amp;D dệt kỹ thuật vùng Tokyo: trụ sở/phòng lab Toray, Teijin, Asahi Kasei; NTT (đối tác hitoe™).
-- Tokyo cũng là nơi **Wearable X** (trong hồ sơ, [`Wearable_X/`](/root/c_semi/etextile_pitching/Wearable_X/)) có gốc sáng lập trước khi đặt cơ sở tại NYC — dòng Nadi X yoga pants dùng haptic dệt trong vải
+- Tokyo cũng là nơi **Wearable X** (trong hồ sơ, [`Wearable_X/`](/root/c_semi/etextile_pitching/Wearable_X/)) có gốc sáng lập trước khi đặt cơ sở tại NYC — dòng Nadi X yoga pants dùng haptic dệt trong vải — bấm để xem ảnh
                  &lt;/div&gt;`,
                 {
   &quot;sticky&quot;: true,
@@ -330,19 +333,19 @@
             );
         
     
-            map_5a3afbbd63e5622c80eff82ab5be4069.fitBounds(
+            map_277f1217382d17d4a5caa2c90ab17c2a.fitBounds(
                 [[35.41714, 139.6323669], [35.4594441, 139.666]],
                 {&quot;padding&quot;: [30, 30]}
             );
         
     
-            var circle_marker_8fff62ac71b87d70123a39c1f6a99681 = L.circleMarker(
+            var circle_marker_d805892e2668b1775317f2cec9960bcf = L.circleMarker(
                 [16.83, 112.33],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_8fff62ac71b87d70123a39c1f6a99681.bindTooltip(
+            circle_marker_d805892e2668b1775317f2cec9960bcf.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -352,13 +355,13 @@
             );
         
     
-            var circle_marker_cebb25b909b5fac60ad23957c582b09e = L.circleMarker(
+            var circle_marker_f2a6431d79de74be247d8ef646395ae3 = L.circleMarker(
                 [16.53, 111.75],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_cebb25b909b5fac60ad23957c582b09e.bindTooltip(
+            circle_marker_f2a6431d79de74be247d8ef646395ae3.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -368,13 +371,13 @@
             );
         
     
-            var circle_marker_079e5311cb0e4daa59c693c2a3ac8b5a = L.circleMarker(
+            var circle_marker_0320d6f013027060d9544821cc68b814 = L.circleMarker(
                 [16.45, 111.7],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_079e5311cb0e4daa59c693c2a3ac8b5a.bindTooltip(
+            circle_marker_0320d6f013027060d9544821cc68b814.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -384,13 +387,13 @@
             );
         
     
-            var circle_marker_684fd2770a96f635dd82a456acf07809 = L.circleMarker(
+            var circle_marker_83d5c29cd97ceed61eaf750f4d0cc60a = L.circleMarker(
                 [16.97, 112.26],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_684fd2770a96f635dd82a456acf07809.bindTooltip(
+            circle_marker_83d5c29cd97ceed61eaf750f4d0cc60a.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -400,13 +403,13 @@
             );
         
     
-            var circle_marker_8df727a9bc96df6d981a75a7604a6ef2 = L.circleMarker(
+            var circle_marker_9f0f33735623299bd97aba9a78f738fd = L.circleMarker(
                 [15.78, 111.2],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_8df727a9bc96df6d981a75a7604a6ef2.bindTooltip(
+            circle_marker_9f0f33735623299bd97aba9a78f738fd.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Hoàng Sa (Paracel Islands)
                  &lt;/div&gt;`,
@@ -416,29 +419,29 @@
             );
         
     
-            var marker_30ce2e9327359fb3b826f4abfdb98517 = L.marker(
+            var marker_28ccd8e704a80c8bde31c2591e24e6ba = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            var div_icon_f11a10f138ffbb6d6a53b76c496a1ccf = L.divIcon({
+            var div_icon_16bade53d5c4959a007f4c38d40cf24f = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_30ce2e9327359fb3b826f4abfdb98517.setIcon(div_icon_f11a10f138ffbb6d6a53b76c496a1ccf);
+                marker_28ccd8e704a80c8bde31c2591e24e6ba.setIcon(div_icon_16bade53d5c4959a007f4c38d40cf24f);
             
     
-            var circle_marker_6e2012d10a7d53c8860a5b6037925e82 = L.circleMarker(
+            var circle_marker_bdc52ae5058e43c0eb8f58c16997bfb0 = L.circleMarker(
                 [10.72, 115.82],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_6e2012d10a7d53c8860a5b6037925e82.bindTooltip(
+            circle_marker_bdc52ae5058e43c0eb8f58c16997bfb0.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -448,13 +451,13 @@
             );
         
     
-            var circle_marker_4edc1323ed354ee0da86aa124f46204a = L.circleMarker(
+            var circle_marker_2071cef70eb2fb1fee32343e8eebf477 = L.circleMarker(
                 [10.37, 114.36],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_4edc1323ed354ee0da86aa124f46204a.bindTooltip(
+            circle_marker_2071cef70eb2fb1fee32343e8eebf477.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -464,13 +467,13 @@
             );
         
     
-            var circle_marker_b5eb096b637ec72ffdcd359b3f9a0044 = L.circleMarker(
+            var circle_marker_d1a2ac7bbcb27798089f6e44d1837455 = L.circleMarker(
                 [9.88, 114.35],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_b5eb096b637ec72ffdcd359b3f9a0044.bindTooltip(
+            circle_marker_d1a2ac7bbcb27798089f6e44d1837455.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -480,13 +483,13 @@
             );
         
     
-            var circle_marker_c19169a61dcf84c5194364a0f18dc8f9 = L.circleMarker(
+            var circle_marker_11e84faa8ed0400cb72bf910b58d8f1c = L.circleMarker(
                 [8.64, 111.92],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_c19169a61dcf84c5194364a0f18dc8f9.bindTooltip(
+            circle_marker_11e84faa8ed0400cb72bf910b58d8f1c.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -496,13 +499,13 @@
             );
         
     
-            var circle_marker_b5e3837071176997e4cbb40fa234b380 = L.circleMarker(
+            var circle_marker_73102498c7e47fcd1606ed4f799e850b = L.circleMarker(
                 [11.05, 114.28],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_b5e3837071176997e4cbb40fa234b380.bindTooltip(
+            circle_marker_73102498c7e47fcd1606ed4f799e850b.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -512,13 +515,13 @@
             );
         
     
-            var circle_marker_874745cf546ff55cc9c0faa149564f56 = L.circleMarker(
+            var circle_marker_595ffd13f0f9433f9eb8354e3539828b = L.circleMarker(
                 [7.38, 113.84],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#5A6169&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#5A6169&quot;, &quot;fillOpacity&quot;: 0.9, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            circle_marker_874745cf546ff55cc9c0faa149564f56.bindTooltip(
+            circle_marker_595ffd13f0f9433f9eb8354e3539828b.bindTooltip(
                 `&lt;div&gt;
                      Quần đảo Trường Sa (Spratly Islands)
                  &lt;/div&gt;`,
@@ -528,24 +531,24 @@
             );
         
     
-            var marker_b317b598ff08b5c7be982a0c86e47a48 = L.marker(
+            var marker_60e281723aa202ea208caae8a7d39819 = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_5a3afbbd63e5622c80eff82ab5be4069);
+            ).addTo(map_277f1217382d17d4a5caa2c90ab17c2a);
         
     
-            var div_icon_9ec40a4b4b40772cf004dc9d2f22b3a6 = L.divIcon({
+            var div_icon_74a691dab6f09e59b3dceddcddb50e0d = L.divIcon({
   &quot;html&quot;: &quot;\u003cdiv style=\&quot;font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\&quot;\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e&quot;,
   &quot;className&quot;: &quot;empty&quot;,
 });
         
     
-                marker_b317b598ff08b5c7be982a0c86e47a48.setIcon(div_icon_9ec40a4b4b40772cf004dc9d2f22b3a6);
+                marker_60e281723aa202ea208caae8a7d39819.setIcon(div_icon_74a691dab6f09e59b3dceddcddb50e0d);
             
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
-<h2>Điểm tham quan</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=35.4594441&mlon=139.6323669#map=16/35.4594441/139.6323669" rel="nofollow">Minato Mirai 21 – Landmark Tower, Cosmo Clock 21</a></li><li><a href="https://www.openstreetmap.org/?mlat=35.41714&mlon=139.6593804#map=16/35.41714/139.6593804" rel="nofollow">Sankeien Garden</a></li><li class="off">Chinatown lớn nhất Nhật <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=35.4554856&mlon=139.638881#map=16/35.4554856/139.638881" rel="nofollow">Cup Noodles Museum</a></li><li><a href="https://www.openstreetmap.org/?mlat=35.4525105&mlon=139.6415074#map=16/35.4525105/139.6415074" rel="nofollow">Red Brick Warehouse</a></li><li class="off">Tokyo ≈30 phút (Shibuya, Asakusa – Sensō-ji, Meiji Jingū, teamLab) <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><a href="https://www.openstreetmap.org/?mlat=35.447237&mlon=139.64523#map=16/35.447237/139.64523" rel="nofollow">- **Silk Museum (Bảo tàng Tơ lụa Yokohama)** — Yokohama từng là cảng xuất khẩu tơ tằm số 1 thế giới; bảo tàng nằm trong Silk Center, kể toàn bộ chuỗi từ kén tới lụa.
+<h2>Điểm tham quan</h2><ul><li><img class="thumb" src="sights/minato-mirai-21-landmark-tower-cosmo-clock-21.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=35.4594441&mlon=139.6323669#map=16/35.4594441/139.6323669" rel="nofollow">Minato Mirai 21 – Landmark Tower, Cosmo Clock 21</a></li><li><img class="thumb" src="sights/sankeien-garden.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=35.41714&mlon=139.6593804#map=16/35.41714/139.6593804" rel="nofollow">Sankeien Garden</a></li><li class="off">Chinatown lớn nhất Nhật <em>not found</em></li><li><a href="https://www.openstreetmap.org/?mlat=35.4554856&mlon=139.638881#map=16/35.4554856/139.638881" rel="nofollow">Cup Noodles Museum</a></li><li><img class="thumb" src="sights/red-brick-warehouse.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=35.4525105&mlon=139.6415074#map=16/35.4525105/139.6415074" rel="nofollow">Red Brick Warehouse</a></li><li class="off">Tokyo ≈30 phút (Shibuya, Asakusa – Sensō-ji, Meiji Jingū, teamLab) <em>not found</em></li></ul><h2>Dệt may &amp; smart textile</h2><ul><li><img class="thumb" src="sights/silk-museum-bao-tang-to-lua-yokohama-yokohama-tung-la-cang-x.jpg" alt="" loading="lazy"><a href="https://www.openstreetmap.org/?mlat=35.447237&mlon=139.64523#map=16/35.447237/139.64523" rel="nofollow">- **Silk Museum (Bảo tàng Tơ lụa Yokohama)** — Yokohama từng là cảng xuất khẩu tơ tằm số 1 thế giới; bảo tàng nằm trong Silk Center, kể toàn bộ chuỗi từ kén tới lụa.
 - Là cửa ngõ tới trục R&D dệt kỹ thuật vùng Tokyo: trụ sở/phòng lab Toray, Teijin, Asahi Kasei; NTT (đối tác hitoe™).
 - Tokyo cũng là nơi **Wearable X** (trong hồ sơ, [`Wearable_X/`](/root/c_semi/etextile_pitching/Wearable_X/)) có gốc sáng lập trước khi đặt cơ sở tại NYC — dòng Nadi X yoga pants dùng haptic dệt trong vải</a></li></ul>
 
