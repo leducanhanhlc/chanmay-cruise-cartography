@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_b660a4b5b65953ca88bf3b189c1b4ae7 {
+                #map_d01655fbd2ae4fa75c3f5e11b3f0e366 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,6 +54,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
 </head>
 <body>
     
@@ -72,14 +80,14 @@
        Call: 2027-03-17</div>
 </div>
     
-            <div class="folium-map" id="map_b660a4b5b65953ca88bf3b189c1b4ae7" ></div>
+            <div class="folium-map" id="map_d01655fbd2ae4fa75c3f5e11b3f0e366" ></div>
         
 </body>
 <script>
     
     
-            var map_b660a4b5b65953ca88bf3b189c1b4ae7 = L.map(
-                "map_b660a4b5b65953ca88bf3b189c1b4ae7",
+            var map_d01655fbd2ae4fa75c3f5e11b3f0e366 = L.map(
+                "map_d01655fbd2ae4fa75c3f5e11b3f0e366",
                 {
                     center: [16.3241, 108.0249],
                     crs: L.CRS.EPSG3857,
@@ -91,13 +99,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            L.control.scale().addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
 
             
 
         
     
-            var tile_layer_c164aa02b996fc134adc4abbc9772eaf = L.tileLayer(
+            var tile_layer_13021df8f5658f96b8183138f3437f08 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -114,7 +122,7 @@
             );
         
     
-            tile_layer_c164aa02b996fc134adc4abbc9772eaf.addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            tile_layer_13021df8f5658f96b8183138f3437f08.addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
             L.control.fullscreen(
@@ -124,15 +132,15 @@
   "titleCancel": "Exit Full Screen",
   "forceSeparateButton": false,
 }
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            var tile_layer_aa03fc11e63fbcebe9bec5aeed2004b7 = L.tileLayer(
+            var tile_layer_d0a1545fff30ef8aa3f9e799afab74b6 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_0e879a3358af02d447e26173bd2021c0 = new L.Control.MiniMap(
-                tile_layer_aa03fc11e63fbcebe9bec5aeed2004b7,
+            var mini_map_3fc772a6c9fa3b46fc84a604a750c9b9 = new L.Control.MiniMap(
+                tile_layer_d0a1545fff30ef8aa3f9e799afab74b6,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -147,16 +155,130 @@
   "minimized": false,
 }
             );
-            map_b660a4b5b65953ca88bf3b189c1b4ae7.addControl(mini_map_0e879a3358af02d447e26173bd2021c0);
+            map_d01655fbd2ae4fa75c3f5e11b3f0e366.addControl(mini_map_3fc772a6c9fa3b46fc84a604a750c9b9);
         
     
-            var circle_marker_dd580a3f960bc9b62889ee4d4ac0fee5 = L.circleMarker(
+            ant_path_7abaca2f234c2f92d082a36227d59e9a = L.polyline.antPath(
+              [[16.3248443, 108.0220438], [16.3249721, 108.0220451], [16.3249671, 108.0218509], [16.3248345, 108.0218503], [16.3201417, 108.021828], [16.3136819, 108.0217973], [16.3111776, 108.0217854], [16.3084728, 108.0217464], [16.3071719, 108.0216486], [16.3070303, 108.0215094], [16.3067883, 108.0215137], [16.3066627, 108.0216354], [16.2940216, 108.021501], [16.291571, 108.0214437], [16.2907013, 108.0214221], [16.2907035, 108.021522], [16.2906505, 108.0231464], [16.2873594, 108.0259076], [16.2849758, 108.0269888], [16.2827504, 108.0292884], [16.2825328, 108.02928], [16.2798502, 108.0291767], [16.2747, 108.0260278], [16.2747622, 108.0246], [16.2758683, 108.0244445], [16.2747622, 108.0246], [16.2747638, 108.0245448], [16.2749237, 108.0208946], [16.274929, 108.0207763], [16.2748942, 108.0140724], [16.2748818, 108.0117162], [16.2748979, 108.0105433], [16.2753038, 108.0086161], [16.2758218, 108.0061574], [16.2762639, 108.0039099], [16.2762628, 108.0018358], [16.2762594, 107.9998058], [16.2762554, 107.9974558], [16.2762476, 107.9915981], [16.2762475, 107.9915266], [16.2813444, 107.9896838], [16.282645, 107.9891651], [16.2893058, 107.9864821], [16.2971803, 107.9834959], [16.2977111, 107.9832388], [16.3026558, 107.9814081], [16.302888, 107.9813248], [16.3051707, 107.9804955], [16.3055991, 107.9803362], [16.3068808, 107.9798598], [16.3080219, 107.9794219], [16.3101064, 107.9787732], [16.3103356, 107.9787231], [16.3117343, 107.978416], [16.3120791, 107.9783202], [16.3125235, 107.9777579], [16.3141819, 107.9767072], [16.3138417, 107.9771519], [16.3141819, 107.9767072], [16.3148241, 107.9770107], [16.3155323, 107.9783791], [16.3153756, 107.9792524], [16.3150368, 107.9804779], [16.3146632, 107.9819573], [16.3144971, 107.9826417], [16.3142482, 107.9836667], [16.3140795, 107.9843619], [16.3136551, 107.9861102], [16.3125267, 107.9925717], [16.3116954, 107.9973877], [16.311549, 107.998236], [16.3099933, 107.9981604], [16.3100555, 107.9983978], [16.3100942, 107.9987367], [16.3095606, 108.0016018], [16.3092278, 108.0028315], [16.3091161, 108.0032327], [16.3089931, 108.0044406], [16.3075044, 108.004713], [16.3067708, 108.0123162], [16.3068485, 108.0181425], [16.306883, 108.0212199], [16.3067883, 108.0215137], [16.3066627, 108.0216354], [16.3066543, 108.0219198], [16.306788, 108.0220576], [16.3068934, 108.0223388], [16.3078463, 108.0334407], [16.2905889, 108.0458214], [16.2900942, 108.0461283], [16.2894879, 108.0465044], [16.2711289, 108.0577824]],
+              {
+  "stroke": true,
+  "color": "#C2410C",
+  "weight": 4,
+  "opacity": 0.55,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+12,
+24,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#C2410C",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 900,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            ant_path_7abaca2f234c2f92d082a36227d59e9a.bindTooltip(
+                `<div>
+                     Road route · 26.5 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("HH:mm");
+                }
+            });
+            map_d01655fbd2ae4fa75c3f5e11b3f0e366.timeDimension = L.timeDimension(
+                {
+                    period: "PT1M",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {
+  "position": "bottomleft",
+  "minSpeed": 0.1,
+  "maxSpeed": 10,
+  "autoPlay": true,
+  "loopButton": false,
+  "timeSliderDragUpdate": true,
+  "speedSlider": true,
+  "playerOptions": {
+  "transitionTime": 120,
+  "loop": true,
+  "startOver": true,
+},
+}
+            );
+            map_d01655fbd2ae4fa75c3f5e11b3f0e366.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[108.0220438, 16.3248443], [108.0220451, 16.3249721], [108.0218509, 16.3249671], [108.0218503, 16.3248345], [108.021828, 16.3201417], [108.0217973, 16.3136819], [108.0217854, 16.3111776], [108.0217464, 16.3084728], [108.0216486, 16.3071719], [108.0215094, 16.3070303], [108.0215137, 16.3067883], [108.0216354, 16.3066627], [108.021501, 16.2940216], [108.0214437, 16.291571], [108.0214221, 16.2907013], [108.021522, 16.2907035], [108.0231464, 16.2906505], [108.0259076, 16.2873594], [108.0269888, 16.2849758], [108.0292884, 16.2827504], [108.02928, 16.2825328], [108.0291767, 16.2798502], [108.0260278, 16.2747], [108.0246, 16.2747622], [108.0244445, 16.2758683], [108.0246, 16.2747622], [108.0245448, 16.2747638], [108.0208946, 16.2749237], [108.0207763, 16.274929], [108.0140724, 16.2748942], [108.0117162, 16.2748818], [108.0105433, 16.2748979], [108.0086161, 16.2753038], [108.0061574, 16.2758218], [108.0039099, 16.2762639], [108.0018358, 16.2762628], [107.9998058, 16.2762594], [107.9974558, 16.2762554], [107.9915981, 16.2762476], [107.9915266, 16.2762475], [107.9896838, 16.2813444], [107.9891651, 16.282645], [107.9864821, 16.2893058], [107.9834959, 16.2971803], [107.9832388, 16.2977111], [107.9814081, 16.3026558], [107.9813248, 16.302888], [107.9804955, 16.3051707], [107.9803362, 16.3055991], [107.9798598, 16.3068808], [107.9794219, 16.3080219], [107.9787732, 16.3101064], [107.9787231, 16.3103356], [107.978416, 16.3117343], [107.9783202, 16.3120791], [107.9777579, 16.3125235], [107.9767072, 16.3141819], [107.9771519, 16.3138417], [107.9767072, 16.3141819], [107.9770107, 16.3148241], [107.9783791, 16.3155323], [107.9792524, 16.3153756], [107.9804779, 16.3150368], [107.9819573, 16.3146632], [107.9826417, 16.3144971], [107.9836667, 16.3142482], [107.9843619, 16.3140795], [107.9861102, 16.3136551], [107.9925717, 16.3125267], [107.9973877, 16.3116954], [107.998236, 16.311549], [107.9981604, 16.3099933], [107.9983978, 16.3100555], [107.9987367, 16.3100942], [108.0016018, 16.3095606], [108.0028315, 16.3092278], [108.0032327, 16.3091161], [108.0044406, 16.3089931], [108.004713, 16.3075044], [108.0123162, 16.3067708], [108.0181425, 16.3068485], [108.0212199, 16.306883], [108.0215137, 16.3067883], [108.0216354, 16.3066627], [108.0219198, 16.3066543], [108.0220576, 16.306788], [108.0223388, 16.3068934], [108.0334407, 16.3078463], [108.0458214, 16.2905889], [108.0461283, 16.2900942], [108.0465044, 16.2894879], [108.0577824, 16.2711289]]}, "properties": {"times": ["2026-01-01T08:00:00", "2026-01-01T08:00:01.009121", "2026-01-01T08:00:02.491558", "2026-01-01T08:00:03.538540", "2026-01-01T08:00:40.591938", "2026-01-01T08:01:31.597212", "2026-01-01T08:01:51.370657", "2026-01-01T08:02:12.729059", "2026-01-01T08:02:23.027675", "2026-01-01T08:02:24.569915", "2026-01-01T08:02:26.480960", "2026-01-01T08:02:27.839661", "2026-01-01T08:04:07.655446", "2026-01-01T08:04:27.009624", "2026-01-01T08:04:33.878506", "2026-01-01T08:04:34.641159", "2026-01-01T08:04:47.045945", "2026-01-01T08:05:20.503064", "2026-01-01T08:05:41.052979", "2026-01-01T08:06:05.888558", "2026-01-01T08:06:07.607861", "2026-01-01T08:06:28.803574", "2026-01-01T08:07:16.040010", "2026-01-01T08:07:26.949190", "2026-01-01T08:07:35.762922", "2026-01-01T08:07:44.576654", "2026-01-01T08:07:44.998174", "2026-01-01T08:08:12.888009", "2026-01-01T08:08:13.791938", "2026-01-01T08:09:04.962206", "2026-01-01T08:09:22.946878", "2026-01-01T08:09:31.900292", "2026-01-01T08:09:46.955272", "2026-01-01T08:10:06.162461", "2026-01-01T08:10:23.668609", "2026-01-01T08:10:39.499692", "2026-01-01T08:10:54.994193", "2026-01-01T08:11:12.931177", "2026-01-01T08:11:57.641566", "2026-01-01T08:11:58.187308", "2026-01-01T08:12:40.818098", "2026-01-01T08:12:51.823972", "2026-01-01T08:13:48.261676", "2026-01-01T08:14:54.481854", "2026-01-01T08:14:59.109483", "2026-01-01T08:15:40.576008", "2026-01-01T08:15:42.516482", "2026-01-01T08:16:01.618924", "2026-01-01T08:16:05.213285", "2026-01-01T08:16:15.966482", "2026-01-01T08:16:25.576080", "2026-01-01T08:16:42.763098", "2026-01-01T08:16:44.612742", "2026-01-01T08:16:55.902407", "2026-01-01T08:16:58.721303", "2026-01-01T08:17:04.264371", "2026-01-01T08:17:19.618543", "2026-01-01T08:17:23.946590", "2026-01-01T08:17:28.274632", "2026-01-01T08:17:33.849173", "2026-01-01T08:17:45.694621", "2026-01-01T08:17:52.472846", "2026-01-01T08:18:02.199995", "2026-01-01T08:18:13.868683", "2026-01-01T08:18:19.253658", "2026-01-01T08:18:27.318808", "2026-01-01T08:18:32.788730", "2026-01-01T08:18:46.544895", "2026-01-01T08:19:36.653209", "2026-01-01T08:20:13.987385", "2026-01-01T08:20:20.563470", "2026-01-01T08:20:32.860374", "2026-01-01T08:20:34.737461", "2026-01-01T08:20:37.341741", "2026-01-01T08:20:59.608828", "2026-01-01T08:21:09.354183", "2026-01-01T08:21:12.540422", "2026-01-01T08:21:21.809497", "2026-01-01T08:21:33.746258", "2026-01-01T08:22:32.058923", "2026-01-01T08:23:16.526892", "2026-01-01T08:23:40.013820", "2026-01-01T08:23:42.377363", "2026-01-01T08:23:43.736064", "2026-01-01T08:23:45.907494", "2026-01-01T08:23:47.397573", "2026-01-01T08:23:49.699281", "2026-01-01T08:25:14.757041", "2026-01-01T08:28:00.574293", "2026-01-01T08:28:05.128785", "2026-01-01T08:28:10.710602", "2026-01-01T08:30:59.302336"], "style": {"color": "#C2410C", "weight": 5, "opacity": 0.85}, "icon": "circle", "iconstyle": {"fillColor": "#C2410C", "fillOpacity": 0.9, "stroke": "true", "color": "#ffffff", "weight": 2, "radius": 7}}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                        if (feature.properties.tooltip) {
+                        layer.bindTooltip(feature.properties.tooltip);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_c784c00701e03f10ddeb6017ef1e5146 = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: false,
+                    duration: "PT3M",
+                }
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            var circle_marker_bb97330868b1dd63a9ecda3342d74fd2 = L.circleMarker(
                 [16.3241, 108.0249],
                 {"bubblingMouseEvents": true, "color": "#C2410C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2410C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_dd580a3f960bc9b62889ee4d4ac0fee5.bindTooltip(
+            circle_marker_bb97330868b1dd63a9ecda3342d74fd2.bindTooltip(
                 `<div>
                      Chân Mây — cruise berth
                  </div>`,
@@ -166,13 +288,125 @@
             );
         
     
-            var circle_marker_b4f0dd5b538fb6ba0f7ba2b5570c1ee8 = L.circleMarker(
+            var circle_marker_5d0ca2d606240333c00ab1c3a481cf10 = L.circleMarker(
+                [16.3144875, 107.9808319],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            circle_marker_5d0ca2d606240333c00ab1c3a481cf10.bindTooltip(
+                `<div>
+                     miếu Cảnh Dương (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e5527a324eb57c7fdace103ccafa9ef = L.circleMarker(
+                [16.2788248, 108.0287484],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            circle_marker_7e5527a324eb57c7fdace103ccafa9ef.bindTooltip(
+                `<div>
+                     miếu Mỹ Gia (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a3133313f35c8dc6b2bd4c9aaccce99 = L.circleMarker(
+                [16.2764748, 108.0245224],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            circle_marker_2a3133313f35c8dc6b2bd4c9aaccce99.bindTooltip(
+                `<div>
+                     đình Phú Gia (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef4ffda023acbf617aaa986c8cc988bd = L.circleMarker(
+                [16.3132257, 107.9772018],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            circle_marker_ef4ffda023acbf617aaa986c8cc988bd.bindTooltip(
+                `<div>
+                     đình Cảnh Dương (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f6985869bc34dda1a518b8378857d35 = L.circleMarker(
+                [16.272996640610046, 108.06008753118046],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            circle_marker_5f6985869bc34dda1a518b8378857d35.bindTooltip(
+                `<div>
+                     Lăng Cô (natural=beach)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5136f4f2963241f4e7619cde51600ea5 = L.circleMarker(
+                [16.2793285, 107.9806047],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            circle_marker_5136f4f2963241f4e7619cde51600ea5.bindTooltip(
+                `<div>
+                     miếu Tiền Hiền (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8964bb9871299023596faca6f0e803ef = L.circleMarker(
+                [16.2780728, 107.9815821],
+                {"bubblingMouseEvents": true, "color": "#14181C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
+        
+    
+            circle_marker_8964bb9871299023596faca6f0e803ef.bindTooltip(
+                `<div>
+                     đình Phước An (amenity=place_of_worship)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d28ae0339bb2cf7825e6da576799624 = L.circleMarker(
                 [16.83, 112.33],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_b4f0dd5b538fb6ba0f7ba2b5570c1ee8.bindTooltip(
+            circle_marker_9d28ae0339bb2cf7825e6da576799624.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -182,13 +416,13 @@
             );
         
     
-            var circle_marker_32ee12b4e51fa2f22449e62ca4d41588 = L.circleMarker(
+            var circle_marker_52bb608b8c55ee03775d069ec63f585e = L.circleMarker(
                 [16.53, 111.75],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_32ee12b4e51fa2f22449e62ca4d41588.bindTooltip(
+            circle_marker_52bb608b8c55ee03775d069ec63f585e.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -198,13 +432,13 @@
             );
         
     
-            var circle_marker_16d9a6f5572fbde89ec999fc1f37e926 = L.circleMarker(
+            var circle_marker_c3339f38e4214146d4195dc7da802b5a = L.circleMarker(
                 [16.45, 111.7],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_16d9a6f5572fbde89ec999fc1f37e926.bindTooltip(
+            circle_marker_c3339f38e4214146d4195dc7da802b5a.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -214,13 +448,13 @@
             );
         
     
-            var circle_marker_1d2fcc6944f9647002df98f0faa7e3ae = L.circleMarker(
+            var circle_marker_57351ca8c41643cc42cc7481b5c18779 = L.circleMarker(
                 [16.97, 112.26],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_1d2fcc6944f9647002df98f0faa7e3ae.bindTooltip(
+            circle_marker_57351ca8c41643cc42cc7481b5c18779.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -230,13 +464,13 @@
             );
         
     
-            var circle_marker_9ac20648268f40dd1448c5e4c7124aaf = L.circleMarker(
+            var circle_marker_8dacbd6c2407b5ed1d402975337f7dbd = L.circleMarker(
                 [15.78, 111.2],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_9ac20648268f40dd1448c5e4c7124aaf.bindTooltip(
+            circle_marker_8dacbd6c2407b5ed1d402975337f7dbd.bindTooltip(
                 `<div>
                      Quần đảo Hoàng Sa (Paracel Islands)
                  </div>`,
@@ -246,29 +480,29 @@
             );
         
     
-            var marker_52723d96594f2fc8061c80d7b55a27a1 = L.marker(
+            var marker_9bb26380a7b8417bfe00c0f1ec0758f6 = L.marker(
                 [16.1, 112.75],
                 {
 }
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            var div_icon_15549caa97dd89863febf94de6551206 = L.divIcon({
+            var div_icon_1619fc14a7c7af572fa797b072747e88 = L.divIcon({
   "html": "\u003cdiv style=\"font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\"\u003eQu\u1ea7n \u0111\u1ea3o Ho\u00e0ng Sa\u003c/div\u003e",
   "className": "empty",
 });
         
     
-                marker_52723d96594f2fc8061c80d7b55a27a1.setIcon(div_icon_15549caa97dd89863febf94de6551206);
+                marker_9bb26380a7b8417bfe00c0f1ec0758f6.setIcon(div_icon_1619fc14a7c7af572fa797b072747e88);
             
     
-            var circle_marker_09e669589143bb4a76963f47010ffae4 = L.circleMarker(
+            var circle_marker_d7c1b35567cbdacf353c99f2af920103 = L.circleMarker(
                 [10.72, 115.82],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_09e669589143bb4a76963f47010ffae4.bindTooltip(
+            circle_marker_d7c1b35567cbdacf353c99f2af920103.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -278,13 +512,13 @@
             );
         
     
-            var circle_marker_c5391f1dd3bb86370bd2c5659c8e1ee2 = L.circleMarker(
+            var circle_marker_ec9f9cf608a28e83b635286cf177121d = L.circleMarker(
                 [10.37, 114.36],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_c5391f1dd3bb86370bd2c5659c8e1ee2.bindTooltip(
+            circle_marker_ec9f9cf608a28e83b635286cf177121d.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -294,13 +528,13 @@
             );
         
     
-            var circle_marker_b1b167221ed68e4e6fc00d5c4de8e6c6 = L.circleMarker(
+            var circle_marker_daab74ccfdfd2a8a9a66a043e38a387f = L.circleMarker(
                 [9.88, 114.35],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_b1b167221ed68e4e6fc00d5c4de8e6c6.bindTooltip(
+            circle_marker_daab74ccfdfd2a8a9a66a043e38a387f.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -310,13 +544,13 @@
             );
         
     
-            var circle_marker_00e757272e0bc7ae8dec7c391857e106 = L.circleMarker(
+            var circle_marker_8a2f271079afc11e07264035eb62ba7f = L.circleMarker(
                 [8.64, 111.92],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_00e757272e0bc7ae8dec7c391857e106.bindTooltip(
+            circle_marker_8a2f271079afc11e07264035eb62ba7f.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -326,13 +560,13 @@
             );
         
     
-            var circle_marker_ccb45851f44eb5e991a27a3c47116525 = L.circleMarker(
+            var circle_marker_3e7a400aed9d8e232a8d7dcf7e0d7c93 = L.circleMarker(
                 [11.05, 114.28],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_ccb45851f44eb5e991a27a3c47116525.bindTooltip(
+            circle_marker_3e7a400aed9d8e232a8d7dcf7e0d7c93.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -342,13 +576,13 @@
             );
         
     
-            var circle_marker_b0644aedc17d12a80db4e8c9c02b9f30 = L.circleMarker(
+            var circle_marker_4e81123de8fae0ee7ea69e8f41dd2528 = L.circleMarker(
                 [7.38, 113.84],
                 {"bubblingMouseEvents": true, "color": "#5A6169", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5A6169", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            circle_marker_b0644aedc17d12a80db4e8c9c02b9f30.bindTooltip(
+            circle_marker_4e81123de8fae0ee7ea69e8f41dd2528.bindTooltip(
                 `<div>
                      Quần đảo Trường Sa (Spratly Islands)
                  </div>`,
@@ -358,35 +592,35 @@
             );
         
     
-            var marker_9c1a6b76e4e8c0b4aefb28213a08f4d6 = L.marker(
+            var marker_133672fcf8f28d0f60a706bfd55a742c = L.marker(
                 [7.3, 112.1],
                 {
 }
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            var div_icon_b234d2a61298dc0ed5aa26697e18b242 = L.divIcon({
+            var div_icon_63b125e4d86c6f9b16c0dad5c91f5d04 = L.divIcon({
   "html": "\u003cdiv style=\"font:600 11px system-ui,sans-serif;color:#5A6169;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff\"\u003eQu\u1ea7n \u0111\u1ea3o Tr\u01b0\u1eddng Sa\u003c/div\u003e",
   "className": "empty",
 });
         
     
-                marker_9c1a6b76e4e8c0b4aefb28213a08f4d6.setIcon(div_icon_b234d2a61298dc0ed5aa26697e18b242);
+                marker_133672fcf8f28d0f60a706bfd55a742c.setIcon(div_icon_63b125e4d86c6f9b16c0dad5c91f5d04);
             
     
-            var feature_group_4b6780d5ba502c05027eb531aeb3151a = L.featureGroup(
+            var feature_group_3fb3704cf316f02c5648a7d5dba8a859 = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_b3b338669e185720bed4c2c581cf2643 = L.polyline(
+            var poly_line_2038c8a478176fec59ddd2b3702e4ee7 = L.polyline(
                 [[16.3241, 108.0249], [22.295, 114.169]],
                 {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": "6,8", "dashOffset": null, "fill": false, "fillColor": "#7C8794", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_4b6780d5ba502c05027eb531aeb3151a);
+            ).addTo(feature_group_3fb3704cf316f02c5648a7d5dba8a859);
         
     
-            poly_line_b3b338669e185720bed4c2c581cf2643.bindTooltip(
+            poly_line_2038c8a478176fec59ddd2b3702e4ee7.bindTooltip(
                 `<div>
                      Chân Mây ↔ Hong Kong
                  </div>`,
@@ -396,13 +630,13 @@
             );
         
     
-            var circle_marker_53c81f472c3fa33866f4bd073548b03e = L.circleMarker(
+            var circle_marker_f834092abad0a780504470b8c43876a9 = L.circleMarker(
                 [22.295, 114.169],
                 {"bubblingMouseEvents": true, "color": "#7C8794", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F4F1EA", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
-            ).addTo(feature_group_4b6780d5ba502c05027eb531aeb3151a);
+            ).addTo(feature_group_3fb3704cf316f02c5648a7d5dba8a859);
         
     
-            circle_marker_53c81f472c3fa33866f4bd073548b03e.bindTooltip(
+            circle_marker_f834092abad0a780504470b8c43876a9.bindTooltip(
                 `<div>
                      Hong Kong (stop 8 of 9)
                  </div>`,
@@ -412,26 +646,26 @@
             );
         
     
-            feature_group_4b6780d5ba502c05027eb531aeb3151a.addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            feature_group_3fb3704cf316f02c5648a7d5dba8a859.addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
         
     
-            var layer_control_9e11e8ce95691fe9eb7d0c25a40d17eb_layers = {
+            var layer_control_d56cc386a1cadca26744f60e0960cb4b_layers = {
                 base_layers : {
-                    "cartodbpositron" : tile_layer_c164aa02b996fc134adc4abbc9772eaf,
+                    "cartodbpositron" : tile_layer_13021df8f5658f96b8183138f3437f08,
                 },
                 overlays :  {
-                    "Cruise legs" : feature_group_4b6780d5ba502c05027eb531aeb3151a,
+                    "Cruise legs" : feature_group_3fb3704cf316f02c5648a7d5dba8a859,
                 },
             };
-            let layer_control_9e11e8ce95691fe9eb7d0c25a40d17eb = L.control.layers(
-                layer_control_9e11e8ce95691fe9eb7d0c25a40d17eb_layers.base_layers,
-                layer_control_9e11e8ce95691fe9eb7d0c25a40d17eb_layers.overlays,
+            let layer_control_d56cc386a1cadca26744f60e0960cb4b = L.control.layers(
+                layer_control_d56cc386a1cadca26744f60e0960cb4b_layers.base_layers,
+                layer_control_d56cc386a1cadca26744f60e0960cb4b_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_b660a4b5b65953ca88bf3b189c1b4ae7);
+            ).addTo(map_d01655fbd2ae4fa75c3f5e11b3f0e366);
 
         
 </script>
